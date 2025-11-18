@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkBoundingBoxData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f Max;
+        /* 0x00 */
+        public Vector3f Max;
         [NMS(Index = 0)]
-        /* 0x10 */ public Vector3f Min;
+        /* 0x10 */
+        public Vector3f Min;
     }
 }

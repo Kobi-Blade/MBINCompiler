@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardScanEventOutcome : NMSTemplate
     {
         // size: 0x7
-        public enum RewardScanEventOutcomeEnum : uint {
+        public enum RewardScanEventOutcomeEnum : uint
+        {
             Success,
             Interstellar,
             BadData,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             NoSystem,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public RewardScanEventOutcomeEnum RewardScanEventOutcome;
+        /* 0x0 */
+        public RewardScanEventOutcomeEnum RewardScanEventOutcome;
     }
 }

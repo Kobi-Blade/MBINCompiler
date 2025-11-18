@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAlienPuzzleCategory : NMSTemplate
     {
         // size: 0x3B
-        public enum AlienPuzzleCategoryEnum : uint {
+        public enum AlienPuzzleCategoryEnum : uint
+        {
             Default,
             GuildTraderNone,
             GuildTraderLow,
@@ -66,6 +67,7 @@ namespace libMBIN.NMS.GameComponents
             SpiderRenewed,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AlienPuzzleCategoryEnum AlienPuzzleCategory;
+        /* 0x0 */
+        public AlienPuzzleCategoryEnum AlienPuzzleCategory;
     }
 }

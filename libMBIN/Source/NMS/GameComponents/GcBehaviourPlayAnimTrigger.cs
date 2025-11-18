@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourPlayAnimTrigger : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 Trigger;
+        /* 0x00 */
+        public NMSString0x10 Trigger;
         [NMS(Index = 0)]
-        /* 0x10 */ public int Frame;
+        /* 0x10 */
+        public int Frame;
     }
 }

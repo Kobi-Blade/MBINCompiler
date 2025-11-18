@@ -4,18 +4,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcDistanceScaleComponentData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public float MaxDistance;
+        /* 0x00 */
+        public float MaxDistance;
         [NMS(Index = 5)]
-        /* 0x04 */ public float MaxHeight;
+        /* 0x04 */
+        public float MaxHeight;
         [NMS(Index = 2)]
-        /* 0x08 */ public float MinDistance;
+        /* 0x08 */
+        public float MinDistance;
         [NMS(Index = 4)]
-        /* 0x0C */ public float MinHeight;
+        /* 0x0C */
+        public float MinHeight;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Scale;
+        /* 0x10 */
+        public float Scale;
         [NMS(Index = 6)]
-        /* 0x14 */ public bool DisabledWhenOnFreighter;
+        /* 0x14 */
+        public bool DisabledWhenOnFreighter;
         [NMS(Index = 0)]
-        /* 0x15 */ public bool UseGlobals;
+        /* 0x15 */
+        public bool UseGlobals;
     }
 }

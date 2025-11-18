@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcActionTrigger : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSTemplate> Action;
+        /* 0x00 */
+        public List<NMSTemplate> Action;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSTemplate Event;
+        /* 0x10 */
+        public NMSTemplate Event;
     }
 }

@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcByteBeatPlayerComponentData : NMSTemplate
     {
         // size: 0x2
-        public enum ByteBeatPlayerTypeEnum : uint {
+        public enum ByteBeatPlayerTypeEnum : uint
+        {
             Player,
             Settlement,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ByteBeatPlayerTypeEnum ByteBeatPlayerType;
+        /* 0x0 */
+        public ByteBeatPlayerTypeEnum ByteBeatPlayerType;
     }
 }

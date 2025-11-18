@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionPlatform : NMSTemplate
     {
         // size: 0x2
-        public enum MissionPlatformEnum : uint {
+        public enum MissionPlatformEnum : uint
+        {
             Undefined,
             NintendoSwitch,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionPlatformEnum MissionPlatform;
+        /* 0x0 */
+        public MissionPlatformEnum MissionPlatform;
     }
 }

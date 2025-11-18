@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcWeightedResource : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkModelResource Geometry;
+        /* 0x00 */
+        public TkModelResource Geometry;
         [NMS(Index = 0, MxmlName = "Relative Probability")]
-        /* 0x20 */ public float RelativeProbability;
+        /* 0x20 */
+        public float RelativeProbability;
     }
 }

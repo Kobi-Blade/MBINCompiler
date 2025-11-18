@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcSentinelQuadWeaponMode : NMSTemplate
     {
         // size: 0x4
-        public enum SentinelQuadWeaponModeEnum : uint {
+        public enum SentinelQuadWeaponModeEnum : uint
+        {
             Laser,
             MiniCannon,
             Grenades,
             Flamethrower,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SentinelQuadWeaponModeEnum SentinelQuadWeaponMode;
+        /* 0x0 */
+        public SentinelQuadWeaponModeEnum SentinelQuadWeaponMode;
     }
 }

@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcLaunchFuelCostDifficultyOption : NMSTemplate
     {
         // size: 0x4
-        public enum LaunchFuelCostDifficultyEnum : uint {
+        public enum LaunchFuelCostDifficultyEnum : uint
+        {
             Free,
             Low,
             Normal,
             High,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public LaunchFuelCostDifficultyEnum LaunchFuelCostDifficulty;
+        /* 0x0 */
+        public LaunchFuelCostDifficultyEnum LaunchFuelCostDifficulty;
     }
 }

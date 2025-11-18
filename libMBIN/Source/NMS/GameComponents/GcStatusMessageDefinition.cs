@@ -1,24 +1,29 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0xBF9DFBF2515F6DCE, NameHash = 0xA29CFBD3)]
     public class GcStatusMessageDefinition : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public NMSString0x20A CustomPrefixLocID;
+        /* 0x00 */
+        public NMSString0x20A CustomPrefixLocID;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x20A Message;
+        /* 0x20 */
+        public NMSString0x20A Message;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 Id;
+        /* 0x40 */
+        public NMSString0x10 Id;
         [NMS(Index = 10)]
-        /* 0x50 */ public float DisplayDurationMultiplier;
+        /* 0x50 */
+        public float DisplayDurationMultiplier;
         [NMS(Index = 9)]
-        /* 0x54 */ public float Distance;
+        /* 0x54 */
+        public float Distance;
         [NMS(Index = 13)]
-        /* 0x58 */ public GcStatusMessageMissionMarkup MissionMarkup;
+        /* 0x58 */
+        public GcStatusMessageMissionMarkup MissionMarkup;
         // size: 0x8
-        public enum ReplicateToEnum : uint {
+        public enum ReplicateToEnum : uint
+        {
             None,
             Fireteam,
             Fireteam_SameUA,
@@ -29,20 +34,28 @@ namespace libMBIN.NMS.GameComponents
             Not_Fireteam,
         }
         [NMS(Index = 7)]
-        /* 0x5C */ public ReplicateToEnum ReplicateTo;
+        /* 0x5C */
+        public ReplicateToEnum ReplicateTo;
         [NMS(Index = 4)]
-        /* 0x60 */ public bool AddFriendlyDronePrefix;
+        /* 0x60 */
+        public bool AddFriendlyDronePrefix;
         [NMS(Index = 3)]
-        /* 0x61 */ public bool AddPetNamePrefix;
+        /* 0x61 */
+        public bool AddPetNamePrefix;
         [NMS(Index = 2)]
-        /* 0x62 */ public bool AddPlayerNamePrefix;
+        /* 0x62 */
+        public bool AddPlayerNamePrefix;
         [NMS(Index = 6)]
-        /* 0x63 */ public bool IncludePlayerName;
+        /* 0x63 */
+        public bool IncludePlayerName;
         [NMS(Index = 11)]
-        /* 0x64 */ public bool OnlyInMultiplayer;
+        /* 0x64 */
+        public bool OnlyInMultiplayer;
         [NMS(Index = 12)]
-        /* 0x65 */ public bool OnlyOnFireteam;
+        /* 0x65 */
+        public bool OnlyOnFireteam;
         [NMS(Index = 8)]
-        /* 0x66 */ public bool PostLocally;
+        /* 0x66 */
+        public bool PostLocally;
     }
 }

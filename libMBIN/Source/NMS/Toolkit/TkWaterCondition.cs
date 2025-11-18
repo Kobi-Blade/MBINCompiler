@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkWaterCondition : NMSTemplate
     {
         // size: 0xF
-        public enum WaterConditionEnum : uint {
+        public enum WaterConditionEnum : uint
+        {
             Absolutely_Tranquil,
             Breezy_Lake,
             Wavy_Lake,
@@ -22,6 +23,7 @@ namespace libMBIN.NMS.Toolkit
             Wall_Of_Water,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WaterConditionEnum WaterCondition;
+        /* 0x0 */
+        public WaterConditionEnum WaterCondition;
     }
 }

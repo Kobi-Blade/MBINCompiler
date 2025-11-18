@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcGalacticAddressData : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public int PlanetIndex;
+        /* 0x00 */
+        public int PlanetIndex;
         [NMS(Index = 3)]
-        /* 0x04 */ public int SolarSystemIndex;
+        /* 0x04 */
+        public int SolarSystemIndex;
         [NMS(Index = 0)]
-        /* 0x08 */ public int VoxelX;
+        /* 0x08 */
+        public int VoxelX;
         [NMS(Index = 1)]
-        /* 0x0C */ public int VoxelY;
+        /* 0x0C */
+        public int VoxelY;
         [NMS(Index = 2)]
-        /* 0x10 */ public int VoxelZ;
+        /* 0x10 */
+        public int VoxelZ;
     }
 }

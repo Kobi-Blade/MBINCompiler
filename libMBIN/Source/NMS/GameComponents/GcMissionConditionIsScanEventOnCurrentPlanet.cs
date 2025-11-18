@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionIsScanEventOnCurrentPlanet : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Event;
+        /* 0x00 */
+        public NMSString0x20A Event;
         [NMS(Index = 1)]
-        /* 0x20 */ public bool AllowInShip;
+        /* 0x20 */
+        public bool AllowInShip;
     }
 }

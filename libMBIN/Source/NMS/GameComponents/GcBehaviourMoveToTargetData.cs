@@ -6,22 +6,29 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourMoveToTargetData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkBlackboardDefaultValueFloat ArriveDist;
+        /* 0x00 */
+        public TkBlackboardDefaultValueFloat ArriveDist;
         [NMS(Index = 0)]
-        /* 0x18 */ public NMSString0x10 TargetKey;
+        /* 0x18 */
+        public NMSString0x10 TargetKey;
         [NMS(Index = 5)]
-        /* 0x28 */ public float AvoidCreaturesStrength;
+        /* 0x28 */
+        public float AvoidCreaturesStrength;
         // size: 0x3
-        public enum BehaviourMoveSpeedEnum : uint {
+        public enum BehaviourMoveSpeedEnum : uint
+        {
             Normal,
             Fast,
             Dynamic,
         }
         [NMS(Index = 2)]
-        /* 0x2C */ public BehaviourMoveSpeedEnum BehaviourMoveSpeed;
+        /* 0x2C */
+        public BehaviourMoveSpeedEnum BehaviourMoveSpeed;
         [NMS(Index = 3)]
-        /* 0x30 */ public float DynamicMoveSlowdownDistMul;
+        /* 0x30 */
+        public float DynamicMoveSlowdownDistMul;
         [NMS(Index = 4)]
-        /* 0x34 */ public float SpeedModifier;
+        /* 0x34 */
+        public float SpeedModifier;
     }
 }

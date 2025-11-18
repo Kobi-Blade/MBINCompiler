@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCombatEffectType : NMSTemplate
     {
         // size: 0x6
-        public enum CombatEffectTypeEnum : uint {
+        public enum CombatEffectTypeEnum : uint
+        {
             None,
             Fire,
             Stun,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             SpookyLight,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CombatEffectTypeEnum CombatEffectType;
+        /* 0x0 */
+        public CombatEffectTypeEnum CombatEffectType;
     }
 }

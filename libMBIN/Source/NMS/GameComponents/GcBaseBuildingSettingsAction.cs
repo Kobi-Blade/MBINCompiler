@@ -6,14 +6,17 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingSettingsAction : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public TkGraphicsDetailTypes MaxAffectedDetail;
+        /* 0x0 */
+        public TkGraphicsDetailTypes MaxAffectedDetail;
         // size: 0x3
-        public enum UseCorePartsOnlyEnum : uint {
+        public enum UseCorePartsOnlyEnum : uint
+        {
             False,
             True,
             DontCare,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public UseCorePartsOnlyEnum UseCorePartsOnly;
+        /* 0x4 */
+        public UseCorePartsOnlyEnum UseCorePartsOnly;
     }
 }

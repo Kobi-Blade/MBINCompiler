@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,27 +6,38 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerFullBodyIKComponentData : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x000 */ public GcIKConstraint COGConstraint;
+        /* 0x000 */
+        public GcIKConstraint COGConstraint;
         [NMS(Index = 8)]
-        /* 0x150 */ public GcIKConstraint SitConstraint;
+        /* 0x150 */
+        public GcIKConstraint SitConstraint;
         [NMS(Index = 7)]
-        /* 0x2A0 */ public List<NMSString0x20> CameraNeckBones;
+        /* 0x2A0 */
+        public List<NMSString0x20> CameraNeckBones;
         [NMS(Index = 6)]
-        /* 0x2B0 */ public List<NMSString0x20> HandBones;
+        /* 0x2B0 */
+        public List<NMSString0x20> HandBones;
         [NMS(Index = 2)]
-        /* 0x2C0 */ public List<GcIKConstraint> HeadConstraints;
+        /* 0x2C0 */
+        public List<GcIKConstraint> HeadConstraints;
         [NMS(Index = 11)]
-        /* 0x2D0 */ public List<GcCreatureIkData> JointDataDeprecated;
+        /* 0x2D0 */
+        public List<GcCreatureIkData> JointDataDeprecated;
         [NMS(Index = 3)]
-        /* 0x2E0 */ public List<GcIKConstraint> LegConstraints;
+        /* 0x2E0 */
+        public List<GcIKConstraint> LegConstraints;
         [NMS(Index = 5)]
-        /* 0x2F0 */ public List<GcIKConstraint> RestrictConstraints;
+        /* 0x2F0 */
+        public List<GcIKConstraint> RestrictConstraints;
         [NMS(Index = 13)]
-        /* 0x300 */ public GcCharacterLookAtData LookAtSettings;
+        /* 0x300 */
+        public GcCharacterLookAtData LookAtSettings;
         [NMS(Index = 9)]
-        /* 0x334 */ public float DisableDistanceSq;
+        /* 0x334 */
+        public float DisableDistanceSq;
         // size: 0x6
-        public enum PlayerHeadUpAxisEnum : uint {
+        public enum PlayerHeadUpAxisEnum : uint
+        {
             X,
             XNeg,
             Y,
@@ -36,12 +46,16 @@ namespace libMBIN.NMS.GameComponents
             ZNeg,
         }
         [NMS(Index = 10)]
-        /* 0x338 */ public PlayerHeadUpAxisEnum PlayerHeadUpAxis;
+        /* 0x338 */
+        public PlayerHeadUpAxisEnum PlayerHeadUpAxis;
         [NMS(Index = 0)]
-        /* 0x33C */ public bool Enabled;
+        /* 0x33C */
+        public bool Enabled;
         [NMS(Index = 1)]
-        /* 0x33D */ public bool EnableFootRaycasts;
+        /* 0x33D */
+        public bool EnableFootRaycasts;
         [NMS(Index = 12)]
-        /* 0x33E */ public bool UseFootGlue;
+        /* 0x33E */
+        public bool UseFootGlue;
     }
 }

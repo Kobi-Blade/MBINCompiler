@@ -4,20 +4,24 @@ namespace libMBIN.NMS.Toolkit
     public class TkNGuiAlignment : NMSTemplate
     {
         // size: 0x3
-        public enum HorizontalEnum : byte {
+        public enum HorizontalEnum : byte
+        {
             Left,
             Center,
             Right,
         }
         [NMS(Index = 1)]
-        /* 0x0 */ public HorizontalEnum Horizontal;
+        /* 0x0 */
+        public HorizontalEnum Horizontal;
         // size: 0x3
-        public enum VerticalEnum : byte {
+        public enum VerticalEnum : byte
+        {
             Top,
             Middle,
             Bottom,
         }
         [NMS(Index = 0)]
-        /* 0x1 */ public VerticalEnum Vertical;
+        /* 0x1 */
+        public VerticalEnum Vertical;
     }
 }

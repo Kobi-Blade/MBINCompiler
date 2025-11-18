@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWaitForFriendlyDroneScanEvent : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public NMSString0x20A Event;
+        /* 0x00 */
+        public NMSString0x20A Event;
         [NMS(Index = 5)]
-        /* 0x20 */ public VariableSizeString DebugText;
+        /* 0x20 */
+        public VariableSizeString DebugText;
         [NMS(Index = 2)]
-        /* 0x30 */ public VariableSizeString MessageCantSummon;
+        /* 0x30 */
+        public VariableSizeString MessageCantSummon;
         [NMS(Index = 3)]
-        /* 0x40 */ public VariableSizeString MessageNotAvailable;
+        /* 0x40 */
+        public VariableSizeString MessageNotAvailable;
         [NMS(Index = 0)]
-        /* 0x50 */ public VariableSizeString MessageSummoned;
+        /* 0x50 */
+        public VariableSizeString MessageSummoned;
         [NMS(Index = 1)]
-        /* 0x60 */ public VariableSizeString MessageUnsummoned;
+        /* 0x60 */
+        public VariableSizeString MessageUnsummoned;
     }
 }

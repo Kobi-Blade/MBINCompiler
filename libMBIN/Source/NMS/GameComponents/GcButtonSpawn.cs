@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,11 +6,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcButtonSpawn : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public GcButtonSpawnOffset Offset;
+        /* 0x00 */
+        public GcButtonSpawnOffset Offset;
         [NMS(Index = 0)]
-        /* 0x20 */ public TkInputEnum Button;
+        /* 0x20 */
+        public TkInputEnum Button;
         // size: 0x5
-        public enum EventEnum : uint {
+        public enum EventEnum : uint
+        {
             None,
             Pirates,
             Police,
@@ -19,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             Walker,
         }
         [NMS(Index = 1)]
-        /* 0x24 */ public EventEnum Event;
+        /* 0x24 */
+        public EventEnum Event;
     }
 }

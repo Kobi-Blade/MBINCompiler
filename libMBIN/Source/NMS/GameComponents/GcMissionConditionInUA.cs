@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionInUA : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x100 UA;
+        /* 0x0 */
+        public NMSString0x100 UA;
     }
 }

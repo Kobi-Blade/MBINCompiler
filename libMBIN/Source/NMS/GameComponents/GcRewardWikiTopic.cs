@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardWikiTopic : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Topic;
+        /* 0x00 */
+        public NMSString0x20A Topic;
         [NMS(Index = 1)]
-        /* 0x20 */ public bool CentreMessage;
+        /* 0x20 */
+        public bool CentreMessage;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatusMessageMissionMarkup : NMSTemplate
     {
         // size: 0x12
-        public enum MissionMarkupEnum : uint {
+        public enum MissionMarkupEnum : uint
+        {
             KillFiend,
             KillPirate,
             KillSentinel,
@@ -25,6 +26,7 @@ namespace libMBIN.NMS.GameComponents
             None,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionMarkupEnum MissionMarkup;
+        /* 0x0 */
+        public MissionMarkupEnum MissionMarkup;
     }
 }

@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcProductTableType : NMSTemplate
     {
         // size: 0x3
-        public enum ProductTableTypeEnum : uint {
+        public enum ProductTableTypeEnum : uint
+        {
             Main,
             BaseParts,
             ModularCustomisation,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ProductTableTypeEnum ProductTableType;
+        /* 0x0 */
+        public ProductTableTypeEnum ProductTableType;
     }
 }

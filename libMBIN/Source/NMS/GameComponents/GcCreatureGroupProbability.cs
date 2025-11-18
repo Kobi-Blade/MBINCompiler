@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureGroupProbability : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Group;
+        /* 0x00 */
+        public NMSString0x10 Group;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Probability;
+        /* 0x10 */
+        public float Probability;
     }
 }

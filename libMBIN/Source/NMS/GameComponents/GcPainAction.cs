@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcPainAction : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Damage;
+        /* 0x00 */
+        public NMSString0x10 Damage;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Radius;
+        /* 0x10 */
+        public float Radius;
         [NMS(Index = 4)]
-        /* 0x14 */ public float RetriggerTime;
+        /* 0x14 */
+        public float RetriggerTime;
         [NMS(Index = 3)]
-        /* 0x18 */ public bool AffectsPlayer;
+        /* 0x18 */
+        public bool AffectsPlayer;
         [NMS(Index = 2)]
-        /* 0x19 */ public bool RadiusBasedDamage;
+        /* 0x19 */
+        public bool RadiusBasedDamage;
     }
 }

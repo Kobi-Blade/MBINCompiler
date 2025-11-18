@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcSeasonalObjectiveOverrides : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A OverrideObjective;
+        /* 0x00 */
+        public NMSString0x20A OverrideObjective;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x20A OverrideObjectiveTip;
+        /* 0x20 */
+        public NMSString0x20A OverrideObjectiveTip;
         [NMS(Index = 0)]
-        /* 0x40 */ public List<int> ApplicableSeasonNumbers;
+        /* 0x40 */
+        public List<int> ApplicableSeasonNumbers;
     }
 }

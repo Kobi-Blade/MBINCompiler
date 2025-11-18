@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcInteractionBaseBuildingState : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 TriggerAction;
+        /* 0x00 */
+        public NMSString0x10 TriggerAction;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Time;
+        /* 0x10 */
+        public int Time;
     }
 }

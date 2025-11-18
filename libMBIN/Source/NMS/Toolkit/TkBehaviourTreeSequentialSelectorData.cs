@@ -6,12 +6,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkBehaviourTreeSequentialSelectorData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public List<NMSTemplate> Children;
+        /* 0x00 */
+        public List<NMSTemplate> Children;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Name;
+        /* 0x10 */
+        public NMSString0x10 Name;
         [NMS(Index = 2)]
-        /* 0x20 */ public bool FailWhenAnyChildFails;
+        /* 0x20 */
+        public bool FailWhenAnyChildFails;
         [NMS(Index = 1)]
-        /* 0x21 */ public bool Looping;
+        /* 0x21 */
+        public bool Looping;
     }
 }

@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceSetCurrentMission : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 MissionID;
+        /* 0x10 */
+        public NMSString0x10 MissionID;
         [NMS(Index = 1)]
-        /* 0x20 */ public bool FirstIncompleteMilestone;
+        /* 0x20 */
+        public bool FirstIncompleteMilestone;
         [NMS(Index = 3)]
-        /* 0x21 */ public bool OverrideMultiplayerPriority;
+        /* 0x21 */
+        public bool OverrideMultiplayerPriority;
         [NMS(Index = 2)]
-        /* 0x22 */ public bool Silent;
+        /* 0x22 */
+        public bool Silent;
     }
 }

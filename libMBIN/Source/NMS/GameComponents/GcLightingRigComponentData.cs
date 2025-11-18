@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcLightingRigComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<GcHeroLightData> LightData;
+        /* 0x00 */
+        public List<GcHeroLightData> LightData;
         [NMS(Index = 2)]
-        /* 0x10 */ public float PitchAngleMax;
+        /* 0x10 */
+        public float PitchAngleMax;
         [NMS(Index = 1)]
-        /* 0x14 */ public float PitchAngleMin;
+        /* 0x14 */
+        public float PitchAngleMin;
     }
 }

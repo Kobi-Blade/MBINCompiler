@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcDamageReceivedDifficultyOption : NMSTemplate
     {
         // size: 0x4
-        public enum DamageReceivedDifficultyEnum : uint {
+        public enum DamageReceivedDifficultyEnum : uint
+        {
             None,
             Low,
             Normal,
             High,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DamageReceivedDifficultyEnum DamageReceivedDifficulty;
+        /* 0x0 */
+        public DamageReceivedDifficultyEnum DamageReceivedDifficulty;
     }
 }

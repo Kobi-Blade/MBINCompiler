@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcWeightedBuildingSize : NMSTemplate
     {
         [NMS(Index = 0, MxmlName = "Relative Probability")]
-        /* 0x00 */ public float RelativeProbability;
+        /* 0x00 */
+        public float RelativeProbability;
         [NMS(Index = 1, MxmlName = "Size X")]
-        /* 0x04 */ public int SizeX;
+        /* 0x04 */
+        public int SizeX;
         [NMS(Index = 2, MxmlName = "Size Y")]
-        /* 0x08 */ public int SizeY;
+        /* 0x08 */
+        public int SizeY;
         [NMS(Index = 3, MxmlName = "Size Z")]
-        /* 0x0C */ public int SizeZ;
+        /* 0x0C */
+        public int SizeZ;
         [NMS(Index = 4, MxmlName = "Create Symmetric Building")]
-        /* 0x10 */ public bool CreateSymmetricBuilding;
+        /* 0x10 */
+        public bool CreateSymmetricBuilding;
     }
 }

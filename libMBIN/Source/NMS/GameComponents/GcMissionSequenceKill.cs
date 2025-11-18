@@ -4,19 +4,26 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceKill : NMSTemplate
     {
         [NMS(Index = 10)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 3)]
-        /* 0x20 */ public int AmountMax;
+        /* 0x20 */
+        public int AmountMax;
         [NMS(Index = 5)]
-        /* 0x24 */ public int AmountMaxNoMP;
+        /* 0x24 */
+        public int AmountMaxNoMP;
         [NMS(Index = 2)]
-        /* 0x28 */ public int AmountMin;
+        /* 0x28 */
+        public int AmountMin;
         [NMS(Index = 4)]
-        /* 0x2C */ public int AmountMinNoMP;
+        /* 0x2C */
+        public int AmountMinNoMP;
         // size: 0x13
-        public enum KillTargetEnum : uint {
+        public enum KillTargetEnum : uint
+        {
             Robots,
             Drones,
             Quads,
@@ -38,14 +45,19 @@ namespace libMBIN.NMS.GameComponents
             SpookSquids,
         }
         [NMS(Index = 1)]
-        /* 0x30 */ public KillTargetEnum KillTarget;
+        /* 0x30 */
+        public KillTargetEnum KillTarget;
         [NMS(Index = 7)]
-        /* 0x34 */ public int OverrideMissionStageIDForMPProgress;
+        /* 0x34 */
+        public int OverrideMissionStageIDForMPProgress;
         [NMS(Index = 9)]
-        /* 0x38 */ public bool AddToMissionBoardObjective;
+        /* 0x38 */
+        public bool AddToMissionBoardObjective;
         [NMS(Index = 8)]
-        /* 0x39 */ public bool UseDefaultAmount;
+        /* 0x39 */
+        public bool UseDefaultAmount;
         [NMS(Index = 6)]
-        /* 0x3A */ public bool WriteProgressToMissionStat;
+        /* 0x3A */
+        public bool WriteProgressToMissionStat;
     }
 }

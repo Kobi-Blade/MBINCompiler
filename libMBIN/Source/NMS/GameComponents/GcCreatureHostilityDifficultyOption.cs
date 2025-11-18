@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureHostilityDifficultyOption : NMSTemplate
     {
         // size: 0x3
-        public enum CreatureHostilityDifficultyEnum : uint {
+        public enum CreatureHostilityDifficultyEnum : uint
+        {
             NeverAttack,
             AttackIfProvoked,
             FullEcosystem,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CreatureHostilityDifficultyEnum CreatureHostilityDifficulty;
+        /* 0x0 */
+        public CreatureHostilityDifficultyEnum CreatureHostilityDifficulty;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcProductToCollect : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Product;
+        /* 0x00 */
+        public NMSString0x10 Product;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Amount;
+        /* 0x10 */
+        public int Amount;
     }
 }

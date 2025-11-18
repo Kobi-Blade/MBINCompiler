@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcStyleProp_Font : NMSTemplate
     {
         [NMS(Index = 0, MxmlName = "Font Index")]
-        /* 0x0 */ public int FontIndex;
+        /* 0x0 */
+        public int FontIndex;
     }
 }

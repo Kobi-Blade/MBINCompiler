@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSeasonNumber : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<int> IncludeOtherSeasons;
+        /* 0x00 */
+        public List<int> IncludeOtherSeasons;
         [NMS(Index = 0)]
-        /* 0x10 */ public int ActiveSeason;
+        /* 0x10 */
+        public int ActiveSeason;
         [NMS(Index = 1)]
-        /* 0x14 */ public bool IncludeRemix;
+        /* 0x14 */
+        public bool IncludeRemix;
     }
 }

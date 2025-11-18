@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemQuality : NMSTemplate
     {
         // size: 0x5
-        public enum ItemQualityEnum : uint {
+        public enum ItemQualityEnum : uint
+        {
             Junk,
             Common,
             Rare,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Legendary,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ItemQualityEnum ItemQuality;
+        /* 0x0 */
+        public ItemQualityEnum ItemQuality;
     }
 }

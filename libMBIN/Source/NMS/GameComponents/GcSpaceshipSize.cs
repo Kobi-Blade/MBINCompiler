@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpaceshipSize : NMSTemplate
     {
         // size: 0x3
-        public enum ShipSizeEnum : uint {
+        public enum ShipSizeEnum : uint
+        {
             None,
             Small,
             Large,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ShipSizeEnum ShipSize;
+        /* 0x0 */
+        public ShipSizeEnum ShipSize;
     }
 }

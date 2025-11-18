@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionAllMilestonesComplete : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int ForStage;
+        /* 0x0 */
+        public int ForStage;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool UseSeasonOverrideMessage;
+        /* 0x4 */
+        public bool UseSeasonOverrideMessage;
     }
 }

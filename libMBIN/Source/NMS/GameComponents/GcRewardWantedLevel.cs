@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardWantedLevel : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Message;
+        /* 0x00 */
+        public NMSString0x20A Message;
         [NMS(Index = 1)]
-        /* 0x20 */ public int Level;
+        /* 0x20 */
+        public int Level;
     }
 }

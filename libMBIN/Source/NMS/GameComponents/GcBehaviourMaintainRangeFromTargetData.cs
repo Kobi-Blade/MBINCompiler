@@ -6,18 +6,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourMaintainRangeFromTargetData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public TkBlackboardDefaultValueFloat MaxDist;
+        /* 0x00 */
+        public TkBlackboardDefaultValueFloat MaxDist;
         [NMS(Index = 1)]
-        /* 0x18 */ public TkBlackboardDefaultValueFloat MinDist;
+        /* 0x18 */
+        public TkBlackboardDefaultValueFloat MinDist;
         [NMS(Index = 0)]
-        /* 0x30 */ public NMSString0x10 TargetKey;
+        /* 0x30 */
+        public NMSString0x10 TargetKey;
         [NMS(Index = 6)]
-        /* 0x40 */ public float AvoidCreaturesStrength;
+        /* 0x40 */
+        public float AvoidCreaturesStrength;
         [NMS(Index = 5)]
-        /* 0x44 */ public float SpeedModifier;
+        /* 0x44 */
+        public float SpeedModifier;
         [NMS(Index = 3, MxmlName = "2D")]
-        /* 0x48 */ public bool _2D;
+        /* 0x48 */
+        public bool _2D;
         [NMS(Index = 4)]
-        /* 0x49 */ public bool SucceedWhenInRange;
+        /* 0x49 */
+        public bool SucceedWhenInRange;
     }
 }

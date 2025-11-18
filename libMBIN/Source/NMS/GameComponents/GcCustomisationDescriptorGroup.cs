@@ -6,20 +6,28 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationDescriptorGroup : NMSTemplate
     {
         [NMS(Index = 6)]
-        /* 0x000 */ public NMSString0x20A Tip;
+        /* 0x000 */
+        public NMSString0x20A Tip;
         [NMS(Index = 1)]
-        /* 0x020 */ public NMSString0x20A Title;
+        /* 0x020 */
+        public NMSString0x20A Title;
         [NMS(Index = 3)]
-        /* 0x040 */ public List<NMSString0x20> Descriptors;
+        /* 0x040 */
+        public List<NMSString0x20> Descriptors;
         [NMS(Index = 0)]
-        /* 0x050 */ public NMSString0x10 GroupID;
+        /* 0x050 */
+        public NMSString0x10 GroupID;
         [NMS(Index = 5)]
-        /* 0x060 */ public NMSString0x10 LinkedSpecialID;
+        /* 0x060 */
+        public NMSString0x10 LinkedSpecialID;
         [NMS(Index = 4)]
-        /* 0x070 */ public List<NMSString0x20> SuffixInclusionList;
+        /* 0x070 */
+        public List<NMSString0x20> SuffixInclusionList;
         [NMS(Index = 2)]
-        /* 0x080 */ public NMSString0x80 Image;
+        /* 0x080 */
+        public NMSString0x80 Image;
         [NMS(Index = 7)]
-        /* 0x100 */ public bool HiddenInCustomiser;
+        /* 0x100 */
+        public bool HiddenInCustomiser;
     }
 }

@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationDescriptorGroupFallbackData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 DescriptorGroupID;
+        /* 0x00 */
+        public NMSString0x10 DescriptorGroupID;
         [NMS(Index = 1)]
-        /* 0x10 */ public List<NMSString0x10> FallbackPriorityList;
+        /* 0x10 */
+        public List<NMSString0x10> FallbackPriorityList;
     }
 }

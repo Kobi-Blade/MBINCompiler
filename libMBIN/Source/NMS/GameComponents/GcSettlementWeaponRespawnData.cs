@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementWeaponRespawnData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public ulong InteractionSeed;
+        /* 0x0 */
+        public ulong InteractionSeed;
         [NMS(Index = 1)]
-        /* 0x8 */ public ulong LastWeaponRefreshTimestamp;
+        /* 0x8 */
+        public ulong LastWeaponRefreshTimestamp;
     }
 }

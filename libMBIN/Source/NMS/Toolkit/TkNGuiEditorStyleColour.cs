@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkNGuiEditorStyleColour : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Colour Colour;
+        /* 0x00 */
+        public Colour Colour;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x80 Name;
+        /* 0x10 */
+        public NMSString0x80 Name;
     }
 }

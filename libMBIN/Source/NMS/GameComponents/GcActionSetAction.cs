@@ -1,13 +1,13 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x970E6744D4FE0095, NameHash = 0xEE278077)]
     public class GcActionSetAction : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public GcInputActions Action;
+        /* 0x0 */
+        public GcInputActions Action;
         [NMS(Index = 0)]
-        /* 0x4 */ public GcActionUseType Status;
+        /* 0x4 */
+        public GcActionUseType Status;
     }
 }

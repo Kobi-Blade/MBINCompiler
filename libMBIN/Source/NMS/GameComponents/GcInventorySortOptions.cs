@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventorySortOptions : NMSTemplate
     {
         // size: 0x5
-        public enum InventorySortEnum : uint {
+        public enum InventorySortEnum : uint
+        {
             None,
             Value,
             Type,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Colour,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InventorySortEnum InventorySort;
+        /* 0x0 */
+        public InventorySortEnum InventorySort;
     }
 }

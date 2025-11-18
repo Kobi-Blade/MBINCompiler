@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcEngineComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int Type;
+        /* 0x0 */
+        public int Type;
     }
 }

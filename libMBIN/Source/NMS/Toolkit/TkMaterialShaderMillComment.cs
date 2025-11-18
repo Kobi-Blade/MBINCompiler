@@ -4,14 +4,19 @@ namespace libMBIN.NMS.Toolkit
     public class TkMaterialShaderMillComment : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public int PosMaxX;
+        /* 0x00 */
+        public int PosMaxX;
         [NMS(Index = 4)]
-        /* 0x04 */ public int PosMaxY;
+        /* 0x04 */
+        public int PosMaxY;
         [NMS(Index = 1)]
-        /* 0x08 */ public int PosMinX;
+        /* 0x08 */
+        public int PosMinX;
         [NMS(Index = 2)]
-        /* 0x0C */ public int PosMinY;
+        /* 0x0C */
+        public int PosMinY;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x100 Text;
+        /* 0x10 */
+        public NMSString0x100 Text;
     }
 }

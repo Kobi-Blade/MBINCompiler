@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSystemSpecificProductFromList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<NMSString0x10> ProductList;
+        /* 0x00 */
+        public List<NMSString0x10> ProductList;
         [NMS(Index = 2)]
-        /* 0x10 */ public int AmountMax;
+        /* 0x10 */
+        public int AmountMax;
         [NMS(Index = 1)]
-        /* 0x14 */ public int AmountMin;
+        /* 0x14 */
+        public int AmountMin;
         [NMS(Index = 3)]
-        /* 0x18 */ public bool ForceSpecialMessage;
+        /* 0x18 */
+        public bool ForceSpecialMessage;
     }
 }

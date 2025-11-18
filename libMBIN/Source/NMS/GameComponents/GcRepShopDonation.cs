@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcRepShopDonation : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public List<NMSString0x10> AltIDs;
+        /* 0x00 */
+        public List<NMSString0x10> AltIDs;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 ProductID;
+        /* 0x10 */
+        public NMSString0x10 ProductID;
         [NMS(Index = 1)]
-        /* 0x20 */ public int DonationValue;
+        /* 0x20 */
+        public int DonationValue;
         [NMS(Index = 2)]
-        /* 0x24 */ public int MaxDonations;
+        /* 0x24 */
+        public int MaxDonations;
         [NMS(Index = 3, Size = 0x1C, EnumType = typeof(GcProceduralProductCategory.ProceduralProductCategoryEnum))]
-        /* 0x28 */ public bool[] ValidProcProdCategories;
+        /* 0x28 */
+        public bool[] ValidProcProdCategories;
     }
 }

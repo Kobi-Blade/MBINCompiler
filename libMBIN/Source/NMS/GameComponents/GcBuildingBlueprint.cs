@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildingBlueprint : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ProductID;
+        /* 0x00 */
+        public NMSString0x10 ProductID;
         [NMS(Index = 1)]
-        /* 0x10 */ public int GroupId;
+        /* 0x10 */
+        public int GroupId;
     }
 }

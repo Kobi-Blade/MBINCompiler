@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS
 {
     public class Quaternion : NMSTemplate
@@ -38,12 +35,12 @@ namespace libMBIN.NMS
         }
 
         public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
-            {
+        {
             if (field == null || fieldInfo == null)
                 return false;
 
             switch (fieldInfo.Name)
-                {
+            {
                 case nameof(dropComponent):
                     // Do nothing...
                     return true;

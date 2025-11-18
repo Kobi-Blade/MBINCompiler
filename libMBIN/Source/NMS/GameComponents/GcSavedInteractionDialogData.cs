@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcSavedInteractionDialogData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A Dialog;
+        /* 0x00 */
+        public NMSString0x20A Dialog;
         [NMS(Index = 0)]
-        /* 0x20 */ public ulong Hash;
+        /* 0x20 */
+        public ulong Hash;
     }
 }

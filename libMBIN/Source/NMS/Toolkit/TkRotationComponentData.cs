@@ -4,12 +4,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkRotationComponentData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f Axis;
+        /* 0x00 */
+        public Vector3f Axis;
         [NMS(Index = 0)]
-        /* 0x10 */ public float Speed;
+        /* 0x10 */
+        public float Speed;
         [NMS(Index = 3)]
-        /* 0x14 */ public int SyncGroup;
+        /* 0x14 */
+        public int SyncGroup;
         [NMS(Index = 2)]
-        /* 0x18 */ public bool AlwaysUpdate;
+        /* 0x18 */
+        public bool AlwaysUpdate;
     }
 }

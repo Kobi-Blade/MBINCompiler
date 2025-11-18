@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcLightProperties : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public Colour BounceColour;
+        /* 0x00 */
+        public Colour BounceColour;
         [NMS(Index = 1)]
-        /* 0x10 */ public Colour LightColour;
+        /* 0x10 */
+        public Colour LightColour;
         [NMS(Index = 0)]
-        /* 0x20 */ public Colour SunColour;
+        /* 0x20 */
+        public Colour SunColour;
     }
 }

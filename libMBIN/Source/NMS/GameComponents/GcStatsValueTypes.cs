@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatsValueTypes : NMSTemplate
     {
         // size: 0x4
-        public enum StatsValueEnum : uint {
+        public enum StatsValueEnum : uint
+        {
             DistanceJetpacked,
             DistanceWalked,
             DistanceWarped,
             DamageSustained,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public StatsValueEnum StatsValue;
+        /* 0x0 */
+        public StatsValueEnum StatsValue;
     }
 }

@@ -1,9 +1,10 @@
 ﻿using libMBIN;
 
-namespace MBINCompiler
+namespace MBINCompiler.Source
 {
 
-    internal class Version {
+    internal class Version
+    {
 
         /// <summary>
         /// Get the version string for both MBINCompiler and libMBIN.
@@ -23,7 +24,7 @@ namespace MBINCompiler
         /// Otherwise display a short-format, computer-friendly version string.
         /// </param>
         /// <returns>A long or short formatted version string.</returns>
-        public static string GetVersionString( bool quiet ) => quiet ? GetVersionStringCompact() : GetVersionStringVerbose();
+        public static string GetVersionString(bool quiet) => quiet ? GetVersionStringCompact() : GetVersionStringVerbose();
 
         /// <summary>Get the version info for a specified MBIN <paramref name="mbin"/>.</summary>
         /// <param name="mbin">The MBIN file to display the version info for.</param>
@@ -31,14 +32,15 @@ namespace MBINCompiler
         ///     If true then a plain, script-friendly version string is displayed.
         ///     If false then a human-friendly message is displayed.
         /// </param>
-        public static string GetVersionString(MBINFile mbin = null, bool quiet = false) {
-            if ( mbin == null ) return GetVersionString( quiet );
+        public static string GetVersionString(MBINFile mbin = null, bool quiet = false)
+        {
+            if (mbin == null) return GetVersionString(quiet);
 
             System.Version mbinVersion = mbin.Header.GetMBINVersion();
             string versionString = mbinVersion.ToString();
 
             return !quiet
-                ? ( versionString != "0.0.0.0" )
+                ? (versionString != "0.0.0.0")
                 ? "Compiled with MBINCompiler v" + versionString
                 : "Unknown MBIN version!\nNot compiled by MBINCompiler."
                 : versionString;

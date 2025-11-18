@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcHandType : NMSTemplate
     {
         // size: 0x2
-        public enum HandTypeEnum : uint {
+        public enum HandTypeEnum : uint
+        {
             Offhand,
             Dominant,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HandTypeEnum HandType;
+        /* 0x0 */
+        public HandTypeEnum HandType;
     }
 }

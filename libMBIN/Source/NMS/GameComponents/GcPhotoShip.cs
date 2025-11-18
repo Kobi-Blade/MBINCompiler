@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPhotoShip : NMSTemplate
     {
         // size: 0xB
-        public enum PhotoShipTypeEnum : uint {
+        public enum PhotoShipTypeEnum : uint
+        {
             Freighter,
             Dropship,
             Fighter,
@@ -18,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             Corvette,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PhotoShipTypeEnum PhotoShipType;
+        /* 0x0 */
+        public PhotoShipTypeEnum PhotoShipType;
     }
 }

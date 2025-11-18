@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkNoiseVoxelTypeEnum : NMSTemplate
     {
         // size: 0xA
-        public enum NoiseVoxelTypeEnum : uint {
+        public enum NoiseVoxelTypeEnum : uint
+        {
             Base,
             Rock,
             Mountain,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.Toolkit
             RandomRockOrSubstance,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NoiseVoxelTypeEnum NoiseVoxelType;
+        /* 0x0 */
+        public NoiseVoxelTypeEnum NoiseVoxelType;
     }
 }

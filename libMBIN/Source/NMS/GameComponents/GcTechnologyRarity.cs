@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcTechnologyRarity : NMSTemplate
     {
         // size: 0x7
-        public enum TechnologyRarityEnum : uint {
+        public enum TechnologyRarityEnum : uint
+        {
             Normal,
             VeryCommon,
             Common,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Always,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TechnologyRarityEnum TechnologyRarity;
+        /* 0x0 */
+        public TechnologyRarityEnum TechnologyRarity;
     }
 }

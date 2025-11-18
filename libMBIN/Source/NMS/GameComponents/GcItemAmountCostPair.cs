@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemAmountCostPair : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ItemId;
+        /* 0x00 */
+        public NMSString0x10 ItemId;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Amount;
+        /* 0x10 */
+        public int Amount;
     }
 }

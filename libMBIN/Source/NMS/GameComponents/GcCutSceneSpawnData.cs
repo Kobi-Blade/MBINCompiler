@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,30 +6,43 @@ namespace libMBIN.NMS.GameComponents
     public class GcCutSceneSpawnData : NMSTemplate
     {
         [NMS(Index = 10)]
-        /* 0x00 */ public Vector3f Facing;
+        /* 0x00 */
+        public Vector3f Facing;
         [NMS(Index = 9)]
-        /* 0x10 */ public Vector3f Local;
+        /* 0x10 */
+        public Vector3f Local;
         [NMS(Index = 8)]
-        /* 0x20 */ public Vector3f Offset;
+        /* 0x20 */
+        public Vector3f Offset;
         [NMS(Index = 11)]
-        /* 0x30 */ public Vector3f Up;
+        /* 0x30 */
+        public Vector3f Up;
         [NMS(Index = 7)]
-        /* 0x40 */ public GcResourceElement ResourceElement;
+        /* 0x40 */
+        public GcResourceElement ResourceElement;
         [NMS(Index = 1)]
-        /* 0x88 */ public NMSString0x10 Group;
+        /* 0x88 */
+        public NMSString0x10 Group;
         [NMS(Index = 2)]
-        /* 0x98 */ public NMSString0x10 Id;
+        /* 0x98 */
+        public NMSString0x10 Id;
         [NMS(Index = 12)]
-        /* 0xA8 */ public List<NMSTemplate> Modules;
+        /* 0xA8 */
+        public List<NMSTemplate> Modules;
         [NMS(Index = 6)]
-        /* 0xB8 */ public GcSeed Seed;
+        /* 0xB8 */
+        public GcSeed Seed;
         [NMS(Index = 3)]
-        /* 0xC8 */ public VariableSizeString TrimmedPath;
+        /* 0xC8 */
+        public VariableSizeString TrimmedPath;
         [NMS(Index = 0)]
-        /* 0xD8 */ public int Guid;
+        /* 0xD8 */
+        public int Guid;
         [NMS(Index = 4)]
-        /* 0xDC */ public bool DebugDraw;
+        /* 0xDC */
+        public bool DebugDraw;
         [NMS(Index = 5)]
-        /* 0xDD */ public bool EnableAI;
+        /* 0xDD */
+        public bool EnableAI;
     }
 }

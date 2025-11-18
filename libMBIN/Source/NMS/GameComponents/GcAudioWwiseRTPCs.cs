@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAudioWwiseRTPCs : NMSTemplate
     {
         // size: 0x67
-        public enum AkRTPCEnum : uint {
+        public enum AkRTPCEnum : uint
+        {
             INVALID_RTPC = 0x0,
             BASE_BATTERY_CHARGING = 0x7C13B3BA,
             BASE_SPHERE_ROLLSPEED = 0xB7D53D81,
@@ -110,6 +111,7 @@ namespace libMBIN.NMS.GameComponents
             WPN_PL_NEUTRON_CANNON_CHARGE = 0x60C92E72,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AkRTPCEnum AkRTPC;
+        /* 0x0 */
+        public AkRTPCEnum AkRTPC;
     }
 }

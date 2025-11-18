@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcActionUseType : NMSTemplate
     {
         // size: 0x8
-        public enum ActionUseTypeEnum : uint {
+        public enum ActionUseTypeEnum : uint
+        {
             Active,
             ActiveVR,
             ActiveNonVR,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Obsolete,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ActionUseTypeEnum ActionUseType;
+        /* 0x0 */
+        public ActionUseTypeEnum ActionUseType;
     }
 }

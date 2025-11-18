@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasTechnology : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Technology;
+        /* 0x00 */
+        public NMSString0x10 Technology;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool AllowPartiallyInstalled;
+        /* 0x10 */
+        public bool AllowPartiallyInstalled;
         [NMS(Index = 3)]
-        /* 0x11 */ public bool TakeTechFromSeasonData;
+        /* 0x11 */
+        public bool TakeTechFromSeasonData;
         [NMS(Index = 2)]
-        /* 0x12 */ public bool TeachIfNotKnown;
+        /* 0x12 */
+        public bool TeachIfNotKnown;
     }
 }

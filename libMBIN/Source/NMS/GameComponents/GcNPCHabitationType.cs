@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCHabitationType : NMSTemplate
     {
         // size: 0x5
-        public enum NPCHabitationTypeEnum : uint {
+        public enum NPCHabitationTypeEnum : uint
+        {
             WeaponsExpert,
             Farmer,
             Builder,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Scientist,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NPCHabitationTypeEnum NPCHabitationType;
+        /* 0x0 */
+        public NPCHabitationTypeEnum NPCHabitationType;
     }
 }

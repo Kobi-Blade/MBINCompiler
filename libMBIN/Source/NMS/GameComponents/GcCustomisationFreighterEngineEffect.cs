@@ -6,16 +6,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationFreighterEngineEffect : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public Colour GlowColour;
+        /* 0x00 */
+        public Colour GlowColour;
         [NMS(Index = 4)]
-        /* 0x10 */ public TkModelResource EffectResource;
+        /* 0x10 */
+        public TkModelResource EffectResource;
         [NMS(Index = 3)]
-        /* 0x30 */ public NMSString0x20A Tip;
+        /* 0x30 */
+        public NMSString0x20A Tip;
         [NMS(Index = 2)]
-        /* 0x50 */ public NMSString0x10 LinkedSpecialID;
+        /* 0x50 */
+        public NMSString0x10 LinkedSpecialID;
         [NMS(Index = 1)]
-        /* 0x60 */ public NMSString0x10 LinkedTechID;
+        /* 0x60 */
+        public NMSString0x10 LinkedTechID;
         [NMS(Index = 0)]
-        /* 0x70 */ public NMSString0x10 Name;
+        /* 0x70 */
+        public NMSString0x10 Name;
     }
 }

@@ -6,10 +6,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkAttachmentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<NMSTemplate> AdditionalData;
+        /* 0x00 */
+        public List<NMSTemplate> AdditionalData;
         [NMS(Index = 1)]
-        /* 0x10 */ public List<LinkableNMSTemplate> Components;
+        /* 0x10 */
+        public List<LinkableNMSTemplate> Components;
         [NMS(Index = 2, Size = 0x5)]
-        /* 0x20 */ public float[] LodDistances;
+        /* 0x20 */
+        public float[] LodDistances;
     }
 }

@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionPlanetCreatureRoles : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int NumRoles;
+        /* 0x0 */
+        public int NumRoles;
         [NMS(Index = 1)]
-        /* 0x4 */ public TkEqualityEnum Test;
+        /* 0x4 */
+        public TkEqualityEnum Test;
         [NMS(Index = 2)]
-        /* 0x8 */ public bool TakeNumFromSeasonData;
+        /* 0x8 */
+        public bool TakeNumFromSeasonData;
     }
 }

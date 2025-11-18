@@ -6,20 +6,28 @@ namespace libMBIN.NMS.GameComponents
     public class GcSeasonalMilestoneEncryption : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x20A Description;
+        /* 0x00 */
+        public NMSString0x20A Description;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x20A Subtitle;
+        /* 0x20 */
+        public NMSString0x20A Subtitle;
         [NMS(Index = 1)]
-        /* 0x40 */ public NMSString0x20A TitleUpper;
+        /* 0x40 */
+        public NMSString0x20A TitleUpper;
         [NMS(Index = 5)]
-        /* 0x60 */ public TkTextureResource HoverPopupIcon;
+        /* 0x60 */
+        public TkTextureResource HoverPopupIcon;
         [NMS(Index = 4)]
-        /* 0x78 */ public TkTextureResource Patch;
+        /* 0x78 */
+        public TkTextureResource Patch;
         [NMS(Index = 6)]
-        /* 0x90 */ public NMSString0x10 DecryptMissionId;
+        /* 0x90 */
+        public NMSString0x10 DecryptMissionId;
         [NMS(Index = 7)]
-        /* 0xA0 */ public int DecryptMissionSeed;
+        /* 0xA0 */
+        public int DecryptMissionSeed;
         [NMS(Index = 0)]
-        /* 0xA4 */ public bool IsEncrypted;
+        /* 0xA4 */
+        public bool IsEncrypted;
     }
 }

@@ -4,15 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcBlackboardIntModifyData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Key;
+        /* 0x00 */
+        public NMSString0x10 Key;
         // size: 0x2
-        public enum ModifyIntTypeEnum : uint {
+        public enum ModifyIntTypeEnum : uint
+        {
             SetValue,
             IncrementValue,
         }
         [NMS(Index = 2)]
-        /* 0x10 */ public ModifyIntTypeEnum ModifyIntType;
+        /* 0x10 */
+        public ModifyIntTypeEnum ModifyIntType;
         [NMS(Index = 1)]
-        /* 0x14 */ public int Value;
+        /* 0x14 */
+        public int Value;
     }
 }

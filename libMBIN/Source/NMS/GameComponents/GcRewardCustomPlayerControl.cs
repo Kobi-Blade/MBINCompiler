@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardCustomPlayerControl : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 RequestedMode;
+        /* 0x0 */
+        public NMSString0x10 RequestedMode;
     }
 }

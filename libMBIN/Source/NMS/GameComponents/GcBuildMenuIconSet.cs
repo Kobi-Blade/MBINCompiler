@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildMenuIconSet : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkTextureResource Glow;
+        /* 0x00 */
+        public TkTextureResource Glow;
         [NMS(Index = 0)]
-        /* 0x18 */ public TkTextureResource Normal;
+        /* 0x18 */
+        public TkTextureResource Normal;
     }
 }

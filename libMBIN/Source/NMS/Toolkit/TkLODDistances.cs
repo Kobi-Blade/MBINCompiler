@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkLODDistances : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x5)]
-        /* 0x0 */ public float[] Distances;
+        /* 0x0 */
+        public float[] Distances;
     }
 }

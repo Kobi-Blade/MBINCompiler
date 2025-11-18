@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMinimumUseConstraint : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 Group;
+        /* 0x00 */
+        public NMSString0x10 Group;
         [NMS(Index = 0)]
-        /* 0x10 */ public List<NMSString0x10> Modules;
+        /* 0x10 */
+        public List<NMSString0x10> Modules;
         [NMS(Index = 1, MxmlName = "Min Uses")]
-        /* 0x20 */ public int MinUses;
+        /* 0x20 */
+        public int MinUses;
     }
 }

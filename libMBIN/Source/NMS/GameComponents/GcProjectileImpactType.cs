@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcProjectileImpactType : NMSTemplate
     {
         // size: 0x12
-        public enum ImpactEnum : uint {
+        public enum ImpactEnum : uint
+        {
             Default,
             Terrain,
             Substance,
@@ -25,6 +26,7 @@ namespace libMBIN.NMS.GameComponents
             FreighterShield,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ImpactEnum Impact;
+        /* 0x0 */
+        public ImpactEnum Impact;
     }
 }

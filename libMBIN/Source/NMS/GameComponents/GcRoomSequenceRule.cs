@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRoomSequenceRule : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x10 MustBeAfterRoom;
+        /* 0x00 */
+        public NMSString0x10 MustBeAfterRoom;
         [NMS(Index = 2)]
-        /* 0x10 */ public NMSString0x10 MustBeBeforeRoom;
+        /* 0x10 */
+        public NMSString0x10 MustBeBeforeRoom;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 RoomID;
+        /* 0x20 */
+        public NMSString0x10 RoomID;
         [NMS(Index = 1)]
-        /* 0x30 */ public int MinRoomIndex;
+        /* 0x30 */
+        public int MinRoomIndex;
     }
 }

@@ -4,11 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkPusherType : NMSTemplate
     {
         // size: 0x2
-        public enum PusherTypeEnum : byte {
+        public enum PusherTypeEnum : byte
+        {
             Sphere,
             HollowSphere,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PusherTypeEnum PusherType;
+        /* 0x0 */
+        public PusherTypeEnum PusherType;
     }
 }

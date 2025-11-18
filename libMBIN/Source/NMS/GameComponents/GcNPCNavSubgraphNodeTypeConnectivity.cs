@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCNavSubgraphNodeTypeConnectivity : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x0 */ public float ConnectionToPOI;
+        /* 0x0 */
+        public float ConnectionToPOI;
         [NMS(Index = 1)]
-        /* 0x4 */ public float ExternalConnection;
+        /* 0x4 */
+        public float ExternalConnection;
         [NMS(Index = 0)]
-        /* 0x8 */ public float InternalConnection;
+        /* 0x8 */
+        public float InternalConnection;
         [NMS(Index = 2)]
-        /* 0xC */ public float PathToPOI;
+        /* 0xC */
+        public float PathToPOI;
     }
 }

@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceFeed : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 3)]
-        /* 0x20 */ public int AmountMax;
+        /* 0x20 */
+        public int AmountMax;
         [NMS(Index = 2)]
-        /* 0x24 */ public int AmountMin;
+        /* 0x24 */
+        public int AmountMin;
         [NMS(Index = 1)]
-        /* 0x28 */ public bool RequireSpecificBait;
+        /* 0x28 */
+        public bool RequireSpecificBait;
     }
 }

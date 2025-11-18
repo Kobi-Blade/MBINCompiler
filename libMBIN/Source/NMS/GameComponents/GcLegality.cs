@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcLegality : NMSTemplate
     {
         // size: 0x2
-        public enum LegalityEnum : uint {
+        public enum LegalityEnum : uint
+        {
             Legal,
             Illegal,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public LegalityEnum Legality;
+        /* 0x0 */
+        public LegalityEnum Legality;
     }
 }

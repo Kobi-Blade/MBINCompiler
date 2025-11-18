@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionWristMenuOpen : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public bool GunHandOnly;
+        /* 0x0 */
+        public bool GunHandOnly;
         [NMS(Index = 3)]
-        /* 0x1 */ public bool InventoryOnly;
+        /* 0x1 */
+        public bool InventoryOnly;
         [NMS(Index = 0)]
-        /* 0x2 */ public bool LeftHandOnly;
+        /* 0x2 */
+        public bool LeftHandOnly;
         [NMS(Index = 1)]
-        /* 0x3 */ public bool QuickMenuOnly;
+        /* 0x3 */
+        public bool QuickMenuOnly;
     }
 }

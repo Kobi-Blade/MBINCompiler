@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcWaypointComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public TkTextureResource Icon;
+        /* 0x0 */
+        public TkTextureResource Icon;
     }
 }

@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCInteractionData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkAttachmentData Data;
+        /* 0x00 */
+        public TkAttachmentData Data;
         [NMS(Index = 0)]
-        /* 0x38 */ public NMSString0x10 ID;
+        /* 0x38 */
+        public NMSString0x10 ID;
     }
 }

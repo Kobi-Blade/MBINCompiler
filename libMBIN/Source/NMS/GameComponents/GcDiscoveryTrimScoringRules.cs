@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcDiscoveryTrimScoringRules : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float MaxScoreValue;
+        /* 0x0 */
+        public float MaxScoreValue;
         [NMS(Index = 0)]
-        /* 0x4 */ public float MinScoreValue;
+        /* 0x4 */
+        public float MinScoreValue;
         [NMS(Index = 2)]
-        /* 0x8 */ public TkCurveType Curve;
+        /* 0x8 */
+        public TkCurveType Curve;
     }
 }

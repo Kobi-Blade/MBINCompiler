@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class CollisionShapeType : NMSTemplate
     {
         // size: 0x4
-        public enum _CollisionShapeTypeEnum : uint {
+        public enum _CollisionShapeTypeEnum : uint
+        {
             Box,
             Capsule,
             Sphere,
             None,
         }
         [NMS(Index = 0, MxmlName = "CollisionShapeType")]
-        /* 0x0 */ public _CollisionShapeTypeEnum _CollisionShapeType;
+        /* 0x0 */
+        public _CollisionShapeTypeEnum _CollisionShapeType;
     }
 }

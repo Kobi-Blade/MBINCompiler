@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcVROverride_Layout : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float FloatValue;
+        /* 0x0 */
+        public float FloatValue;
         // size: 0x5
-        public enum VROverride_LayoutEnum : uint {
+        public enum VROverride_LayoutEnum : uint
+        {
             PosX,
             PosY,
             LayerWidth,
@@ -14,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             MaxWidth,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public VROverride_LayoutEnum VROverride_Layout;
+        /* 0x4 */
+        public VROverride_LayoutEnum VROverride_Layout;
     }
 }

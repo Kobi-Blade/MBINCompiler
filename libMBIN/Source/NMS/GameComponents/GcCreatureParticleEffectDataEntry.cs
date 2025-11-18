@@ -6,16 +6,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureParticleEffectDataEntry : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public VariableSizeString EffectLocator;
+        /* 0x00 */
+        public VariableSizeString EffectLocator;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 EffectName;
+        /* 0x10 */
+        public NMSString0x10 EffectName;
         [NMS(Index = 5)]
-        /* 0x20 */ public List<NMSTemplate> Requirements;
+        /* 0x20 */
+        public List<NMSTemplate> Requirements;
         [NMS(Index = 2)]
-        /* 0x30 */ public float Scale;
+        /* 0x30 */
+        public float Scale;
         [NMS(Index = 3)]
-        /* 0x34 */ public bool Attached;
+        /* 0x34 */
+        public bool Attached;
         [NMS(Index = 4)]
-        /* 0x35 */ public bool DetachOnRetire;
+        /* 0x35 */
+        public bool DetachOnRetire;
     }
 }

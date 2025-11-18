@@ -1,18 +1,20 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x5BF04559C408968, NameHash = 0x8E41A670)]
     public class GcTeleportEndpoint : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public Vector3f Facing;
+        /* 0x00 */
+        public Vector3f Facing;
         [NMS(Index = 1)]
-        /* 0x10 */ public Vector3f Position;
+        /* 0x10 */
+        public Vector3f Position;
         [NMS(Index = 0)]
-        /* 0x20 */ public GcUniverseAddressData UniverseAddress;
+        /* 0x20 */
+        public GcUniverseAddressData UniverseAddress;
         // size: 0xB
-        public enum TeleporterTypeEnum : uint {
+        public enum TeleporterTypeEnum : uint
+        {
             Base,
             Spacestation,
             Atlas,
@@ -26,14 +28,19 @@ namespace libMBIN.NMS.GameComponents
             Frigate,
         }
         [NMS(Index = 3)]
-        /* 0x38 */ public TeleporterTypeEnum TeleporterType;
+        /* 0x38 */
+        public TeleporterTypeEnum TeleporterType;
         [NMS(Index = 4)]
-        /* 0x3C */ public NMSString0x40 Name;
+        /* 0x3C */
+        public NMSString0x40 Name;
         [NMS(Index = 5)]
-        /* 0x7C */ public bool CalcWarpOffset;
+        /* 0x7C */
+        public bool CalcWarpOffset;
         [NMS(Index = 7)]
-        /* 0x7D */ public bool IsFavourite;
+        /* 0x7D */
+        public bool IsFavourite;
         [NMS(Index = 6)]
-        /* 0x7E */ public bool IsFeatured;
+        /* 0x7E */
+        public bool IsFeatured;
     }
 }

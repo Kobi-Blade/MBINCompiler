@@ -4,11 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimStateMachineBlendTimeMode : NMSTemplate
     {
         // size: 0x2
-        public enum TimeModeEnum : uint {
+        public enum TimeModeEnum : uint
+        {
             Normalised,
             Seconds,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TimeModeEnum TimeMode;
+        /* 0x0 */
+        public TimeModeEnum TimeMode;
     }
 }

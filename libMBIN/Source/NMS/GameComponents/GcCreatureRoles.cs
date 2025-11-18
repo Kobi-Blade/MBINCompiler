@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureRoles : NMSTemplate
     {
         // size: 0xB
-        public enum CreatureRoleEnum : uint {
+        public enum CreatureRoleEnum : uint
+        {
             None,
             Predator,
             PlayerPredator,
@@ -18,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             Pet,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CreatureRoleEnum CreatureRole;
+        /* 0x0 */
+        public CreatureRoleEnum CreatureRole;
     }
 }

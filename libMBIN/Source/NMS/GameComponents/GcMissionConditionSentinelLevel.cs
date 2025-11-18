@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSentinelLevel : NMSTemplate
     {
         // size: 0x5
-        public enum RequiredSentinelLevelEnum : uint {
+        public enum RequiredSentinelLevelEnum : uint
+        {
             None,
             Low,
             Default,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Corrupt,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public RequiredSentinelLevelEnum RequiredSentinelLevel;
+        /* 0x0 */
+        public RequiredSentinelLevelEnum RequiredSentinelLevel;
     }
 }

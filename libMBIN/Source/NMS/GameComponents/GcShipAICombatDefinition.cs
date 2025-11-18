@@ -6,36 +6,52 @@ namespace libMBIN.NMS.GameComponents
     public class GcShipAICombatDefinition : NMSTemplate
     {
         [NMS(Index = 15)]
-        /* 0x00 */ public TkTextureResource Icon;
+        /* 0x00 */
+        public TkTextureResource Icon;
         [NMS(Index = 1)]
-        /* 0x18 */ public NMSString0x10 Behaviour;
+        /* 0x18 */
+        public NMSString0x10 Behaviour;
         [NMS(Index = 9)]
-        /* 0x28 */ public NMSString0x10 DamageMultiplier;
+        /* 0x28 */
+        public NMSString0x10 DamageMultiplier;
         [NMS(Index = 3)]
-        /* 0x38 */ public NMSString0x10 Engine;
+        /* 0x38 */
+        public NMSString0x10 Engine;
         [NMS(Index = 13)]
-        /* 0x48 */ public NMSString0x10 Gun;
+        /* 0x48 */
+        public NMSString0x10 Gun;
         [NMS(Index = 0)]
-        /* 0x58 */ public NMSString0x10 Id;
+        /* 0x58 */
+        public NMSString0x10 Id;
         [NMS(Index = 2)]
-        /* 0x68 */ public NMSString0x10 PlanetBehaviour;
+        /* 0x68 */
+        public NMSString0x10 PlanetBehaviour;
         [NMS(Index = 4)]
-        /* 0x78 */ public NMSString0x10 PlanetEngine;
+        /* 0x78 */
+        public NMSString0x10 PlanetEngine;
         [NMS(Index = 5)]
-        /* 0x88 */ public NMSString0x10 Reward;
+        /* 0x88 */
+        public NMSString0x10 Reward;
         [NMS(Index = 10)]
-        /* 0x98 */ public NMSString0x10 Shield;
+        /* 0x98 */
+        public NMSString0x10 Shield;
         [NMS(Index = 7)]
-        /* 0xA8 */ public int Health;
+        /* 0xA8 */
+        public int Health;
         [NMS(Index = 14)]
-        /* 0xAC */ public int LaserDamageLevel;
+        /* 0xAC */
+        public int LaserDamageLevel;
         [NMS(Index = 8)]
-        /* 0xB0 */ public int LevelledExtraHealth;
+        /* 0xB0 */
+        public int LevelledExtraHealth;
         [NMS(Index = 6)]
-        /* 0xB4 */ public int RewardCount;
+        /* 0xB4 */
+        public int RewardCount;
         [NMS(Index = 12)]
-        /* 0xB8 */ public bool UsesFuelRods;
+        /* 0xB8 */
+        public bool UsesFuelRods;
         [NMS(Index = 11)]
-        /* 0xB9 */ public bool UsesShieldGenerators;
+        /* 0xB9 */
+        public bool UsesShieldGenerators;
     }
 }

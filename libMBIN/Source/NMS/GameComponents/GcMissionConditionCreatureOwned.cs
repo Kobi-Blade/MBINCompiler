@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCreatureOwned : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 SpecificCreatureID;
+        /* 0x00 */
+        public NMSString0x10 SpecificCreatureID;
         [NMS(Index = 0)]
-        /* 0x10 */ public int Amount;
+        /* 0x10 */
+        public int Amount;
         [NMS(Index = 1)]
-        /* 0x14 */ public TkEqualityEnum Test;
+        /* 0x14 */
+        public TkEqualityEnum Test;
         [NMS(Index = 3)]
-        /* 0x18 */ public bool AnyPredator;
+        /* 0x18 */
+        public bool AnyPredator;
     }
 }

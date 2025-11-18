@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcDamageType : NMSTemplate
     {
         // size: 0x19
-        public enum DamageTypeEnum : uint {
+        public enum DamageTypeEnum : uint
+        {
             Gun,
             Laser,
             Shotgun,
@@ -32,6 +33,7 @@ namespace libMBIN.NMS.GameComponents
             FreighterTorpedo,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DamageTypeEnum DamageType;
+        /* 0x0 */
+        public DamageTypeEnum DamageType;
     }
 }

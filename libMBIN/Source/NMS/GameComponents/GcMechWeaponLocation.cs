@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMechWeaponLocation : NMSTemplate
     {
         // size: 0x5
-        public enum MechWeaponLocationEnum : uint {
+        public enum MechWeaponLocationEnum : uint
+        {
             TurretExocraft,
             TurretSentinel,
             ArmLeft,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             FlameThrower,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MechWeaponLocationEnum MechWeaponLocation;
+        /* 0x0 */
+        public MechWeaponLocationEnum MechWeaponLocation;
     }
 }

@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCPopulationDifficultyOption : NMSTemplate
     {
         // size: 0x2
-        public enum NPCPopulationDifficultyEnum : uint {
+        public enum NPCPopulationDifficultyEnum : uint
+        {
             Full,
             Abandoned,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NPCPopulationDifficultyEnum NPCPopulationDifficulty;
+        /* 0x0 */
+        public NPCPopulationDifficultyEnum NPCPopulationDifficulty;
     }
 }

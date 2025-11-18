@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardStatCompareAndSet : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 CompareAndSetStat;
+        /* 0x00 */
+        public NMSString0x10 CompareAndSetStat;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 CoreStat;
+        /* 0x10 */
+        public NMSString0x10 CoreStat;
     }
 }

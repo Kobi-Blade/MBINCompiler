@@ -4,11 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcCameraAmbientSpaceData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Animation;
+        /* 0x00 */
+        public NMSString0x10 Animation;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 DroneAnimation;
+        /* 0x10 */
+        public NMSString0x10 DroneAnimation;
         // size: 0x8
-        public enum OriginEnum : uint {
+        public enum OriginEnum : uint
+        {
             SpaceStationInternals,
             SpaceStationBack,
             FreighterBattle,
@@ -19,6 +22,7 @@ namespace libMBIN.NMS.GameComponents
             Anomaly,
         }
         [NMS(Index = 2)]
-        /* 0x20 */ public OriginEnum Origin;
+        /* 0x20 */
+        public OriginEnum Origin;
     }
 }

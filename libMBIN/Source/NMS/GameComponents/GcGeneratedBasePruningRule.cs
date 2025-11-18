@@ -6,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcGeneratedBasePruningRule : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 NodeName;
+        /* 0x00 */
+        public NMSString0x10 NodeName;
         [NMS(Index = 4)]
-        /* 0x10 */ public List<NMSString0x10> RoomFilters;
+        /* 0x10 */
+        public List<NMSString0x10> RoomFilters;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 RuleId;
+        /* 0x20 */
+        public NMSString0x10 RuleId;
         [NMS(Index = 3)]
-        /* 0x30 */ public int MaxPerDungeon;
+        /* 0x30 */
+        public int MaxPerDungeon;
         [NMS(Index = 2)]
-        /* 0x34 */ public int MaxPerRoom;
+        /* 0x34 */
+        public int MaxPerRoom;
     }
 }

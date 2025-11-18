@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationGroups : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<GcCustomisationGroup> CustomisationGroups;
+        /* 0x0 */
+        public List<GcCustomisationGroup> CustomisationGroups;
     }
 }

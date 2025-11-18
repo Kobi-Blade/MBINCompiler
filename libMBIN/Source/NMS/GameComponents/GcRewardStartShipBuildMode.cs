@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardStartShipBuildMode : NMSTemplate
     {
         // size: 0x4
-        public enum ShipBuildTypeEnum : uint {
+        public enum ShipBuildTypeEnum : uint
+        {
             CreateFromDefault,
             CreateFromDockedShip,
             ResumeBuild,
             ResumeBuildFromPurchaseScreen,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ShipBuildTypeEnum ShipBuildType;
+        /* 0x0 */
+        public ShipBuildTypeEnum ShipBuildType;
     }
 }

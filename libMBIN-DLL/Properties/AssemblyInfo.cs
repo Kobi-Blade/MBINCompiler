@@ -35,8 +35,8 @@ using System.Runtime.InteropServices;
 
 // Do not modify the attributes below.
 // To Update the version, see libMBIN.Version.VERSION.STRING.
-[assembly: AssemblyVersion( libMBIN.Version.VERSION_STRING )]
-[assembly: AssemblyFileVersion( libMBIN.Version.VERSION_STRING )]
+[assembly: AssemblyVersion(libMBIN.Version.VERSION_STRING)]
+[assembly: AssemblyFileVersion(libMBIN.Version.VERSION_STRING)]
 
 // MBINCompiler needs access to libMBIN.Version.VERSION_STRING
-[assembly: InternalsVisibleTo( "MBINCompiler" )]
+[assembly: InternalsVisibleTo("MBINCompiler")]

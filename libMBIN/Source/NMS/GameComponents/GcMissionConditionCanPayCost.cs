@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCanPayCost : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 CostID;
+        /* 0x0 */
+        public NMSString0x10 CostID;
     }
 }

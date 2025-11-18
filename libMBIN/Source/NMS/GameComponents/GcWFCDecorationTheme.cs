@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWFCDecorationTheme : NMSTemplate
     {
         // size: 0x5
-        public enum WFCDecorationThemeEnum : uint {
+        public enum WFCDecorationThemeEnum : uint
+        {
             Default,
             Construction,
             Upgrade1,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Upgrade3,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WFCDecorationThemeEnum WFCDecorationTheme;
+        /* 0x0 */
+        public WFCDecorationThemeEnum WFCDecorationTheme;
     }
 }

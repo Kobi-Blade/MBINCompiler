@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourApplyDamageData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public TkBlackboardDefaultValueVector Offset;
+        /* 0x00 */
+        public TkBlackboardDefaultValueVector Offset;
         [NMS(Index = 0)]
-        /* 0x30 */ public TkBlackboardDefaultValueId PlayerDamageType;
+        /* 0x30 */
+        public TkBlackboardDefaultValueId PlayerDamageType;
         [NMS(Index = 1)]
-        /* 0x58 */ public TkBlackboardDefaultValueFloat Radius;
+        /* 0x58 */
+        public TkBlackboardDefaultValueFloat Radius;
     }
 }

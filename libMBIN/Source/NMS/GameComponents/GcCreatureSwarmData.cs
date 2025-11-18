@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,17 +6,23 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureSwarmData : NMSTemplate
     {
         [NMS(Index = 6)]
-        /* 0x00 */ public List<GcCreatureSwarmDataParams> Params;
+        /* 0x00 */
+        public List<GcCreatureSwarmDataParams> Params;
         [NMS(Index = 1)]
-        /* 0x10 */ public int MaxCount;
+        /* 0x10 */
+        public int MaxCount;
         [NMS(Index = 0)]
-        /* 0x14 */ public int MinCount;
+        /* 0x14 */
+        public int MinCount;
         [NMS(Index = 3)]
-        /* 0x18 */ public float SwarmMovementRadius;
+        /* 0x18 */
+        public float SwarmMovementRadius;
         [NMS(Index = 2)]
-        /* 0x1C */ public float SwarmMovementSpeed;
+        /* 0x1C */
+        public float SwarmMovementSpeed;
         // size: 0x6
-        public enum SwarmMovementTypeEnum : uint {
+        public enum SwarmMovementTypeEnum : uint
+        {
             None,
             Circle,
             Random,
@@ -26,8 +31,10 @@ namespace libMBIN.NMS.GameComponents
             FollowPlayerLimited,
         }
         [NMS(Index = 4)]
-        /* 0x20 */ public SwarmMovementTypeEnum SwarmMovementType;
+        /* 0x20 */
+        public SwarmMovementTypeEnum SwarmMovementType;
         [NMS(Index = 5)]
-        /* 0x24 */ public bool AttractedToBait;
+        /* 0x24 */
+        public bool AttractedToBait;
     }
 }

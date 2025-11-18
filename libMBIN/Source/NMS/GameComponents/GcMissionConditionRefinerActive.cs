@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionRefinerActive : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A ActiveRecipe;
+        /* 0x00 */
+        public NMSString0x20A ActiveRecipe;
         [NMS(Index = 2)]
-        /* 0x20 */ public int AmountToMake;
+        /* 0x20 */
+        public int AmountToMake;
         [NMS(Index = 0)]
-        /* 0x24 */ public bool HasFuel;
+        /* 0x24 */
+        public bool HasFuel;
     }
 }

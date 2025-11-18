@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderWeirdBasePartCategory : NMSTemplate
     {
         // size: 0xB
-        public enum WonderWeirdBasePartCategoryEnum : uint {
+        public enum WonderWeirdBasePartCategoryEnum : uint
+        {
             EngineOrb,
             BeamStone,
             BubbleCluster,
@@ -18,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             WeirdCube,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WonderWeirdBasePartCategoryEnum WonderWeirdBasePartCategory;
+        /* 0x0 */
+        public WonderWeirdBasePartCategoryEnum WonderWeirdBasePartCategory;
     }
 }

@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementTowerPower : NMSTemplate
     {
         // size: 0x4
-        public enum SettlementTowerPowerEnum : uint {
+        public enum SettlementTowerPowerEnum : uint
+        {
             EarnNavigationData,
             ScanForBuildings,
             ScanForAnomalies,
             ScanForCrashedShips,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SettlementTowerPowerEnum SettlementTowerPower;
+        /* 0x0 */
+        public SettlementTowerPowerEnum SettlementTowerPower;
     }
 }

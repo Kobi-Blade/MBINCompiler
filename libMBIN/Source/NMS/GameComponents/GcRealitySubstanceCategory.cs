@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRealitySubstanceCategory : NMSTemplate
     {
         // size: 0x9
-        public enum SubstanceCategoryEnum : uint {
+        public enum SubstanceCategoryEnum : uint
+        {
             Fuel,
             Metal,
             Catalyst,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             BuildingPart,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SubstanceCategoryEnum SubstanceCategory;
+        /* 0x0 */
+        public SubstanceCategoryEnum SubstanceCategory;
     }
 }

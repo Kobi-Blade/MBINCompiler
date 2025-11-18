@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionIsPlayerWeak : NMSTemplate
     {
         // size: 0x3
-        public enum ProgressTypeEnum : uint {
+        public enum ProgressTypeEnum : uint
+        {
             ShipOrWeapon,
             Ship,
             Weapon,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ProgressTypeEnum ProgressType;
+        /* 0x0 */
+        public ProgressTypeEnum ProgressType;
     }
 }

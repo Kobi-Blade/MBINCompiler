@@ -4,12 +4,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimationNotify : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSTemplate Data;
+        /* 0x00 */
+        public NMSTemplate Data;
         [NMS(Index = 2)]
-        /* 0x10 */ public float EndFrame;
+        /* 0x10 */
+        public float EndFrame;
         [NMS(Index = 1)]
-        /* 0x14 */ public float StartFrame;
+        /* 0x14 */
+        public float StartFrame;
         [NMS(Index = 3)]
-        /* 0x18 */ public int Track;
+        /* 0x18 */
+        public int Track;
     }
 }

@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasAnySettlementBuildingInProgress : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool IgnoreIfTimerActive;
+        /* 0x0 */
+        public bool IgnoreIfTimerActive;
     }
 }

@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureHarvestSubstanceList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 CreatureType;
+        /* 0x00 */
+        public NMSString0x10 CreatureType;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Item;
+        /* 0x10 */
+        public NMSString0x10 Item;
         [NMS(Index = 3)]
-        /* 0x20 */ public int MinBlobs;
+        /* 0x20 */
+        public int MinBlobs;
         [NMS(Index = 2)]
-        /* 0x24 */ public NMSString0x80 Desc;
+        /* 0x24 */
+        public NMSString0x80 Desc;
     }
 }

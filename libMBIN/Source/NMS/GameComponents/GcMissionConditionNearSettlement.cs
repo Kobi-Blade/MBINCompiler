@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionNearSettlement : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Distance;
+        /* 0x0 */
+        public float Distance;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool AllowBuildersSettlement;
+        /* 0x4 */
+        public bool AllowBuildersSettlement;
         [NMS(Index = 2)]
-        /* 0x5 */ public bool MustMatchThisMissionSeed;
+        /* 0x5 */
+        public bool MustMatchThisMissionSeed;
     }
 }

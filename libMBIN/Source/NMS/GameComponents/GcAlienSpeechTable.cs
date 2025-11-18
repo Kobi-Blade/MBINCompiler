@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcAlienSpeechTable : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<GcAlienSpeechEntry> Table;
+        /* 0x0 */
+        public List<GcAlienSpeechEntry> Table;
     }
 }

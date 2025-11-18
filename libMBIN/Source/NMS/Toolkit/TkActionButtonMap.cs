@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkActionButtonMap : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ActionId;
+        /* 0x00 */
+        public NMSString0x10 ActionId;
         [NMS(Index = 3)]
-        /* 0x10 */ public List<TkPlatformButtonPair> Platforms;
+        /* 0x10 */
+        public List<TkPlatformButtonPair> Platforms;
         [NMS(Index = 2)]
-        /* 0x20 */ public TkInputEnum PadButtonId;
+        /* 0x20 */
+        public TkInputEnum PadButtonId;
         [NMS(Index = 1)]
-        /* 0x24 */ public bool ScaleToFitFont;
+        /* 0x24 */
+        public bool ScaleToFitFont;
     }
 }

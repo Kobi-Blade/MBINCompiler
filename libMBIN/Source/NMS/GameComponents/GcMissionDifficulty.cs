@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionDifficulty : NMSTemplate
     {
         // size: 0x3
-        public enum MissionDifficultyEnum : uint {
+        public enum MissionDifficultyEnum : uint
+        {
             Easy,
             Normal,
             Hard,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionDifficultyEnum MissionDifficulty;
+        /* 0x0 */
+        public MissionDifficultyEnum MissionDifficulty;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventoryBaseStatEntry : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 BaseStatID;
+        /* 0x00 */
+        public NMSString0x10 BaseStatID;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Value;
+        /* 0x10 */
+        public float Value;
     }
 }

@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerMissionProgressMapEntry : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Mission;
+        /* 0x00 */
+        public NMSString0x10 Mission;
         [NMS(Index = 2)]
-        /* 0x10 */ public int MaxProgress;
+        /* 0x10 */
+        public int MaxProgress;
         [NMS(Index = 1)]
-        /* 0x14 */ public int MinProgress;
+        /* 0x14 */
+        public int MinProgress;
         [NMS(Index = 3)]
-        /* 0x18 */ public int NewProgress;
+        /* 0x18 */
+        public int NewProgress;
     }
 }

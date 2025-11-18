@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCProbabilityWordReactionData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A NextInteraction;
+        /* 0x00 */
+        public NMSString0x20A NextInteraction;
         [NMS(Index = 1)]
-        /* 0x20 */ public float Probability;
+        /* 0x20 */
+        public float Probability;
     }
 }

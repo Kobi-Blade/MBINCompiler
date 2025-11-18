@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostHealth : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int HealthUnits;
+        /* 0x0 */
+        public int HealthUnits;
     }
 }

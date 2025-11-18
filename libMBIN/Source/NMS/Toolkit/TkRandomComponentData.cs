@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkRandomComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int Seed;
+        /* 0x0 */
+        public int Seed;
     }
 }

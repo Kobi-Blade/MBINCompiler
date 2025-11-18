@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionNearObject : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Distance;
+        /* 0x0 */
+        public float Distance;
         // size: 0x6
-        public enum MissionObjectEnum : uint {
+        public enum MissionObjectEnum : uint
+        {
             PlayerShip,
             PlayerVehicle,
             PlayerSubmarine,
@@ -15,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             OpenStandardPortal,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public MissionObjectEnum MissionObject;
+        /* 0x4 */
+        public MissionObjectEnum MissionObject;
     }
 }

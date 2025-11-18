@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRemoteWeapons : NMSTemplate
     {
         // size: 0x17
-        public enum RemoteWeaponTypeEnum : uint {
+        public enum RemoteWeaponTypeEnum : uint
+        {
             Laser,
             VehicleLaser,
             AIMechLaser,
@@ -30,6 +31,7 @@ namespace libMBIN.NMS.GameComponents
             None,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public RemoteWeaponTypeEnum RemoteWeaponType;
+        /* 0x0 */
+        public RemoteWeaponTypeEnum RemoteWeaponType;
     }
 }

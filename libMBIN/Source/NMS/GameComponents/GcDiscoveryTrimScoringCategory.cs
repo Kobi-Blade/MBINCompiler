@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcDiscoveryTrimScoringCategory : NMSTemplate
     {
         // size: 0x8
-        public enum DiscoveryTrimScoringCategoryEnum : uint {
+        public enum DiscoveryTrimScoringCategoryEnum : uint
+        {
             IsNamedSystem,
             RecentlyVisitedSystem,
             RecentDiscoveryInSystem,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             NumNamedDiscoveries,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DiscoveryTrimScoringCategoryEnum DiscoveryTrimScoringCategory;
+        /* 0x0 */
+        public DiscoveryTrimScoringCategoryEnum DiscoveryTrimScoringCategory;
     }
 }

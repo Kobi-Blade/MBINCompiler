@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcSprintingCostDifficultyOption : NMSTemplate
     {
         // size: 0x3
-        public enum SprintingCostDifficultyEnum : uint {
+        public enum SprintingCostDifficultyEnum : uint
+        {
             Free,
             Low,
             Full,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SprintingCostDifficultyEnum SprintingCostDifficulty;
+        /* 0x0 */
+        public SprintingCostDifficultyEnum SprintingCostDifficulty;
     }
 }

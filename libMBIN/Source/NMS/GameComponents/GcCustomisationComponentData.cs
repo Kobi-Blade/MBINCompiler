@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationComponentData : NMSTemplate
     {
         // size: 0x1A
-        public enum CustomisationDataTypeEnum : uint {
+        public enum CustomisationDataTypeEnum : uint
+        {
             Player,
             Vehicle,
             Weapon,
@@ -33,6 +34,7 @@ namespace libMBIN.NMS.GameComponents
             FishingRod,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CustomisationDataTypeEnum CustomisationDataType;
+        /* 0x0 */
+        public CustomisationDataTypeEnum CustomisationDataType;
     }
 }

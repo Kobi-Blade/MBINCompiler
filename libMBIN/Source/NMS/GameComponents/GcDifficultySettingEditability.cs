@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcDifficultySettingEditability : NMSTemplate
     {
         // size: 0x5
-        public enum DifficultySettingEditabilityEnum : uint {
+        public enum DifficultySettingEditabilityEnum : uint
+        {
             FullyEditable,
             IncreaseOnly,
             DecreaseOnly,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             LockedHidden,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DifficultySettingEditabilityEnum DifficultySettingEditability;
+        /* 0x0 */
+        public DifficultySettingEditabilityEnum DifficultySettingEditability;
     }
 }

@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcFishingTime : NMSTemplate
     {
         // size: 0x3
-        public enum FishingTimeEnum : uint {
+        public enum FishingTimeEnum : uint
+        {
             Day,
             Night,
             Both,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FishingTimeEnum FishingTime;
+        /* 0x0 */
+        public FishingTimeEnum FishingTime;
     }
 }

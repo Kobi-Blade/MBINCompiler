@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcObjectSpawnerComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public TkModelResource Object;
+        /* 0x00 */
+        public TkModelResource Object;
         [NMS(Index = 2)]
-        /* 0x20 */ public float SpawnCooldown;
+        /* 0x20 */
+        public float SpawnCooldown;
         [NMS(Index = 1)]
-        /* 0x24 */ public int SpawnPowerCost;
+        /* 0x24 */
+        public int SpawnPowerCost;
     }
 }

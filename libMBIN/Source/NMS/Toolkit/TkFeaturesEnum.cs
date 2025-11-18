@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkFeaturesEnum : NMSTemplate
     {
         // size: 0x7
-        public enum FeatureTypesEnum : uint {
+        public enum FeatureTypesEnum : uint
+        {
             River,
             Crater,
             Arches,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.Toolkit
             Substance,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FeatureTypesEnum FeatureTypes;
+        /* 0x0 */
+        public FeatureTypesEnum FeatureTypes;
     }
 }

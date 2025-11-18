@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcWealthClass : NMSTemplate
     {
         // size: 0x4
-        public enum WealthClassEnum : uint {
+        public enum WealthClassEnum : uint
+        {
             Poor,
             Average,
             Wealthy,
             Pirate,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WealthClassEnum WealthClass;
+        /* 0x0 */
+        public WealthClassEnum WealthClass;
     }
 }

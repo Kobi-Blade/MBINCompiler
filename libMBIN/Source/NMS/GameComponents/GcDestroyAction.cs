@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcDestroyAction : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 PlayEffect;
+        /* 0x00 */
+        public NMSString0x10 PlayEffect;
         [NMS(Index = 0)]
-        /* 0x10 */ public bool DestroyAll;
+        /* 0x10 */
+        public bool DestroyAll;
         [NMS(Index = 1)]
-        /* 0x11 */ public bool UseDestructables;
+        /* 0x11 */
+        public bool UseDestructables;
     }
 }

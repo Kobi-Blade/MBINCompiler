@@ -6,24 +6,34 @@ namespace libMBIN.NMS.GameComponents
     public class GcHeavyAirSettingValues : NMSTemplate
     {
         [NMS(Index = 7)]
-        /* 0x00 */ public Colour ForceColour1;
+        /* 0x00 */
+        public Colour ForceColour1;
         [NMS(Index = 8)]
-        /* 0x10 */ public Colour ForceColour2;
+        /* 0x10 */
+        public Colour ForceColour2;
         [NMS(Index = 4)]
-        /* 0x20 */ public TkPaletteTexture Colour1;
+        /* 0x20 */
+        public TkPaletteTexture Colour1;
         [NMS(Index = 5)]
-        /* 0x2C */ public TkPaletteTexture Colour2;
+        /* 0x2C */
+        public TkPaletteTexture Colour2;
         [NMS(Index = 2)]
-        /* 0x38 */ public float Alpha1;
+        /* 0x38 */
+        public float Alpha1;
         [NMS(Index = 3)]
-        /* 0x3C */ public float Alpha2;
+        /* 0x3C */
+        public float Alpha2;
         [NMS(Index = 1)]
-        /* 0x40 */ public float Speed;
+        /* 0x40 */
+        public float Speed;
         [NMS(Index = 0)]
-        /* 0x44 */ public float Thickness;
+        /* 0x44 */
+        public float Thickness;
         [NMS(Index = 6)]
-        /* 0x48 */ public bool ForceColour;
+        /* 0x48 */
+        public bool ForceColour;
         [NMS(Index = 9)]
-        /* 0x49 */ public bool ReduceThicknessWithCloudCoverage;
+        /* 0x49 */
+        public bool ReduceThicknessWithCloudCoverage;
     }
 }

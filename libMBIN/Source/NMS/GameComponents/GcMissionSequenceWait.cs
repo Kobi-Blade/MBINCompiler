@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWait : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public float Time;
+        /* 0x10 */
+        public float Time;
         [NMS(Index = 3)]
-        /* 0x14 */ public bool MultiplyTimeBySeasonValue;
+        /* 0x14 */
+        public bool MultiplyTimeBySeasonValue;
         [NMS(Index = 2)]
-        /* 0x15 */ public bool SuppressMessages;
+        /* 0x15 */
+        public bool SuppressMessages;
     }
 }

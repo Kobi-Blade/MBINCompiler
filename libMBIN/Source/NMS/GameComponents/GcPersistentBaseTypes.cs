@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPersistentBaseTypes : NMSTemplate
     {
         // size: 0xD
-        public enum PersistentBaseTypesEnum : uint {
+        public enum PersistentBaseTypesEnum : uint
+        {
             HomePlanetBase,
             FreighterBase,
             ExternalPlanetBase,
@@ -20,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             ShipBaseScratch,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PersistentBaseTypesEnum PersistentBaseTypes;
+        /* 0x0 */
+        public PersistentBaseTypesEnum PersistentBaseTypes;
     }
 }

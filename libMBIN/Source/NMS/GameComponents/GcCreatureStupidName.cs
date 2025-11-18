@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureStupidName : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x00 */
+        public NMSString0x10 Id;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<NMSString0x80> Names;
+        /* 0x10 */
+        public List<NMSString0x80> Names;
         [NMS(Index = 1)]
-        /* 0x20 */ public int Count;
+        /* 0x20 */
+        public int Count;
     }
 }

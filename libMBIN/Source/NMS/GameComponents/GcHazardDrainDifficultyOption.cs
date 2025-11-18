@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcHazardDrainDifficultyOption : NMSTemplate
     {
         // size: 0x3
-        public enum HazardDrainDifficultyEnum : uint {
+        public enum HazardDrainDifficultyEnum : uint
+        {
             Slow,
             Normal,
             Fast,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HazardDrainDifficultyEnum HazardDrainDifficulty;
+        /* 0x0 */
+        public HazardDrainDifficultyEnum HazardDrainDifficulty;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCharacterCustomisationBoneScaleData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 BoneName;
+        /* 0x00 */
+        public NMSString0x10 BoneName;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Scale;
+        /* 0x10 */
+        public float Scale;
     }
 }

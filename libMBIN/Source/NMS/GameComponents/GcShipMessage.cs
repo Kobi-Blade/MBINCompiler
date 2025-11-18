@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcShipMessage : NMSTemplate
     {
         // size: 0x2
-        public enum MessageTypeEnum : uint {
+        public enum MessageTypeEnum : uint
+        {
             Leave,
             Fight,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MessageTypeEnum MessageType;
+        /* 0x0 */
+        public MessageTypeEnum MessageType;
     }
 }

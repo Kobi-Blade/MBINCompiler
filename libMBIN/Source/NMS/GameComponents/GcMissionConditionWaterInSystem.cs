@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionWaterInSystem : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool WaterworldSpecific;
+        /* 0x0 */
+        public bool WaterworldSpecific;
     }
 }

@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardMissionOverride : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x10 ForceLocalMissionSelection;
+        /* 0x00 */
+        public NMSString0x10 ForceLocalMissionSelection;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Mission;
+        /* 0x10 */
+        public NMSString0x10 Mission;
         [NMS(Index = 1)]
-        /* 0x20 */ public GcSeed OptionalMissionSeed;
+        /* 0x20 */
+        public GcSeed OptionalMissionSeed;
         [NMS(Index = 2)]
-        /* 0x30 */ public NMSString0x10 Reward;
+        /* 0x30 */
+        public NMSString0x10 Reward;
     }
 }

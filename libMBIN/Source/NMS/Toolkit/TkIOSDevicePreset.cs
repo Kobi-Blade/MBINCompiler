@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkIOSDevicePreset : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public TkGraphicsSettings DefaultGraphicsSettings;
+        /* 0x000 */
+        public TkGraphicsSettings DefaultGraphicsSettings;
         [NMS(Index = 1)]
-        /* 0x1C8 */ public List<NMSString0x100> ModelIdentifiers;
+        /* 0x1C8 */
+        public List<NMSString0x100> ModelIdentifiers;
         [NMS(Index = 0)]
-        /* 0x1D8 */ public NMSString0x100 DeviceName;
+        /* 0x1D8 */
+        public NMSString0x100 DeviceName;
     }
 }

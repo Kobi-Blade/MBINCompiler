@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseDefenceStatusType : NMSTemplate
     {
         // size: 0x5
-        public enum BaseDefenceStatusEnum : uint {
+        public enum BaseDefenceStatusEnum : uint
+        {
             AttackingTarget,
             Alert,
             SearchingForTarget,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Security,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BaseDefenceStatusEnum BaseDefenceStatus;
+        /* 0x0 */
+        public BaseDefenceStatusEnum BaseDefenceStatus;
     }
 }

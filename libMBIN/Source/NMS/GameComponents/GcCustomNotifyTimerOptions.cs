@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomNotifyTimerOptions : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float NotifyDisplayTime;
+        /* 0x0 */
+        public float NotifyDisplayTime;
         [NMS(Index = 2)]
-        /* 0x4 */ public float NotifyPauseTime;
+        /* 0x4 */
+        public float NotifyPauseTime;
         [NMS(Index = 0)]
-        /* 0x8 */ public bool HasCustomNotifyTimer;
+        /* 0x8 */
+        public bool HasCustomNotifyTimer;
     }
 }

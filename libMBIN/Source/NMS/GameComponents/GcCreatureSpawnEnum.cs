@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureSpawnEnum : NMSTemplate
     {
         // size: 0x1A
-        public enum IncrementorEnum : uint {
+        public enum IncrementorEnum : uint
+        {
             None,
             Resource,
             ResourceAway,
@@ -33,6 +34,7 @@ namespace libMBIN.NMS.GameComponents
             Warp,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public IncrementorEnum Incrementor;
+        /* 0x0 */
+        public IncrementorEnum Incrementor;
     }
 }

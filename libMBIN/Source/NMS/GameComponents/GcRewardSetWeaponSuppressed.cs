@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSetWeaponSuppressed : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool WeaponSuppressed;
+        /* 0x0 */
+        public bool WeaponSuppressed;
     }
 }

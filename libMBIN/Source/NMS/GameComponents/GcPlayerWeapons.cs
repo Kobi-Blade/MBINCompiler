@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerWeapons : NMSTemplate
     {
         // size: 0x14
-        public enum WeaponModeEnum : uint {
+        public enum WeaponModeEnum : uint
+        {
             Bolt,
             Shotgun,
             Burst,
@@ -27,6 +28,7 @@ namespace libMBIN.NMS.GameComponents
             FishLaser,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WeaponModeEnum WeaponMode;
+        /* 0x0 */
+        public WeaponModeEnum WeaponMode;
     }
 }

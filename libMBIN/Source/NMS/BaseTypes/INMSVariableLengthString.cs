@@ -1,9 +1,6 @@
-﻿using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
-namespace libMBIN.NMS
+﻿namespace libMBIN.NMS
 {
-    public interface INMSVariableLengthString: INMSString
+    public interface INMSVariableLengthString : INMSString
     {
         string String { get; set; }
     }

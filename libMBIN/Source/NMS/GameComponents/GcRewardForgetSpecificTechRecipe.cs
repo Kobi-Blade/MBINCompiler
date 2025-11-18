@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardForgetSpecificTechRecipe : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSString0x10> TechList;
+        /* 0x0 */
+        public List<NMSString0x10> TechList;
     }
 }

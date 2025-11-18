@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionStatDiff : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 CurrentStat;
+        /* 0x00 */
+        public NMSString0x10 CurrentStat;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 TargetStat;
+        /* 0x10 */
+        public NMSString0x10 TargetStat;
         [NMS(Index = 2)]
-        /* 0x20 */ public int AmountPastTarget;
+        /* 0x20 */
+        public int AmountPastTarget;
         [NMS(Index = 3)]
-        /* 0x24 */ public TkEqualityEnum Test;
+        /* 0x24 */
+        public TkEqualityEnum Test;
     }
 }

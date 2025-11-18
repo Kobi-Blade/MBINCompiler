@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-using libMBIN;
+namespace MBINCompiler.Source.Commands
+{
 
-namespace MBINCompiler.Commands {
+    internal class RegisterCommand : Command<RegisterCommand>
+    {
 
-    internal class RegisterCommand : Command<RegisterCommand> {
-
-        public override int ExecuteCommand( CommandLineParser options ) {
+        public override int ExecuteCommand(CommandLineParser options)
+        {
             const string name = "PATH";
             string pathvar = System.Environment.GetEnvironmentVariable(name);
             var value = pathvar + ';' + Environment.CurrentDirectory;

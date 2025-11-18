@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkEmitterData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public VariableSizeString Particle;
+        /* 0x0 */
+        public VariableSizeString Particle;
     }
 }

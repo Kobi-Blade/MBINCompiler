@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcHologramPivotType : NMSTemplate
     {
         // size: 0x2
-        public enum HologramPivotTypeEnum : uint {
+        public enum HologramPivotTypeEnum : uint
+        {
             Origin,
             CentreBounds,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HologramPivotTypeEnum HologramPivotType;
+        /* 0x0 */
+        public HologramPivotTypeEnum HologramPivotType;
     }
 }

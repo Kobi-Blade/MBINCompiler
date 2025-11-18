@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcLandingHelperComponentData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float ActiveDistanceMax;
+        /* 0x0 */
+        public float ActiveDistanceMax;
         [NMS(Index = 0)]
-        /* 0x4 */ public float ActiveDistanceMin;
+        /* 0x4 */
+        public float ActiveDistanceMin;
         [NMS(Index = 2)]
-        /* 0x8 */ public bool LandPoint;
+        /* 0x8 */
+        public bool LandPoint;
     }
 }

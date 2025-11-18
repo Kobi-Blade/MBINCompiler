@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class AxisSpecification : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f CustomAxis;
+        /* 0x00 */
+        public Vector3f CustomAxis;
         // size: 0x7
-        public enum AxisEnum : uint {
+        public enum AxisEnum : uint
+        {
             X,
             Y,
             Z,
@@ -16,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             CustomAxis,
         }
         [NMS(Index = 0)]
-        /* 0x10 */ public AxisEnum Axis;
+        /* 0x10 */
+        public AxisEnum Axis;
     }
 }

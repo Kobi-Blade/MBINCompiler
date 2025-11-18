@@ -1,17 +1,19 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x711157B05511A2B3, NameHash = 0xE99625D7)]
     public class GcStormProperties : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public GcWeatherColourModifiers ColourModifiers;
+        /* 0x000 */
+        public GcWeatherColourModifiers ColourModifiers;
         [NMS(Index = 1)]
-        /* 0x2A0 */ public GcFogProperties Fog;
+        /* 0x2A0 */
+        public GcFogProperties Fog;
         [NMS(Index = 3, Size = 0x6, EnumType = typeof(GcHazardModifiers.HazardModifierEnum))]
-        /* 0x470 */ public Vector2f[] HazardModifiers;
+        /* 0x470 */
+        public Vector2f[] HazardModifiers;
         [NMS(Index = 0)]
-        /* 0x4A0 */ public float Weighting;
+        /* 0x4A0 */
+        public float Weighting;
     }
 }

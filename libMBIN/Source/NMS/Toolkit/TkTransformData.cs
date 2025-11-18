@@ -4,22 +4,31 @@ namespace libMBIN.NMS.Toolkit
     public class TkTransformData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public float RotX;
+        /* 0x00 */
+        public float RotX;
         [NMS(Index = 4)]
-        /* 0x04 */ public float RotY;
+        /* 0x04 */
+        public float RotY;
         [NMS(Index = 5)]
-        /* 0x08 */ public float RotZ;
+        /* 0x08 */
+        public float RotZ;
         [NMS(Index = 6)]
-        /* 0x0C */ public float ScaleX;
+        /* 0x0C */
+        public float ScaleX;
         [NMS(Index = 7)]
-        /* 0x10 */ public float ScaleY;
+        /* 0x10 */
+        public float ScaleY;
         [NMS(Index = 8)]
-        /* 0x14 */ public float ScaleZ;
+        /* 0x14 */
+        public float ScaleZ;
         [NMS(Index = 0)]
-        /* 0x18 */ public float TransX;
+        /* 0x18 */
+        public float TransX;
         [NMS(Index = 1)]
-        /* 0x1C */ public float TransY;
+        /* 0x1C */
+        public float TransY;
         [NMS(Index = 2)]
-        /* 0x20 */ public float TransZ;
+        /* 0x20 */
+        public float TransZ;
     }
 }

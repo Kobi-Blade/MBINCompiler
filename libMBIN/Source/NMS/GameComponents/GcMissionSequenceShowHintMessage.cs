@@ -6,24 +6,34 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceShowHintMessage : NMSTemplate
     {
         [NMS(Index = 9)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 3)]
-        /* 0x10 */ public NMSString0x10 InventoryHint;
+        /* 0x10 */
+        public NMSString0x10 InventoryHint;
         [NMS(Index = 0)]
-        /* 0x20 */ public VariableSizeString Message;
+        /* 0x20 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x30 */ public VariableSizeString MessagePadControl;
+        /* 0x30 */
+        public VariableSizeString MessagePadControl;
         [NMS(Index = 2)]
-        /* 0x40 */ public VariableSizeString MessageTitle;
+        /* 0x40 */
+        public VariableSizeString MessageTitle;
         [NMS(Index = 8)]
-        /* 0x50 */ public List<NMSTemplate> UseConditionsForTextFormatting;
+        /* 0x50 */
+        public List<NMSTemplate> UseConditionsForTextFormatting;
         [NMS(Index = 5)]
-        /* 0x60 */ public float HighPriorityTime;
+        /* 0x60 */
+        public float HighPriorityTime;
         [NMS(Index = 4)]
-        /* 0x64 */ public float InitialWaitTime;
+        /* 0x64 */
+        public float InitialWaitTime;
         [NMS(Index = 6)]
-        /* 0x68 */ public float SecondaryWaitTime;
+        /* 0x68 */
+        public float SecondaryWaitTime;
         [NMS(Index = 7)]
-        /* 0x6C */ public bool AllowedWhileInDanger;
+        /* 0x6C */
+        public bool AllowedWhileInDanger;
     }
 }

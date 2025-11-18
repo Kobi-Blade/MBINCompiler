@@ -4,11 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshAreaFlags : NMSTemplate
     {
         // size: 0x2
-        public enum NavMeshAreaFlagsEnum : byte {
+        public enum NavMeshAreaFlagsEnum : byte
+        {
             None,
             Steep,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NavMeshAreaFlagsEnum NavMeshAreaFlags;
+        /* 0x0 */
+        public NavMeshAreaFlagsEnum NavMeshAreaFlags;
     }
 }

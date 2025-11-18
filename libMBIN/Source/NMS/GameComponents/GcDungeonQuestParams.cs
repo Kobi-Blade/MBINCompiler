@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcDungeonQuestParams : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x10> QuestItems;
+        /* 0x00 */
+        public List<NMSString0x10> QuestItems;
         [NMS(Index = 0)]
-        /* 0x10 */ public float Probability;
+        /* 0x10 */
+        public float Probability;
     }
 }

@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcScreenFilterData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A LocText;
+        /* 0x00 */
+        public NMSString0x20A LocText;
         [NMS(Index = 1)]
-        /* 0x20 */ public VariableSizeString Filename;
+        /* 0x20 */
+        public VariableSizeString Filename;
         [NMS(Index = 2)]
-        /* 0x30 */ public float FadeDistance;
+        /* 0x30 */
+        public float FadeDistance;
         [NMS(Index = 4)]
-        /* 0x34 */ public float HdrAreaAdjust;
+        /* 0x34 */
+        public float HdrAreaAdjust;
         [NMS(Index = 3)]
-        /* 0x38 */ public bool SelectableInPhotoMode;
+        /* 0x38 */
+        public bool SelectableInPhotoMode;
     }
 }

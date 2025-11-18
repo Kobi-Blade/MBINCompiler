@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcFishSize : NMSTemplate
     {
         // size: 0x4
-        public enum FishSizeEnum : uint {
+        public enum FishSizeEnum : uint
+        {
             Small,
             Medium,
             Large,
             ExtraLarge,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FishSizeEnum FishSize;
+        /* 0x0 */
+        public FishSizeEnum FishSize;
     }
 }

@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcFonts : NMSTemplate
     {
         // size: 0x4
-        public enum FontTypeEnum : uint {
+        public enum FontTypeEnum : uint
+        {
             Body,
             Title,
             Console1,
             Console2,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FontTypeEnum FontType;
+        /* 0x0 */
+        public FontTypeEnum FontType;
     }
 }

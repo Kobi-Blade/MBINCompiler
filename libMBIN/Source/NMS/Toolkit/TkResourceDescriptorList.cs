@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkResourceDescriptorList : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<TkResourceDescriptorData> Descriptors;
+        /* 0x00 */
+        public List<TkResourceDescriptorData> Descriptors;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 TypeId;
+        /* 0x10 */
+        public NMSString0x10 TypeId;
     }
 }

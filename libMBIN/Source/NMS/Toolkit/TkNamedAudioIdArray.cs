@@ -6,8 +6,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkNamedAudioIdArray : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x80> Values;
+        /* 0x00 */
+        public List<NMSString0x80> Values;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x80 Name;
+        /* 0x10 */
+        public NMSString0x80 Name;
     }
 }

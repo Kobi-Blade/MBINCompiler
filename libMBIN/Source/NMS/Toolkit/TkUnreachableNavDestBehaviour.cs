@@ -4,11 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkUnreachableNavDestBehaviour : NMSTemplate
     {
         // size: 0x2
-        public enum UnreachableNavDestBehaviourEnum : byte {
+        public enum UnreachableNavDestBehaviourEnum : byte
+        {
             ClampToFurthestReachable,
             ContinueOffMesh,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public UnreachableNavDestBehaviourEnum UnreachableNavDestBehaviour;
+        /* 0x0 */
+        public UnreachableNavDestBehaviourEnum UnreachableNavDestBehaviour;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionWaitForTime : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public ulong WaitTimeInSeconds;
+        /* 0x0 */
+        public ulong WaitTimeInSeconds;
         [NMS(Index = 1)]
-        /* 0x8 */ public bool ThisConditionWillSetMissionUserDataIsThatOk;
+        /* 0x8 */
+        public bool ThisConditionWillSetMissionUserDataIsThatOk;
     }
 }

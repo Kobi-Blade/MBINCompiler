@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcVehicleType : NMSTemplate
     {
         // size: 0x7
-        public enum VehicleTypeEnum : uint {
+        public enum VehicleTypeEnum : uint
+        {
             Buggy,
             Bike,
             Truck,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Mech,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public VehicleTypeEnum VehicleType;
+        /* 0x0 */
+        public VehicleTypeEnum VehicleType;
     }
 }

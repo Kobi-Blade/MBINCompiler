@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionType : NMSTemplate
     {
         // size: 0x21
-        public enum MissionTypeEnum : uint {
+        public enum MissionTypeEnum : uint
+        {
             SpaceCombat,
             GroundCombat,
             Research,
@@ -40,6 +41,7 @@ namespace libMBIN.NMS.GameComponents
             CorvetteFiendKill,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionTypeEnum MissionType;
+        /* 0x0 */
+        public MissionTypeEnum MissionType;
     }
 }

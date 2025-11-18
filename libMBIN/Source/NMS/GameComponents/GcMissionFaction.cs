@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionFaction : NMSTemplate
     {
         // size: 0xA
-        public enum MissionFactionEnum : uint {
+        public enum MissionFactionEnum : uint
+        {
             Gek,
             Korvax,
             Vykeen,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             None,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionFactionEnum MissionFaction;
+        /* 0x0 */
+        public MissionFactionEnum MissionFaction;
     }
 }

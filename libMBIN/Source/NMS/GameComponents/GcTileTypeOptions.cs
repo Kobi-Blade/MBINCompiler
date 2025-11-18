@@ -7,6 +7,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcTileTypeOptions : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<TkPaletteTexture> Options;
+        /* 0x0 */
+        public List<TkPaletteTexture> Options;
     }
 }

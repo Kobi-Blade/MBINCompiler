@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildingSpawnSlot : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int BuildingDataIndex;
+        /* 0x0 */
+        public int BuildingDataIndex;
         [NMS(Index = 2)]
-        /* 0x4 */ public float Probability;
+        /* 0x4 */
+        public float Probability;
         [NMS(Index = 0)]
-        /* 0x8 */ public bool HasBuilding;
+        /* 0x8 */
+        public bool HasBuilding;
     }
 }

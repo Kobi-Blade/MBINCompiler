@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkPaletteTexture : NMSTemplate
     {
         // size: 0x8
-        public enum ColourAltEnum : uint {
+        public enum ColourAltEnum : uint
+        {
             Primary,
             Alternative1,
             Alternative2,
@@ -15,11 +16,14 @@ namespace libMBIN.NMS.Toolkit
             None,
         }
         [NMS(Index = 1)]
-        /* 0x0 */ public ColourAltEnum ColourAlt;
+        /* 0x0 */
+        public ColourAltEnum ColourAlt;
         [NMS(Index = 2)]
-        /* 0x4 */ public int Index;
+        /* 0x4 */
+        public int Index;
         // size: 0x40
-        public enum PaletteEnum : uint {
+        public enum PaletteEnum : uint
+        {
             Grass,
             Plant,
             Leaf,
@@ -86,6 +90,7 @@ namespace libMBIN.NMS.Toolkit
             DeepWaterBioLum,
         }
         [NMS(Index = 0)]
-        /* 0x8 */ public PaletteEnum Palette;
+        /* 0x8 */
+        public PaletteEnum Palette;
     }
 }

@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWaitForFreighterPods : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x20 */ public int Amount;
+        /* 0x20 */
+        public int Amount;
         [NMS(Index = 2)]
-        /* 0x24 */ public bool TakeAmountFromPulseEncounter;
+        /* 0x24 */
+        public bool TakeAmountFromPulseEncounter;
     }
 }

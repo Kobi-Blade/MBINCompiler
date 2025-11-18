@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostMissionActive : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A CostString;
+        /* 0x00 */
+        public NMSString0x20A CostString;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 MissionID;
+        /* 0x20 */
+        public NMSString0x10 MissionID;
     }
 }

@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostOwnSettlement : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public sbyte NumRequired;
+        /* 0x0 */
+        public sbyte NumRequired;
     }
 }

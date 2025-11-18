@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkWaterConditionData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<TkWaveInputData> Waves;
+        /* 0x00 */
+        public List<TkWaveInputData> Waves;
         [NMS(Index = 1)]
-        /* 0x10 */ public TkFoamProperties FoamProperties;
+        /* 0x10 */
+        public TkFoamProperties FoamProperties;
         [NMS(Index = 2)]
-        /* 0x30 */ public float DetailNormalsStrength;
+        /* 0x30 */
+        public float DetailNormalsStrength;
         [NMS(Index = 3)]
-        /* 0x34 */ public float WaveRTPCStrength;
+        /* 0x34 */
+        public float WaveRTPCStrength;
     }
 }

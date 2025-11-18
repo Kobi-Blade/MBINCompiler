@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCompositeCurveElementData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Duration;
+        /* 0x0 */
+        public float Duration;
         [NMS(Index = 0)]
-        /* 0x4 */ public float EndValue;
+        /* 0x4 */
+        public float EndValue;
         [NMS(Index = 2)]
-        /* 0x8 */ public TkCurveType CurveType;
+        /* 0x8 */
+        public TkCurveType CurveType;
     }
 }

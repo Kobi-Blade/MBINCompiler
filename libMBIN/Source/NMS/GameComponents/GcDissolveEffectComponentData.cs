@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcDissolveEffectComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float DissolveBeginHeight;
+        /* 0x0 */
+        public float DissolveBeginHeight;
         [NMS(Index = 1)]
-        /* 0x4 */ public float DissolveEndHeight;
+        /* 0x4 */
+        public float DissolveEndHeight;
     }
 }

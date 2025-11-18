@@ -4,18 +4,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWaitForStatSeasonal : NMSTemplate
     {
         [NMS(Index = 6)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 Stat;
+        /* 0x20 */
+        public NMSString0x10 Stat;
         [NMS(Index = 2)]
-        /* 0x30 */ public NMSString0x10 StatGroup;
+        /* 0x30 */
+        public NMSString0x10 StatGroup;
         [NMS(Index = 3)]
-        /* 0x40 */ public int Amount;
+        /* 0x40 */
+        public int Amount;
         [NMS(Index = 5)]
-        /* 0x44 */ public bool EncouragesFighting;
+        /* 0x44 */
+        public bool EncouragesFighting;
         [NMS(Index = 4)]
-        /* 0x45 */ public bool TakeAmountFromSeasonalData;
+        /* 0x45 */
+        public bool TakeAmountFromSeasonalData;
     }
 }

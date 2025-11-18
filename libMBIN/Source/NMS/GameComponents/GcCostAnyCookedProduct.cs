@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostAnyCookedProduct : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A CostString;
+        /* 0x00 */
+        public NMSString0x20A CostString;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x20A CostStringCantAfford;
+        /* 0x20 */
+        public NMSString0x20A CostStringCantAfford;
         [NMS(Index = 2)]
-        /* 0x40 */ public int Index;
+        /* 0x40 */
+        public int Index;
         [NMS(Index = 4)]
-        /* 0x44 */ public bool MixRandomAndBetter;
+        /* 0x44 */
+        public bool MixRandomAndBetter;
         [NMS(Index = 3)]
-        /* 0x45 */ public bool PreferBetterItems;
+        /* 0x45 */
+        public bool PreferBetterItems;
     }
 }

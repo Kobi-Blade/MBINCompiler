@@ -4,20 +4,28 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardProcTechProduct : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Group;
+        /* 0x00 */
+        public NMSString0x20A Group;
         [NMS(Index = 3)]
-        /* 0x20 */ public int WeightedChanceEpic;
+        /* 0x20 */
+        public int WeightedChanceEpic;
         [NMS(Index = 4)]
-        /* 0x24 */ public int WeightedChanceLegendary;
+        /* 0x24 */
+        public int WeightedChanceLegendary;
         [NMS(Index = 1)]
-        /* 0x28 */ public int WeightedChanceNormal;
+        /* 0x28 */
+        public int WeightedChanceNormal;
         [NMS(Index = 2)]
-        /* 0x2C */ public int WeightedChanceRare;
+        /* 0x2C */
+        public int WeightedChanceRare;
         [NMS(Index = 7)]
-        /* 0x30 */ public bool AllowAnyGroup;
+        /* 0x30 */
+        public bool AllowAnyGroup;
         [NMS(Index = 6)]
-        /* 0x31 */ public bool ForceQualityRelevant;
+        /* 0x31 */
+        public bool ForceQualityRelevant;
         [NMS(Index = 5)]
-        /* 0x32 */ public bool ForceRelevant;
+        /* 0x32 */
+        public bool ForceRelevant;
     }
 }

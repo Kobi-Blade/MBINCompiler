@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderMineralCategory : NMSTemplate
     {
         // size: 0x8
-        public enum WonderMineralCategoryEnum : uint {
+        public enum WonderMineralCategoryEnum : uint
+        {
             GeneralFact0,
             GeneralFact1,
             GeneralFact2,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             ToxFact,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WonderMineralCategoryEnum WonderMineralCategory;
+        /* 0x0 */
+        public WonderMineralCategoryEnum WonderMineralCategory;
     }
 }

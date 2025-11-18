@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAntagonistGroup : NMSTemplate
     {
         // size: 0x6
-        public enum AntagonistGroupEnum : uint {
+        public enum AntagonistGroupEnum : uint
+        {
             Player,
             Fiends,
             Creatures,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             Walls,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AntagonistGroupEnum AntagonistGroup;
+        /* 0x0 */
+        public AntagonistGroupEnum AntagonistGroup;
     }
 }

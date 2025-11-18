@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcSeasonEndRewardsRedemptionState : NMSTemplate
     {
         // size: 0x4
-        public enum SeasonEndRewardsRedemptionStateEnum : uint {
+        public enum SeasonEndRewardsRedemptionStateEnum : uint
+        {
             None,
             Available,
             PendingRedemption,
             Redeemed,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SeasonEndRewardsRedemptionStateEnum SeasonEndRewardsRedemptionState;
+        /* 0x0 */
+        public SeasonEndRewardsRedemptionStateEnum SeasonEndRewardsRedemptionState;
     }
 }

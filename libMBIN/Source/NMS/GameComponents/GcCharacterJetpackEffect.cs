@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCharacterJetpackEffect : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 Effect;
+        /* 0x00 */
+        public NMSString0x10 Effect;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x100 NodeName;
+        /* 0x10 */
+        public NMSString0x100 NodeName;
     }
 }

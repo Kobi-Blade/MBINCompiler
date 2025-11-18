@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostInstalledTech : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x00 */
+        public NMSString0x10 Id;
         // size: 0x6
-        public enum InventoryToCheckEnum : uint {
+        public enum InventoryToCheckEnum : uint
+        {
             All,
             Suit,
             Ship,
@@ -15,10 +17,13 @@ namespace libMBIN.NMS.GameComponents
             Buggy,
         }
         [NMS(Index = 3)]
-        /* 0x10 */ public InventoryToCheckEnum InventoryToCheck;
+        /* 0x10 */
+        public InventoryToCheckEnum InventoryToCheck;
         [NMS(Index = 1)]
-        /* 0x14 */ public float MinChargePercent;
+        /* 0x14 */
+        public float MinChargePercent;
         [NMS(Index = 2)]
-        /* 0x18 */ public bool BurnCharge;
+        /* 0x18 */
+        public bool BurnCharge;
     }
 }

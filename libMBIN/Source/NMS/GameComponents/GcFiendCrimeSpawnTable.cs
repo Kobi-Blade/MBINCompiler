@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcFiendCrimeSpawnTable : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<GcFiendCrimeSpawnData> Spawns;
+        /* 0x00 */
+        public List<GcFiendCrimeSpawnData> Spawns;
         [NMS(Index = 0)]
-        /* 0x10 */ public GcFiendCrime Crime;
+        /* 0x10 */
+        public GcFiendCrime Crime;
         [NMS(Index = 1)]
-        /* 0x14 */ public float ResponseRate;
+        /* 0x14 */
+        public float ResponseRate;
     }
 }

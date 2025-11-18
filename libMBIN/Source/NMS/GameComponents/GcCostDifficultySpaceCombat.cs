@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostDifficultySpaceCombat : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A CostStringCantAfford;
+        /* 0x00 */
+        public NMSString0x20A CostStringCantAfford;
         [NMS(Index = 1)]
-        /* 0x20 */ public GcCombatTimerDifficultyOption SpaceCombatTimers;
+        /* 0x20 */
+        public GcCombatTimerDifficultyOption SpaceCombatTimers;
         [NMS(Index = 0)]
-        /* 0x24 */ public TkEqualityEnum Test;
+        /* 0x24 */
+        public TkEqualityEnum Test;
     }
 }

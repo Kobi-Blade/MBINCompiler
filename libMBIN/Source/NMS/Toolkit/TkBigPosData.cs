@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkBigPosData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public Vector3f Local;
+        /* 0x00 */
+        public Vector3f Local;
         [NMS(Index = 1)]
-        /* 0x10 */ public Vector3f Offset;
+        /* 0x10 */
+        public Vector3f Offset;
     }
 }

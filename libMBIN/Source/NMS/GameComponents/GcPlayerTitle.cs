@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,36 +6,52 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerTitle : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x20A AlreadyUnlockedDescription;
+        /* 0x00 */
+        public NMSString0x20A AlreadyUnlockedDescription;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x20A Title;
+        /* 0x20 */
+        public NMSString0x20A Title;
         [NMS(Index = 2)]
-        /* 0x40 */ public NMSString0x20A UnlockDescription;
+        /* 0x40 */
+        public NMSString0x20A UnlockDescription;
         [NMS(Index = 0)]
-        /* 0x60 */ public NMSString0x10 ID;
+        /* 0x60 */
+        public NMSString0x10 ID;
         [NMS(Index = 4)]
-        /* 0x70 */ public NMSString0x10 RevealedBy;
+        /* 0x70 */
+        public NMSString0x10 RevealedBy;
         [NMS(Index = 15)]
-        /* 0x80 */ public List<NMSString0x10> TitleUnlocksSpecials;
+        /* 0x80 */
+        public List<NMSString0x10> TitleUnlocksSpecials;
         [NMS(Index = 6)]
-        /* 0x90 */ public NMSString0x10 UnlockedByMission;
+        /* 0x90 */
+        public NMSString0x10 UnlockedByMission;
         [NMS(Index = 5)]
-        /* 0xA0 */ public NMSString0x10 UnlockedByProductRecipe;
+        /* 0xA0 */
+        public NMSString0x10 UnlockedByProductRecipe;
         [NMS(Index = 8)]
-        /* 0xB0 */ public NMSString0x10 UnlockedByStat;
+        /* 0xB0 */
+        public NMSString0x10 UnlockedByStat;
         [NMS(Index = 7)]
-        /* 0xC0 */ public NMSString0x10 UnlockedByTrophy;
+        /* 0xC0 */
+        public NMSString0x10 UnlockedByTrophy;
         [NMS(Index = 11)]
-        /* 0xD0 */ public GcInteractionType UnlockedByInteraction;
+        /* 0xD0 */
+        public GcInteractionType UnlockedByInteraction;
         [NMS(Index = 12)]
-        /* 0xD4 */ public int UnlockedByInteractionIndex;
+        /* 0xD4 */
+        public int UnlockedByInteractionIndex;
         [NMS(Index = 13)]
-        /* 0xD8 */ public GcAlienRace UnlockedByInteractionRace;
+        /* 0xD8 */
+        public GcAlienRace UnlockedByInteractionRace;
         [NMS(Index = 10)]
-        /* 0xDC */ public int UnlockedByLeveledStatRank;
+        /* 0xDC */
+        public int UnlockedByLeveledStatRank;
         [NMS(Index = 9)]
-        /* 0xE0 */ public float UnlockedByStatValue;
+        /* 0xE0 */
+        public float UnlockedByStatValue;
         [NMS(Index = 14)]
-        /* 0xE4 */ public bool UnlockedByInteractionOnlyTestMainRaces;
+        /* 0xE4 */
+        public bool UnlockedByInteractionOnlyTestMainRaces;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionCategory : NMSTemplate
     {
         // size: 0x5
-        public enum MissionCategoryEnum : uint {
+        public enum MissionCategoryEnum : uint
+        {
             Info,
             SelectableHint,
             Mission,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Urgent,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionCategoryEnum MissionCategory;
+        /* 0x0 */
+        public MissionCategoryEnum MissionCategory;
     }
 }

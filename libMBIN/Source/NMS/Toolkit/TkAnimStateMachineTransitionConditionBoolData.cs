@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimStateMachineTransitionConditionBoolData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Parameter;
+        /* 0x00 */
+        public NMSString0x10 Parameter;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool CompareValue;
+        /* 0x10 */
+        public bool CompareValue;
     }
 }

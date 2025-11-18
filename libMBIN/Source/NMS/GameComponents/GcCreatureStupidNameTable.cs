@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureStupidNameTable : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<GcCreatureStupidName> Table;
+        /* 0x00 */
+        public List<GcCreatureStupidName> Table;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x80 StupidUserName;
+        /* 0x10 */
+        public NMSString0x80 StupidUserName;
     }
 }

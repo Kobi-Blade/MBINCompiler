@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcFishSizeProbability : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int BaseWeight;
+        /* 0x0 */
+        public int BaseWeight;
         [NMS(Index = 3)]
-        /* 0x4 */ public int DepthModifier;
+        /* 0x4 */
+        public int DepthModifier;
         [NMS(Index = 2)]
-        /* 0x8 */ public int DepthRangeMax;
+        /* 0x8 */
+        public int DepthRangeMax;
         [NMS(Index = 1)]
-        /* 0xC */ public int DepthRangeMin;
+        /* 0xC */
+        public int DepthRangeMin;
     }
 }

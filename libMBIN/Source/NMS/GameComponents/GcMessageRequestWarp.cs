@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMessageRequestWarp : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Delay;
+        /* 0x0 */
+        public float Delay;
     }
 }

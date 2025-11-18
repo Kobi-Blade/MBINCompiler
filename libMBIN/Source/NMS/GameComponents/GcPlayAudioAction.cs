@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayAudioAction : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public float OcclusionRadius;
+        /* 0x00 */
+        public float OcclusionRadius;
         [NMS(Index = 0)]
-        /* 0x04 */ public NMSString0x80 Sound;
+        /* 0x04 */
+        public NMSString0x80 Sound;
         [NMS(Index = 1)]
-        /* 0x84 */ public bool UseOcclusion;
+        /* 0x84 */
+        public bool UseOcclusion;
     }
 }

@@ -4,16 +4,20 @@ namespace libMBIN.NMS.GameComponents
     public class GcBeenShotEvent : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int DamageThreshold;
+        /* 0x0 */
+        public int DamageThreshold;
         [NMS(Index = 2)]
-        /* 0x4 */ public float HealthThreshold;
+        /* 0x4 */
+        public float HealthThreshold;
         // size: 0x3
-        public enum ShotByEnum : uint {
+        public enum ShotByEnum : uint
+        {
             Player,
             Anything,
             PlayerOrRemotePlayer,
         }
         [NMS(Index = 0)]
-        /* 0x8 */ public ShotByEnum ShotBy;
+        /* 0x8 */
+        public ShotByEnum ShotBy;
     }
 }

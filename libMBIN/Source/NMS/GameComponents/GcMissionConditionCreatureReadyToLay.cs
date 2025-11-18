@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCreatureReadyToLay : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool PrimaryCreatureOnly;
+        /* 0x0 */
+        public bool PrimaryCreatureOnly;
     }
 }

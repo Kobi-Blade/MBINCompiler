@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcNameGeneratorWord : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Word;
+        /* 0x00 */
+        public NMSString0x20A Word;
         [NMS(Index = 1)]
-        /* 0x20 */ public int NumOptions;
+        /* 0x20 */
+        public int NumOptions;
     }
 }

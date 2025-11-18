@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcFrigateClass : NMSTemplate
     {
         // size: 0xA
-        public enum FrigateClassEnum : uint {
+        public enum FrigateClassEnum : uint
+        {
             Combat,
             Exploration,
             Mining,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             GhostShip,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FrigateClassEnum FrigateClass;
+        /* 0x0 */
+        public FrigateClassEnum FrigateClass;
     }
 }

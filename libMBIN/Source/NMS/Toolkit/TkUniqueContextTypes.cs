@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkUniqueContextTypes : NMSTemplate
     {
         // size: 0x7
-        public enum UniqueContextTypeEnum : uint {
+        public enum UniqueContextTypeEnum : uint
+        {
             Debug,
             Generic,
             Environment,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.Toolkit
             Dungeon,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public UniqueContextTypeEnum UniqueContextType;
+        /* 0x0 */
+        public UniqueContextTypeEnum UniqueContextType;
     }
 }

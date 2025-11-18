@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderPlanetCategory : NMSTemplate
     {
         // size: 0xB
-        public enum WonderPlanetCategoryEnum : uint {
+        public enum WonderPlanetCategoryEnum : uint
+        {
             TemperatureMax,
             TemperatureMin,
             ToxicityMax,
@@ -18,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             PerfectionMin,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WonderPlanetCategoryEnum WonderPlanetCategory;
+        /* 0x0 */
+        public WonderPlanetCategoryEnum WonderPlanetCategory;
     }
 }

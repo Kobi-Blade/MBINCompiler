@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPersistedStatData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 GroupId;
+        /* 0x00 */
+        public NMSString0x10 GroupId;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 StatId;
+        /* 0x10 */
+        public NMSString0x10 StatId;
     }
 }

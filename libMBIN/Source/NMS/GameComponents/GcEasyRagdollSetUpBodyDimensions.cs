@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcEasyRagdollSetUpBodyDimensions : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f Centre;
+        /* 0x00 */
+        public Vector3f Centre;
         [NMS(Index = 2)]
-        /* 0x10 */ public Vector3f Size;
+        /* 0x10 */
+        public Vector3f Size;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x20 Joint;
+        /* 0x20 */
+        public NMSString0x20 Joint;
     }
 }

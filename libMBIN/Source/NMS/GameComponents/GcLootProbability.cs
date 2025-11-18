@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcLootProbability : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public TkModelResource LootModel;
+        /* 0x00 */
+        public TkModelResource LootModel;
         [NMS(Index = 1)]
-        /* 0x20 */ public float Probability;
+        /* 0x20 */
+        public float Probability;
     }
 }

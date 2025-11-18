@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceRepairTech : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<NMSString0x10> TechsToRepair;
+        /* 0x20 */
+        public List<NMSString0x10> TechsToRepair;
     }
 }

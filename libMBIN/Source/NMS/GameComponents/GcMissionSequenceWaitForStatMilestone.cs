@@ -4,20 +4,26 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWaitForStatMilestone : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 Stat;
+        /* 0x20 */
+        public NMSString0x10 Stat;
         // size: 0x3
-        public enum MilestoneEnum : uint {
+        public enum MilestoneEnum : uint
+        {
             Bronze,
             Silver,
             Gold,
         }
         [NMS(Index = 2)]
-        /* 0x30 */ public MilestoneEnum Milestone;
+        /* 0x30 */
+        public MilestoneEnum Milestone;
         [NMS(Index = 3)]
-        /* 0x34 */ public bool EveryMilestone;
+        /* 0x34 */
+        public bool EveryMilestone;
     }
 }

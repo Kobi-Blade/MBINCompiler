@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureGenerationArchetypes : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<GcCreatureGenerationDomainTable> AirArchetypes;
+        /* 0x00 */
+        public List<GcCreatureGenerationDomainTable> AirArchetypes;
         [NMS(Index = 3)]
-        /* 0x10 */ public List<GcCreatureGenerationDomainTable> CaveArchetypes;
+        /* 0x10 */
+        public List<GcCreatureGenerationDomainTable> CaveArchetypes;
         [NMS(Index = 0)]
-        /* 0x20 */ public List<GcCreatureGenerationDomainTable> GroundArchetypes;
+        /* 0x20 */
+        public List<GcCreatureGenerationDomainTable> GroundArchetypes;
         [NMS(Index = 2)]
-        /* 0x30 */ public List<GcCreatureGenerationDomainTable> WaterArchetypes;
+        /* 0x30 */
+        public List<GcCreatureGenerationDomainTable> WaterArchetypes;
     }
 }

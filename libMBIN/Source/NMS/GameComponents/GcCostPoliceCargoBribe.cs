@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostPoliceCargoBribe : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public int Amount;
+        /* 0x0 */
+        public int Amount;
         [NMS(Index = 0)]
-        /* 0x4 */ public bool IncludeNipNip;
+        /* 0x4 */
+        public bool IncludeNipNip;
         [NMS(Index = 1)]
-        /* 0x5 */ public bool OnlyCargoProbeInventories;
+        /* 0x5 */
+        public bool OnlyCargoProbeInventories;
     }
 }

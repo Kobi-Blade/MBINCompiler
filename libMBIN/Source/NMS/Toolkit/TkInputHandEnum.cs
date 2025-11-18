@@ -4,12 +4,14 @@ namespace libMBIN.NMS.Toolkit
     public class TkInputHandEnum : NMSTemplate
     {
         // size: 0x3
-        public enum InputHandEnum : uint {
+        public enum InputHandEnum : uint
+        {
             None,
             Left,
             Right,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InputHandEnum InputHand;
+        /* 0x0 */
+        public InputHandEnum InputHand;
     }
 }

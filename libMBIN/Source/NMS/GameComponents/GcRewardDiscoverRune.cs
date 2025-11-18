@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardDiscoverRune : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool AllRunes;
+        /* 0x0 */
+        public bool AllRunes;
     }
 }

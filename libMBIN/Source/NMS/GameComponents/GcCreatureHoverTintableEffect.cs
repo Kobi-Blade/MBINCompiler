@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureHoverTintableEffect : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public Colour TintColour;
+        /* 0x00 */
+        public Colour TintColour;
         [NMS(Index = 1)]
-        /* 0x10 */ public float LightStrength;
+        /* 0x10 */
+        public float LightStrength;
         [NMS(Index = 2)]
-        /* 0x14 */ public float TintStrength;
+        /* 0x14 */
+        public float TintStrength;
         [NMS(Index = 0)]
-        /* 0x18 */ public NMSString0x100 EffectNode;
+        /* 0x18 */
+        public NMSString0x100 EffectNode;
     }
 }

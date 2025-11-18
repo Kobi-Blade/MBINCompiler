@@ -7,7 +7,8 @@ namespace libMBIN.NMS.GameComponents
     {
         // size: 0xE
         [Flags]
-        public enum CorvettePartCategoryEnum : uint {
+        public enum CorvettePartCategoryEnum : uint
+        {
             None = 0x0,
             Cockpit = 0x1,
             Hab = 0x2,
@@ -24,6 +25,7 @@ namespace libMBIN.NMS.GameComponents
             Interior = 0x1000,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CorvettePartCategoryEnum CorvettePartCategory;
+        /* 0x0 */
+        public CorvettePartCategoryEnum CorvettePartCategory;
     }
 }

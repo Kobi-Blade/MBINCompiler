@@ -6,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcResourceElement : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public VariableSizeString AltId;
+        /* 0x00 */
+        public VariableSizeString AltId;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Filename;
+        /* 0x10 */
+        public VariableSizeString Filename;
         [NMS(Index = 3)]
-        /* 0x20 */ public TkProceduralTextureChosenOptionList ProceduralTexture;
+        /* 0x20 */
+        public TkProceduralTextureChosenOptionList ProceduralTexture;
         [NMS(Index = 2)]
-        /* 0x30 */ public GcSeed Seed;
+        /* 0x30 */
+        public GcSeed Seed;
         [NMS(Index = 1)]
-        /* 0x40 */ public GcResource ResHandle;
+        /* 0x40 */
+        public GcResource ResHandle;
     }
 }

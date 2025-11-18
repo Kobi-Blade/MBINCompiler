@@ -1,69 +1,97 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0xD38DBE89D42C7663, NameHash = 0x77F1C814)]
     public class GcShootableComponentData : NMSTemplate
     {
         [NMS(Index = 9)]
-        /* 0x00 */ public GcProjectileImpactData ImpactOverrideData;
+        /* 0x00 */
+        public GcProjectileImpactData ImpactOverrideData;
         [NMS(Index = 27)]
-        /* 0x20 */ public NMSString0x10 DamageMultiplier;
+        /* 0x20 */
+        public NMSString0x10 DamageMultiplier;
         [NMS(Index = 7)]
-        /* 0x30 */ public NMSString0x10 ImpactShakeEffect;
+        /* 0x30 */
+        public NMSString0x10 ImpactShakeEffect;
         [NMS(Index = 26)]
-        /* 0x40 */ public NMSString0x10 RequiredTech;
+        /* 0x40 */
+        public NMSString0x10 RequiredTech;
         [NMS(Index = 22)]
-        /* 0x50 */ public float CapHealthForMissingArmour;
+        /* 0x50 */
+        public float CapHealthForMissingArmour;
         [NMS(Index = 14)]
-        /* 0x54 */ public float FiendCrimeModifier;
+        /* 0x54 */
+        public float FiendCrimeModifier;
         [NMS(Index = 13)]
-        /* 0x58 */ public GcFiendCrime FiendCrimeType;
+        /* 0x58 */
+        public GcFiendCrime FiendCrimeType;
         [NMS(Index = 8)]
-        /* 0x5C */ public GcProjectileImpactType ForceImpactType;
+        /* 0x5C */
+        public GcProjectileImpactType ForceImpactType;
         [NMS(Index = 0)]
-        /* 0x60 */ public int Health;
+        /* 0x60 */
+        public int Health;
         [NMS(Index = 11)]
-        /* 0x64 */ public int IncreaseCorruptSentinelWanted;
+        /* 0x64 */
+        public int IncreaseCorruptSentinelWanted;
         [NMS(Index = 10)]
-        /* 0x68 */ public int IncreaseWanted;
+        /* 0x68 */
+        public int IncreaseWanted;
         [NMS(Index = 12)]
-        /* 0x6C */ public float IncreaseWantedThresholdTime;
+        /* 0x6C */
+        public float IncreaseWantedThresholdTime;
         [NMS(Index = 1)]
-        /* 0x70 */ public int LevelledExtraHealth;
+        /* 0x70 */
+        public int LevelledExtraHealth;
         [NMS(Index = 16)]
-        /* 0x74 */ public int MinDamage;
+        /* 0x74 */
+        public int MinDamage;
         [NMS(Index = 15)]
-        /* 0x78 */ public float RepairTime;
+        /* 0x78 */
+        public float RepairTime;
         [NMS(Index = 25)]
-        /* 0x7C */ public NMSString0x20 NameOverride;
+        /* 0x7C */
+        public NMSString0x20 NameOverride;
         [NMS(Index = 3)]
-        /* 0x9C */ public bool AutoAimTarget;
+        /* 0x9C */
+        public bool AutoAimTarget;
         [NMS(Index = 23)]
-        /* 0x9D */ public bool CouldCountAsArmourForParent;
+        /* 0x9D */
+        public bool CouldCountAsArmourForParent;
         [NMS(Index = 19)]
-        /* 0x9E */ public bool HitEffectEnabled;
+        /* 0x9E */
+        public bool HitEffectEnabled;
         [NMS(Index = 20)]
-        /* 0x9F */ public bool HitEffectEntireModel;
+        /* 0x9F */
+        public bool HitEffectEntireModel;
         [NMS(Index = 18)]
-        /* 0xA0 */ public bool IgnoreHitPush;
+        /* 0xA0 */
+        public bool IgnoreHitPush;
         [NMS(Index = 5)]
-        /* 0xA1 */ public bool IgnorePlayer;
+        /* 0xA1 */
+        public bool IgnorePlayer;
         [NMS(Index = 24)]
-        /* 0xA2 */ public bool IgnoreTerrainEditKills;
+        /* 0xA2 */
+        public bool IgnoreTerrainEditKills;
         [NMS(Index = 6)]
-        /* 0xA3 */ public bool ImpactShake;
+        /* 0xA3 */
+        public bool ImpactShake;
         [NMS(Index = 29)]
-        /* 0xA4 */ public bool IsAffectedByPiercing;
+        /* 0xA4 */
+        public bool IsAffectedByPiercing;
         [NMS(Index = 21)]
-        /* 0xA5 */ public bool IsArmoured;
+        /* 0xA5 */
+        public bool IsArmoured;
         [NMS(Index = 28)]
-        /* 0xA6 */ public bool IsPiercable;
+        /* 0xA6 */
+        public bool IsPiercable;
         [NMS(Index = 4)]
-        /* 0xA7 */ public bool PlayerOnly;
+        /* 0xA7 */
+        public bool PlayerOnly;
         [NMS(Index = 17)]
-        /* 0xA8 */ public bool StaticUntilShot;
+        /* 0xA8 */
+        public bool StaticUntilShot;
         [NMS(Index = 2)]
-        /* 0xA9 */ public bool UseSpaceLevelForExtraHealth;
+        /* 0xA9 */
+        public bool UseSpaceLevelForExtraHealth;
     }
 }

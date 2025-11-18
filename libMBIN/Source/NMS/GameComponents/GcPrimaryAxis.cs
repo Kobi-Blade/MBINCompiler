@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPrimaryAxis : NMSTemplate
     {
         // size: 0x6
-        public enum PrimaryAxisEnum : uint {
+        public enum PrimaryAxisEnum : uint
+        {
             Z,
             ZNeg,
             X,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             YNeg,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PrimaryAxisEnum PrimaryAxis;
+        /* 0x0 */
+        public PrimaryAxisEnum PrimaryAxis;
     }
 }

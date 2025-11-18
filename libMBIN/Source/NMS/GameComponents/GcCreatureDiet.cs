@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureDiet : NMSTemplate
     {
         // size: 0x4
-        public enum DietEnum : uint {
+        public enum DietEnum : uint
+        {
             Carnivore,
             Omnivore,
             Herbivore,
             Robot,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DietEnum Diet;
+        /* 0x0 */
+        public DietEnum Diet;
     }
 }

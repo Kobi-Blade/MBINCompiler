@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkNGuiEditorIcons : NMSTemplate
     {
         // size: 0x612
-        public enum NGuiEditorIconEnum : uint {
+        public enum NGuiEditorIconEnum : uint
+        {
             none,
             _0,
             _1,
@@ -1561,6 +1562,7 @@ namespace libMBIN.NMS.Toolkit
             z,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NGuiEditorIconEnum NGuiEditorIcon;
+        /* 0x0 */
+        public NGuiEditorIconEnum NGuiEditorIcon;
     }
 }

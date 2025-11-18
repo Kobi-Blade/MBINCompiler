@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetaryBuildingRestrictions : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool RequiresCorruptSentinels;
+        /* 0x0 */
+        public bool RequiresCorruptSentinels;
         [NMS(Index = 2)]
-        /* 0x1 */ public bool RequiresRelicWorld;
+        /* 0x1 */
+        public bool RequiresRelicWorld;
         [NMS(Index = 1)]
-        /* 0x2 */ public bool RequiresWater;
+        /* 0x2 */
+        public bool RequiresWater;
     }
 }

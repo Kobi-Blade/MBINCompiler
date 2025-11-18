@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcAntagonistEnemy : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<NMSString0x10> Perceptions;
+        /* 0x00 */
+        public List<NMSString0x10> Perceptions;
         [NMS(Index = 1)]
-        /* 0x10 */ public float GrudgeFactor;
+        /* 0x10 */
+        public float GrudgeFactor;
         [NMS(Index = 0)]
-        /* 0x14 */ public float HatredFactor;
+        /* 0x14 */
+        public float HatredFactor;
     }
 }

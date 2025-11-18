@@ -4,11 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshPolyFlags : NMSTemplate
     {
         // size: 0x2
-        public enum NavMeshPolyFlagsEnum : ushort {
+        public enum NavMeshPolyFlagsEnum : ushort
+        {
             None,
             TestFlag,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NavMeshPolyFlagsEnum NavMeshPolyFlags;
+        /* 0x0 */
+        public NavMeshPolyFlagsEnum NavMeshPolyFlags;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCTriggerTypes : NMSTemplate
     {
         // size: 0x11
-        public enum NPCTriggerEnum : uint {
+        public enum NPCTriggerEnum : uint
+        {
             None,
             Idle,
             Greet,
@@ -24,6 +25,7 @@ namespace libMBIN.NMS.GameComponents
             OneShotMoodResponse,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NPCTriggerEnum NPCTrigger;
+        /* 0x0 */
+        public NPCTriggerEnum NPCTrigger;
     }
 }

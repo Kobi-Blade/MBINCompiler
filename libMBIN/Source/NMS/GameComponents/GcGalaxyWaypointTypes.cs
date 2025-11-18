@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcGalaxyWaypointTypes : NMSTemplate
     {
         // size: 0x6
-        public enum GalaxyWaypointTypeEnum : uint {
+        public enum GalaxyWaypointTypeEnum : uint
+        {
             User,
             Gameplay_AtlasStation,
             Gameplay_DistressBeacon,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             Gameplay_SeasonParty,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public GalaxyWaypointTypeEnum GalaxyWaypointType;
+        /* 0x0 */
+        public GalaxyWaypointTypeEnum GalaxyWaypointType;
     }
 }

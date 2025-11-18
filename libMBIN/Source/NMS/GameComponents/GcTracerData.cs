@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcTracerData : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public float DamageMax;
+        /* 0x00 */
+        public float DamageMax;
         [NMS(Index = 3)]
-        /* 0x04 */ public float DamageMaxDistance;
+        /* 0x04 */
+        public float DamageMaxDistance;
         [NMS(Index = 4)]
-        /* 0x08 */ public float DamageMin;
+        /* 0x08 */
+        public float DamageMin;
         [NMS(Index = 2)]
-        /* 0x0C */ public float DamageMinDistance;
+        /* 0x0C */
+        public float DamageMinDistance;
         [NMS(Index = 0)]
-        /* 0x10 */ public float Length;
+        /* 0x10 */
+        public float Length;
         [NMS(Index = 1)]
-        /* 0x14 */ public float Speed;
+        /* 0x14 */
+        public float Speed;
     }
 }

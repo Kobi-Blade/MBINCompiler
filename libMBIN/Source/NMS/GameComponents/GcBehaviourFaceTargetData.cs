@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourFaceTargetData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 TargetKey;
+        /* 0x00 */
+        public NMSString0x10 TargetKey;
         [NMS(Index = 1)]
-        /* 0x10 */ public float ArriveAngle;
+        /* 0x10 */
+        public float ArriveAngle;
     }
 }

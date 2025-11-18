@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkNGuiEditorGraphicType : NMSTemplate
     {
         // size: 0x5F
-        public enum NGuiEditorGraphicEnum : uint {
+        public enum NGuiEditorGraphicEnum : uint
+        {
             Panel,
             Button,
             Text,
@@ -102,6 +103,7 @@ namespace libMBIN.NMS.Toolkit
             ContextMenuButton,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NGuiEditorGraphicEnum NGuiEditorGraphic;
+        /* 0x0 */
+        public NGuiEditorGraphicEnum NGuiEditorGraphic;
     }
 }

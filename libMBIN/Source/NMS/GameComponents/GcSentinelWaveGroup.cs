@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcSentinelWaveGroup : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x10> ExtremeWaves;
+        /* 0x00 */
+        public List<NMSString0x10> ExtremeWaves;
         [NMS(Index = 0)]
-        /* 0x10 */ public List<NMSString0x10> Waves;
+        /* 0x10 */
+        public List<NMSString0x10> Waves;
     }
 }

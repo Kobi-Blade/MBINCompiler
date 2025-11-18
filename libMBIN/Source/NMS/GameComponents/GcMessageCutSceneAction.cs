@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMessageCutSceneAction : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public Vector3f Facing;
+        /* 0x00 */
+        public Vector3f Facing;
         [NMS(Index = 2)]
-        /* 0x10 */ public Vector3f Local;
+        /* 0x10 */
+        public Vector3f Local;
         [NMS(Index = 1)]
-        /* 0x20 */ public Vector3f Offset;
+        /* 0x20 */
+        public Vector3f Offset;
         [NMS(Index = 4)]
-        /* 0x30 */ public Vector3f Up;
+        /* 0x30 */
+        public Vector3f Up;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 Action;
+        /* 0x40 */
+        public NMSString0x10 Action;
     }
 }

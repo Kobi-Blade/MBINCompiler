@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardNexus : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool Allow;
+        /* 0x0 */
+        public bool Allow;
     }
 }

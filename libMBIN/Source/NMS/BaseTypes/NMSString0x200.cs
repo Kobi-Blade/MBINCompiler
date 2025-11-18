@@ -1,7 +1,4 @@
-﻿using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
-namespace libMBIN.NMS
+﻿namespace libMBIN.NMS
 {
     [NMS(Size = 0x200, Alignment = 0x1)]
     public class NMSString0x200 : NMSTemplate, INMSString
@@ -30,7 +27,7 @@ namespace libMBIN.NMS
 
         public NMSString0x200() { }
 
-		public static implicit operator NMSString0x200 ( string str ) => new NMSString0x200(str);
-		public static implicit operator string ( NMSString0x200 str ) => str.Value;
-	}
+        public static implicit operator NMSString0x200(string str) => new NMSString0x200(str);
+        public static implicit operator string(NMSString0x200 str) => str.Value;
+    }
 }

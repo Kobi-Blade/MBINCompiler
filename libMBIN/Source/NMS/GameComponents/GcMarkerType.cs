@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMarkerType : NMSTemplate
     {
         // size: 0x4A
-        public enum MarkerTypeEnum : byte {
+        public enum MarkerTypeEnum : byte
+        {
             Default,
             PlanetPoleNorth,
             PlanetPoleSouth,
@@ -81,6 +82,7 @@ namespace libMBIN.NMS.GameComponents
             NetworkPlayerFireTeamCorvetteTeleporter,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MarkerTypeEnum MarkerType;
+        /* 0x0 */
+        public MarkerTypeEnum MarkerType;
     }
 }

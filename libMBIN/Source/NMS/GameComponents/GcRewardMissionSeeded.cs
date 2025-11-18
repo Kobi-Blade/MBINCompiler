@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardMissionSeeded : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Mission;
+        /* 0x00 */
+        public NMSString0x10 Mission;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 MissionNoGroundCombat;
+        /* 0x10 */
+        public NMSString0x10 MissionNoGroundCombat;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x10 MissionNoSpaceCombat;
+        /* 0x20 */
+        public NMSString0x10 MissionNoSpaceCombat;
         [NMS(Index = 5)]
-        /* 0x30 */ public bool ForceUseConversationSeed;
+        /* 0x30 */
+        public bool ForceUseConversationSeed;
         [NMS(Index = 3)]
-        /* 0x31 */ public bool InheritActiveMultiplayerMissionSeed;
+        /* 0x31 */
+        public bool InheritActiveMultiplayerMissionSeed;
         [NMS(Index = 4)]
-        /* 0x32 */ public bool SelectMissionAsLocalMissionBoard;
+        /* 0x32 */
+        public bool SelectMissionAsLocalMissionBoard;
     }
 }

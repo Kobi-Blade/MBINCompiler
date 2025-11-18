@@ -2,6 +2,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>b6850f17-d8fd-48de-9cf2-240f1ba87236</ProjectGuid>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.Default.props" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.props" />

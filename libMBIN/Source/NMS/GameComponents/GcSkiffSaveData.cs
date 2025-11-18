@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcSkiffSaveData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public Vector4f Direction;
+        /* 0x00 */
+        public Vector4f Direction;
         [NMS(Index = 1)]
-        /* 0x10 */ public Vector4f Position;
+        /* 0x10 */
+        public Vector4f Position;
         [NMS(Index = 0)]
-        /* 0x20 */ public ulong Location;
+        /* 0x20 */
+        public ulong Location;
     }
 }

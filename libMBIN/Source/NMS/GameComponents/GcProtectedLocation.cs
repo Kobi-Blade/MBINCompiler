@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcProtectedLocation : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public Vector3f Location;
+        /* 0x00 */
+        public Vector3f Location;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Radius;
+        /* 0x10 */
+        public float Radius;
     }
 }

@@ -1,6 +1,7 @@
 ﻿namespace libMBIN.NMS
 {
-    public interface IHashMap {
+    public interface IHashMap
+    {
         object GetElements();
 
         uint Count { get; }

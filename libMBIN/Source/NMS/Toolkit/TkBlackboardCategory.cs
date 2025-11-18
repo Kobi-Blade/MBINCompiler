@@ -4,12 +4,14 @@ namespace libMBIN.NMS.Toolkit
     public class TkBlackboardCategory : NMSTemplate
     {
         // size: 0x3
-        public enum BlackboardCategoryEnum : uint {
+        public enum BlackboardCategoryEnum : uint
+        {
             Local,
             Archetype,
             PlayerControl,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BlackboardCategoryEnum BlackboardCategory;
+        /* 0x0 */
+        public BlackboardCategoryEnum BlackboardCategory;
     }
 }

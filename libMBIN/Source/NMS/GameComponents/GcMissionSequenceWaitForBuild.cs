@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWaitForBuild : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 TargetTech;
+        /* 0x20 */
+        public NMSString0x10 TargetTech;
     }
 }

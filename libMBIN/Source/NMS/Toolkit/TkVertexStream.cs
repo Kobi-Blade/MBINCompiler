@@ -6,6 +6,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkVertexStream : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<byte> VertexStream;
+        /* 0x0 */
+        public List<byte> VertexStream;
     }
 }

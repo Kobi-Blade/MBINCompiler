@@ -1,8 +1,8 @@
 // Source: https://rosettacode.org/wiki/CRC-32#C.23
 
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 
 /// <summary>
 /// Performs 32-bit reversed cyclic redundancy checks.
@@ -15,7 +15,7 @@ public class Crc32
     /// </summary>
     private const uint s_generator = 0xEDB88320;
     #endregion
- 
+
     #region Constructors
     /// <summary>
     /// Creates a new instance of the Crc32 class.
@@ -29,14 +29,14 @@ public class Crc32
             for (var j = 0; j < 8; ++j)
             {
                 tableEntry = ((tableEntry & 1) != 0)
-                    ? (s_generator ^ (tableEntry >> 1)) 
+                    ? (s_generator ^ (tableEntry >> 1))
                     : (tableEntry >> 1);
             }
             return tableEntry;
         }).ToArray();
     }
     #endregion
- 
+
     #region Methods
     /// <summary>
     /// Calculates the checksum of the byte stream.
@@ -46,17 +46,16 @@ public class Crc32
     public uint Get<T>(IEnumerable<T> byteStream)
     {
         // Initialize checksumRegister to 0xFFFFFFFF and calculate the checksum.
-        return ~byteStream.Aggregate(0xFFFFFFFF, (checksumRegister, currentByte) => 
+        return ~byteStream.Aggregate(0xFFFFFFFF, (checksumRegister, currentByte) =>
                     (m_checksumTable[(checksumRegister & 0xFF) ^ Convert.ToByte(currentByte)] ^ (checksumRegister >> 8)));
     }
     #endregion
- 
+
     #region Fields
     /// <summary>
     /// Contains a cache of calculated checksum chunks.
     /// </summary>
     private readonly UInt32[] m_checksumTable;
- 
+
     #endregion
 }
- 

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardPirateAttack : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 AttackDefinition;
+        /* 0x00 */
+        public NMSString0x10 AttackDefinition;
         [NMS(Index = 1)]
-        /* 0x10 */ public int NumSquads;
+        /* 0x10 */
+        public int NumSquads;
         [NMS(Index = 0)]
-        /* 0x14 */ public bool Instant;
+        /* 0x14 */
+        public bool Instant;
     }
 }

@@ -7,7 +7,8 @@ namespace libMBIN.NMS.GameComponents
     {
         // size: 0x48
         [Flags]
-        public enum CollisionGroupEnum : uint {
+        public enum CollisionGroupEnum : uint
+        {
             Normal,
             Terrain,
             TerrainInstance,
@@ -82,6 +83,7 @@ namespace libMBIN.NMS.GameComponents
             Raycast_SpaceStationShipBuilderCamera,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CollisionGroupEnum CollisionGroup;
+        /* 0x0 */
+        public CollisionGroupEnum CollisionGroup;
     }
 }

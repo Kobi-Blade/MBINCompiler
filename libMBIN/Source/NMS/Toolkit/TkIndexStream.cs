@@ -6,6 +6,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkIndexStream : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<int> IndexStream;
+        /* 0x0 */
+        public List<int> IndexStream;
     }
 }

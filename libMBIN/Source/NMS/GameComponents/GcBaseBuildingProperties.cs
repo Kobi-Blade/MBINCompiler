@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingProperties : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 DefaultInBaseObject;
+        /* 0x00 */
+        public NMSString0x10 DefaultInBaseObject;
         [NMS(Index = 2)]
-        /* 0x10 */ public NMSString0x10 DefaultInFreighterObject;
+        /* 0x10 */
+        public NMSString0x10 DefaultInFreighterObject;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 DefaultOnTerrainObject;
+        /* 0x20 */
+        public NMSString0x10 DefaultOnTerrainObject;
     }
 }

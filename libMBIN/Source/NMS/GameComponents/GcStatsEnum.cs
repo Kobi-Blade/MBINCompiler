@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatsEnum : NMSTemplate
     {
         // size: 0x1B
-        public enum StatEnumEnum : uint {
+        public enum StatEnumEnum : uint
+        {
             None,
             DEPOTS_BROKEN,
             FPODS_BROKEN,
@@ -34,6 +35,7 @@ namespace libMBIN.NMS.GameComponents
             BIGGSDEBRIS_POI,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public StatEnumEnum StatEnum;
+        /* 0x0 */
+        public StatEnumEnum StatEnum;
     }
 }

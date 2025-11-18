@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerControlModeEntry : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkModelResource ControlModeResource;
+        /* 0x00 */
+        public TkModelResource ControlModeResource;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 Id;
+        /* 0x20 */
+        public NMSString0x10 Id;
     }
 }

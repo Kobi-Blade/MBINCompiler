@@ -7,7 +7,8 @@ namespace libMBIN.NMS.Toolkit
     {
         // size: 0x6
         [Flags]
-        public enum MetadataReadMaskEnum : uint {
+        public enum MetadataReadMaskEnum : uint
+        {
             None = 0x0,
             Default = 0x1,
             SaveWhenMultiplayerClient = 0x2,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.Toolkit
             SaveDifficultySettings = 0x10,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MetadataReadMaskEnum MetadataReadMask;
+        /* 0x0 */
+        public MetadataReadMaskEnum MetadataReadMask;
     }
 }

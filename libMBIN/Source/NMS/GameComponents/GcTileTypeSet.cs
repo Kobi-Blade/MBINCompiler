@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcTileTypeSet : NMSTemplate
     {
         [NMS(Index = 1, Size = 0xC)]
-        /* 0x00 */ public TkPaletteTexture[] Colours;
+        /* 0x00 */
+        public TkPaletteTexture[] Colours;
         [NMS(Index = 0)]
-        /* 0x90 */ public float Probability;
+        /* 0x90 */
+        public float Probability;
     }
 }

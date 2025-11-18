@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureGroups : NMSTemplate
     {
         // size: 0x4
-        public enum CreatureGroupEnum : uint {
+        public enum CreatureGroupEnum : uint
+        {
             Solo,
             Couple,
             Group,
             Herd,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CreatureGroupEnum CreatureGroup;
+        /* 0x0 */
+        public CreatureGroupEnum CreatureGroup;
     }
 }

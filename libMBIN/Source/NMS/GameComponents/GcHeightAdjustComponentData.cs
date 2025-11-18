@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcHeightAdjustComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float HeightOffset;
+        /* 0x0 */
+        public float HeightOffset;
     }
 }

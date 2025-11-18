@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,28 +6,40 @@ namespace libMBIN.NMS.GameComponents
     public class GcSceneSettings : NMSTemplate
     {
         [NMS(Index = 8)]
-        /* 0x000 */ public GcPlayerSpawnStateData PlayerState;
+        /* 0x000 */
+        public GcPlayerSpawnStateData PlayerState;
         [NMS(Index = 4, Size = 0x5)]
-        /* 0x0E0 */ public VariableSizeString[] PlanetFiles;
+        /* 0x0E0 */
+        public VariableSizeString[] PlanetFiles;
         [NMS(Index = 9)]
-        /* 0x130 */ public List<NMSTemplate> Events;
+        /* 0x130 */
+        public List<NMSTemplate> Events;
         [NMS(Index = 0)]
-        /* 0x140 */ public VariableSizeString NextSettingFile;
+        /* 0x140 */
+        public VariableSizeString NextSettingFile;
         [NMS(Index = 2)]
-        /* 0x150 */ public List<VariableSizeString> PlanetSceneFiles;
+        /* 0x150 */
+        public List<VariableSizeString> PlanetSceneFiles;
         [NMS(Index = 10)]
-        /* 0x160 */ public List<NMSTemplate> PostWarpEvents;
+        /* 0x160 */
+        public List<NMSTemplate> PostWarpEvents;
         [NMS(Index = 1)]
-        /* 0x170 */ public VariableSizeString SceneFile;
+        /* 0x170 */
+        public VariableSizeString SceneFile;
         [NMS(Index = 5)]
-        /* 0x180 */ public List<VariableSizeString> ShipPreloadFiles;
+        /* 0x180 */
+        public List<VariableSizeString> ShipPreloadFiles;
         [NMS(Index = 3)]
-        /* 0x190 */ public VariableSizeString SolarSystemFile;
+        /* 0x190 */
+        public VariableSizeString SolarSystemFile;
         [NMS(Index = 11)]
-        /* 0x1A0 */ public NMSString0x10 SpawnerOptionId;
+        /* 0x1A0 */
+        public NMSString0x10 SpawnerOptionId;
         [NMS(Index = 7)]
-        /* 0x1B0 */ public bool SpawnInsideShip;
+        /* 0x1B0 */
+        public bool SpawnInsideShip;
         [NMS(Index = 6)]
-        /* 0x1B1 */ public bool SpawnShip;
+        /* 0x1B1 */
+        public bool SpawnShip;
     }
 }

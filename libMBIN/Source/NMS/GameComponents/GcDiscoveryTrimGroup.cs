@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcDiscoveryTrimGroup : NMSTemplate
     {
         // size: 0x4
-        public enum DiscoveryTrimGroupEnum : uint {
+        public enum DiscoveryTrimGroupEnum : uint
+        {
             System,
             Planet,
             Interesting,
             Boring,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DiscoveryTrimGroupEnum DiscoveryTrimGroup;
+        /* 0x0 */
+        public DiscoveryTrimGroupEnum DiscoveryTrimGroup;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcFontTypesEnum : NMSTemplate
     {
         // size: 0x8
-        public enum FontEnum : uint {
+        public enum FontEnum : uint
+        {
             Impact,
             Bebas,
             GeosansLightWide,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Segoeui32,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FontEnum Font;
+        /* 0x0 */
+        public FontEnum Font;
     }
 }

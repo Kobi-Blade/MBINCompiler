@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasMilestoneThatCouldRewardItem : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Item;
+        /* 0x00 */
+        public NMSString0x10 Item;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Recipe;
+        /* 0x10 */
+        public NMSString0x10 Recipe;
     }
 }

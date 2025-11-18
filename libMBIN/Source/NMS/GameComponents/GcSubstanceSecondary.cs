@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcSubstanceSecondary : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ID;
+        /* 0x00 */
+        public NMSString0x10 ID;
         [NMS(Index = 3)]
-        /* 0x10 */ public float AmountMax;
+        /* 0x10 */
+        public float AmountMax;
         [NMS(Index = 2)]
-        /* 0x14 */ public float AmountMin;
+        /* 0x14 */
+        public float AmountMin;
         [NMS(Index = 1)]
-        /* 0x18 */ public float Chance;
+        /* 0x18 */
+        public float Chance;
     }
 }

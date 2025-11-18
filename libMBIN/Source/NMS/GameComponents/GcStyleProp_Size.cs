@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcStyleProp_Size : NMSTemplate
     {
         [NMS(Index = 0, MxmlName = "Font Size")]
-        /* 0x0 */ public float FontSize;
+        /* 0x0 */
+        public float FontSize;
     }
 }

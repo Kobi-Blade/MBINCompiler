@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventoryIndex : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int X;
+        /* 0x0 */
+        public int X;
         [NMS(Index = 1)]
-        /* 0x4 */ public int Y;
+        /* 0x4 */
+        public int Y;
     }
 }

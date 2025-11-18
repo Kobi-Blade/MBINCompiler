@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderType : NMSTemplate
     {
         // size: 0x7
-        public enum WonderTypeEnum : uint {
+        public enum WonderTypeEnum : uint
+        {
             Treasure,
             WeirdBasePart,
             Planet,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Custom,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WonderTypeEnum WonderType;
+        /* 0x0 */
+        public WonderTypeEnum WonderType;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetChatType : NMSTemplate
     {
         // size: 0x15
-        public enum PetChatTypeEnum : uint {
+        public enum PetChatTypeEnum : uint
+        {
             Adopted,
             Hatched,
             Summoned,
@@ -28,6 +29,7 @@ namespace libMBIN.NMS.GameComponents
             Unsummoned,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PetChatTypeEnum PetChatType;
+        /* 0x0 */
+        public PetChatTypeEnum PetChatType;
     }
 }

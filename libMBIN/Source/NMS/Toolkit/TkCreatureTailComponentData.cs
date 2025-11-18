@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
@@ -8,12 +7,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkCreatureTailComponentData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public TkCreatureTailParams DefaultParams;
+        /* 0x00 */
+        public TkCreatureTailParams DefaultParams;
         [NMS(Index = 3)]
-        /* 0x78 */ public List<TkCreatureTailParams> ParamVariations;
+        /* 0x78 */
+        public List<TkCreatureTailParams> ParamVariations;
         [NMS(Index = 0)]
-        /* 0x88 */ public GcPrimaryAxis LengthAxis;
+        /* 0x88 */
+        public GcPrimaryAxis LengthAxis;
         [NMS(Index = 1)]
-        /* 0x8C */ public bool CanUseDefaultParams;
+        /* 0x8C */
+        public bool CanUseDefaultParams;
     }
 }

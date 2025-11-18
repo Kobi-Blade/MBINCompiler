@@ -4,13 +4,15 @@ namespace libMBIN.NMS.Toolkit
     public class TkGraphicsDetailTypes : NMSTemplate
     {
         // size: 0x4
-        public enum GraphicDetailEnum : uint {
+        public enum GraphicDetailEnum : uint
+        {
             Low,
             Medium,
             High,
             Ultra,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public GraphicDetailEnum GraphicDetail;
+        /* 0x0 */
+        public GraphicDetailEnum GraphicDetail;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRealityGameIcons : NMSTemplate
     {
         // size: 0x73
-        public enum GameIconsEnum : uint {
+        public enum GameIconsEnum : uint
+        {
             Stamina,
             NoStamina,
             EnergyCharge,
@@ -122,6 +123,7 @@ namespace libMBIN.NMS.GameComponents
             InvalidShipBuild,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public GameIconsEnum GameIcons;
+        /* 0x0 */
+        public GameIconsEnum GameIcons;
     }
 }

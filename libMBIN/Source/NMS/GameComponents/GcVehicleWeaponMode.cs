@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcVehicleWeaponMode : NMSTemplate
     {
         // size: 0x5
-        public enum VehicleWeaponModeEnum : uint {
+        public enum VehicleWeaponModeEnum : uint
+        {
             Laser,
             Gun,
             TerrainEdit,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Flamethrower,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public VehicleWeaponModeEnum VehicleWeaponMode;
+        /* 0x0 */
+        public VehicleWeaponModeEnum VehicleWeaponMode;
     }
 }

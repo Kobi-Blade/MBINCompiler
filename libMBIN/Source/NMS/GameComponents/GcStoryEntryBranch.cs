@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcStoryEntryBranch : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Entry;
+        /* 0x00 */
+        public NMSString0x20A Entry;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 RequiresMission;
+        /* 0x20 */
+        public NMSString0x10 RequiresMission;
         [NMS(Index = 2)]
-        /* 0x30 */ public bool ConditionMissionComplete;
+        /* 0x30 */
+        public bool ConditionMissionComplete;
     }
 }

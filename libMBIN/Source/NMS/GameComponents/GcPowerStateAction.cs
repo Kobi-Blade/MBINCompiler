@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPowerStateAction : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public bool SetConnectionEnabled;
+        /* 0x0 */
+        public bool SetConnectionEnabled;
         [NMS(Index = 0)]
-        /* 0x1 */ public bool SetRateEnabled;
+        /* 0x1 */
+        public bool SetRateEnabled;
     }
 }

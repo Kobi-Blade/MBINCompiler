@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationTextureOptions : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<GcCustomisationMultiTextureOption> MultiTextureOptions;
+        /* 0x00 */
+        public List<GcCustomisationMultiTextureOption> MultiTextureOptions;
         [NMS(Index = 0)]
-        /* 0x10 */ public List<GcCustomisationTextureOption> TextureOptions;
+        /* 0x10 */
+        public List<GcCustomisationTextureOption> TextureOptions;
     }
 }

@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcJourneyCategoryType : NMSTemplate
     {
         // size: 0x4
-        public enum CategoryTypeEnum : uint {
+        public enum CategoryTypeEnum : uint
+        {
             Journey,
             SeasonHistory,
             Race,
             Guild,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CategoryTypeEnum CategoryType;
+        /* 0x0 */
+        public CategoryTypeEnum CategoryType;
     }
 }

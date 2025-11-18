@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,9 +6,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcCutSceneTriggerInputData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<GcCutSceneTriggerActionData> Actions;
+        /* 0x00 */
+        public List<GcCutSceneTriggerActionData> Actions;
         // size: 0xD
-        public enum CutSceneKeyPressEnum : uint {
+        public enum CutSceneKeyPressEnum : uint
+        {
             _1,
             _2,
             _3,
@@ -25,6 +26,7 @@ namespace libMBIN.NMS.GameComponents
             PadRight,
         }
         [NMS(Index = 0)]
-        /* 0x10 */ public CutSceneKeyPressEnum CutSceneKeyPress;
+        /* 0x10 */
+        public CutSceneKeyPressEnum CutSceneKeyPress;
     }
 }

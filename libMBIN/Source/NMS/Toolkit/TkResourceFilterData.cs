@@ -6,8 +6,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkResourceFilterData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x20A> FilteredResources;
+        /* 0x00 */
+        public List<NMSString0x20A> FilteredResources;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 FilterName;
+        /* 0x10 */
+        public NMSString0x10 FilterName;
     }
 }

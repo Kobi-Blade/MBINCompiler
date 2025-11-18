@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSettlementParty : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A OSD;
+        /* 0x00 */
+        public NMSString0x20A OSD;
         [NMS(Index = 0)]
-        /* 0x20 */ public float FireworksDuration;
+        /* 0x20 */
+        public float FireworksDuration;
         [NMS(Index = 1)]
-        /* 0x24 */ public float FireworksFrequency;
+        /* 0x24 */
+        public float FireworksFrequency;
     }
 }

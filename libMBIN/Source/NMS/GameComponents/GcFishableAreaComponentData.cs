@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcFishableAreaComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Radius;
+        /* 0x0 */
+        public float Radius;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool SourceFishBasedOnSettlementBuildingLevel;
+        /* 0x4 */
+        public bool SourceFishBasedOnSettlementBuildingLevel;
     }
 }

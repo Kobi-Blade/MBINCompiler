@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcIkPistonData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x000 */ public NMSString0x100 Joint1Name;
+        /* 0x000 */
+        public NMSString0x100 Joint1Name;
         [NMS(Index = 1)]
-        /* 0x100 */ public NMSString0x100 Joint2Name;
+        /* 0x100 */
+        public NMSString0x100 Joint2Name;
     }
 }

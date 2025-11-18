@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcShipAIPerformanceArray : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSTemplate> Array;
+        /* 0x0 */
+        public List<NMSTemplate> Array;
     }
 }

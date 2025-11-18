@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreaturePetMood : NMSTemplate
     {
         // size: 0x2
-        public enum PetMoodEnum : uint {
+        public enum PetMoodEnum : uint
+        {
             Hungry,
             Lonely,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PetMoodEnum PetMood;
+        /* 0x0 */
+        public PetMoodEnum PetMood;
     }
 }

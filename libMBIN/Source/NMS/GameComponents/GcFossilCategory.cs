@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcFossilCategory : NMSTemplate
     {
         // size: 0x5
-        public enum FossilCategoryEnum : uint {
+        public enum FossilCategoryEnum : uint
+        {
             None,
             Head,
             Body,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Tail,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FossilCategoryEnum FossilCategory;
+        /* 0x0 */
+        public FossilCategoryEnum FossilCategory;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAlienRace : NMSTemplate
     {
         // size: 0x9
-        public enum AlienRaceEnum : uint {
+        public enum AlienRaceEnum : uint
+        {
             Traders,
             Warriors,
             Explorers,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Builders,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AlienRaceEnum AlienRace;
+        /* 0x0 */
+        public AlienRaceEnum AlienRace;
     }
 }

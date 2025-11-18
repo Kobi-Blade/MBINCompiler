@@ -4,18 +4,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpaceshipShieldData : NMSTemplate
     {
         [NMS(Index = 6)]
-        /* 0x00 */ public NMSString0x10 DamageMulOverride;
+        /* 0x00 */
+        public NMSString0x10 DamageMulOverride;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Id;
+        /* 0x10 */
+        public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x20 */ public int Health;
+        /* 0x20 */
+        public int Health;
         [NMS(Index = 2)]
-        /* 0x24 */ public int LevelledExtraHealth;
+        /* 0x24 */
+        public int LevelledExtraHealth;
         [NMS(Index = 4)]
-        /* 0x28 */ public float RechargeDelayTime;
+        /* 0x28 */
+        public float RechargeDelayTime;
         [NMS(Index = 3)]
-        /* 0x2C */ public float RechargeTime;
+        /* 0x2C */
+        public float RechargeTime;
         [NMS(Index = 5)]
-        /* 0x30 */ public bool StartDepletedWhenEnabled;
+        /* 0x30 */
+        public bool StartDepletedWhenEnabled;
     }
 }

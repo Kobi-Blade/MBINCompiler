@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPulseEncounterSpawnAbandonedFreighter : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public TkModelResource AbandonedFreighter;
+        /* 0x0 */
+        public TkModelResource AbandonedFreighter;
     }
 }

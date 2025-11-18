@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCreatureTrust : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public TkEqualityEnum Test;
+        /* 0x0 */
+        public TkEqualityEnum Test;
         [NMS(Index = 0)]
-        /* 0x4 */ public float Trust;
+        /* 0x4 */
+        public float Trust;
     }
 }

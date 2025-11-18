@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceSuppressMarkers : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool Suppressed;
+        /* 0x0 */
+        public bool Suppressed;
         [NMS(Index = 1)]
-        /* 0x1 */ public bool SuppressedAfterNextWarp;
+        /* 0x1 */
+        public bool SuppressedAfterNextWarp;
     }
 }

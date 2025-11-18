@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionItemRewardedBySeason : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ItemID;
+        /* 0x00 */
+        public NMSString0x10 ItemID;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool TakeIDFromSeasonData;
+        /* 0x10 */
+        public bool TakeIDFromSeasonData;
     }
 }

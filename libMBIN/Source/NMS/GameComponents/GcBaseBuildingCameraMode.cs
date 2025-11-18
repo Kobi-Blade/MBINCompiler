@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingCameraMode : NMSTemplate
     {
         // size: 0x4
-        public enum BaseBuildingCameraModeEnum : uint {
+        public enum BaseBuildingCameraModeEnum : uint
+        {
             Inactive,
             FreeCam,
             FocusCam,
             OrbitCam,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BaseBuildingCameraModeEnum BaseBuildingCameraMode;
+        /* 0x0 */
+        public BaseBuildingCameraModeEnum BaseBuildingCameraMode;
     }
 }

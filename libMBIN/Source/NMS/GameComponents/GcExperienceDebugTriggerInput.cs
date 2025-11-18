@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,9 +6,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcExperienceDebugTriggerInput : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<GcExperienceDebugTriggerAction> Actions;
+        /* 0x00 */
+        public List<GcExperienceDebugTriggerAction> Actions;
         // size: 0xD
-        public enum KeyPressEnum : uint {
+        public enum KeyPressEnum : uint
+        {
             _1,
             _2,
             _3,
@@ -25,6 +26,7 @@ namespace libMBIN.NMS.GameComponents
             PadRight,
         }
         [NMS(Index = 0)]
-        /* 0x10 */ public KeyPressEnum KeyPress;
+        /* 0x10 */
+        public KeyPressEnum KeyPress;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcTradingClass : NMSTemplate
     {
         // size: 0x7
-        public enum TradingClassEnum : uint {
+        public enum TradingClassEnum : uint
+        {
             Mining,
             HighTech,
             Trading,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             PowerGeneration,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TradingClassEnum TradingClass;
+        /* 0x0 */
+        public TradingClassEnum TradingClass;
     }
 }

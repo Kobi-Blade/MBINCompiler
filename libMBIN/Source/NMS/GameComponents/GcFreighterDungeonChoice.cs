@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcFreighterDungeonChoice : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Name;
+        /* 0x00 */
+        public NMSString0x10 Name;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Weighting;
+        /* 0x10 */
+        public float Weighting;
     }
 }

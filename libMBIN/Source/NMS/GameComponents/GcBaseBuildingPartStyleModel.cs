@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingPartStyleModel : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public TkModelResource Inactive;
+        /* 0x00 */
+        public TkModelResource Inactive;
         [NMS(Index = 1)]
-        /* 0x20 */ public TkModelResource Model;
+        /* 0x20 */
+        public TkModelResource Model;
         [NMS(Index = 0)]
-        /* 0x40 */ public GcBaseBuildingPartStyle Style;
+        /* 0x40 */
+        public GcBaseBuildingPartStyle Style;
     }
 }

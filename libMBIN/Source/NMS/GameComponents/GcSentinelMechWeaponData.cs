@@ -1,74 +1,103 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x402BB7C40C846D88, NameHash = 0xBFA48A64)]
     public class GcSentinelMechWeaponData : NMSTemplate
     {
         [NMS(Index = 27)]
-        /* 0x00 */ public Colour LaserLightColour;
+        /* 0x00 */
+        public Colour LaserLightColour;
         [NMS(Index = 26)]
-        /* 0x10 */ public Vector3f LaserLightOffset;
+        /* 0x10 */
+        public Vector3f LaserLightOffset;
         [NMS(Index = 9)]
-        /* 0x20 */ public GcVehicleWeaponMuzzleData MuzzleData;
+        /* 0x20 */
+        public GcVehicleWeaponMuzzleData MuzzleData;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 Id;
+        /* 0x40 */
+        public NMSString0x10 Id;
         [NMS(Index = 21)]
-        /* 0x50 */ public NMSString0x10 LaserID;
+        /* 0x50 */
+        public NMSString0x10 LaserID;
         [NMS(Index = 13)]
-        /* 0x60 */ public NMSString0x10 Projectile;
+        /* 0x60 */
+        public NMSString0x10 Projectile;
         [NMS(Index = 7)]
-        /* 0x70 */ public float AttackAngle;
+        /* 0x70 */
+        public float AttackAngle;
         [NMS(Index = 12)]
-        /* 0x74 */ public float ChargeTime;
+        /* 0x74 */
+        public float ChargeTime;
         [NMS(Index = 3)]
-        /* 0x78 */ public float CooldownTimeMax;
+        /* 0x78 */
+        public float CooldownTimeMax;
         [NMS(Index = 2)]
-        /* 0x7C */ public float CooldownTimeMin;
+        /* 0x7C */
+        public float CooldownTimeMin;
         [NMS(Index = 4)]
-        /* 0x80 */ public float IdealRange;
+        /* 0x80 */
+        public float IdealRange;
         [NMS(Index = 23)]
-        /* 0x84 */ public float LaserFireTimeMax;
+        /* 0x84 */
+        public float LaserFireTimeMax;
         [NMS(Index = 22)]
-        /* 0x88 */ public float LaserFireTimeMin;
+        /* 0x88 */
+        public float LaserFireTimeMin;
         [NMS(Index = 29)]
-        /* 0x8C */ public float LaserLightAttackIntensity;
+        /* 0x8C */
+        public float LaserLightAttackIntensity;
         [NMS(Index = 28)]
-        /* 0x90 */ public float LaserLightChargeIntensity;
+        /* 0x90 */
+        public float LaserLightChargeIntensity;
         [NMS(Index = 25)]
-        /* 0x94 */ public float LaserSpringTimeMax;
+        /* 0x94 */
+        public float LaserSpringTimeMax;
         [NMS(Index = 24)]
-        /* 0x98 */ public float LaserSpringTimeMin;
+        /* 0x98 */
+        public float LaserSpringTimeMin;
         [NMS(Index = 6)]
-        /* 0x9C */ public float MaxRange;
+        /* 0x9C */
+        public float MaxRange;
         [NMS(Index = 5)]
-        /* 0xA0 */ public float MinRange;
+        /* 0xA0 */
+        public float MinRange;
         [NMS(Index = 20)]
-        /* 0xA4 */ public float ProjectileExplosionRadius;
+        /* 0xA4 */
+        public float ProjectileExplosionRadius;
         [NMS(Index = 16)]
-        /* 0xA8 */ public float ProjectileFireInterval;
+        /* 0xA8 */
+        public float ProjectileFireInterval;
         [NMS(Index = 19)]
-        /* 0xAC */ public float ProjectileInheritInitialVelocity;
+        /* 0xAC */
+        public float ProjectileInheritInitialVelocity;
         [NMS(Index = 18)]
-        /* 0xB0 */ public int ProjectileNumShotsMax;
+        /* 0xB0 */
+        public int ProjectileNumShotsMax;
         [NMS(Index = 17)]
-        /* 0xB4 */ public int ProjectileNumShotsMin;
+        /* 0xB4 */
+        public int ProjectileNumShotsMin;
         [NMS(Index = 14)]
-        /* 0xB8 */ public int ProjectilesPerShot;
+        /* 0xB8 */
+        public int ProjectilesPerShot;
         [NMS(Index = 15)]
-        /* 0xBC */ public float ProjectileSpread;
+        /* 0xBC */
+        public float ProjectileSpread;
         // size: 0x2
-        public enum SentinelMechWeaponTypeEnum : uint {
+        public enum SentinelMechWeaponTypeEnum : uint
+        {
             Projectile,
             Laser,
         }
         [NMS(Index = 1)]
-        /* 0xC0 */ public SentinelMechWeaponTypeEnum SentinelMechWeaponType;
+        /* 0xC0 */
+        public SentinelMechWeaponTypeEnum SentinelMechWeaponType;
         [NMS(Index = 8)]
-        /* 0xC4 */ public GcMechWeaponLocation ShootLocation;
+        /* 0xC4 */
+        public GcMechWeaponLocation ShootLocation;
         [NMS(Index = 10)]
-        /* 0xC8 */ public GcAudioWwiseEvents StartFireAudioEvent;
+        /* 0xC8 */
+        public GcAudioWwiseEvents StartFireAudioEvent;
         [NMS(Index = 11)]
-        /* 0xCC */ public GcAudioWwiseEvents StopFireAudioEvent;
+        /* 0xCC */
+        public GcAudioWwiseEvents StopFireAudioEvent;
     }
 }

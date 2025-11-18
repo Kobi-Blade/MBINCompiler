@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPortalData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float RuneRotateTime;
+        /* 0x0 */
+        public float RuneRotateTime;
         [NMS(Index = 2)]
-        /* 0x4 */ public bool KnowAllRunes;
+        /* 0x4 */
+        public bool KnowAllRunes;
         [NMS(Index = 1)]
-        /* 0x5 */ public bool SkipRuneEntry;
+        /* 0x5 */
+        public bool SkipRuneEntry;
     }
 }

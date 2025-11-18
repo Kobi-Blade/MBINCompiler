@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSystemHasCreatureType : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 CreatureID;
+        /* 0x00 */
+        public NMSString0x10 CreatureID;
         [NMS(Index = 2)]
-        /* 0x10 */ public bool AllowInNexus;
+        /* 0x10 */
+        public bool AllowInNexus;
         [NMS(Index = 1)]
-        /* 0x11 */ public bool RequireOnPlanet;
+        /* 0x11 */
+        public bool RequireOnPlanet;
     }
 }

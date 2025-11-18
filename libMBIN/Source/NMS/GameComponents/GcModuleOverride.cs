@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcModuleOverride : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Module;
+        /* 0x00 */
+        public NMSString0x10 Module;
         [NMS(Index = 3)]
-        /* 0x10 */ public List<GcWeightedResource> Scenes;
+        /* 0x10 */
+        public List<GcWeightedResource> Scenes;
         [NMS(Index = 2, MxmlName = "Original Scene Probability")]
-        /* 0x20 */ public float OriginalSceneProbability;
+        /* 0x20 */
+        public float OriginalSceneProbability;
         [NMS(Index = 1, MxmlName = "Probability Multiplier")]
-        /* 0x24 */ public float ProbabilityMultiplier;
+        /* 0x24 */
+        public float ProbabilityMultiplier;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcHazardModifiers : NMSTemplate
     {
         // size: 0x6
-        public enum HazardModifierEnum : uint {
+        public enum HazardModifierEnum : uint
+        {
             Temperature,
             Toxicity,
             Radiation,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             SpookLevel,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HazardModifierEnum HazardModifier;
+        /* 0x0 */
+        public HazardModifierEnum HazardModifier;
     }
 }

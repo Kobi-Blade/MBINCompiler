@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnim2dBlendNodeData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public Vector2f Position;
+        /* 0x0 */
+        public Vector2f Position;
         [NMS(Index = 1)]
-        /* 0x8 */ public NMSTemplate BlendChild;
+        /* 0x8 */
+        public NMSTemplate BlendChild;
     }
 }

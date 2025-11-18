@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionOnOtherSideOfPortal : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool TestForRegularPortal;
+        /* 0x0 */
+        public bool TestForRegularPortal;
         [NMS(Index = 1)]
-        /* 0x1 */ public bool TestForStoryPortal;
+        /* 0x1 */
+        public bool TestForStoryPortal;
     }
 }

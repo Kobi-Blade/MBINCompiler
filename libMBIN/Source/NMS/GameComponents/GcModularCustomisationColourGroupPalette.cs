@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcModularCustomisationColourGroupPalette : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A RequiredTextureOption;
+        /* 0x00 */
+        public NMSString0x20A RequiredTextureOption;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 RequiredTextureGroup;
+        /* 0x20 */
+        public NMSString0x10 RequiredTextureGroup;
         [NMS(Index = 2)]
-        /* 0x30 */ public TkPaletteTexture Palette;
+        /* 0x30 */
+        public TkPaletteTexture Palette;
     }
 }

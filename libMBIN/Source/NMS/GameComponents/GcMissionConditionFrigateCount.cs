@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionFrigateCount : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int FrigateCount;
+        /* 0x0 */
+        public int FrigateCount;
         [NMS(Index = 1)]
-        /* 0x4 */ public TkEqualityEnum Test;
+        /* 0x4 */
+        public TkEqualityEnum Test;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardFrigateDamageResponse : NMSTemplate
     {
         // size: 0x6
-        public enum ResponseEnum : uint {
+        public enum ResponseEnum : uint
+        {
             StayOut,
             ReturnHome,
             CheckForMoreDamage,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             AbortExpedition,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ResponseEnum Response;
+        /* 0x0 */
+        public ResponseEnum Response;
     }
 }

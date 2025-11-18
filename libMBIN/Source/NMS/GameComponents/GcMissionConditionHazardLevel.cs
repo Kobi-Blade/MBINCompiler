@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHazardLevel : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Level;
+        /* 0x0 */
+        public int Level;
         [NMS(Index = 0)]
-        /* 0x4 */ public GcPlayerHazardType SpecificHazard;
+        /* 0x4 */
+        public GcPlayerHazardType SpecificHazard;
         [NMS(Index = 2)]
-        /* 0x8 */ public TkEqualityEnum Test;
+        /* 0x8 */
+        public TkEqualityEnum Test;
     }
 }

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRegionHotspotSubstance : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 SubstanceId;
+        /* 0x00 */
+        public NMSString0x10 SubstanceId;
         [NMS(Index = 1)]
-        /* 0x10 */ public int AmountCost;
+        /* 0x10 */
+        public int AmountCost;
         [NMS(Index = 2)]
-        /* 0x14 */ public int SubstanceYeild;
+        /* 0x14 */
+        public int SubstanceYeild;
     }
 }

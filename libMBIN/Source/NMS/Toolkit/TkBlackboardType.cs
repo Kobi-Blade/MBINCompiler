@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkBlackboardType : NMSTemplate
     {
         // size: 0x7
-        public enum BlackboardTypeEnum : uint {
+        public enum BlackboardTypeEnum : uint
+        {
             Invalid,
             Float,
             Integer,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.Toolkit
             Attachment,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BlackboardTypeEnum BlackboardType;
+        /* 0x0 */
+        public BlackboardTypeEnum BlackboardType;
     }
 }

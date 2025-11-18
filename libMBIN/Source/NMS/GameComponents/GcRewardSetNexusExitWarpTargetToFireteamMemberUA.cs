@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSetNexusExitWarpTargetToFireteamMemberUA : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int FireteamMemberIndex;
+        /* 0x0 */
+        public int FireteamMemberIndex;
     }
 }

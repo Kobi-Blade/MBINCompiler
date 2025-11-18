@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementStatStrengthRanges : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int AmountMax;
+        /* 0x0 */
+        public int AmountMax;
         [NMS(Index = 0)]
-        /* 0x4 */ public int AmountMin;
+        /* 0x4 */
+        public int AmountMin;
     }
 }

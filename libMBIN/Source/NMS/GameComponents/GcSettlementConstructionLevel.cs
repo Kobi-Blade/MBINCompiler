@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementConstructionLevel : NMSTemplate
     {
         // size: 0x9
-        public enum SettlementConstructionLevelEnum : uint {
+        public enum SettlementConstructionLevelEnum : uint
+        {
             Start,
             GroundStorey,
             RegularStorey,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Other,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SettlementConstructionLevelEnum SettlementConstructionLevel;
+        /* 0x0 */
+        public SettlementConstructionLevelEnum SettlementConstructionLevel;
     }
 }

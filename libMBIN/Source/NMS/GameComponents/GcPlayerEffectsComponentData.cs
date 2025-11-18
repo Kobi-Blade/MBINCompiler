@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerEffectsComponentData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public float VehicleInOutDissolveDelay;
+        /* 0x0 */
+        public float VehicleInOutDissolveDelay;
         [NMS(Index = 1)]
-        /* 0x4 */ public float VehicleInOutEffectDelay;
+        /* 0x4 */
+        public float VehicleInOutEffectDelay;
         [NMS(Index = 0)]
-        /* 0x8 */ public float VehicleInOutTime;
+        /* 0x8 */
+        public float VehicleInOutTime;
     }
 }

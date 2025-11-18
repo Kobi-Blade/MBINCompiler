@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcWeaponTerminalInteractionData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int RespawnPeriodInSeconds;
+        /* 0x0 */
+        public int RespawnPeriodInSeconds;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool UseSentinelWeapon;
+        /* 0x4 */
+        public bool UseSentinelWeapon;
     }
 }

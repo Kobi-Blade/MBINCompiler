@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostHasFireteamMember : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int Index;
+        /* 0x0 */
+        public int Index;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool BlockIfCannotAccessTheirPurpleSystem;
+        /* 0x4 */
+        public bool BlockIfCannotAccessTheirPurpleSystem;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcInteractionType : NMSTemplate
     {
         // size: 0x99
-        public enum InteractionTypeEnum : uint {
+        public enum InteractionTypeEnum : uint
+        {
             None,
             Shop,
             NPC,
@@ -160,6 +161,7 @@ namespace libMBIN.NMS.GameComponents
             CorvetteMissionBoard,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InteractionTypeEnum InteractionType;
+        /* 0x0 */
+        public InteractionTypeEnum InteractionType;
     }
 }

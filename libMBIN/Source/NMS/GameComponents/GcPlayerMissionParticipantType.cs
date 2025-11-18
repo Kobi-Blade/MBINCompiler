@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerMissionParticipantType : NMSTemplate
     {
         // size: 0xD
-        public enum ParticipantTypeEnum : uint {
+        public enum ParticipantTypeEnum : uint
+        {
             None,
             MissionGiver,
             MissionGiverReference,
@@ -20,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             Secondary9,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ParticipantTypeEnum ParticipantType;
+        /* 0x0 */
+        public ParticipantTypeEnum ParticipantType;
     }
 }

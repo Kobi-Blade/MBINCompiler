@@ -6,6 +6,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkIdArray : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSString0x10> Array;
+        /* 0x0 */
+        public List<NMSString0x10> Array;
     }
 }

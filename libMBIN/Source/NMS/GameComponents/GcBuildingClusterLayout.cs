@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildingClusterLayout : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<GcBuildingClusterLayoutEntry> ClusterBuildings;
+        /* 0x00 */
+        public List<GcBuildingClusterLayoutEntry> ClusterBuildings;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 ID;
+        /* 0x10 */
+        public NMSString0x10 ID;
         [NMS(Index = 4, MxmlName = "Alignment Jitter")]
-        /* 0x20 */ public float AlignmentJitter;
+        /* 0x20 */
+        public float AlignmentJitter;
         [NMS(Index = 3, MxmlName = "Alignment Steps")]
-        /* 0x24 */ public int AlignmentSteps;
+        /* 0x24 */
+        public int AlignmentSteps;
         [NMS(Index = 1)]
-        /* 0x28 */ public float RelativeProbability;
+        /* 0x28 */
+        public float RelativeProbability;
     }
 }

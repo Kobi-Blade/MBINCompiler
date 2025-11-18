@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkMaterialShaderMillFlag : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x20 Flag;
+        /* 0x0 */
+        public NMSString0x20 Flag;
     }
 }

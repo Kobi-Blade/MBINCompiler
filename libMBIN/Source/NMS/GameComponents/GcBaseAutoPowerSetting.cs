@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseAutoPowerSetting : NMSTemplate
     {
         // size: 0x3
-        public enum BaseAutoPowerSettingEnum : uint {
+        public enum BaseAutoPowerSettingEnum : uint
+        {
             UseDefault,
             ForceDisabled,
             ForceEnabled,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BaseAutoPowerSettingEnum BaseAutoPowerSetting;
+        /* 0x0 */
+        public BaseAutoPowerSettingEnum BaseAutoPowerSetting;
     }
 }

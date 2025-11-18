@@ -23,7 +23,7 @@ namespace libMBIN
         {
             int output = 0;
             int[] newverts = new int[4] { 0, 0, 0, 1 };
-            for (int i=0; i < 3; i++)
+            for (int i = 0; i < 3; i++)
             {
                 int temp = (int)(511 * verts[i]);   // rounds down
                 if (Math.Sign(temp) == +1)
@@ -63,7 +63,7 @@ namespace libMBIN
             return new INT_2_10_10_10_REV(vals);
         }
 
-        public static implicit operator float[] (INT_2_10_10_10_REV val)
+        public static implicit operator float[](INT_2_10_10_10_REV val)
         {
             return val.vals;
         }

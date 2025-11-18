@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcCameraShakeCapturedData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public float ShakeFrequency;
+        /* 0x00 */
+        public float ShakeFrequency;
         [NMS(Index = 1)]
-        /* 0x04 */ public float ShakeStrength;
+        /* 0x04 */
+        public float ShakeStrength;
         [NMS(Index = 4)]
-        /* 0x08 */ public float VibrateFrequency;
+        /* 0x08 */
+        public float VibrateFrequency;
         [NMS(Index = 3)]
-        /* 0x0C */ public float VibrateStrength;
+        /* 0x0C */
+        public float VibrateStrength;
         [NMS(Index = 0)]
-        /* 0x10 */ public bool Active;
+        /* 0x10 */
+        public bool Active;
     }
 }

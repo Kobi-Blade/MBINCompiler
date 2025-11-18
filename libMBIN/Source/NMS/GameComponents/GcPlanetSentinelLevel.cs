@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetSentinelLevel : NMSTemplate
     {
         // size: 0x4
-        public enum SentinelLevelEnum : uint {
+        public enum SentinelLevelEnum : uint
+        {
             Low,
             Default,
             Aggressive,
             Corrupt,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SentinelLevelEnum SentinelLevel;
+        /* 0x0 */
+        public SentinelLevelEnum SentinelLevel;
     }
 }

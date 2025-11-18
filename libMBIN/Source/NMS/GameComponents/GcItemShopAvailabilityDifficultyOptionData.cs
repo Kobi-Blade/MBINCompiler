@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemShopAvailabilityDifficultyOptionData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSString0x10> NeverSoldItems;
+        /* 0x0 */
+        public List<NMSString0x10> NeverSoldItems;
     }
 }

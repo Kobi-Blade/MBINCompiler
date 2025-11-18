@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcWeightedColourId : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 DecorationPaletteId;
+        /* 0x00 */
+        public NMSString0x10 DecorationPaletteId;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 PaletteId;
+        /* 0x10 */
+        public NMSString0x10 PaletteId;
         [NMS(Index = 0, MxmlName = "Relative Probability")]
-        /* 0x20 */ public float RelativeProbability;
+        /* 0x20 */
+        public float RelativeProbability;
     }
 }

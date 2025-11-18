@@ -1,5 +1,5 @@
-using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
+using libMBIN.NMS.Toolkit;
 
 namespace libMBIN.NMS.Globals
 {
@@ -7,16 +7,22 @@ namespace libMBIN.NMS.Globals
     public class GcNavigationGlobals : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x000 */ public TkVolumeNavMeshBuildParams FreighterBaseNavMeshBuildParams;
+        /* 0x000 */
+        public TkVolumeNavMeshBuildParams FreighterBaseNavMeshBuildParams;
         [NMS(Index = 5)]
-        /* 0x070 */ public TkVolumeNavMeshBuildParams NexusNavMeshBuildParams;
+        /* 0x070 */
+        public TkVolumeNavMeshBuildParams NexusNavMeshBuildParams;
         [NMS(Index = 4)]
-        /* 0x0E0 */ public TkVolumeNavMeshBuildParams SpaceStationNavMeshBuildParams;
+        /* 0x0E0 */
+        public TkVolumeNavMeshBuildParams SpaceStationNavMeshBuildParams;
         [NMS(Index = 2)]
-        /* 0x150 */ public GcPlanetaryNavMeshBuildParams PlanetaryNavMeshBuildParams;
+        /* 0x150 */
+        public GcPlanetaryNavMeshBuildParams PlanetaryNavMeshBuildParams;
         [NMS(Index = 0)]
-        /* 0x18C */ public int MaxAsyncTileBuildsInFlight;
+        /* 0x18C */
+        public int MaxAsyncTileBuildsInFlight;
         [NMS(Index = 1)]
-        /* 0x190 */ public int PlanetaryNavMeshLod;
+        /* 0x190 */
+        public int PlanetaryNavMeshLod;
     }
 }

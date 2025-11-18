@@ -6,8 +6,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimJointLODData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x40> JointNames;
+        /* 0x00 */
+        public List<NMSString0x40> JointNames;
         [NMS(Index = 0)]
-        /* 0x10 */ public int LOD;
+        /* 0x10 */
+        public int LOD;
     }
 }

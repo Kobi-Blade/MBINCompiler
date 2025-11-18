@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionExpeditionContainsReward : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 RewardID;
+        /* 0x0 */
+        public NMSString0x10 RewardID;
     }
 }

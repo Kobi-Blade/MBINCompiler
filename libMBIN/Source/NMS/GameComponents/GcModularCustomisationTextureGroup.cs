@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcModularCustomisationTextureGroup : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Title;
+        /* 0x00 */
+        public NMSString0x20A Title;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 TextureOptionGroup;
+        /* 0x20 */
+        public NMSString0x10 TextureOptionGroup;
     }
 }

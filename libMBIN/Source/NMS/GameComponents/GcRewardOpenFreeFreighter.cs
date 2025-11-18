@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardOpenFreeFreighter : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A NextInteractionIfBought;
+        /* 0x00 */
+        public NMSString0x20A NextInteractionIfBought;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x20A NextInteractionIfNotBought;
+        /* 0x20 */
+        public NMSString0x20A NextInteractionIfNotBought;
         [NMS(Index = 0)]
-        /* 0x40 */ public bool ReinteractWhenBought;
+        /* 0x40 */
+        public bool ReinteractWhenBought;
     }
 }

@@ -4,28 +4,40 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceCraftProduct : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A MessageCanCraft;
+        /* 0x00 */
+        public NMSString0x20A MessageCanCraft;
         [NMS(Index = 3)]
-        /* 0x20 */ public NMSString0x20A MessageLearnPreReqs;
+        /* 0x20 */
+        public NMSString0x20A MessageLearnPreReqs;
         [NMS(Index = 2)]
-        /* 0x40 */ public NMSString0x20A MessageLearnRecipe;
+        /* 0x40 */
+        public NMSString0x20A MessageLearnRecipe;
         [NMS(Index = 1)]
-        /* 0x60 */ public NMSString0x20A MessageNoIngreds;
+        /* 0x60 */
+        public NMSString0x20A MessageNoIngreds;
         [NMS(Index = 11)]
-        /* 0x80 */ public VariableSizeString DebugText;
+        /* 0x80 */
+        public VariableSizeString DebugText;
         [NMS(Index = 4)]
-        /* 0x90 */ public NMSString0x10 TargetProductID;
+        /* 0x90 */
+        public NMSString0x10 TargetProductID;
         [NMS(Index = 5)]
-        /* 0xA0 */ public int TargetAmount;
+        /* 0xA0 */
+        public int TargetAmount;
         [NMS(Index = 10)]
-        /* 0xA4 */ public bool CanSetIcon;
+        /* 0xA4 */
+        public bool CanSetIcon;
         [NMS(Index = 6)]
-        /* 0xA5 */ public bool TakeAmountFromSeasonData;
+        /* 0xA5 */
+        public bool TakeAmountFromSeasonData;
         [NMS(Index = 7)]
-        /* 0xA6 */ public bool TakeIDFromSeasonData;
+        /* 0xA6 */
+        public bool TakeIDFromSeasonData;
         [NMS(Index = 8)]
-        /* 0xA7 */ public bool TeachIfNotKnown;
+        /* 0xA7 */
+        public bool TeachIfNotKnown;
         [NMS(Index = 9)]
-        /* 0xA8 */ public bool WaitForSelected;
+        /* 0xA8 */
+        public bool WaitForSelected;
     }
 }

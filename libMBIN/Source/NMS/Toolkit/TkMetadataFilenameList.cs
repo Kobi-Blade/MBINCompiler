@@ -6,6 +6,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkMetadataFilenameList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<VariableSizeString> Filenames;
+        /* 0x0 */
+        public List<VariableSizeString> Filenames;
     }
 }

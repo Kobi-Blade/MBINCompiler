@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceExplorationLogSpecial : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A CustomPlanetLog;
+        /* 0x00 */
+        public NMSString0x20A CustomPlanetLog;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x20A CustomPlanetMessage;
+        /* 0x20 */
+        public NMSString0x20A CustomPlanetMessage;
         [NMS(Index = 3)]
-        /* 0x40 */ public NMSString0x20A CustomSystemLog;
+        /* 0x40 */
+        public NMSString0x20A CustomSystemLog;
         [NMS(Index = 1)]
-        /* 0x60 */ public NMSString0x20A CustomSystemMessage;
+        /* 0x60 */
+        public NMSString0x20A CustomSystemMessage;
         [NMS(Index = 4)]
-        /* 0x80 */ public VariableSizeString DebugText;
+        /* 0x80 */
+        public VariableSizeString DebugText;
     }
 }

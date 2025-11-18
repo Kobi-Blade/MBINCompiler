@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreaturePetAccessorySlot : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 AccessoryGroup;
+        /* 0x00 */
+        public NMSString0x10 AccessoryGroup;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x100 AttachLocator;
+        /* 0x10 */
+        public NMSString0x100 AttachLocator;
     }
 }

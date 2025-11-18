@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostStat : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x20A CostAsString;
+        /* 0x00 */
+        public NMSString0x20A CostAsString;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 Stat;
+        /* 0x20 */
+        public NMSString0x10 Stat;
         [NMS(Index = 1)]
-        /* 0x30 */ public NMSString0x10 StatGroup;
+        /* 0x30 */
+        public NMSString0x10 StatGroup;
         [NMS(Index = 2)]
-        /* 0x40 */ public int Value;
+        /* 0x40 */
+        public int Value;
     }
 }

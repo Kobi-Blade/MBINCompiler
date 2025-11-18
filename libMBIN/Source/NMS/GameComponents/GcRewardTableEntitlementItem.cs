@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardTableEntitlementItem : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 EntitlementId;
+        /* 0x00 */
+        public NMSString0x10 EntitlementId;
         [NMS(Index = 2)]
-        /* 0x10 */ public NMSTemplate Reward;
+        /* 0x10 */
+        public NMSTemplate Reward;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 RewardId;
+        /* 0x20 */
+        public NMSString0x10 RewardId;
     }
 }

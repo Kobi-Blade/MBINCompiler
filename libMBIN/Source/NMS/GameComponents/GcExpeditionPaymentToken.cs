@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcExpeditionPaymentToken : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 TokenName;
+        /* 0x00 */
+        public NMSString0x10 TokenName;
         [NMS(Index = 1)]
-        /* 0x10 */ public int TokenValue;
+        /* 0x10 */
+        public int TokenValue;
     }
 }

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimationAction : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ID;
+        /* 0x00 */
+        public NMSString0x10 ID;
         [NMS(Index = 2)]
-        /* 0x10 */ public float EndFrame;
+        /* 0x10 */
+        public float EndFrame;
         [NMS(Index = 1)]
-        /* 0x14 */ public float StartFrame;
+        /* 0x14 */
+        public float StartFrame;
     }
 }

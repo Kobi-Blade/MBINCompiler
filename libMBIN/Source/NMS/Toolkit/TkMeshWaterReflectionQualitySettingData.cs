@@ -4,19 +4,23 @@ namespace libMBIN.NMS.Toolkit
     public class TkMeshWaterReflectionQualitySettingData : NMSTemplate
     {
         // size: 0x3
-        public enum PlanarReflectionsEnum : uint {
+        public enum PlanarReflectionsEnum : uint
+        {
             Off,
             TerrainOnly,
             TerrainAndScreenspace,
         }
         [NMS(Index = 1)]
-        /* 0x0 */ public PlanarReflectionsEnum PlanarReflections;
+        /* 0x0 */
+        public PlanarReflectionsEnum PlanarReflections;
         // size: 0x2
-        public enum ScreenSpaceReflectionsEnum : uint {
+        public enum ScreenSpaceReflectionsEnum : uint
+        {
             Off,
             On,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public ScreenSpaceReflectionsEnum ScreenSpaceReflections;
+        /* 0x4 */
+        public ScreenSpaceReflectionsEnum ScreenSpaceReflections;
     }
 }

@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcHotActionMenuTypes : NMSTemplate
     {
         // size: 0x3
-        public enum HotActionMenuTypesEnum : uint {
+        public enum HotActionMenuTypesEnum : uint
+        {
             OnFoot,
             InShip,
             InExocraft,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HotActionMenuTypesEnum HotActionMenuTypes;
+        /* 0x0 */
+        public HotActionMenuTypesEnum HotActionMenuTypes;
     }
 }

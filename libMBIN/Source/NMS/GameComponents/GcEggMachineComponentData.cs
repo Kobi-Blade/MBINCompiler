@@ -1,13 +1,13 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x7F839F16B2A1F02D, NameHash = 0x89F6C9F7)]
     public class GcEggMachineComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x000 */ public GcMaintenanceComponentData MaintenanceData;
+        /* 0x000 */
+        public GcMaintenanceComponentData MaintenanceData;
         [NMS(Index = 1)]
-        /* 0x410 */ public int NumInputs;
+        /* 0x410 */
+        public int NumInputs;
     }
 }

@@ -4,18 +4,23 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceDiscoverOnPlanet : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 1)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         // size: 0x3
-        public enum DiscoverTargetOnThisPlanetEnum : uint {
+        public enum DiscoverTargetOnThisPlanetEnum : uint
+        {
             Animal,
             Vegetable,
             Mineral,
         }
         [NMS(Index = 2)]
-        /* 0x20 */ public DiscoverTargetOnThisPlanetEnum DiscoverTargetOnThisPlanet;
+        /* 0x20 */
+        public DiscoverTargetOnThisPlanetEnum DiscoverTargetOnThisPlanet;
         [NMS(Index = 0)]
-        /* 0x24 */ public float PercentToDiscover;
+        /* 0x24 */
+        public float PercentToDiscover;
     }
 }

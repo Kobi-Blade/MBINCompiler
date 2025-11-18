@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureRoleFrequencyModifier : NMSTemplate
     {
         // size: 0x4
-        public enum CreatureRoleFrequencyModifierEnum : uint {
+        public enum CreatureRoleFrequencyModifierEnum : uint
+        {
             Never,
             Low,
             Normal,
             High,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CreatureRoleFrequencyModifierEnum CreatureRoleFrequencyModifier;
+        /* 0x0 */
+        public CreatureRoleFrequencyModifierEnum CreatureRoleFrequencyModifier;
     }
 }

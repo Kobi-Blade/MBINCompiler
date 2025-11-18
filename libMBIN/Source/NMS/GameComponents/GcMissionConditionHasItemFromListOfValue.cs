@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasItemFromListOfValue : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<NMSString0x10> ItemList;
+        /* 0x00 */
+        public List<NMSString0x10> ItemList;
         [NMS(Index = 0)]
-        /* 0x10 */ public int UnitValue;
+        /* 0x10 */
+        public int UnitValue;
         [NMS(Index = 1)]
-        /* 0x14 */ public bool UseDefaultAmount;
+        /* 0x14 */
+        public bool UseDefaultAmount;
     }
 }

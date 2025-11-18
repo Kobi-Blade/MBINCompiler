@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemFilterMatchIDType : NMSTemplate
     {
         // size: 0x3
-        public enum MatchItemIDTypeEnum : uint {
+        public enum MatchItemIDTypeEnum : uint
+        {
             Exact,
             Prefix,
             Postfix,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MatchItemIDTypeEnum MatchItemIDType;
+        /* 0x0 */
+        public MatchItemIDTypeEnum MatchItemIDType;
     }
 }

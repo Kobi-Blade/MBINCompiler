@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildingOverrideData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f Position;
+        /* 0x00 */
+        public Vector3f Position;
         [NMS(Index = 0)]
-        /* 0x10 */ public GcSeed Seed;
+        /* 0x10 */
+        public GcSeed Seed;
         [NMS(Index = 2)]
-        /* 0x20 */ public int Index;
+        /* 0x20 */
+        public int Index;
     }
 }

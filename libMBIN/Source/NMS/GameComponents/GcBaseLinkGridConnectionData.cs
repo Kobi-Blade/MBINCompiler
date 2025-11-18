@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,18 +6,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseLinkGridConnectionData : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public List<Vector3f> LinkSocketPositions;
+        /* 0x00 */
+        public List<Vector3f> LinkSocketPositions;
         [NMS(Index = 6)]
-        /* 0x10 */ public List<int> LinkSocketSubGroups;
+        /* 0x10 */
+        public List<int> LinkSocketSubGroups;
         [NMS(Index = 3)]
-        /* 0x20 */ public float ConnectionDistance;
+        /* 0x20 */
+        public float ConnectionDistance;
         [NMS(Index = 0)]
-        /* 0x24 */ public GcLinkNetworkTypes Network;
+        /* 0x24 */
+        public GcLinkNetworkTypes Network;
         [NMS(Index = 2)]
-        /* 0x28 */ public int NetworkMask;
+        /* 0x28 */
+        public int NetworkMask;
         [NMS(Index = 1)]
-        /* 0x2C */ public int NetworkSubGroup;
+        /* 0x2C */
+        public int NetworkSubGroup;
         [NMS(Index = 4)]
-        /* 0x30 */ public bool UseMinDistance;
+        /* 0x30 */
+        public bool UseMinDistance;
     }
 }

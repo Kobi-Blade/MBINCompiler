@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderFloraCategory : NMSTemplate
     {
         // size: 0x8
-        public enum WonderFloraCategoryEnum : uint {
+        public enum WonderFloraCategoryEnum : uint
+        {
             GeneralFact0,
             GeneralFact1,
             GeneralFact2,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             ToxFact,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WonderFloraCategoryEnum WonderFloraCategory;
+        /* 0x0 */
+        public WonderFloraCategoryEnum WonderFloraCategory;
     }
 }

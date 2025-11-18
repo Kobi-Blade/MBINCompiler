@@ -4,24 +4,34 @@ namespace libMBIN.NMS.Toolkit
     public class TkPostProcessData : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public float BrightnessDepth;
+        /* 0x00 */
+        public float BrightnessDepth;
         [NMS(Index = 8)]
-        /* 0x04 */ public float BrightnessFinal;
+        /* 0x04 */
+        public float BrightnessFinal;
         [NMS(Index = 6)]
-        /* 0x08 */ public float ContrastDepth;
+        /* 0x08 */
+        public float ContrastDepth;
         [NMS(Index = 9)]
-        /* 0x0C */ public float ContrastFinal;
+        /* 0x0C */
+        public float ContrastFinal;
         [NMS(Index = 3)]
-        /* 0x10 */ public float DOFFarAmount;
+        /* 0x10 */
+        public float DOFFarAmount;
         [NMS(Index = 1)]
-        /* 0x14 */ public float DOFFarPlane;
+        /* 0x14 */
+        public float DOFFarPlane;
         [NMS(Index = 2)]
-        /* 0x18 */ public float DOFNearAmount;
+        /* 0x18 */
+        public float DOFNearAmount;
         [NMS(Index = 0)]
-        /* 0x1C */ public float DOFNearPlane;
+        /* 0x1C */
+        public float DOFNearPlane;
         [NMS(Index = 4)]
-        /* 0x20 */ public float SaturationDepth;
+        /* 0x20 */
+        public float SaturationDepth;
         [NMS(Index = 7)]
-        /* 0x24 */ public float SaturationFinal;
+        /* 0x24 */
+        public float SaturationFinal;
     }
 }

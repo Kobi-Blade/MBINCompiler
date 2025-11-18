@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionNearRobotSite : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Distance;
+        /* 0x0 */
+        public float Distance;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool RequireNPCs;
+        /* 0x4 */
+        public bool RequireNPCs;
         [NMS(Index = 2)]
-        /* 0x5 */ public bool RequireRevealTech;
+        /* 0x5 */
+        public bool RequireRevealTech;
     }
 }

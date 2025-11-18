@@ -4,22 +4,27 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimationGameData : NMSTemplate
     {
         // size: 0x3
-        public enum RootMotionEnum : uint {
+        public enum RootMotionEnum : uint
+        {
             None,
             EnabledWithGravity,
             EnabledFullControl,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public RootMotionEnum RootMotion;
+        /* 0x0 */
+        public RootMotionEnum RootMotion;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool BlockPlayerMovement;
+        /* 0x4 */
+        public bool BlockPlayerMovement;
         // size: 0x3
-        public enum BlockPlayerWeaponEnum : uint {
+        public enum BlockPlayerWeaponEnum : uint
+        {
             Unblocked,
             Sheathed,
             OutButCannotFire,
         }
         [NMS(Index = 2)]
-        /* 0x8 */ public BlockPlayerWeaponEnum BlockPlayerWeapon;
+        /* 0x8 */
+        public BlockPlayerWeaponEnum BlockPlayerWeapon;
     }
 }

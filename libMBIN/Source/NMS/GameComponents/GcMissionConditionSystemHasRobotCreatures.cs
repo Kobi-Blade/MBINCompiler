@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSystemHasRobotCreatures : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool RequireOnPlanet;
+        /* 0x0 */
+        public bool RequireOnPlanet;
     }
 }

@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardMultiSpecificProductRecipes : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A SetName;
+        /* 0x00 */
+        public NMSString0x20A SetName;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 DisplayProductId;
+        /* 0x20 */
+        public NMSString0x10 DisplayProductId;
         [NMS(Index = 0)]
-        /* 0x30 */ public List<NMSString0x10> ProductIds;
+        /* 0x30 */
+        public List<NMSString0x10> ProductIds;
         [NMS(Index = 3)]
-        /* 0x40 */ public bool Silent;
+        /* 0x40 */
+        public bool Silent;
     }
 }

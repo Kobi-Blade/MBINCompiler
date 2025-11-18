@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcJudgementMessageOptions : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x000 */ public NMSString0x80 MessageInSettlement;
+        /* 0x000 */
+        public NMSString0x80 MessageInSettlement;
         [NMS(Index = 1)]
-        /* 0x080 */ public NMSString0x80 MessageInSettlementSystem;
+        /* 0x080 */
+        public NMSString0x80 MessageInSettlementSystem;
         [NMS(Index = 2)]
-        /* 0x100 */ public NMSString0x80 MessageOutOfSettlementSystem;
+        /* 0x100 */
+        public NMSString0x80 MessageOutOfSettlementSystem;
     }
 }

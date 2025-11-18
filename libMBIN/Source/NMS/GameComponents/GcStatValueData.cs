@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatValueData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public float Denominator;
+        /* 0x0 */
+        public float Denominator;
         [NMS(Index = 1)]
-        /* 0x4 */ public float FloatValue;
+        /* 0x4 */
+        public float FloatValue;
         [NMS(Index = 0)]
-        /* 0x8 */ public int IntValue;
+        /* 0x8 */
+        public int IntValue;
     }
 }

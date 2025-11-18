@@ -4,40 +4,58 @@ namespace libMBIN.NMS.Toolkit
     public class TkLocalisationEntry : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x000 */ public NMSString0x20A Id;
+        /* 0x000 */
+        public NMSString0x20A Id;
         [NMS(Index = 11)]
-        /* 0x020 */ public VariableSizeString BrazilianPortuguese;
+        /* 0x020 */
+        public VariableSizeString BrazilianPortuguese;
         [NMS(Index = 8)]
-        /* 0x030 */ public VariableSizeString Dutch;
+        /* 0x030 */
+        public VariableSizeString Dutch;
         [NMS(Index = 1)]
-        /* 0x040 */ public VariableSizeString English;
+        /* 0x040 */
+        public VariableSizeString English;
         [NMS(Index = 2)]
-        /* 0x050 */ public VariableSizeString French;
+        /* 0x050 */
+        public VariableSizeString French;
         [NMS(Index = 4)]
-        /* 0x060 */ public VariableSizeString German;
+        /* 0x060 */
+        public VariableSizeString German;
         [NMS(Index = 3)]
-        /* 0x070 */ public VariableSizeString Italian;
+        /* 0x070 */
+        public VariableSizeString Italian;
         [NMS(Index = 16)]
-        /* 0x080 */ public VariableSizeString Japanese;
+        /* 0x080 */
+        public VariableSizeString Japanese;
         [NMS(Index = 15)]
-        /* 0x090 */ public VariableSizeString Korean;
+        /* 0x090 */
+        public VariableSizeString Korean;
         [NMS(Index = 10)]
-        /* 0x0A0 */ public VariableSizeString LatinAmericanSpanish;
+        /* 0x0A0 */
+        public VariableSizeString LatinAmericanSpanish;
         [NMS(Index = 7)]
-        /* 0x0B0 */ public VariableSizeString Polish;
+        /* 0x0B0 */
+        public VariableSizeString Polish;
         [NMS(Index = 9)]
-        /* 0x0C0 */ public VariableSizeString Portuguese;
+        /* 0x0C0 */
+        public VariableSizeString Portuguese;
         [NMS(Index = 6)]
-        /* 0x0D0 */ public VariableSizeString Russian;
+        /* 0x0D0 */
+        public VariableSizeString Russian;
         [NMS(Index = 12)]
-        /* 0x0E0 */ public VariableSizeString SimplifiedChinese;
+        /* 0x0E0 */
+        public VariableSizeString SimplifiedChinese;
         [NMS(Index = 5)]
-        /* 0x0F0 */ public VariableSizeString Spanish;
+        /* 0x0F0 */
+        public VariableSizeString Spanish;
         [NMS(Index = 14)]
-        /* 0x100 */ public VariableSizeString TencentChinese;
+        /* 0x100 */
+        public VariableSizeString TencentChinese;
         [NMS(Index = 13)]
-        /* 0x110 */ public VariableSizeString TraditionalChinese;
+        /* 0x110 */
+        public VariableSizeString TraditionalChinese;
         [NMS(Index = 17)]
-        /* 0x120 */ public VariableSizeString USEnglish;
+        /* 0x120 */
+        public VariableSizeString USEnglish;
     }
 }

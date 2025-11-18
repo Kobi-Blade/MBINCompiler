@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcFishingDifficultyOption : NMSTemplate
     {
         // size: 0x4
-        public enum FishingDifficultyEnum : uint {
+        public enum FishingDifficultyEnum : uint
+        {
             AutoCatch,
             LongCatchWindow,
             NormalCatchWindow,
             ShortCatchWindow,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FishingDifficultyEnum FishingDifficulty;
+        /* 0x0 */
+        public FishingDifficultyEnum FishingDifficulty;
     }
 }

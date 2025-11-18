@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcProceduralProductDeployable : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 BaseID;
+        /* 0x00 */
+        public NMSString0x10 BaseID;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Variants;
+        /* 0x10 */
+        public int Variants;
     }
 }

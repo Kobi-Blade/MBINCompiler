@@ -4,10 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkMaterialShaderMillConnect : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public int Count;
+        /* 0x00 */
+        public int Count;
         [NMS(Index = 0)]
-        /* 0x04 */ public NMSString0x20 Name;
+        /* 0x04 */
+        public NMSString0x20 Name;
         [NMS(Index = 2)]
-        /* 0x24 */ public bool Expanded;
+        /* 0x24 */
+        public bool Expanded;
     }
 }

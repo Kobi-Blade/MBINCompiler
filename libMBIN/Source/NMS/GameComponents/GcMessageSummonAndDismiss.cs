@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMessageSummonAndDismiss : NMSTemplate
     {
         // size: 0x2
-        public enum SummonEventTypeEnum : uint {
+        public enum SummonEventTypeEnum : uint
+        {
             Summon,
             Dismiss,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SummonEventTypeEnum SummonEventType;
+        /* 0x0 */
+        public SummonEventTypeEnum SummonEventType;
     }
 }

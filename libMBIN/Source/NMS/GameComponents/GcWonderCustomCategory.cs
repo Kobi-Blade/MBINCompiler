@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderCustomCategory : NMSTemplate
     {
         // size: 0xC
-        public enum WonderCustomCategoryEnum : uint {
+        public enum WonderCustomCategoryEnum : uint
+        {
             Custom01,
             Custom02,
             Custom03,
@@ -19,6 +20,7 @@ namespace libMBIN.NMS.GameComponents
             Custom12,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WonderCustomCategoryEnum WonderCustomCategory;
+        /* 0x0 */
+        public WonderCustomCategoryEnum WonderCustomCategory;
     }
 }

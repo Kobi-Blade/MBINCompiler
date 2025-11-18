@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSetMissionStat : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int ValueToAdd;
+        /* 0x0 */
+        public int ValueToAdd;
         [NMS(Index = 0)]
-        /* 0x4 */ public int ValueToSet;
+        /* 0x4 */
+        public int ValueToSet;
     }
 }

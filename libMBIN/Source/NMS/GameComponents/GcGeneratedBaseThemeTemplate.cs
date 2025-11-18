@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcGeneratedBaseThemeTemplate : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x10> DecorationTemplates;
+        /* 0x00 */
+        public List<NMSString0x10> DecorationTemplates;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Name;
+        /* 0x10 */
+        public NMSString0x10 Name;
     }
 }

@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcCharacterControlOutputSpace : NMSTemplate
     {
         // size: 0x3
-        public enum CharacterControlOutputSpaceEnum : uint {
+        public enum CharacterControlOutputSpaceEnum : uint
+        {
             CameraRelative,
             CameraRelativeTopDown,
             Raw,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CharacterControlOutputSpaceEnum CharacterControlOutputSpace;
+        /* 0x0 */
+        public CharacterControlOutputSpaceEnum CharacterControlOutputSpace;
     }
 }

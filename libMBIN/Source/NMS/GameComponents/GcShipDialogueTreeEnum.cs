@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcShipDialogueTreeEnum : NMSTemplate
     {
         // size: 0x7
-        public enum DialogueTreeEnum : uint {
+        public enum DialogueTreeEnum : uint
+        {
             Bribe,
             Beg,
             Ambush,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Hostile,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DialogueTreeEnum DialogueTree;
+        /* 0x0 */
+        public DialogueTreeEnum DialogueTree;
     }
 }

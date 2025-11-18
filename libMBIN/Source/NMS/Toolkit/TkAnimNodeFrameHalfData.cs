@@ -6,10 +6,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimNodeFrameHalfData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<ushort> Rotations;
+        /* 0x00 */
+        public List<ushort> Rotations;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<halfVector4> Scales;
+        /* 0x10 */
+        public List<halfVector4> Scales;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<halfVector4> Translations;
+        /* 0x20 */
+        public List<halfVector4> Translations;
     }
 }

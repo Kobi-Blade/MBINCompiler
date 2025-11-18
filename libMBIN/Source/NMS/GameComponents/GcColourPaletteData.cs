@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcColourPaletteData : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x5)]
-        /* 0x00 */ public Colour[] Colours;
+        /* 0x00 */
+        public Colour[] Colours;
         [NMS(Index = 1, Size = 0x5)]
-        /* 0x50 */ public int[] ColourIndices;
+        /* 0x50 */
+        public int[] ColourIndices;
     }
 }

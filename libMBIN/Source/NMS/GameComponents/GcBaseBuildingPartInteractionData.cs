@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingPartInteractionData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public Vector3f AtDir;
+        /* 0x00 */
+        public Vector3f AtDir;
         [NMS(Index = 1)]
-        /* 0x10 */ public Vector3f LocalPos;
+        /* 0x10 */
+        public Vector3f LocalPos;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 InteractionID;
+        /* 0x20 */
+        public NMSString0x10 InteractionID;
     }
 }

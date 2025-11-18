@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcHeavyAirColourData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public Colour Colour1;
+        /* 0x00 */
+        public Colour Colour1;
         [NMS(Index = 1)]
-        /* 0x10 */ public Colour Colour2;
+        /* 0x10 */
+        public Colour Colour2;
         [NMS(Index = 2)]
-        /* 0x20 */ public Colour ExtremeColour1;
+        /* 0x20 */
+        public Colour ExtremeColour1;
         [NMS(Index = 3)]
-        /* 0x30 */ public Colour ExtremeColour2;
+        /* 0x30 */
+        public Colour ExtremeColour2;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetVocabularyWords : NMSTemplate
     {
         // size: 0xF
-        public enum PetVocabularyWordEnum : uint {
+        public enum PetVocabularyWordEnum : uint
+        {
             Attack,
             Dislike,
             Cute,
@@ -22,6 +23,7 @@ namespace libMBIN.NMS.GameComponents
             Yummy,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PetVocabularyWordEnum PetVocabularyWord;
+        /* 0x0 */
+        public PetVocabularyWordEnum PetVocabularyWord;
     }
 }

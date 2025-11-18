@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionInMultiplayer : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool MustBeInFireteam;
+        /* 0x0 */
+        public bool MustBeInFireteam;
     }
 }

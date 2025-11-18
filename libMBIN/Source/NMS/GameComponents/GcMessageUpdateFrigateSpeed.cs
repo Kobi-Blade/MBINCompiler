@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMessageUpdateFrigateSpeed : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float StartSpeed;
+        /* 0x0 */
+        public float StartSpeed;
         [NMS(Index = 1)]
-        /* 0x4 */ public float TargetSpeed;
+        /* 0x4 */
+        public float TargetSpeed;
     }
 }

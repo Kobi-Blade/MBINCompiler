@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkBlackboardValueVector : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f Value;
+        /* 0x00 */
+        public Vector3f Value;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Key;
+        /* 0x10 */
+        public NMSString0x10 Key;
     }
 }

@@ -4,9 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcScanEventTableType : NMSTemplate
     {
         // size: 0x8
-        public enum ScanTableEnum : uint {
+        public enum ScanTableEnum : uint
+        {
             Space,
-            Planet ,
+            Planet,
             Missions,
             Tutorial,
             MissionsCreative,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Seasonal,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ScanTableEnum ScanTable;
+        /* 0x0 */
+        public ScanTableEnum ScanTable;
     }
 }

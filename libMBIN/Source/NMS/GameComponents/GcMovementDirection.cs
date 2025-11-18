@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcMovementDirection : NMSTemplate
     {
         // size: 0x4
-        public enum MovementDirectionEnum : uint {
+        public enum MovementDirectionEnum : uint
+        {
             WorldRelative,
             BodyRelative,
             HeadRelative,
             NotSet,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MovementDirectionEnum MovementDirection;
+        /* 0x0 */
+        public MovementDirectionEnum MovementDirection;
     }
 }

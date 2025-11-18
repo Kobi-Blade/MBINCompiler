@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31313.79
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11205.157 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MBINCompiler", "MBINCompiler\MBINCompiler.csproj", "{CE736EF9-7BE9-4FF0-9551-78F0071AA373}"
 EndProject
@@ -24,17 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MBINCompilerDocs", "MBINCompilerDocs\MBINCompilerDocs.csproj", "{9CFA3E54-6D7D-414B-A2E8-B1D98CFD0D0A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaveFileMapping", "SaveFileMapping\SaveFileMapping.csproj", "{97076177-ECD1-4BD1-8BF7-3503EDEBF358}"
-	ProjectSection(ProjectDependencies) = postProject
-		{F2D295A6-D082-4EB4-8FC9-F4687F674939} = {F2D295A6-D082-4EB4-8FC9-F4687F674939}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveFileMapping", "SaveFileMapping\SaveFileMapping.csproj", "{0531E322-3CDD-D522-51EE-5B9A96FF4B21}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		libMBIN\libMBIN-Shared.projitems*{b6850f17-d8fd-48de-9cf2-240f1ba87236}*SharedItemsImports = 13
-		libMBIN\libMBIN-Shared.projitems*{ce736ef9-7be9-4ff0-9551-78f0071aa373}*SharedItemsImports = 5
-		libMBIN\libMBIN-Shared.projitems*{f2d295a6-d082-4eb4-8fc9-f4687f674939}*SharedItemsImports = 5
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -56,18 +48,6 @@ Global
 		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Release-XML|Any CPU.Build.0 = Release|Any CPU
 		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Release-XML|x64.ActiveCfg = Release|x64
 		{CE736EF9-7BE9-4FF0-9551-78F0071AA373}.Release-XML|x64.Build.0 = Release|x64
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug|x64.ActiveCfg = Debug|x64
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Debug|x64.Build.0 = Debug|x64
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release|Any CPU.Build.0 = Release|Any CPU
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release|x64.ActiveCfg = Release|x64
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release|x64.Build.0 = Release|x64
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release-XML|Any CPU.ActiveCfg = Release|Any CPU
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release-XML|Any CPU.Build.0 = Release|Any CPU
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release-XML|x64.ActiveCfg = Release|x64
-		{836B3A35-C1EA-47C8-B3AB-59C0E2E0C763}.Release-XML|x64.Build.0 = Release|x64
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2D295A6-D082-4EB4-8FC9-F4687F674939}.Debug|x64.ActiveCfg = Debug|x64
@@ -92,18 +72,18 @@ Global
 		{9CFA3E54-6D7D-414B-A2E8-B1D98CFD0D0A}.Release-XML|Any CPU.Build.0 = Release|Any CPU
 		{9CFA3E54-6D7D-414B-A2E8-B1D98CFD0D0A}.Release-XML|x64.ActiveCfg = Release|x64
 		{9CFA3E54-6D7D-414B-A2E8-B1D98CFD0D0A}.Release-XML|x64.Build.0 = Release|x64
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Debug|x64.Build.0 = Debug|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release|x64.ActiveCfg = Release|x64
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release|x64.Build.0 = Release|x64
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release-XML|Any CPU.ActiveCfg = Release|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release-XML|Any CPU.Build.0 = Release|Any CPU
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release-XML|x64.ActiveCfg = Release|x64
-		{97076177-ECD1-4BD1-8BF7-3503EDEBF358}.Release-XML|x64.Build.0 = Release|x64
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Debug|x64.ActiveCfg = Release|x64
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Debug|x64.Build.0 = Release|x64
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release|x64.ActiveCfg = Release|x64
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release|x64.Build.0 = Release|x64
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release-XML|Any CPU.ActiveCfg = Release|Any CPU
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release-XML|Any CPU.Build.0 = Release|Any CPU
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release-XML|x64.ActiveCfg = Release|x64
+		{0531E322-3CDD-D522-51EE-5B9A96FF4B21}.Release-XML|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,5 +93,10 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA99F7CB-A4A0-4314-AE1C-092F0E8A7C2E}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		libMBIN\libMBIN-Shared.projitems*{b6850f17-d8fd-48de-9cf2-240f1ba87236}*SharedItemsImports = 13
+		libMBIN\libMBIN-Shared.projitems*{ce736ef9-7be9-4ff0-9551-78f0071aa373}*SharedItemsImports = 5
+		libMBIN\libMBIN-Shared.projitems*{f2d295a6-d082-4eb4-8fc9-f4687f674939}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

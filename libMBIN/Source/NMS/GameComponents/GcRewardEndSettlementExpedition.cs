@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardEndSettlementExpedition : NMSTemplate
     {
         // size: 0x2
-        public enum EndTypeEnum : uint {
+        public enum EndTypeEnum : uint
+        {
             Debrief,
             Shutdown,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public EndTypeEnum EndType;
+        /* 0x0 */
+        public EndTypeEnum EndType;
     }
 }

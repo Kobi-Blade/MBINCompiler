@@ -4,13 +4,15 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimBlendType : NMSTemplate
     {
         // size: 0x4
-        public enum BlendTypeEnum : uint {
+        public enum BlendTypeEnum : uint
+        {
             Normal,
             MatchTimes,
             MatchTimesAndPhase,
             OffsetByBlendTime,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BlendTypeEnum BlendType;
+        /* 0x0 */
+        public BlendTypeEnum BlendType;
     }
 }

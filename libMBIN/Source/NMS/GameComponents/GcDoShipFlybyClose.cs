@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcDoShipFlybyClose : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float LockOffset;
+        /* 0x0 */
+        public float LockOffset;
         [NMS(Index = 2)]
-        /* 0x4 */ public float LockSpread;
+        /* 0x4 */
+        public float LockSpread;
         [NMS(Index = 1)]
-        /* 0x8 */ public float LockTime;
+        /* 0x8 */
+        public float LockTime;
         [NMS(Index = 4)]
-        /* 0xC */ public bool HailingBehaviour;
+        /* 0xC */
+        public bool HailingBehaviour;
         [NMS(Index = 3)]
-        /* 0xD */ public bool StayCloseAtLowSpeed;
+        /* 0xD */
+        public bool StayCloseAtLowSpeed;
     }
 }

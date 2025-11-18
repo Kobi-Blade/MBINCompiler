@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimPoseExampleElement : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Anim;
+        /* 0x00 */
+        public NMSString0x10 Anim;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Value;
+        /* 0x10 */
+        public float Value;
     }
 }

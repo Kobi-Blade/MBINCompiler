@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPunctuationDelay : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Delay;
+        /* 0x0 */
+        public float Delay;
         [NMS(Index = 0)]
-        /* 0x4 */ public NMSString0x20 Punctuation;
+        /* 0x4 */
+        public NMSString0x20 Punctuation;
     }
 }

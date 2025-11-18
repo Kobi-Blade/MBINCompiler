@@ -4,10 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkPlatformButtonPair : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 ButtonId;
+        /* 0x00 */
+        public NMSString0x10 ButtonId;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 PlatformId;
+        /* 0x10 */
+        public NMSString0x10 PlatformId;
         [NMS(Index = 2)]
-        /* 0x20 */ public Vector2f Size;
+        /* 0x20 */
+        public Vector2f Size;
     }
 }

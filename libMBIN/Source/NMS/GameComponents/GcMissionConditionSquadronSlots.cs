@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSquadronSlots : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int PilotSlots;
+        /* 0x0 */
+        public int PilotSlots;
         [NMS(Index = 2)]
-        /* 0x4 */ public TkEqualityEnum Test;
+        /* 0x4 */
+        public TkEqualityEnum Test;
         [NMS(Index = 1)]
-        /* 0x8 */ public bool OnlyCountFreeSlots;
+        /* 0x8 */
+        public bool OnlyCountFreeSlots;
         [NMS(Index = 3)]
-        /* 0x9 */ public bool TakeNumberFromSeasonData;
+        /* 0x9 */
+        public bool TakeNumberFromSeasonData;
     }
 }

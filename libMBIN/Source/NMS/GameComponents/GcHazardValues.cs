@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcHazardValues : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Extreme;
+        /* 0x0 */
+        public float Extreme;
         [NMS(Index = 0)]
-        /* 0x4 */ public float Normal;
+        /* 0x4 */
+        public float Normal;
     }
 }

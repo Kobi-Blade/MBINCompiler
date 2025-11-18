@@ -4,10 +4,12 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingSecondaryMode : NMSTemplate
     {
         // size: 0x1
-        public enum BaseBuildingSecondaryModeEnum : uint {
+        public enum BaseBuildingSecondaryModeEnum : uint
+        {
             ShipStructural,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BaseBuildingSecondaryModeEnum BaseBuildingSecondaryMode;
+        /* 0x0 */
+        public BaseBuildingSecondaryModeEnum BaseBuildingSecondaryMode;
     }
 }

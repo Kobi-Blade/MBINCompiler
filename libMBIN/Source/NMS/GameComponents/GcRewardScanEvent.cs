@@ -4,11 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardScanEvent : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Event;
+        /* 0x00 */
+        public NMSString0x20A Event;
         [NMS(Index = 7)]
-        /* 0x20 */ public NMSString0x20A FailureOSD;
+        /* 0x20 */
+        public NMSString0x20A FailureOSD;
         // size: 0x6
-        public enum ScanEventTableEnum : uint {
+        public enum ScanEventTableEnum : uint
+        {
             Space,
             Planet,
             Missions,
@@ -17,16 +20,22 @@ namespace libMBIN.NMS.GameComponents
             NPCPlanetSite,
         }
         [NMS(Index = 1)]
-        /* 0x40 */ public ScanEventTableEnum ScanEventTable;
+        /* 0x40 */
+        public ScanEventTableEnum ScanEventTable;
         [NMS(Index = 4)]
-        /* 0x44 */ public float StartDelay;
+        /* 0x44 */
+        public float StartDelay;
         [NMS(Index = 2)]
-        /* 0x48 */ public bool DoAerialScan;
+        /* 0x48 */
+        public bool DoAerialScan;
         [NMS(Index = 6)]
-        /* 0x49 */ public bool ForceSilentFailure;
+        /* 0x49 */
+        public bool ForceSilentFailure;
         [NMS(Index = 3)]
-        /* 0x4A */ public bool UseMissionIDSeedForEvent;
+        /* 0x4A */
+        public bool UseMissionIDSeedForEvent;
         [NMS(Index = 5)]
-        /* 0x4B */ public bool UseStartDelayWhenNoAerialScan;
+        /* 0x4B */
+        public bool UseStartDelayWhenNoAerialScan;
     }
 }

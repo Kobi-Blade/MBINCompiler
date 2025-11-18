@@ -6,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourLookData : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public TkBlackboardDefaultValueBool CanLook;
+        /* 0x00 */
+        public TkBlackboardDefaultValueBool CanLook;
         [NMS(Index = 2)]
-        /* 0x18 */ public TkBlackboardDefaultValueBool FocusOnTarget;
+        /* 0x18 */
+        public TkBlackboardDefaultValueBool FocusOnTarget;
         [NMS(Index = 3)]
-        /* 0x30 */ public TkBlackboardDefaultValueBool RelaxedLook;
+        /* 0x30 */
+        public TkBlackboardDefaultValueBool RelaxedLook;
         [NMS(Index = 0)]
-        /* 0x48 */ public NMSString0x10 LookTargetKey;
+        /* 0x48 */
+        public NMSString0x10 LookTargetKey;
         [NMS(Index = 1)]
-        /* 0x58 */ public bool LookWhenBeyondMaxAngle;
+        /* 0x58 */
+        public bool LookWhenBeyondMaxAngle;
     }
 }

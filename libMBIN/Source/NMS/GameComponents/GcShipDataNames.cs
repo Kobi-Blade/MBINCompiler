@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcShipDataNames : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public NMSString0x100 ResourceName;
+        /* 0x000 */
+        public NMSString0x100 ResourceName;
         [NMS(Index = 0)]
-        /* 0x100 */ public NMSString0x20 DataName;
+        /* 0x100 */
+        public NMSString0x20 DataName;
     }
 }

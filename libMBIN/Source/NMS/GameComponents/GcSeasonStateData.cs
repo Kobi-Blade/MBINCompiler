@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,26 +6,37 @@ namespace libMBIN.NMS.GameComponents
     public class GcSeasonStateData : NMSTemplate
     {
         [NMS(Index = 9)]
-        /* 0x000 */ public GcInventoryContainer SeasonTransferInventory;
+        /* 0x000 */
+        public GcInventoryContainer SeasonTransferInventory;
         [NMS(Index = 0)]
-        /* 0x160 */ public List<float> MilestoneValues;
+        /* 0x160 */
+        public List<float> MilestoneValues;
         [NMS(Index = 7)]
-        /* 0x170 */ public List<GcUAProtectedLocations> ProtectedEvents;
+        /* 0x170 */
+        public List<GcUAProtectedLocations> ProtectedEvents;
         [NMS(Index = 5)]
-        /* 0x180 */ public List<GcPlayerMissionParticipant> RendezvousParticipants;
+        /* 0x180 */
+        public List<GcPlayerMissionParticipant> RendezvousParticipants;
         [NMS(Index = 4)]
-        /* 0x190 */ public List<ulong> RendezvousUAs;
+        /* 0x190 */
+        public List<ulong> RendezvousUAs;
         [NMS(Index = 1)]
-        /* 0x1A0 */ public List<short> RewardCollected;
+        /* 0x1A0 */
+        public List<short> RewardCollected;
         [NMS(Index = 10)]
-        /* 0x1B0 */ public GcSeasonEndRewardsRedemptionState EndRewardsRedemptionState;
+        /* 0x1B0 */
+        public GcSeasonEndRewardsRedemptionState EndRewardsRedemptionState;
         [NMS(Index = 3)]
-        /* 0x1B4 */ public int PinnedMilestone;
+        /* 0x1B4 */
+        public int PinnedMilestone;
         [NMS(Index = 2)]
-        /* 0x1B8 */ public int PinnedStage;
+        /* 0x1B8 */
+        public int PinnedStage;
         [NMS(Index = 8)]
-        /* 0x1BC */ public GcSeasonSaveStateOnDeath StateOnDeath;
+        /* 0x1BC */
+        public GcSeasonSaveStateOnDeath StateOnDeath;
         [NMS(Index = 6)]
-        /* 0x1C0 */ public bool HasCollectedFinalReward;
+        /* 0x1C0 */
+        public bool HasCollectedFinalReward;
     }
 }

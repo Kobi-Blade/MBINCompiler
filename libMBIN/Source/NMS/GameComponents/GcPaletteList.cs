@@ -1,12 +1,11 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x18F03FD240B0BB5B, NameHash = 0x2DF7C5B6)]
     public class GcPaletteList : NMSTemplate
     {
         // size: 0x40
-        public enum PalettesEnum {
+        public enum PalettesEnum
+        {
             Grass,
             Plant,
             Leaf,
@@ -73,6 +72,7 @@ namespace libMBIN.NMS.GameComponents
             DeepWaterBioLum,
         }
         [NMS(Index = 0, Size = 0x40, EnumType = typeof(PalettesEnum))]
-        /* 0x0 */ public GcPaletteData[] Palettes;
+        /* 0x0 */
+        public GcPaletteData[] Palettes;
     }
 }

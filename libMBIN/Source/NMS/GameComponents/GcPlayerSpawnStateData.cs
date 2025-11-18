@@ -4,33 +4,47 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerSpawnStateData : NMSTemplate
     {
         [NMS(Index = 12)]
-        /* 0x00 */ public Vector4f AbandonedFreighterPositionInSystem;
+        /* 0x00 */
+        public Vector4f AbandonedFreighterPositionInSystem;
         [NMS(Index = 13)]
-        /* 0x10 */ public Vector4f AbandonedFreighterTransformAt;
+        /* 0x10 */
+        public Vector4f AbandonedFreighterTransformAt;
         [NMS(Index = 14)]
-        /* 0x20 */ public Vector4f AbandonedFreighterTransformUp;
+        /* 0x20 */
+        public Vector4f AbandonedFreighterTransformUp;
         [NMS(Index = 9)]
-        /* 0x30 */ public Vector4f FreighterPositionInSystem;
+        /* 0x30 */
+        public Vector4f FreighterPositionInSystem;
         [NMS(Index = 10)]
-        /* 0x40 */ public Vector4f FreighterTransformAt;
+        /* 0x40 */
+        public Vector4f FreighterTransformAt;
         [NMS(Index = 11)]
-        /* 0x50 */ public Vector4f FreighterTransformUp;
+        /* 0x50 */
+        public Vector4f FreighterTransformUp;
         [NMS(Index = 2)]
-        /* 0x60 */ public Vector4f PlayerDeathRespawnPositionInSystem;
+        /* 0x60 */
+        public Vector4f PlayerDeathRespawnPositionInSystem;
         [NMS(Index = 3)]
-        /* 0x70 */ public Vector4f PlayerDeathRespawnTransformAt;
+        /* 0x70 */
+        public Vector4f PlayerDeathRespawnTransformAt;
         [NMS(Index = 0)]
-        /* 0x80 */ public Vector4f PlayerPositionInSystem;
+        /* 0x80 */
+        public Vector4f PlayerPositionInSystem;
         [NMS(Index = 1)]
-        /* 0x90 */ public Vector4f PlayerTransformAt;
+        /* 0x90 */
+        public Vector4f PlayerTransformAt;
         [NMS(Index = 4)]
-        /* 0xA0 */ public Vector4f ShipPositionInSystem;
+        /* 0xA0 */
+        public Vector4f ShipPositionInSystem;
         [NMS(Index = 5)]
-        /* 0xB0 */ public Vector4f ShipTransformAt;
+        /* 0xB0 */
+        public Vector4f ShipTransformAt;
         [NMS(Index = 6)]
-        /* 0xC0 */ public Vector4f ShipTransformUp;
+        /* 0xC0 */
+        public Vector4f ShipTransformUp;
         // size: 0xA
-        public enum LastKnownPlayerStateEnum : uint {
+        public enum LastKnownPlayerStateEnum : uint
+        {
             OnFoot,
             InShip,
             InStation,
@@ -43,8 +57,10 @@ namespace libMBIN.NMS.GameComponents
             OnFootInCorvetteLanded,
         }
         [NMS(Index = 8)]
-        /* 0xD0 */ public LastKnownPlayerStateEnum LastKnownPlayerState;
+        /* 0xD0 */
+        public LastKnownPlayerStateEnum LastKnownPlayerState;
         [NMS(Index = 7)]
-        /* 0xD4 */ public bool ShipHovering;
+        /* 0xD4 */
+        public bool ShipHovering;
     }
 }

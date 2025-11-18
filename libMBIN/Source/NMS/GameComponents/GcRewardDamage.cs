@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardDamage : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<GcImpactCombatEffectData> CombatEffects;
+        /* 0x00 */
+        public List<GcImpactCombatEffectData> CombatEffects;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 PlayerDamage;
+        /* 0x10 */
+        public NMSString0x10 PlayerDamage;
     }
 }

@@ -4,13 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardShipAssistance : NMSTemplate
     {
         // size: 0x2
-        public enum AssistanceTypeEnum : uint {
+        public enum AssistanceTypeEnum : uint
+        {
             Police,
             Wingmen,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AssistanceTypeEnum AssistanceType;
+        /* 0x0 */
+        public AssistanceTypeEnum AssistanceType;
         [NMS(Index = 1)]
-        /* 0x4 */ public float Time;
+        /* 0x4 */
+        public float Time;
     }
 }

@@ -6,13 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemFilterStageDataStageGroup : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSTemplate> Children;
+        /* 0x00 */
+        public List<NMSTemplate> Children;
         // size: 0x2
-        public enum FilterStageGroupOperatorEnum : uint {
+        public enum FilterStageGroupOperatorEnum : uint
+        {
             AND,
             OR,
         }
         [NMS(Index = 0)]
-        /* 0x10 */ public FilterStageGroupOperatorEnum FilterStageGroupOperator;
+        /* 0x10 */
+        public FilterStageGroupOperatorEnum FilterStageGroupOperator;
     }
 }

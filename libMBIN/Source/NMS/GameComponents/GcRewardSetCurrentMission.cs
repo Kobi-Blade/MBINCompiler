@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSetCurrentMission : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Mission;
+        /* 0x00 */
+        public NMSString0x10 Mission;
         [NMS(Index = 2)]
-        /* 0x10 */ public bool Seeded;
+        /* 0x10 */
+        public bool Seeded;
         [NMS(Index = 1)]
-        /* 0x11 */ public bool Silent;
+        /* 0x11 */
+        public bool Silent;
     }
 }

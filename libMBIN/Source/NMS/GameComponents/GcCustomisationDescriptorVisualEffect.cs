@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationDescriptorVisualEffect : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Effect;
+        /* 0x00 */
+        public NMSString0x10 Effect;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x20 AttachTo;
+        /* 0x10 */
+        public NMSString0x20 AttachTo;
     }
 }

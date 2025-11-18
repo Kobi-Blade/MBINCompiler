@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMultitoolPoolType : NMSTemplate
     {
         // size: 0x5
-        public enum MultiToolPoolTypeEnum : uint {
+        public enum MultiToolPoolTypeEnum : uint
+        {
             Standard,
             Exotic,
             Sentinel,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             SettlementRotational,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MultiToolPoolTypeEnum MultiToolPoolType;
+        /* 0x0 */
+        public MultiToolPoolTypeEnum MultiToolPoolType;
     }
 }

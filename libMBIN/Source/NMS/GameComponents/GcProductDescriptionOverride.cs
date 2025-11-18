@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcProductDescriptionOverride : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A NewDescription;
+        /* 0x00 */
+        public NMSString0x20A NewDescription;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 MissionID;
+        /* 0x20 */
+        public NMSString0x10 MissionID;
         [NMS(Index = 0)]
-        /* 0x30 */ public NMSString0x10 ProductID;
+        /* 0x30 */
+        public NMSString0x10 ProductID;
     }
 }

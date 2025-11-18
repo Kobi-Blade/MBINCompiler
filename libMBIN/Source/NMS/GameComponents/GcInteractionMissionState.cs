@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcInteractionMissionState : NMSTemplate
     {
         // size: 0x4
-        public enum InteractionMissionStateEnum : uint {
+        public enum InteractionMissionStateEnum : uint
+        {
             Unused,
             Unlocked,
             MonoCorrupted,
             GiftGiven,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InteractionMissionStateEnum InteractionMissionState;
+        /* 0x0 */
+        public InteractionMissionStateEnum InteractionMissionState;
     }
 }

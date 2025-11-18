@@ -4,37 +4,52 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshVelocitySamplingParams : NMSTemplate
     {
         [NMS(Index = 12)]
-        /* 0x00 */ public uint AdaptiveDepths;
+        /* 0x00 */
+        public uint AdaptiveDepths;
         [NMS(Index = 10)]
-        /* 0x04 */ public uint AdaptiveDivs;
+        /* 0x04 */
+        public uint AdaptiveDivs;
         [NMS(Index = 11)]
-        /* 0x08 */ public uint AdaptiveRings;
+        /* 0x08 */
+        public uint AdaptiveRings;
         [NMS(Index = 13)]
-        /* 0x0C */ public uint GridSize;
+        /* 0x0C */
+        public uint GridSize;
         [NMS(Index = 8)]
-        /* 0x10 */ public float HorizonTime;
+        /* 0x10 */
+        public float HorizonTime;
         [NMS(Index = 0)]
-        /* 0x14 */ public float VelocityBias;
+        /* 0x14 */
+        public float VelocityBias;
         [NMS(Index = 7)]
-        /* 0x18 */ public float WeightCollisionTime;
+        /* 0x18 */
+        public float WeightCollisionTime;
         [NMS(Index = 4)]
-        /* 0x1C */ public float WeightCurVel;
+        /* 0x1C */
+        public float WeightCurVel;
         [NMS(Index = 3)]
-        /* 0x20 */ public float WeightDesiredVel;
+        /* 0x20 */
+        public float WeightDesiredVel;
         [NMS(Index = 2)]
-        /* 0x24 */ public float WeightEnergyCost;
+        /* 0x24 */
+        public float WeightEnergyCost;
         [NMS(Index = 5)]
-        /* 0x28 */ public float WeightFacingDir;
+        /* 0x28 */
+        public float WeightFacingDir;
         [NMS(Index = 1)]
-        /* 0x2C */ public float WeightProgress;
+        /* 0x2C */
+        public float WeightProgress;
         [NMS(Index = 6)]
-        /* 0x30 */ public float WeightSide;
+        /* 0x30 */
+        public float WeightSide;
         // size: 0x2
-        public enum SamplingTypeEnum : byte {
+        public enum SamplingTypeEnum : byte
+        {
             Adaptive,
             Grid,
         }
         [NMS(Index = 9)]
-        /* 0x34 */ public SamplingTypeEnum SamplingType;
+        /* 0x34 */
+        public SamplingTypeEnum SamplingType;
     }
 }

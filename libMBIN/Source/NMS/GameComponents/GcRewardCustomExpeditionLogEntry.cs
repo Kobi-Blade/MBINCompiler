@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardCustomExpeditionLogEntry : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A LocID;
+        /* 0x00 */
+        public NMSString0x20A LocID;
         [NMS(Index = 3)]
-        /* 0x20 */ public NMSString0x10 RewardID;
+        /* 0x20 */
+        public NMSString0x10 RewardID;
         [NMS(Index = 0)]
-        /* 0x30 */ public bool FromIntervention;
+        /* 0x30 */
+        public bool FromIntervention;
         [NMS(Index = 1)]
-        /* 0x31 */ public bool WhaleEvent;
+        /* 0x31 */
+        public bool WhaleEvent;
     }
 }

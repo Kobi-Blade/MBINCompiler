@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class Mapping : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public List<InfluencesOnMappedPoint> InfluencesOnMappedPoint;
+        /* 0x00 */
+        public List<InfluencesOnMappedPoint> InfluencesOnMappedPoint;
         [NMS(Index = 3)]
-        /* 0x10 */ public int NumMappedPoints;
+        /* 0x10 */
+        public int NumMappedPoints;
         [NMS(Index = 1)]
-        /* 0x14 */ public int NumSimI;
+        /* 0x14 */
+        public int NumSimI;
         [NMS(Index = 2)]
-        /* 0x18 */ public int NumSimJ;
+        /* 0x18 */
+        public int NumSimJ;
         [NMS(Index = 0)]
-        /* 0x1C */ public NMSString0x40 Name;
+        /* 0x1C */
+        public NMSString0x40 Name;
     }
 }

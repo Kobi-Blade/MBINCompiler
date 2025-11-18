@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -8,14 +7,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingGroup : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A Name;
+        /* 0x00 */
+        public NMSString0x20A Name;
         [NMS(Index = 2)]
-        /* 0x20 */ public TkTextureResource Icon;
+        /* 0x20 */
+        public TkTextureResource Icon;
         [NMS(Index = 0)]
-        /* 0x38 */ public NMSString0x10 ID;
+        /* 0x38 */
+        public NMSString0x10 ID;
         [NMS(Index = 4)]
-        /* 0x48 */ public List<GcBaseBuildingSubGroup> SubGroups;
+        /* 0x48 */
+        public List<GcBaseBuildingSubGroup> SubGroups;
         [NMS(Index = 3)]
-        /* 0x58 */ public int DefaultColourIdx;
+        /* 0x58 */
+        public int DefaultColourIdx;
     }
 }

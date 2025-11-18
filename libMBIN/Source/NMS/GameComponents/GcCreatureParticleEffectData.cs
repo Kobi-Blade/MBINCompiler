@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureParticleEffectData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<GcCreatureParticleEffectDataEntry> Effects;
+        /* 0x00 */
+        public List<GcCreatureParticleEffectDataEntry> Effects;
         [NMS(Index = 1)]
-        /* 0x10 */ public GcCreatureParticleEffectTrigger RetireTriggers;
+        /* 0x10 */
+        public GcCreatureParticleEffectTrigger RetireTriggers;
         [NMS(Index = 0)]
-        /* 0x14 */ public GcCreatureParticleEffectTrigger SpawnTriggers;
+        /* 0x14 */
+        public GcCreatureParticleEffectTrigger SpawnTriggers;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCriticalMissionsDone : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public bool OnlyCheckSeasonalCriticals;
+        /* 0x0 */
+        public bool OnlyCheckSeasonalCriticals;
         [NMS(Index = 0)]
-        /* 0x1 */ public bool Warped;
+        /* 0x1 */
+        public bool Warped;
     }
 }

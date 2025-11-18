@@ -4,15 +4,20 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCNavigationAreaComponentData : NMSTemplate
     {
         [NMS(Index = 7)]
-        /* 0x00 */ public float ConnectionLengthFactor;
+        /* 0x00 */
+        public float ConnectionLengthFactor;
         [NMS(Index = 5)]
-        /* 0x04 */ public float MaxNeighbourSlope;
+        /* 0x04 */
+        public float MaxNeighbourSlope;
         [NMS(Index = 2)]
-        /* 0x08 */ public float MaxRadius;
+        /* 0x08 */
+        public float MaxRadius;
         [NMS(Index = 1)]
-        /* 0x0C */ public float MinRadius;
+        /* 0x0C */
+        public float MinRadius;
         // size: 0x9
-        public enum NavAreaTypeEnum : uint {
+        public enum NavAreaTypeEnum : uint
+        {
             Normal,
             BuildingWithExterior,
             Debris,
@@ -24,12 +29,16 @@ namespace libMBIN.NMS.GameComponents
             FreighterBase,
         }
         [NMS(Index = 0)]
-        /* 0x10 */ public NavAreaTypeEnum NavAreaType;
+        /* 0x10 */
+        public NavAreaTypeEnum NavAreaType;
         [NMS(Index = 4)]
-        /* 0x14 */ public float NeighbourCandidateDistance;
+        /* 0x14 */
+        public float NeighbourCandidateDistance;
         [NMS(Index = 3)]
-        /* 0x18 */ public float SphereCastHeightClearance;
+        /* 0x18 */
+        public float SphereCastHeightClearance;
         [NMS(Index = 6)]
-        /* 0x1C */ public bool LimitPOIConnections;
+        /* 0x1C */
+        public bool LimitPOIConnections;
     }
 }

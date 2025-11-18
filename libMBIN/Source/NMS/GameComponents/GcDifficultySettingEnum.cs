@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcDifficultySettingEnum : NMSTemplate
     {
         // size: 0x1E
-        public enum DifficultySettingEnum : uint {
+        public enum DifficultySettingEnum : uint
+        {
             SettingsLocked,
             InventoriesAlwaysInRange,
             AllSlotsUnlocked,
@@ -37,6 +38,7 @@ namespace libMBIN.NMS.GameComponents
             NPCPopulation,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DifficultySettingEnum DifficultySetting;
+        /* 0x0 */
+        public DifficultySettingEnum DifficultySetting;
     }
 }

@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkNGuiEditorSavedFavourite : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x000 */ public List<TkNGuiEditorSavedFavourite> Children;
+        /* 0x000 */
+        public List<TkNGuiEditorSavedFavourite> Children;
         [NMS(Index = 0)]
-        /* 0x010 */ public NMSString0x100 Name;
+        /* 0x010 */
+        public NMSString0x100 Name;
         [NMS(Index = 1)]
-        /* 0x110 */ public bool AddedManually;
+        /* 0x110 */
+        public bool AddedManually;
     }
 }

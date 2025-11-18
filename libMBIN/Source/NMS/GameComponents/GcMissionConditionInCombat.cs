@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionInCombat : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A OverrideOSDMessage;
+        /* 0x00 */
+        public NMSString0x20A OverrideOSDMessage;
         // size: 0x9
-        public enum CombatTypeEnum : uint {
+        public enum CombatTypeEnum : uint
+        {
             GroundCombat,
             SpaceCombat,
             FiendCombat,
@@ -18,14 +20,19 @@ namespace libMBIN.NMS.GameComponents
             JellyBoss,
         }
         [NMS(Index = 0)]
-        /* 0x20 */ public CombatTypeEnum CombatType;
+        /* 0x20 */
+        public CombatTypeEnum CombatType;
         [NMS(Index = 2)]
-        /* 0x24 */ public bool CheckAllFireteamMembers;
+        /* 0x24 */
+        public bool CheckAllFireteamMembers;
         [NMS(Index = 3)]
-        /* 0x25 */ public bool EncouragesFightingSentinels;
+        /* 0x25 */
+        public bool EncouragesFightingSentinels;
         [NMS(Index = 5)]
-        /* 0x26 */ public bool SpaceCombatTextCountsPirates;
+        /* 0x26 */
+        public bool SpaceCombatTextCountsPirates;
         [NMS(Index = 4)]
-        /* 0x27 */ public bool SpaceCombatTextCountsSentinels;
+        /* 0x27 */
+        public bool SpaceCombatTextCountsSentinels;
     }
 }

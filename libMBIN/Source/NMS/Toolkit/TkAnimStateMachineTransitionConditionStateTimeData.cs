@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimStateMachineTransitionConditionStateTimeData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float MaxTime;
+        /* 0x0 */
+        public float MaxTime;
         [NMS(Index = 0)]
-        /* 0x4 */ public float MinTime;
+        /* 0x4 */
+        public float MinTime;
     }
 }

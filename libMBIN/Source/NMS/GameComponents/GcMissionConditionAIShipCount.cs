@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionAIShipCount : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Count;
+        /* 0x0 */
+        public int Count;
         [NMS(Index = 2)]
-        /* 0x4 */ public TkEqualityEnum Test;
+        /* 0x4 */
+        public TkEqualityEnum Test;
         [NMS(Index = 0)]
-        /* 0x8 */ public GcRealityCommonFactions Type;
+        /* 0x8 */
+        public GcRealityCommonFactions Type;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCPropType : NMSTemplate
     {
         // size: 0xF
-        public enum NPCPropEnum : uint {
+        public enum NPCPropEnum : uint
+        {
             None,
             Default,
             DontCare,
@@ -22,6 +23,7 @@ namespace libMBIN.NMS.GameComponents
             Staff,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NPCPropEnum NPCProp;
+        /* 0x0 */
+        public NPCPropEnum NPCProp;
     }
 }

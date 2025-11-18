@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiFileBrowserRecents : NMSTemplate
     {
         [NMS(Index = 0, Size = 0xA)]
-        /* 0x0 */ public NMSString0x100[] Recents;
+        /* 0x0 */
+        public NMSString0x100[] Recents;
     }
 }

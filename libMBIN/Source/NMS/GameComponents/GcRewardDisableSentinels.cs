@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardDisableSentinels : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A OSDMessage;
+        /* 0x00 */
+        public NMSString0x20A OSDMessage;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x20A WantedBarMessage;
+        /* 0x20 */
+        public NMSString0x20A WantedBarMessage;
         [NMS(Index = 0)]
-        /* 0x40 */ public float Duration;
+        /* 0x40 */
+        public float Duration;
     }
 }

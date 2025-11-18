@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcScreenFilters : NMSTemplate
     {
         // size: 0x54
-        public enum ScreenFilterEnum : uint {
+        public enum ScreenFilterEnum : uint
+        {
             Default,
             DefaultStorm,
             Frozen,
@@ -91,6 +92,7 @@ namespace libMBIN.NMS.GameComponents
             DeepWater,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ScreenFilterEnum ScreenFilter;
+        /* 0x0 */
+        public ScreenFilterEnum ScreenFilter;
     }
 }

@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.Toolkit
     public class TkNGuiEditorLayout : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<TkNGuiEditorSavedFavourite> FavouriteData;
+        /* 0x00 */
+        public List<TkNGuiEditorSavedFavourite> FavouriteData;
         [NMS(Index = 4)]
-        /* 0x10 */ public List<int> FavouriteTreeNodeChildCounts;
+        /* 0x10 */
+        public List<int> FavouriteTreeNodeChildCounts;
         [NMS(Index = 3)]
-        /* 0x20 */ public List<NMSString0x100> FavouriteTreeNodes;
+        /* 0x20 */
+        public List<NMSString0x100> FavouriteTreeNodes;
         [NMS(Index = 2)]
-        /* 0x30 */ public List<TkNGuiEditorSavedTreeNodeModification> TreeNodeModificationData;
+        /* 0x30 */
+        public List<TkNGuiEditorSavedTreeNodeModification> TreeNodeModificationData;
         [NMS(Index = 0, Size = 0x110)]
-        /* 0x40 */ public TkNGuiWindowLayoutData[] Windows;
+        /* 0x40 */
+        public TkNGuiWindowLayoutData[] Windows;
     }
 }

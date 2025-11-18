@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcByteBeatJukeboxData : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x10)]
-        /* 0x000 */ public NMSString0x10[] Playlist;
+        /* 0x000 */
+        public NMSString0x10[] Playlist;
         [NMS(Index = 2)]
-        /* 0x100 */ public bool Playing;
+        /* 0x100 */
+        public bool Playing;
         [NMS(Index = 1)]
-        /* 0x101 */ public bool Shuffle;
+        /* 0x101 */
+        public bool Shuffle;
     }
 }

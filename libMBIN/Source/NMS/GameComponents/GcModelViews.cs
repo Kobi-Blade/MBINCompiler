@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcModelViews : NMSTemplate
     {
         // size: 0x32
-        public enum ModelViewsEnum : uint {
+        public enum ModelViewsEnum : uint
+        {
             Suit,
             SplitSuit,
             SuitWithCape,
@@ -57,6 +58,7 @@ namespace libMBIN.NMS.GameComponents
             None,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ModelViewsEnum ModelViews;
+        /* 0x0 */
+        public ModelViewsEnum ModelViews;
     }
 }

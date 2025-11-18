@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionPageHint : NMSTemplate
     {
         // size: 0xD
-        public enum MissionPageHintEnum : uint {
+        public enum MissionPageHintEnum : uint
+        {
             None,
             Suit,
             Ship,
@@ -20,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             Options,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionPageHintEnum MissionPageHint;
+        /* 0x0 */
+        public MissionPageHintEnum MissionPageHint;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkSceneBoneRemapping : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x80 FromBone;
+        /* 0x00 */
+        public NMSString0x80 FromBone;
         [NMS(Index = 1)]
-        /* 0x80 */ public NMSString0x80 ToBone;
+        /* 0x80 */
+        public NMSString0x80 ToBone;
     }
 }

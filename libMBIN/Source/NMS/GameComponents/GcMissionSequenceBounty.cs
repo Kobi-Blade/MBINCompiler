@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceBounty : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x10 Bounty;
+        /* 0x00 */
+        public NMSString0x10 Bounty;
         [NMS(Index = 4)]
-        /* 0x10 */ public VariableSizeString DebugText;
+        /* 0x10 */
+        public VariableSizeString DebugText;
         [NMS(Index = 2)]
-        /* 0x20 */ public VariableSizeString MessageDestroy;
+        /* 0x20 */
+        public VariableSizeString MessageDestroy;
         [NMS(Index = 1)]
-        /* 0x30 */ public VariableSizeString MessageEngage;
+        /* 0x30 */
+        public VariableSizeString MessageEngage;
         [NMS(Index = 0)]
-        /* 0x40 */ public VariableSizeString MessageGetToSpace;
+        /* 0x40 */
+        public VariableSizeString MessageGetToSpace;
     }
 }

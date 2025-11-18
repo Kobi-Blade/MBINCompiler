@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimationOverrideList : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<TkAnimationData> Anims;
+        /* 0x00 */
+        public List<TkAnimationData> Anims;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Name;
+        /* 0x10 */
+        public NMSString0x10 Name;
     }
 }

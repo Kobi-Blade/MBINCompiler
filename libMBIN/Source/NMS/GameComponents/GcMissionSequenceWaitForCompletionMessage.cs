@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWaitForCompletionMessage : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A MessageWhenInterstellar;
+        /* 0x00 */
+        public NMSString0x20A MessageWhenInterstellar;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x20A ReturnToOptionalScanEvent;
+        /* 0x20 */
+        public NMSString0x20A ReturnToOptionalScanEvent;
         [NMS(Index = 3)]
-        /* 0x40 */ public NMSString0x10 CompletionCost;
+        /* 0x40 */
+        public NMSString0x10 CompletionCost;
         [NMS(Index = 4)]
-        /* 0x50 */ public VariableSizeString DebugText;
+        /* 0x50 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x60 */ public VariableSizeString Message;
+        /* 0x60 */
+        public VariableSizeString Message;
     }
 }

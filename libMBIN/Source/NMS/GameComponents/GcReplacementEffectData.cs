@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcReplacementEffectData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x00 */
+        public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 ReplaceWith;
+        /* 0x10 */
+        public NMSString0x10 ReplaceWith;
     }
 }

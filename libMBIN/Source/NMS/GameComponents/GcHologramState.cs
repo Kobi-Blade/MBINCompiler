@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcHologramState : NMSTemplate
     {
         // size: 0x4
-        public enum HologramStateEnum : uint {
+        public enum HologramStateEnum : uint
+        {
             Hologram,
             Attract,
             Explode,
             Disabled,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HologramStateEnum HologramState;
+        /* 0x0 */
+        public HologramStateEnum HologramState;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcScanType : NMSTemplate
     {
         // size: 0xB
-        public enum ScanTypeEnum : uint {
+        public enum ScanTypeEnum : uint
+        {
             Tool,
             Beacon,
             RadioTower,
@@ -18,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             VisualOnlyAerial,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ScanTypeEnum ScanType;
+        /* 0x0 */
+        public ScanTypeEnum ScanType;
     }
 }

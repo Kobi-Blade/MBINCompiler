@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatModifyType : NMSTemplate
     {
         // size: 0x3
-        public enum ModifyTypeEnum : uint {
+        public enum ModifyTypeEnum : uint
+        {
             Set,
             Add,
             Subtract,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ModifyTypeEnum ModifyType;
+        /* 0x0 */
+        public ModifyTypeEnum ModifyType;
     }
 }

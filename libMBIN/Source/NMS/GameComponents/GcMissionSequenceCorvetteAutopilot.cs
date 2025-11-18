@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceCorvetteAutopilot : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 2)]
-        /* 0x10 */ public VariableSizeString MessageAutopiloting;
+        /* 0x10 */
+        public VariableSizeString MessageAutopiloting;
         [NMS(Index = 0)]
-        /* 0x20 */ public VariableSizeString MessageNotReadyToAutopilot;
+        /* 0x20 */
+        public VariableSizeString MessageNotReadyToAutopilot;
         [NMS(Index = 1)]
-        /* 0x30 */ public VariableSizeString MessageReadyToAutopilot;
+        /* 0x30 */
+        public VariableSizeString MessageReadyToAutopilot;
         [NMS(Index = 3)]
-        /* 0x40 */ public float RequiredAutopilotTime;
+        /* 0x40 */
+        public float RequiredAutopilotTime;
         [NMS(Index = 4)]
-        /* 0x44 */ public bool TakeTimeFromSeasonData;
+        /* 0x44 */
+        public bool TakeTimeFromSeasonData;
     }
 }

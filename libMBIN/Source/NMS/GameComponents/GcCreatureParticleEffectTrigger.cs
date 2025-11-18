@@ -7,7 +7,8 @@ namespace libMBIN.NMS.GameComponents
     {
         // size: 0x7
         [Flags]
-        public enum CreatureParticleEffectTriggerEnum : uint {
+        public enum CreatureParticleEffectTriggerEnum : uint
+        {
             None = 0x0,
             Spawn = 0x1,
             Despawn = 0x2,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Disappear = 0x20,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CreatureParticleEffectTriggerEnum CreatureParticleEffectTrigger;
+        /* 0x0 */
+        public CreatureParticleEffectTriggerEnum CreatureParticleEffectTrigger;
     }
 }

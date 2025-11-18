@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkSaveID : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public ulong Value;
+        /* 0x0 */
+        public ulong Value;
     }
 }

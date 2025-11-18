@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkMaterialFxFlags : NMSTemplate
     {
         // size: 0x40
-        public enum MaterialFxFlagEnum : uint {
+        public enum MaterialFxFlagEnum : uint
+        {
             _X01,
             _X02_SKINNED,
             _X03_NORMALMAP,
@@ -71,6 +72,7 @@ namespace libMBIN.NMS.Toolkit
             _X64_RESERVED_FLAG_FOR_EARLY_Z_PATCHING_DO_NOT_USE,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MaterialFxFlagEnum MaterialFxFlag;
+        /* 0x0 */
+        public MaterialFxFlagEnum MaterialFxFlag;
     }
 }

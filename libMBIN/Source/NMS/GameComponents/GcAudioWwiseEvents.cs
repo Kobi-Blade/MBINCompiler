@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAudioWwiseEvents : NMSTemplate
     {
         // size: 0xAD0
-        public enum AkEventEnum : uint {
+        public enum AkEventEnum : uint
+        {
             INVALID_EVENT = 0x0,
             ABANDONED_DOOR_UNLOCK = 0x264BED2D,
             ABANDONED_FIEND_IDLE = 0x187DE821,
@@ -2775,6 +2776,7 @@ namespace libMBIN.NMS.GameComponents
             WPN_TERRAIN_UNDO = 0x89B7D91D,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AkEventEnum AkEvent;
+        /* 0x0 */
+        public AkEventEnum AkEvent;
     }
 }

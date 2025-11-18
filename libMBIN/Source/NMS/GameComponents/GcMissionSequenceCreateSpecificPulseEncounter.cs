@@ -4,32 +4,46 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceCreateSpecificPulseEncounter : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public NMSString0x20A ShipHUDOverrideWhenReady;
+        /* 0x00 */
+        public NMSString0x20A ShipHUDOverrideWhenReady;
         [NMS(Index = 13)]
-        /* 0x20 */ public VariableSizeString DebugText;
+        /* 0x20 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x30 */ public VariableSizeString Message;
+        /* 0x30 */
+        public VariableSizeString Message;
         [NMS(Index = 4)]
-        /* 0x40 */ public VariableSizeString MessageEncounterReady;
+        /* 0x40 */
+        public VariableSizeString MessageEncounterReady;
         [NMS(Index = 1)]
-        /* 0x50 */ public VariableSizeString MessageNoShip;
+        /* 0x50 */
+        public VariableSizeString MessageNoShip;
         [NMS(Index = 2)]
-        /* 0x60 */ public VariableSizeString MessageNotPulsing;
+        /* 0x60 */
+        public VariableSizeString MessageNotPulsing;
         [NMS(Index = 3)]
-        /* 0x70 */ public VariableSizeString MessageSignalBlocked;
+        /* 0x70 */
+        public VariableSizeString MessageSignalBlocked;
         [NMS(Index = 7)]
-        /* 0x80 */ public NMSString0x10 PulseEncounterID;
+        /* 0x80 */
+        public NMSString0x10 PulseEncounterID;
         [NMS(Index = 6)]
-        /* 0x90 */ public float MinTimeInPulse;
+        /* 0x90 */
+        public float MinTimeInPulse;
         [NMS(Index = 9)]
-        /* 0x94 */ public bool AllowAnyEncounter;
+        /* 0x94 */
+        public bool AllowAnyEncounter;
         [NMS(Index = 11)]
-        /* 0x95 */ public bool AllowOutsideShip;
+        /* 0x95 */
+        public bool AllowOutsideShip;
         [NMS(Index = 12)]
-        /* 0x96 */ public bool EnsureClearOfSolarSystemObjects;
+        /* 0x96 */
+        public bool EnsureClearOfSolarSystemObjects;
         [NMS(Index = 10)]
-        /* 0x97 */ public bool Silent;
+        /* 0x97 */
+        public bool Silent;
         [NMS(Index = 8)]
-        /* 0x98 */ public bool TakeEncounterIDFromSeasonData;
+        /* 0x98 */
+        public bool TakeEncounterIDFromSeasonData;
     }
 }

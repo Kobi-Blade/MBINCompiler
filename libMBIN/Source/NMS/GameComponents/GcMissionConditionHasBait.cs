@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasBait : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 SpecificID;
+        /* 0x00 */
+        public NMSString0x10 SpecificID;
         [NMS(Index = 0)]
-        /* 0x10 */ public bool OnlyPrimaryBait;
+        /* 0x10 */
+        public bool OnlyPrimaryBait;
         [NMS(Index = 1)]
-        /* 0x11 */ public bool RequireInBaitBox;
+        /* 0x11 */
+        public bool RequireInBaitBox;
         [NMS(Index = 3)]
-        /* 0x12 */ public bool TakeSpecificBaitIDFromSeasonData;
+        /* 0x12 */
+        public bool TakeSpecificBaitIDFromSeasonData;
     }
 }

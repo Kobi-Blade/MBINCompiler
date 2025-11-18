@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionNearFossilDisplay : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Distance;
+        /* 0x0 */
+        public float Distance;
         [NMS(Index = 0)]
-        /* 0x4 */ public bool MustBeComplete;
+        /* 0x4 */
+        public bool MustBeComplete;
     }
 }

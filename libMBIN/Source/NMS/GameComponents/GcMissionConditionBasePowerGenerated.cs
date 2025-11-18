@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionBasePowerGenerated : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int Amount;
+        /* 0x0 */
+        public int Amount;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool MustBeSpare;
+        /* 0x4 */
+        public bool MustBeSpare;
         [NMS(Index = 2)]
-        /* 0x5 */ public bool TakeAmountFromSeasonData;
+        /* 0x5 */
+        public bool TakeAmountFromSeasonData;
     }
 }

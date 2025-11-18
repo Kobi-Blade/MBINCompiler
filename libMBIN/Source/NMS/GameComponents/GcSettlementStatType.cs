@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementStatType : NMSTemplate
     {
         // size: 0x8
-        public enum SettlementStatTypeEnum : uint {
+        public enum SettlementStatTypeEnum : uint
+        {
             MaxPopulation,
             Happiness,
             Production,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             BugAttack,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SettlementStatTypeEnum SettlementStatType;
+        /* 0x0 */
+        public SettlementStatTypeEnum SettlementStatType;
     }
 }

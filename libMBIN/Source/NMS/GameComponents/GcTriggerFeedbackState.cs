@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcTriggerFeedbackState : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x00 */
+        public NMSString0x10 Id;
         [NMS(Index = 2)]
-        /* 0x10 */ public TkTriggerFeedbackData Data;
+        /* 0x10 */
+        public TkTriggerFeedbackData Data;
         [NMS(Index = 1)]
-        /* 0x20 */ public GcInputActions Action;
+        /* 0x20 */
+        public GcInputActions Action;
     }
 }

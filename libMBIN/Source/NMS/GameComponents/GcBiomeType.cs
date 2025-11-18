@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBiomeType : NMSTemplate
     {
         // size: 0x11
-        public enum BiomeEnum : uint {
+        public enum BiomeEnum : uint
+        {
             Lush,
             Toxic,
             Scorched,
@@ -24,6 +25,7 @@ namespace libMBIN.NMS.GameComponents
             All,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BiomeEnum Biome;
+        /* 0x0 */
+        public BiomeEnum Biome;
     }
 }

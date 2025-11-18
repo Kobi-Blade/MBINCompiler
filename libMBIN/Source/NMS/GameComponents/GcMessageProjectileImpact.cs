@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,34 +6,47 @@ namespace libMBIN.NMS.GameComponents
     public class GcMessageProjectileImpact : NMSTemplate
     {
         [NMS(Index = 8)]
-        /* 0x00 */ public Vector3f PosLocal;
+        /* 0x00 */
+        public Vector3f PosLocal;
         [NMS(Index = 9)]
-        /* 0x10 */ public Vector3f PosOffset;
+        /* 0x10 */
+        public Vector3f PosOffset;
         [NMS(Index = 10)]
-        /* 0x20 */ public List<GcImpactCombatEffectData> CombatEffects;
+        /* 0x20 */
+        public List<GcImpactCombatEffectData> CombatEffects;
         [NMS(Index = 11)]
-        /* 0x30 */ public List<GcCombatEffectDamageMultiplier> DamageMultipliers;
+        /* 0x30 */
+        public List<GcCombatEffectDamageMultiplier> DamageMultipliers;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 Id;
+        /* 0x40 */
+        public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x50 */ public int Damage;
+        /* 0x50 */
+        public int Damage;
         // size: 0x3
-        public enum HitTypeEnum : uint {
+        public enum HitTypeEnum : uint
+        {
             Shootable,
             Terrain,
             Generic,
         }
         [NMS(Index = 7)]
-        /* 0x54 */ public HitTypeEnum HitType;
+        /* 0x54 */
+        public HitTypeEnum HitType;
         [NMS(Index = 6)]
-        /* 0x58 */ public GcNodeID Node;
+        /* 0x58 */
+        public GcNodeID Node;
         [NMS(Index = 2)]
-        /* 0x5C */ public GcDamageType Type;
+        /* 0x5C */
+        public GcDamageType Type;
         [NMS(Index = 3)]
-        /* 0x60 */ public bool Critical;
+        /* 0x60 */
+        public bool Critical;
         [NMS(Index = 4)]
-        /* 0x61 */ public bool Ineffective;
+        /* 0x61 */
+        public bool Ineffective;
         [NMS(Index = 5)]
-        /* 0x62 */ public bool LaserHeatBoost;
+        /* 0x62 */
+        public bool LaserHeatBoost;
     }
 }

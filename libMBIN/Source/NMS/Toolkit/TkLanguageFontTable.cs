@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,6 +6,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkLanguageFontTable : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<TkLanguageFontTableEntry> Table;
+        /* 0x0 */
+        public List<TkLanguageFontTableEntry> Table;
     }
 }

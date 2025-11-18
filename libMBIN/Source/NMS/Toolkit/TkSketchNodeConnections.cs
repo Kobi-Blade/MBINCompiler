@@ -6,6 +6,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkSketchNodeConnections : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<uint> Connections;
+        /* 0x0 */
+        public List<uint> Connections;
     }
 }

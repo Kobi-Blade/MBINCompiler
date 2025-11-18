@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkBlackboardComparisonTypeEnum : NMSTemplate
     {
         // size: 0x6
-        public enum ComparisonTypeEnum : uint {
+        public enum ComparisonTypeEnum : uint
+        {
             Equal,
             NotEqual,
             GreaterThan,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.Toolkit
             LessThanEqual,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ComparisonTypeEnum ComparisonType;
+        /* 0x0 */
+        public ComparisonTypeEnum ComparisonType;
     }
 }

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpringWeightModifyingAnim : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Anim;
+        /* 0x00 */
+        public NMSString0x10 Anim;
         [NMS(Index = 1)]
-        /* 0x10 */ public float DesiredWeight;
+        /* 0x10 */
+        public float DesiredWeight;
         [NMS(Index = 2)]
-        /* 0x14 */ public bool IncludeBlendOut;
+        /* 0x14 */
+        public bool IncludeBlendOut;
     }
 }

@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkBehaviourTreePriorityDecoratorData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSTemplate Child;
+        /* 0x0 */
+        public NMSTemplate Child;
     }
 }

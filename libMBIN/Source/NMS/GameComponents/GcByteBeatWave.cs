@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcByteBeatWave : NMSTemplate
     {
         // size: 0x4
-        public enum ByteBeatWaveEnum : uint {
+        public enum ByteBeatWaveEnum : uint
+        {
             SawTooth,
             Sine,
             Square,
             Triangle,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ByteBeatWaveEnum ByteBeatWave;
+        /* 0x0 */
+        public ByteBeatWaveEnum ByteBeatWave;
     }
 }

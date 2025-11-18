@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkLODComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<TkLODModelResource> LODModels;
+        /* 0x00 */
+        public List<TkLODModelResource> LODModels;
         [NMS(Index = 2)]
-        /* 0x10 */ public float CrossFadeOverlap;
+        /* 0x10 */
+        public float CrossFadeOverlap;
         [NMS(Index = 1)]
-        /* 0x14 */ public float CrossFadeTime;
+        /* 0x14 */
+        public float CrossFadeTime;
         [NMS(Index = 3)]
-        /* 0x18 */ public bool UseMasterModel;
+        /* 0x18 */
+        public bool UseMasterModel;
     }
 }

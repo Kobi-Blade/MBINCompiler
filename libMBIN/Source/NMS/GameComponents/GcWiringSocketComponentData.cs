@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcWiringSocketComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool Value;
+        /* 0x0 */
+        public bool Value;
     }
 }

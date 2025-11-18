@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkTrophyEnum : NMSTemplate
     {
         // size: 0x6
-        public enum TrophyEnum : uint {
+        public enum TrophyEnum : uint
+        {
             None = 0xFFFFFFFF,
             Trophy0 = 0x0,
             Trophy1 = 0x1,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.Toolkit
             Trophy4 = 0x4,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TrophyEnum Trophy;
+        /* 0x0 */
+        public TrophyEnum Trophy;
     }
 }

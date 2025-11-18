@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSpecificProductRecipe : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x20A SeasonRewardFormat;
+        /* 0x00 */
+        public NMSString0x20A SeasonRewardFormat;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 ID;
+        /* 0x20 */
+        public NMSString0x10 ID;
         [NMS(Index = 2)]
-        /* 0x30 */ public bool HideInSeasonRewards;
+        /* 0x30 */
+        public bool HideInSeasonRewards;
         [NMS(Index = 1)]
-        /* 0x31 */ public bool Silent;
+        /* 0x31 */
+        public bool Silent;
     }
 }

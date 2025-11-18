@@ -4,13 +4,15 @@ namespace libMBIN.NMS.Toolkit
     public class TkNoiseOffsetEnum : NMSTemplate
     {
         // size: 0x4
-        public enum OffsetTypeEnum : uint {
+        public enum OffsetTypeEnum : uint
+        {
             Zero,
             Base,
             All,
             SeaLevel,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public OffsetTypeEnum OffsetType;
+        /* 0x0 */
+        public OffsetTypeEnum OffsetType;
     }
 }

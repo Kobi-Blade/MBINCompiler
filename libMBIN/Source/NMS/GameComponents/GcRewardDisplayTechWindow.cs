@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardDisplayTechWindow : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 TechID;
+        /* 0x00 */
+        public NMSString0x10 TechID;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool Damaged;
+        /* 0x10 */
+        public bool Damaged;
         [NMS(Index = 3)]
-        /* 0x11 */ public bool FullBox;
+        /* 0x11 */
+        public bool FullBox;
         [NMS(Index = 2)]
-        /* 0x12 */ public bool NeedsInstall;
+        /* 0x12 */
+        public bool NeedsInstall;
     }
 }

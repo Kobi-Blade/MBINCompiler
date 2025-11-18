@@ -7,12 +7,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCombinedStatLevel : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<NMSString0x10> Stats;
+        /* 0x00 */
+        public List<NMSString0x10> Stats;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Amount;
+        /* 0x10 */
+        public int Amount;
         [NMS(Index = 2)]
-        /* 0x14 */ public int Modulo;
+        /* 0x14 */
+        public int Modulo;
         [NMS(Index = 3)]
-        /* 0x18 */ public TkEqualityEnum Test;
+        /* 0x18 */
+        public TkEqualityEnum Test;
     }
 }

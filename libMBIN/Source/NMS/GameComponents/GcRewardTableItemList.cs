@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,11 +6,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardTableItemList : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x10 IncrementStat;
+        /* 0x00 */
+        public NMSString0x10 IncrementStat;
         [NMS(Index = 4)]
-        /* 0x10 */ public List<GcRewardTableItem> List;
+        /* 0x10 */
+        public List<GcRewardTableItem> List;
         // size: 0xC
-        public enum RewardChoiceEnum : uint {
+        public enum RewardChoiceEnum : uint
+        {
             GiveAll,
             Select,
             SelectAlways,
@@ -26,10 +28,13 @@ namespace libMBIN.NMS.GameComponents
             SelectFromSuccessSilent,
         }
         [NMS(Index = 0)]
-        /* 0x20 */ public RewardChoiceEnum RewardChoice;
+        /* 0x20 */
+        public RewardChoiceEnum RewardChoice;
         [NMS(Index = 1)]
-        /* 0x24 */ public bool OverrideZeroSeed;
+        /* 0x24 */
+        public bool OverrideZeroSeed;
         [NMS(Index = 2)]
-        /* 0x25 */ public bool UseInventoryChoiceOverride;
+        /* 0x25 */
+        public bool UseInventoryChoiceOverride;
     }
 }

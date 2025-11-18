@@ -1,7 +1,4 @@
-﻿using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
-namespace libMBIN.NMS
+﻿namespace libMBIN.NMS
 {
     [NMS(Size = 0x10, Alignment = 0x10)]
     public class Vector3f : NMSTemplate

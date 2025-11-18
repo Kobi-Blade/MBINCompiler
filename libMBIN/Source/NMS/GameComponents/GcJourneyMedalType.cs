@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcJourneyMedalType : NMSTemplate
     {
         // size: 0xA
-        public enum MedalTypeEnum : uint {
+        public enum MedalTypeEnum : uint
+        {
             Standings,
             Missions,
             Words,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             DistanceWarped,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MedalTypeEnum MedalType;
+        /* 0x0 */
+        public MedalTypeEnum MedalType;
     }
 }

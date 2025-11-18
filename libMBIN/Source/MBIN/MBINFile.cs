@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Reflection;
 using System.IO;
+using System.Reflection;
 
 namespace libMBIN
 {
@@ -16,7 +16,8 @@ namespace libMBIN
         public static bool IsValid(string path)
         {
             if (!File.Exists(path)) return false;
-            using (var mbin = new MBINFile(path)) {
+            using (var mbin = new MBINFile(path))
+            {
                 return mbin.Load() ? mbin.Header.IsValid : false;
             }
         }

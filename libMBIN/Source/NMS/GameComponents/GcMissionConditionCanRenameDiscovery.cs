@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCanRenameDiscovery : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool ValueToReturnWhileSearchActive;
+        /* 0x0 */
+        public bool ValueToReturnWhileSearchActive;
     }
 }

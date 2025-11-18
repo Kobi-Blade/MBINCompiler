@@ -4,14 +4,17 @@ namespace libMBIN.NMS.GameComponents
     public class GcFrigateInteractionAction : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A CommunicatorDialog;
+        /* 0x00 */
+        public NMSString0x20A CommunicatorDialog;
         // size: 0x3
-        public enum ActionTypeEnum : uint {
+        public enum ActionTypeEnum : uint
+        {
             Repair,
             UpdateDamagedComponents,
             CargoPhoneCall,
         }
         [NMS(Index = 0)]
-        /* 0x20 */ public ActionTypeEnum ActionType;
+        /* 0x20 */
+        public ActionTypeEnum ActionType;
     }
 }

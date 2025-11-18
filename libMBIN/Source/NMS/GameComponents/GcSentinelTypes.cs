@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcSentinelTypes : NMSTemplate
     {
         // size: 0xD
-        public enum SentinelTypeEnum : uint {
+        public enum SentinelTypeEnum : uint
+        {
             PatrolDrone,
             CombatDrone,
             MedicDrone,
@@ -20,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             StoneFloater,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SentinelTypeEnum SentinelType;
+        /* 0x0 */
+        public SentinelTypeEnum SentinelType;
     }
 }

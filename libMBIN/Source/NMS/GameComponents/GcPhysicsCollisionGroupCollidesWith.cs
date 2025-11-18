@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPhysicsCollisionGroupCollidesWith : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<GcPhysicsCollisionGroups> CollidesWith;
+        /* 0x00 */
+        public List<GcPhysicsCollisionGroups> CollidesWith;
         [NMS(Index = 0)]
-        /* 0x10 */ public GcPhysicsCollisionGroups Group;
+        /* 0x10 */
+        public GcPhysicsCollisionGroups Group;
     }
 }

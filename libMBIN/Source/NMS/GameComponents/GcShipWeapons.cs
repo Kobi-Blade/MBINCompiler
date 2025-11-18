@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcShipWeapons : NMSTemplate
     {
         // size: 0x7
-        public enum ShipWeaponEnum : uint {
+        public enum ShipWeaponEnum : uint
+        {
             Laser,
             Projectile,
             Shotgun,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Rocket,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ShipWeaponEnum ShipWeapon;
+        /* 0x0 */
+        public ShipWeaponEnum ShipWeapon;
     }
 }

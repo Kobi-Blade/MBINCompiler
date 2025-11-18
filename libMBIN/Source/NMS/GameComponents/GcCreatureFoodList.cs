@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureFoodList : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 DebrisEffect;
+        /* 0x00 */
+        public NMSString0x10 DebrisEffect;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 FoodProduct;
+        /* 0x10 */
+        public NMSString0x10 FoodProduct;
         [NMS(Index = 1)]
-        /* 0x20 */ public VariableSizeString ResourceFile;
+        /* 0x20 */
+        public VariableSizeString ResourceFile;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcDiscoveryType : NMSTemplate
     {
         // size: 0x11
-        public enum DiscoveryTypeEnum : uint {
+        public enum DiscoveryTypeEnum : uint
+        {
             Unknown,
             SolarSystem,
             Planet,
@@ -24,6 +25,7 @@ namespace libMBIN.NMS.GameComponents
             FriendlyDrone,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DiscoveryTypeEnum DiscoveryType;
+        /* 0x0 */
+        public DiscoveryTypeEnum DiscoveryType;
     }
 }

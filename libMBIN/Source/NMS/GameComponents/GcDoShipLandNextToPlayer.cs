@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcDoShipLandNextToPlayer : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Length;
+        /* 0x0 */
+        public float Length;
         [NMS(Index = 1)]
-        /* 0x4 */ public float Offset;
+        /* 0x4 */
+        public float Offset;
     }
 }

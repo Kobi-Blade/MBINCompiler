@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcHologramType : NMSTemplate
     {
         // size: 0x4
-        public enum HologramTypeEnum : uint {
+        public enum HologramTypeEnum : uint
+        {
             Mesh,
             PlayerCharacter,
             PlayerShip,
             PlayerMultiTool,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HologramTypeEnum HologramType;
+        /* 0x0 */
+        public HologramTypeEnum HologramType;
     }
 }

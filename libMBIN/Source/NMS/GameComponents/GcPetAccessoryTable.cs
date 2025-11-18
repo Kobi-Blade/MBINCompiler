@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetAccessoryTable : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x1E, EnumType = typeof(GcPetAccessoryType.PetAccessoryEnum))]
-        /* 0x000 */ public GcPetAccessoryInfo[] Accessories;
+        /* 0x000 */
+        public GcPetAccessoryInfo[] Accessories;
         [NMS(Index = 1)]
-        /* 0x3C0 */ public List<GcPetAccessoryGroup> AccessoryGroups;
+        /* 0x3C0 */
+        public List<GcPetAccessoryGroup> AccessoryGroups;
     }
 }

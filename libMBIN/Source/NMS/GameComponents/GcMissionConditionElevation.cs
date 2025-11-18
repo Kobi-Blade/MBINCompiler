@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionElevation : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float HeightAboveSea;
+        /* 0x0 */
+        public float HeightAboveSea;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool AllowInShip;
+        /* 0x4 */
+        public bool AllowInShip;
         [NMS(Index = 2)]
-        /* 0x5 */ public bool TakeAmountFromSeasonData;
+        /* 0x5 */
+        public bool TakeAmountFromSeasonData;
     }
 }

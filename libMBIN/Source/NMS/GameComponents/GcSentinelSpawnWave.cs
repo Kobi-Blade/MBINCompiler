@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcSentinelSpawnWave : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x00 */
+        public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x10 */ public List<GcSentinelSpawnData> Spawns;
+        /* 0x10 */
+        public List<GcSentinelSpawnData> Spawns;
         [NMS(Index = 2)]
-        /* 0x20 */ public int ReinforceAt;
+        /* 0x20 */
+        public int ReinforceAt;
     }
 }

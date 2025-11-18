@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkVoxelGeneratorSettingsTypes : NMSTemplate
     {
         // size: 0x1F
-        public enum TerrainSettingsEnum : uint {
+        public enum TerrainSettingsEnum : uint
+        {
             FloatingIslands,
             GrandCanyon,
             MountainRavines,
@@ -38,6 +39,7 @@ namespace libMBIN.NMS.Toolkit
             DesertPurple,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TerrainSettingsEnum TerrainSettings;
+        /* 0x0 */
+        public TerrainSettingsEnum TerrainSettings;
     }
 }

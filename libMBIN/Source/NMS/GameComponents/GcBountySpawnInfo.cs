@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcBountySpawnInfo : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public GcAIShipSpawnData Data;
+        /* 0x000 */
+        public GcAIShipSpawnData Data;
         [NMS(Index = 4)]
-        /* 0x160 */ public NMSString0x20A Label;
+        /* 0x160 */
+        public NMSString0x20A Label;
         [NMS(Index = 3)]
-        /* 0x180 */ public TkTextureResource Icon;
+        /* 0x180 */
+        public TkTextureResource Icon;
         [NMS(Index = 2)]
-        /* 0x198 */ public NMSString0x10 AttackData;
+        /* 0x198 */
+        public NMSString0x10 AttackData;
         [NMS(Index = 0)]
-        /* 0x1A8 */ public NMSString0x10 Id;
+        /* 0x1A8 */
+        public NMSString0x10 Id;
     }
 }

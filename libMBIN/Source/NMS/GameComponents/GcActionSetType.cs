@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcActionSetType : NMSTemplate
     {
         // size: 0x2E
-        public enum ActionSetTypeEnum : uint {
+        public enum ActionSetTypeEnum : uint
+        {
             None,
             FRONTEND,
             Frontend_Right,
@@ -53,6 +54,7 @@ namespace libMBIN.NMS.GameComponents
             BuildMenuBiggsPlacement_Left,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ActionSetTypeEnum ActionSetType;
+        /* 0x0 */
+        public ActionSetTypeEnum ActionSetType;
     }
 }

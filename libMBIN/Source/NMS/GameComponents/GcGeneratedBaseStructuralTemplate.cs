@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcGeneratedBaseStructuralTemplate : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkModelResource TemplateScene;
+        /* 0x00 */
+        public TkModelResource TemplateScene;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 Id;
+        /* 0x20 */
+        public NMSString0x10 Id;
     }
 }

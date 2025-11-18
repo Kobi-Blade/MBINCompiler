@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionPulseEncounterActive : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 SpecificObjectID;
+        /* 0x00 */
+        public NMSString0x10 SpecificObjectID;
         // size: 0x7
-        public enum TestEncounterTypeEnum : uint {
+        public enum TestEncounterTypeEnum : uint
+        {
             AnyEncounter,
             AnyObject,
             SpecificObject,
@@ -16,8 +18,10 @@ namespace libMBIN.NMS.GameComponents
             SpecificID,
         }
         [NMS(Index = 0)]
-        /* 0x10 */ public TestEncounterTypeEnum TestEncounterType;
+        /* 0x10 */
+        public TestEncounterTypeEnum TestEncounterType;
         [NMS(Index = 2)]
-        /* 0x14 */ public bool RequireFullySpawned;
+        /* 0x14 */
+        public bool RequireFullySpawned;
     }
 }

@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionOnMultiplayerMission : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool IncludeCorvetteMissions;
+        /* 0x0 */
+        public bool IncludeCorvetteMissions;
     }
 }

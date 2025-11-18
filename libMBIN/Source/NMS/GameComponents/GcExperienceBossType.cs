@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcExperienceBossType : NMSTemplate
     {
         // size: 0x3
-        public enum ExperienceBossTypeEnum : uint {
+        public enum ExperienceBossTypeEnum : uint
+        {
             BugQueen,
             JellyBoss,
             SpookBoss,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ExperienceBossTypeEnum ExperienceBossType;
+        /* 0x0 */
+        public ExperienceBossTypeEnum ExperienceBossType;
     }
 }

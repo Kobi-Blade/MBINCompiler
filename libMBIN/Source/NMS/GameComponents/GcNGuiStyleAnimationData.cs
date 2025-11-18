@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiStyleAnimationData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public List<GcNGuiStyleAnimationKeyframeData> KeyFrames;
+        /* 0x00 */
+        public List<GcNGuiStyleAnimationKeyframeData> KeyFrames;
         [NMS(Index = 0)]
-        /* 0x10 */ public float Length;
+        /* 0x10 */
+        public float Length;
         [NMS(Index = 2)]
-        /* 0x14 */ public bool AnimateByDefault;
+        /* 0x14 */
+        public bool AnimateByDefault;
         [NMS(Index = 1)]
-        /* 0x15 */ public bool Loop;
+        /* 0x15 */
+        public bool Loop;
     }
 }

@@ -6,12 +6,16 @@ namespace libMBIN.NMS.Globals
     public class GcEffectsGlobals : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public TkModelRendererData ResourceRendererData;
+        /* 0x00 */
+        public TkModelRendererData ResourceRendererData;
         [NMS(Index = 3)]
-        /* 0xB0 */ public TkMaterialResource HologramComponentDefaultMaterial;
+        /* 0xB0 */
+        public TkMaterialResource HologramComponentDefaultMaterial;
         [NMS(Index = 1)]
-        /* 0xC8 */ public float ClickToPlayCameraOffset;
+        /* 0xC8 */
+        public float ClickToPlayCameraOffset;
         [NMS(Index = 0)]
-        /* 0xCC */ public float ClickToPlayScale;
+        /* 0xCC */
+        public float ClickToPlayScale;
     }
 }

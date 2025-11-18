@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcAudio3PointDopplerData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Front;
+        /* 0x0 */
+        public float Front;
         [NMS(Index = 1)]
-        /* 0x4 */ public float Mid;
+        /* 0x4 */
+        public float Mid;
         [NMS(Index = 2)]
-        /* 0x8 */ public float Rear;
+        /* 0x8 */
+        public float Rear;
     }
 }

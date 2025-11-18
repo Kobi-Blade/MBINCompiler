@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcUnlockablePlatformReward : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 ProductId;
+        /* 0x00 */
+        public NMSString0x10 ProductId;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 RewardId;
+        /* 0x10 */
+        public NMSString0x10 RewardId;
     }
 }

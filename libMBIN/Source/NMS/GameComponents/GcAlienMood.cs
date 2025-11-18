@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAlienMood : NMSTemplate
     {
         // size: 0xA
-        public enum MoodEnum : uint {
+        public enum MoodEnum : uint
+        {
             Neutral,
             Positive,
             VeryPositive,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Busy,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MoodEnum Mood;
+        /* 0x0 */
+        public MoodEnum Mood;
     }
 }

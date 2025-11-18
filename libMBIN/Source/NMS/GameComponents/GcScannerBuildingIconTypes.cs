@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcScannerBuildingIconTypes : NMSTemplate
     {
         // size: 0x23
-        public enum ScanBuildingIconTypeEnum : uint {
+        public enum ScanBuildingIconTypeEnum : uint
+        {
             None,
             Generic,
             Shelter,
@@ -42,6 +43,7 @@ namespace libMBIN.NMS.GameComponents
             AbandonedRobotCamp,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ScanBuildingIconTypeEnum ScanBuildingIconType;
+        /* 0x0 */
+        public ScanBuildingIconTypeEnum ScanBuildingIconType;
     }
 }

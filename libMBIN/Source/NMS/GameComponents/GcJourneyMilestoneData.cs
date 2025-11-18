@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcJourneyMilestoneData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A JourneyMilestoneTitle;
+        /* 0x00 */
+        public NMSString0x20A JourneyMilestoneTitle;
         [NMS(Index = 3)]
-        /* 0x20 */ public NMSString0x20A JourneyMilestoneTitleLower;
+        /* 0x20 */
+        public NMSString0x20A JourneyMilestoneTitleLower;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 JourneyMilestoneId;
+        /* 0x40 */
+        public NMSString0x10 JourneyMilestoneId;
         [NMS(Index = 1)]
-        /* 0x50 */ public int PointsToUnlock;
+        /* 0x50 */
+        public int PointsToUnlock;
     }
 }

@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatsOneShotTypes : NMSTemplate
     {
         // size: 0x4
-        public enum StatsOneShotEnum : uint {
+        public enum StatsOneShotEnum : uint
+        {
             ShipLanded,
             ShipLaunched,
             ShipWarped,
             WeaponFired,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public StatsOneShotEnum StatsOneShot;
+        /* 0x0 */
+        public StatsOneShotEnum StatsOneShot;
     }
 }

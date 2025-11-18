@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcByteBeatSwitchComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Temp;
+        /* 0x0 */
+        public float Temp;
     }
 }

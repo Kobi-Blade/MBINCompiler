@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcExperienceDebugTriggerActionTypes : NMSTemplate
     {
         // size: 0x38
-        public enum ExperienceDebugTriggerActionEnum : uint {
+        public enum ExperienceDebugTriggerActionEnum : uint
+        {
             None,
             Drones,
             FlyBy,
@@ -63,6 +64,7 @@ namespace libMBIN.NMS.GameComponents
             WaterTransition,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ExperienceDebugTriggerActionEnum ExperienceDebugTriggerAction;
+        /* 0x0 */
+        public ExperienceDebugTriggerActionEnum ExperienceDebugTriggerAction;
     }
 }

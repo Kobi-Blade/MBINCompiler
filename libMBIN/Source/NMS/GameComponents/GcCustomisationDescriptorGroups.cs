@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationDescriptorGroups : NMSTemplate
     {
         [NMS(Index = 2, KeyField = "DescriptorId")]
-        /* 0x00 */ public HashMap<GcCustomisationDescriptorVisualEffects> DescriptorVisualEffects;
+        /* 0x00 */
+        public HashMap<GcCustomisationDescriptorVisualEffects> DescriptorVisualEffects;
         [NMS(Index = 0)]
-        /* 0x30 */ public List<GcCustomisationDescriptorGroupSet> DescriptorGroupSets;
+        /* 0x30 */
+        public List<GcCustomisationDescriptorGroupSet> DescriptorGroupSets;
         [NMS(Index = 1)]
-        /* 0x40 */ public List<GcCustomisationHeadToRace> HeadRaces;
+        /* 0x40 */
+        public List<GcCustomisationHeadToRace> HeadRaces;
     }
 }

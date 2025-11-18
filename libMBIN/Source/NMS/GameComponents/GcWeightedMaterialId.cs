@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcWeightedMaterialId : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x20A DecorationId;
+        /* 0x00 */
+        public NMSString0x20A DecorationId;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x20A Id;
+        /* 0x20 */
+        public NMSString0x20A Id;
         [NMS(Index = 0)]
-        /* 0x40 */ public float RelativeProbability;
+        /* 0x40 */
+        public float RelativeProbability;
     }
 }

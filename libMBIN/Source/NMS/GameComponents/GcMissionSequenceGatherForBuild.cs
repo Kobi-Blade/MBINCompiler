@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceGatherForBuild : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 2)]
-        /* 0x10 */ public NMSString0x10 GatherResource;
+        /* 0x10 */
+        public NMSString0x10 GatherResource;
         [NMS(Index = 0)]
-        /* 0x20 */ public VariableSizeString Message;
+        /* 0x20 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x30 */ public NMSString0x10 TargetTech;
+        /* 0x30 */
+        public NMSString0x10 TargetTech;
     }
 }

@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcDifficultyOptionUIGroup : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A HeadingLocID;
+        /* 0x00 */
+        public NMSString0x20A HeadingLocID;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<GcDifficultySettingUIOption> DifficultyOptions;
+        /* 0x20 */
+        public List<GcDifficultySettingUIOption> DifficultyOptions;
     }
 }

@@ -1,13 +1,13 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0xBEB36DAB59C5349F, NameHash = 0x2A9E41D3)]
     public class GcGenericRewardTableEntry : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public GcRewardTableItemList List;
+        /* 0x00 */
+        public GcRewardTableItemList List;
         [NMS(Index = 0)]
-        /* 0x28 */ public NMSString0x10 Id;
+        /* 0x28 */
+        public NMSString0x10 Id;
     }
 }

@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,36 +6,52 @@ namespace libMBIN.NMS.GameComponents
     public class GcFleetFrigateSaveData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public GcSeed ForcedTraitsSeed;
+        /* 0x00 */
+        public GcSeed ForcedTraitsSeed;
         [NMS(Index = 1)]
-        /* 0x10 */ public GcSeed HomeSystemSeed;
+        /* 0x10 */
+        public GcSeed HomeSystemSeed;
         [NMS(Index = 0)]
-        /* 0x20 */ public GcSeed ResourceSeed;
+        /* 0x20 */
+        public GcSeed ResourceSeed;
         [NMS(Index = 13)]
-        /* 0x30 */ public List<int> Stats;
+        /* 0x30 */
+        public List<int> Stats;
         [NMS(Index = 12)]
-        /* 0x40 */ public List<NMSString0x10> TraitIDs;
+        /* 0x40 */
+        public List<NMSString0x10> TraitIDs;
         [NMS(Index = 3)]
-        /* 0x50 */ public ulong TimeOfLastIncomeCollection;
+        /* 0x50 */
+        public ulong TimeOfLastIncomeCollection;
         [NMS(Index = 15)]
-        /* 0x58 */ public int DamageTaken;
+        /* 0x58 */
+        public int DamageTaken;
         [NMS(Index = 5)]
-        /* 0x5C */ public GcFrigateClass FrigateClass;
+        /* 0x5C */
+        public GcFrigateClass FrigateClass;
         [NMS(Index = 7)]
-        /* 0x60 */ public GcInventoryClass InventoryClass;
+        /* 0x60 */
+        public GcInventoryClass InventoryClass;
         [NMS(Index = 11)]
-        /* 0x64 */ public int NumberOfTimesDamaged;
+        /* 0x64 */
+        public int NumberOfTimesDamaged;
         [NMS(Index = 6)]
-        /* 0x68 */ public GcAlienRace Race;
+        /* 0x68 */
+        public GcAlienRace Race;
         [NMS(Index = 14)]
-        /* 0x6C */ public int RepairsMade;
+        /* 0x6C */
+        public int RepairsMade;
         [NMS(Index = 8)]
-        /* 0x70 */ public int TotalNumberOfExpeditions;
+        /* 0x70 */
+        public int TotalNumberOfExpeditions;
         [NMS(Index = 10)]
-        /* 0x74 */ public int TotalNumberOfFailedEvents;
+        /* 0x74 */
+        public int TotalNumberOfFailedEvents;
         [NMS(Index = 9)]
-        /* 0x78 */ public int TotalNumberOfSuccessfulEvents;
+        /* 0x78 */
+        public int TotalNumberOfSuccessfulEvents;
         [NMS(Index = 4)]
-        /* 0x7C */ public NMSString0x100 CustomName;
+        /* 0x7C */
+        public NMSString0x100 CustomName;
     }
 }

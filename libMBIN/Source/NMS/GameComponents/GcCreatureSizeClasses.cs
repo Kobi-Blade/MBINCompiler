@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureSizeClasses : NMSTemplate
     {
         // size: 0x4
-        public enum CreatureSizeClassEnum : uint {
+        public enum CreatureSizeClassEnum : uint
+        {
             Small,
             Medium,
             Large,
             Huge,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CreatureSizeClassEnum CreatureSizeClass;
+        /* 0x0 */
+        public CreatureSizeClassEnum CreatureSizeClass;
     }
 }

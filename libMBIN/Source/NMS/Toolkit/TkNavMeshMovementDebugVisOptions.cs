@@ -4,9 +4,11 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshMovementDebugVisOptions : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float VelocityArrowLookAheadTime;
+        /* 0x0 */
+        public float VelocityArrowLookAheadTime;
         // size: 0xD
-        public enum NavMeshMovementDebugVisFlagsEnum : ushort {
+        public enum NavMeshMovementDebugVisFlagsEnum : ushort
+        {
             None = 0x0,
             Corridor = 0x1,
             PointPath = 0x2,
@@ -22,6 +24,7 @@ namespace libMBIN.NMS.Toolkit
             ObstacleAvoidance = 0x800,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public NavMeshMovementDebugVisFlagsEnum NavMeshMovementDebugVisFlags;
+        /* 0x4 */
+        public NavMeshMovementDebugVisFlagsEnum NavMeshMovementDebugVisFlags;
     }
 }

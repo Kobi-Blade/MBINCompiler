@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatTrackType : NMSTemplate
     {
         // size: 0x4
-        public enum StatTrackTypeEnum : uint {
+        public enum StatTrackTypeEnum : uint
+        {
             Set,
             Add,
             Max,
             Min,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public StatTrackTypeEnum StatTrackType;
+        /* 0x0 */
+        public StatTrackTypeEnum StatTrackType;
     }
 }

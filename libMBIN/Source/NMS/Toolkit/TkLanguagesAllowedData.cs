@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkLanguagesAllowedData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<TkLanguages> Allowed;
+        /* 0x00 */
+        public List<TkLanguages> Allowed;
         [NMS(Index = 1)]
-        /* 0x10 */ public TkLanguages Fallback;
+        /* 0x10 */
+        public TkLanguages Fallback;
     }
 }

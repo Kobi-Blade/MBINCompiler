@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationShipTrails : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkModelResource Trails;
+        /* 0x00 */
+        public TkModelResource Trails;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 LinkedTechID;
+        /* 0x20 */
+        public NMSString0x10 LinkedTechID;
     }
 }

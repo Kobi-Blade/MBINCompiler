@@ -4,10 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkAudioEmitterLine : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f End;
+        /* 0x00 */
+        public Vector3f End;
         [NMS(Index = 0)]
-        /* 0x10 */ public Vector3f Start;
+        /* 0x10 */
+        public Vector3f Start;
         [NMS(Index = 2)]
-        /* 0x20 */ public float Spacing;
+        /* 0x20 */
+        public float Spacing;
     }
 }

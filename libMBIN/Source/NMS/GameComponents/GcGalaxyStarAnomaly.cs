@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcGalaxyStarAnomaly : NMSTemplate
     {
         // size: 0x5
-        public enum GalaxyStarAnomalyEnum : uint {
+        public enum GalaxyStarAnomalyEnum : uint
+        {
             None,
             AtlasStation,
             AtlasStationFinal,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             MiniStation,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public GalaxyStarAnomalyEnum GalaxyStarAnomaly;
+        /* 0x0 */
+        public GalaxyStarAnomalyEnum GalaxyStarAnomaly;
     }
 }

@@ -4,32 +4,46 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostTableEntry : NMSTemplate
     {
         [NMS(Index = 11)]
-        /* 0x00 */ public NMSString0x20A CannotAffordOSDMsg;
+        /* 0x00 */
+        public NMSString0x20A CannotAffordOSDMsg;
         [NMS(Index = 10)]
-        /* 0x20 */ public NMSString0x20A CommunityContributionCapLocID;
+        /* 0x20 */
+        public NMSString0x20A CommunityContributionCapLocID;
         [NMS(Index = 13)]
-        /* 0x40 */ public NMSTemplate Cost;
+        /* 0x40 */
+        public NMSTemplate Cost;
         [NMS(Index = 0)]
-        /* 0x50 */ public NMSString0x10 Id;
+        /* 0x50 */
+        public NMSString0x10 Id;
         [NMS(Index = 12)]
-        /* 0x60 */ public NMSString0x10 MissionMessageWhenCharged;
+        /* 0x60 */
+        public NMSString0x10 MissionMessageWhenCharged;
         [NMS(Index = 9)]
-        /* 0x70 */ public int CommunityContributionValue;
+        /* 0x70 */
+        public int CommunityContributionValue;
         [NMS(Index = 1)]
-        /* 0x74 */ public bool DisplayCost;
+        /* 0x74 */
+        public bool DisplayCost;
         [NMS(Index = 4)]
-        /* 0x75 */ public bool DisplayOnlyCostIfCantAfford;
+        /* 0x75 */
+        public bool DisplayOnlyCostIfCantAfford;
         [NMS(Index = 2)]
-        /* 0x76 */ public bool DontCharge;
+        /* 0x76 */
+        public bool DontCharge;
         [NMS(Index = 5)]
-        /* 0x77 */ public bool HideCostStringIfCanAfford;
+        /* 0x77 */
+        public bool HideCostStringIfCanAfford;
         [NMS(Index = 3)]
-        /* 0x78 */ public bool HideOptionAndDisplayCostOnly;
+        /* 0x78 */
+        public bool HideOptionAndDisplayCostOnly;
         [NMS(Index = 7)]
-        /* 0x79 */ public bool InvertCanAffordOutcome;
+        /* 0x79 */
+        public bool InvertCanAffordOutcome;
         [NMS(Index = 8)]
-        /* 0x7A */ public bool MustAffordInCreative;
+        /* 0x7A */
+        public bool MustAffordInCreative;
         [NMS(Index = 6)]
-        /* 0x7B */ public bool RemoveOptionIfCantAfford;
+        /* 0x7B */
+        public bool RemoveOptionIfCantAfford;
     }
 }

@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardJetpackBoost : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Duration;
+        /* 0x0 */
+        public float Duration;
         [NMS(Index = 1)]
-        /* 0x4 */ public float ForwardBoost;
+        /* 0x4 */
+        public float ForwardBoost;
         [NMS(Index = 3)]
-        /* 0x8 */ public float IgnitionBoost;
+        /* 0x8 */
+        public float IgnitionBoost;
         [NMS(Index = 2)]
-        /* 0xC */ public float UpBoost;
+        /* 0xC */
+        public float UpBoost;
     }
 }

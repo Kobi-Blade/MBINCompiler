@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCameraShakeTriggerData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Anim;
+        /* 0x00 */
+        public NMSString0x10 Anim;
         [NMS(Index = 1)]
-        /* 0x10 */ public int FrameStart;
+        /* 0x10 */
+        public int FrameStart;
         [NMS(Index = 2)]
-        /* 0x14 */ public NMSString0x20 Shake;
+        /* 0x14 */
+        public NMSString0x20 Shake;
     }
 }

@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimationAttachmentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 AnimGroup;
+        /* 0x0 */
+        public NMSString0x10 AnimGroup;
     }
 }

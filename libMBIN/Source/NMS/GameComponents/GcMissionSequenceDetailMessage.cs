@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,20 +6,28 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceDetailMessage : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A Description;
+        /* 0x00 */
+        public NMSString0x20A Description;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x20A Image;
+        /* 0x20 */
+        public NMSString0x20A Image;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x20A Title;
+        /* 0x40 */
+        public NMSString0x20A Title;
         [NMS(Index = 7)]
-        /* 0x60 */ public VariableSizeString DebugText;
+        /* 0x60 */
+        public VariableSizeString DebugText;
         [NMS(Index = 5)]
-        /* 0x70 */ public List<GcMissionSequenceDetailMessagePoint> Points;
+        /* 0x70 */
+        public List<GcMissionSequenceDetailMessagePoint> Points;
         [NMS(Index = 3)]
-        /* 0x80 */ public NMSString0x10 TakeImageFromItemIcon;
+        /* 0x80 */
+        public NMSString0x10 TakeImageFromItemIcon;
         [NMS(Index = 4)]
-        /* 0x90 */ public GcAudioWwiseEvents AudioEvent;
+        /* 0x90 */
+        public GcAudioWwiseEvents AudioEvent;
         [NMS(Index = 6)]
-        /* 0x94 */ public bool TakeDataFromSeason;
+        /* 0x94 */
+        public bool TakeDataFromSeason;
     }
 }

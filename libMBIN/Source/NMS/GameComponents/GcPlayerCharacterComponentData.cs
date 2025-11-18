@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerCharacterComponentData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 IntialPlayerControlMode;
+        /* 0x00 */
+        public NMSString0x10 IntialPlayerControlMode;
         [NMS(Index = 0)]
-        /* 0x10 */ public List<GcCharacterJetpackEffect> JetpackEffects;
+        /* 0x10 */
+        public List<GcCharacterJetpackEffect> JetpackEffects;
         [NMS(Index = 2)]
-        /* 0x20 */ public List<GcPlayerControlModeEntry> PlayerControlModes;
+        /* 0x20 */
+        public List<GcPlayerControlModeEntry> PlayerControlModes;
     }
 }

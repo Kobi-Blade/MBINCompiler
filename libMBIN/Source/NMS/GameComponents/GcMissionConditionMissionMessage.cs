@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionMissionMessage : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Message;
+        /* 0x00 */
+        public NMSString0x10 Message;
         [NMS(Index = 1)]
-        /* 0x10 */ public VariableSizeString MessageToFormatSeasonalIDInto;
+        /* 0x10 */
+        public VariableSizeString MessageToFormatSeasonalIDInto;
     }
 }

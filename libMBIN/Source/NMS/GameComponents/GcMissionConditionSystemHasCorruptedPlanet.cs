@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSystemHasCorruptedPlanet : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool AllowNexus;
+        /* 0x0 */
+        public bool AllowNexus;
     }
 }

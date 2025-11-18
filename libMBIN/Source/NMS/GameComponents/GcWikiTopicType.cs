@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWikiTopicType : NMSTemplate
     {
         // size: 0x1F
-        public enum WikiTopicTypeEnum : uint {
+        public enum WikiTopicTypeEnum : uint
+        {
             Substances,
             CustomSubstanceList,
             Products,
@@ -38,6 +39,7 @@ namespace libMBIN.NMS.GameComponents
             DebugSweep,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WikiTopicTypeEnum WikiTopicType;
+        /* 0x0 */
+        public WikiTopicTypeEnum WikiTopicType;
     }
 }

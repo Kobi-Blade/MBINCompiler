@@ -4,16 +4,20 @@ namespace libMBIN.NMS.Toolkit
     public class TkDynamicResScalingSettings : NMSTemplate
     {
         // size: 0x3
-        public enum DynamicResScalingAggressivenessEnum : uint {
+        public enum DynamicResScalingAggressivenessEnum : uint
+        {
             Moderate,
             Balanced,
             Aggressive,
         }
         [NMS(Index = 1)]
-        /* 0x0 */ public DynamicResScalingAggressivenessEnum DynamicResScalingAggressiveness;
+        /* 0x0 */
+        public DynamicResScalingAggressivenessEnum DynamicResScalingAggressiveness;
         [NMS(Index = 2)]
-        /* 0x4 */ public float FrametimeHeadroomProportion;
+        /* 0x4 */
+        public float FrametimeHeadroomProportion;
         [NMS(Index = 0)]
-        /* 0x8 */ public float LowestDynamicResScalingFactor;
+        /* 0x8 */
+        public float LowestDynamicResScalingFactor;
     }
 }

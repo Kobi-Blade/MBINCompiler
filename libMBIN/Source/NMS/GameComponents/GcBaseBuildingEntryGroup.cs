@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingEntryGroup : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Group;
+        /* 0x00 */
+        public NMSString0x10 Group;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 SubGroupName;
+        /* 0x10 */
+        public NMSString0x10 SubGroupName;
         [NMS(Index = 2)]
-        /* 0x20 */ public int SubGroup;
+        /* 0x20 */
+        public int SubGroup;
     }
 }

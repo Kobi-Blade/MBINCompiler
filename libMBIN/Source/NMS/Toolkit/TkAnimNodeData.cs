@@ -4,12 +4,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimNodeData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public VariableSizeString Node;
+        /* 0x00 */
+        public VariableSizeString Node;
         [NMS(Index = 1)]
-        /* 0x10 */ public int RotIndex;
+        /* 0x10 */
+        public int RotIndex;
         [NMS(Index = 3)]
-        /* 0x14 */ public int ScaleIndex;
+        /* 0x14 */
+        public int ScaleIndex;
         [NMS(Index = 2)]
-        /* 0x18 */ public int TransIndex;
+        /* 0x18 */
+        public int TransIndex;
     }
 }

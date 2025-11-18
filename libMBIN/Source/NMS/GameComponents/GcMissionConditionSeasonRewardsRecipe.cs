@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSeasonRewardsRecipe : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 RecipeID;
+        /* 0x0 */
+        public NMSString0x10 RecipeID;
     }
 }

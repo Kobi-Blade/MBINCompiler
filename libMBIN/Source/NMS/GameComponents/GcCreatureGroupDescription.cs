@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureGroupDescription : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Group;
+        /* 0x00 */
+        public NMSString0x10 Group;
         [NMS(Index = 3)]
-        /* 0x10 */ public float GroupsPerSquareKm;
+        /* 0x10 */
+        public float GroupsPerSquareKm;
         [NMS(Index = 2)]
-        /* 0x14 */ public int MaxGroupSize;
+        /* 0x14 */
+        public int MaxGroupSize;
         [NMS(Index = 1)]
-        /* 0x18 */ public int MinGroupSize;
+        /* 0x18 */
+        public int MinGroupSize;
     }
 }

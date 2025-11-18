@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TKNGuiEditorComponentSize : NMSTemplate
     {
         // size: 0x41
-        public enum NGuiEditorComponentSizeEnum : uint {
+        public enum NGuiEditorComponentSizeEnum : uint
+        {
             WindowResize,
             WindowButton,
             MinimumWindowHeight,
@@ -72,6 +73,7 @@ namespace libMBIN.NMS.Toolkit
             TooltipMaxWidth,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NGuiEditorComponentSizeEnum NGuiEditorComponentSize;
+        /* 0x0 */
+        public NGuiEditorComponentSizeEnum NGuiEditorComponentSize;
     }
 }

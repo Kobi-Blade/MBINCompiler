@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPortalSaveData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public GcSeed PortalSeed;
+        /* 0x00 */
+        public GcSeed PortalSeed;
         [NMS(Index = 1)]
-        /* 0x10 */ public ulong LastPortalUA;
+        /* 0x10 */
+        public ulong LastPortalUA;
         [NMS(Index = 2)]
-        /* 0x18 */ public bool IsStoryPortal;
+        /* 0x18 */
+        public bool IsStoryPortal;
     }
 }

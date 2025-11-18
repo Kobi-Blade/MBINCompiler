@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcGroupCondition : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<NMSTemplate> Conditions;
+        /* 0x00 */
+        public List<NMSTemplate> Conditions;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool ORConditions;
+        /* 0x10 */
+        public bool ORConditions;
     }
 }

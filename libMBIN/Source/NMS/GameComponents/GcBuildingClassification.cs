@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildingClassification : NMSTemplate
     {
         // size: 0x3C
-        public enum BuildingClassEnum : uint {
+        public enum BuildingClassEnum : uint
+        {
             None,
             TerrainResource,
             Shelter,
@@ -67,6 +68,7 @@ namespace libMBIN.NMS.GameComponents
             Settlement_Builders_RoboArm,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BuildingClassEnum BuildingClass;
+        /* 0x0 */
+        public BuildingClassEnum BuildingClass;
     }
 }

@@ -1,14 +1,14 @@
-using libMBIN.NMS.Toolkit;
-
 namespace libMBIN.NMS.Toolkit
 {
     [NMS(GUID = 0x85BB6DB5973269FE, NameHash = 0x2D59643E)]
     public class TkGraphicsDetailPreset : NMSTemplate
     {
         [NMS(Index = 22)]
-        /* 0x00 */ public TkDynamicResScalingSettings DynamicResScalingSettings;
+        /* 0x00 */
+        public TkDynamicResScalingSettings DynamicResScalingSettings;
         // size: 0x7
-        public enum AmbientOcclusionEnum : uint {
+        public enum AmbientOcclusionEnum : uint
+        {
             Off,
             GTAO_Low,
             GTAO_Medium,
@@ -18,11 +18,14 @@ namespace libMBIN.NMS.Toolkit
             HBAO_High,
         }
         [NMS(Index = 19)]
-        /* 0x0C */ public AmbientOcclusionEnum AmbientOcclusion;
+        /* 0x0C */
+        public AmbientOcclusionEnum AmbientOcclusion;
         [NMS(Index = 1)]
-        /* 0x10 */ public TkGraphicsDetailTypes AnimationQuality;
+        /* 0x10 */
+        public TkGraphicsDetailTypes AnimationQuality;
         // size: 0x5
-        public enum AnisotropyLevelEnum : uint {
+        public enum AnisotropyLevelEnum : uint
+        {
             _1,
             _2,
             _4,
@@ -30,9 +33,11 @@ namespace libMBIN.NMS.Toolkit
             _16,
         }
         [NMS(Index = 20)]
-        /* 0x14 */ public AnisotropyLevelEnum AnisotropyLevel;
+        /* 0x14 */
+        public AnisotropyLevelEnum AnisotropyLevel;
         // size: 0xA
-        public enum AntiAliasingEnum : uint {
+        public enum AntiAliasingEnum : uint
+        {
             None,
             TAA_LOW,
             TAA,
@@ -45,20 +50,25 @@ namespace libMBIN.NMS.Toolkit
             MetalFXTemporal,
         }
         [NMS(Index = 21)]
-        /* 0x18 */ public AntiAliasingEnum AntiAliasing;
+        /* 0x18 */
+        public AntiAliasingEnum AntiAliasing;
         [NMS(Index = 9)]
-        /* 0x1C */ public TkGraphicsDetailTypes BaseQuality;
+        /* 0x1C */
+        public TkGraphicsDetailTypes BaseQuality;
         // size: 0x4
-        public enum DLSSFrameGenerationEnum : uint {
+        public enum DLSSFrameGenerationEnum : uint
+        {
             On2X,
             Off,
             On3X,
             On4X,
         }
         [NMS(Index = 12)]
-        /* 0x20 */ public DLSSFrameGenerationEnum DLSSFrameGeneration;
+        /* 0x20 */
+        public DLSSFrameGenerationEnum DLSSFrameGeneration;
         // size: 0x5
-        public enum DLSSQualityEnum : uint {
+        public enum DLSSQualityEnum : uint
+        {
             MaxPerformance,
             Balanced,
             MaxQuality,
@@ -66,9 +76,11 @@ namespace libMBIN.NMS.Toolkit
             UltraQuality,
         }
         [NMS(Index = 11)]
-        /* 0x24 */ public DLSSQualityEnum DLSSQuality;
+        /* 0x24 */
+        public DLSSQualityEnum DLSSQuality;
         // size: 0x5
-        public enum FFXSR2QualityEnum : uint {
+        public enum FFXSR2QualityEnum : uint
+        {
             UltraPerformance,
             Performance,
             Balanced,
@@ -76,9 +88,11 @@ namespace libMBIN.NMS.Toolkit
             Native,
         }
         [NMS(Index = 15)]
-        /* 0x28 */ public FFXSR2QualityEnum FFXSR2Quality;
+        /* 0x28 */
+        public FFXSR2QualityEnum FFXSR2Quality;
         // size: 0x5
-        public enum FFXSRQualityEnum : uint {
+        public enum FFXSRQualityEnum : uint
+        {
             Off,
             UltraQuality,
             Quality,
@@ -86,57 +100,75 @@ namespace libMBIN.NMS.Toolkit
             Performance,
         }
         [NMS(Index = 14)]
-        /* 0x2C */ public FFXSRQualityEnum FFXSRQuality;
+        /* 0x2C */
+        public FFXSRQualityEnum FFXSRQuality;
         // size: 0x3
-        public enum MetalFXModeEnum : uint {
+        public enum MetalFXModeEnum : uint
+        {
             Off,
             Spatial,
             Temporal,
         }
         [NMS(Index = 17)]
-        /* 0x30 */ public MetalFXModeEnum MetalFXMode;
+        /* 0x30 */
+        public MetalFXModeEnum MetalFXMode;
         // size: 0x4
-        public enum MetalFXQualityEnum : uint {
+        public enum MetalFXQualityEnum : uint
+        {
             UltraQuality,
             Quality,
             Balanced,
             Performance,
         }
         [NMS(Index = 18)]
-        /* 0x34 */ public MetalFXQualityEnum MetalFXQuality;
+        /* 0x34 */
+        public MetalFXQualityEnum MetalFXQuality;
         // size: 0x3
-        public enum NVIDIAReflexLowLatencyEnum : uint {
+        public enum NVIDIAReflexLowLatencyEnum : uint
+        {
             On,
             Off,
             OnWithBoost,
         }
         [NMS(Index = 13)]
-        /* 0x38 */ public NVIDIAReflexLowLatencyEnum NVIDIAReflexLowLatency;
+        /* 0x38 */
+        public NVIDIAReflexLowLatencyEnum NVIDIAReflexLowLatency;
         [NMS(Index = 7)]
-        /* 0x3C */ public TkGraphicsDetailTypes PlanetQuality;
+        /* 0x3C */
+        public TkGraphicsDetailTypes PlanetQuality;
         [NMS(Index = 3)]
-        /* 0x40 */ public TkGraphicsDetailTypes PostProcessingEffects;
+        /* 0x40 */
+        public TkGraphicsDetailTypes PostProcessingEffects;
         [NMS(Index = 4)]
-        /* 0x44 */ public TkGraphicsDetailTypes ReflectionsQuality;
+        /* 0x44 */
+        public TkGraphicsDetailTypes ReflectionsQuality;
         [NMS(Index = 2)]
-        /* 0x48 */ public TkGraphicsDetailTypes ShadowQuality;
+        /* 0x48 */
+        public TkGraphicsDetailTypes ShadowQuality;
         [NMS(Index = 6)]
-        /* 0x4C */ public TkGraphicsDetailTypes TerrainTessellation;
+        /* 0x4C */
+        public TkGraphicsDetailTypes TerrainTessellation;
         [NMS(Index = 0)]
-        /* 0x50 */ public TkGraphicsDetailTypes TextureQuality;
+        /* 0x50 */
+        public TkGraphicsDetailTypes TextureQuality;
         // size: 0x2
-        public enum UIQualityEnum : uint {
+        public enum UIQualityEnum : uint
+        {
             Normal,
             _4K,
         }
         [NMS(Index = 10)]
-        /* 0x54 */ public UIQualityEnum UIQuality;
+        /* 0x54 */
+        public UIQualityEnum UIQuality;
         [NMS(Index = 5)]
-        /* 0x58 */ public TkGraphicsDetailTypes VolumetricsQuality;
+        /* 0x58 */
+        public TkGraphicsDetailTypes VolumetricsQuality;
         [NMS(Index = 8)]
-        /* 0x5C */ public TkGraphicsDetailTypes WaterQuality;
+        /* 0x5C */
+        public TkGraphicsDetailTypes WaterQuality;
         // size: 0x7
-        public enum XESSQualityEnum : uint {
+        public enum XESSQualityEnum : uint
+        {
             UltraPerformance,
             Performance,
             Balanced,
@@ -146,6 +178,7 @@ namespace libMBIN.NMS.Toolkit
             Native,
         }
         [NMS(Index = 16)]
-        /* 0x60 */ public XESSQualityEnum XESSQuality;
+        /* 0x60 */
+        public XESSQualityEnum XESSQuality;
     }
 }

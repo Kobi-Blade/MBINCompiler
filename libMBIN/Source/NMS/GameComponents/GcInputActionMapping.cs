@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcInputActionMapping : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int RemappedKey;
+        /* 0x0 */
+        public int RemappedKey;
         [NMS(Index = 1)]
-        /* 0x4 */ public int RemappedPad;
+        /* 0x4 */
+        public int RemappedPad;
     }
 }

@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -8,10 +7,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatsGroup : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkTextureResource Icon;
+        /* 0x00 */
+        public TkTextureResource Icon;
         [NMS(Index = 0)]
-        /* 0x18 */ public NMSString0x10 Id;
+        /* 0x18 */
+        public NMSString0x10 Id;
         [NMS(Index = 2)]
-        /* 0x28 */ public List<GcStatsEntry> StatIds;
+        /* 0x28 */
+        public List<GcStatsEntry> StatIds;
     }
 }

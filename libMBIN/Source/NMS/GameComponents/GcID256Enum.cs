@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcID256Enum : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSString0x20A> Values;
+        /* 0x0 */
+        public List<NMSString0x20A> Values;
     }
 }

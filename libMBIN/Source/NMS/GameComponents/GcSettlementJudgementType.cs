@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementJudgementType : NMSTemplate
     {
         // size: 0xC
-        public enum SettlementJudgementTypeEnum : uint {
+        public enum SettlementJudgementTypeEnum : uint
+        {
             None,
             StrangerVisit,
             Policy,
@@ -19,6 +20,7 @@ namespace libMBIN.NMS.GameComponents
             UpgradeBuildingChoice,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SettlementJudgementTypeEnum SettlementJudgementType;
+        /* 0x0 */
+        public SettlementJudgementTypeEnum SettlementJudgementType;
     }
 }

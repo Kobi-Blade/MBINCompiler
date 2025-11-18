@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureSubstanceList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 CreatureType;
+        /* 0x00 */
+        public NMSString0x10 CreatureType;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Item;
+        /* 0x10 */
+        public NMSString0x10 Item;
     }
 }

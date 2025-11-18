@@ -4,10 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkOpenVRControllerLookup : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public VariableSizeString DeviceSpec;
+        /* 0x00 */
+        public VariableSizeString DeviceSpec;
         [NMS(Index = 2)]
-        /* 0x10 */ public NMSString0x10 ResetVRViewLayerName;
+        /* 0x10 */
+        public NMSString0x10 ResetVRViewLayerName;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x20 DeviceKeywords;
+        /* 0x20 */
+        public NMSString0x20 DeviceKeywords;
     }
 }

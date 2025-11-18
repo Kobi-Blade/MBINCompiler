@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcTerrainTileType : NMSTemplate
     {
         // size: 0x9
-        public enum TileTypeEnum : uint {
+        public enum TileTypeEnum : uint
+        {
             Air,
             Base,
             Rock,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Substance,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TileTypeEnum TileType;
+        /* 0x0 */
+        public TileTypeEnum TileType;
     }
 }

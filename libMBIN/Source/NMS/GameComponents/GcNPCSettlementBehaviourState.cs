@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCSettlementBehaviourState : NMSTemplate
     {
         // size: 0x5
-        public enum NPCSettlementBehaviourStateEnum : uint {
+        public enum NPCSettlementBehaviourStateEnum : uint
+        {
             Generic,
             Sociable,
             Productive,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Afraid,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NPCSettlementBehaviourStateEnum NPCSettlementBehaviourState;
+        /* 0x0 */
+        public NPCSettlementBehaviourStateEnum NPCSettlementBehaviourState;
     }
 }

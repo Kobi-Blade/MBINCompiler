@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcFrigateStatRange : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Maximum;
+        /* 0x0 */
+        public int Maximum;
         [NMS(Index = 0)]
-        /* 0x4 */ public int Minimum;
+        /* 0x4 */
+        public int Minimum;
     }
 }

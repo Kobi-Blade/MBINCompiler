@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcNumberedTextList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public VariableSizeString Format;
+        /* 0x00 */
+        public VariableSizeString Format;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Count;
+        /* 0x10 */
+        public int Count;
     }
 }

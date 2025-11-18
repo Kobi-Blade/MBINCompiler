@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkCameraAttachmentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float BaseOffset;
+        /* 0x0 */
+        public float BaseOffset;
         [NMS(Index = 1)]
-        /* 0x4 */ public float OffsetScaler;
+        /* 0x4 */
+        public float OffsetScaler;
     }
 }

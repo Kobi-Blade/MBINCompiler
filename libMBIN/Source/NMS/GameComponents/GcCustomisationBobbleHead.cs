@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationBobbleHead : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkModelResource BobbleHead;
+        /* 0x00 */
+        public TkModelResource BobbleHead;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 LinkedTechId;
+        /* 0x20 */
+        public NMSString0x10 LinkedTechId;
     }
 }

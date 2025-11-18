@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
@@ -8,10 +7,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkGameSettings : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<GcInputActionMapping> KeyMapping;
+        /* 0x00 */
+        public List<GcInputActionMapping> KeyMapping;
         [NMS(Index = 1)]
-        /* 0x10 */ public List<GcInputActionMapping2> KeyMapping2;
+        /* 0x10 */
+        public List<GcInputActionMapping2> KeyMapping2;
         [NMS(Index = 2)]
-        /* 0x20 */ public TkPadEnum LastKnownPadType;
+        /* 0x20 */
+        public TkPadEnum LastKnownPadType;
     }
 }

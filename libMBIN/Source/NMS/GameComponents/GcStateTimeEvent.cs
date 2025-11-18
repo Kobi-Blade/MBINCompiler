@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcStateTimeEvent : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float RandomSeconds;
+        /* 0x0 */
+        public float RandomSeconds;
         [NMS(Index = 0)]
-        /* 0x4 */ public float Seconds;
+        /* 0x4 */
+        public float Seconds;
         [NMS(Index = 2)]
-        /* 0x8 */ public bool UseMissionClock;
+        /* 0x8 */
+        public bool UseMissionClock;
     }
 }

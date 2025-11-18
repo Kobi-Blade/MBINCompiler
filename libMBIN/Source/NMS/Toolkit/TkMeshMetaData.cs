@@ -4,22 +4,31 @@ namespace libMBIN.NMS.Toolkit
     public class TkMeshMetaData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public VariableSizeString IdString;
+        /* 0x00 */
+        public VariableSizeString IdString;
         [NMS(Index = 1)]
-        /* 0x10 */ public ulong Hash;
+        /* 0x10 */
+        public ulong Hash;
         [NMS(Index = 7)]
-        /* 0x18 */ public int IndexDataOffset;
+        /* 0x18 */
+        public int IndexDataOffset;
         [NMS(Index = 6)]
-        /* 0x1C */ public int IndexDataSize;
+        /* 0x1C */
+        public int IndexDataSize;
         [NMS(Index = 3)]
-        /* 0x20 */ public int VertexDataOffset;
+        /* 0x20 */
+        public int VertexDataOffset;
         [NMS(Index = 2)]
-        /* 0x24 */ public int VertexDataSize;
+        /* 0x24 */
+        public int VertexDataSize;
         [NMS(Index = 5)]
-        /* 0x28 */ public int VertexPositionDataOffset;
+        /* 0x28 */
+        public int VertexPositionDataOffset;
         [NMS(Index = 4)]
-        /* 0x2C */ public int VertexPositionDataSize;
+        /* 0x2C */
+        public int VertexPositionDataSize;
         [NMS(Index = 8)]
-        /* 0x30 */ public bool DoubleBufferGeometry;
+        /* 0x30 */
+        public bool DoubleBufferGeometry;
     }
 }

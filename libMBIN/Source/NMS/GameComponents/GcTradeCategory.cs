@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcTradeCategory : NMSTemplate
     {
         // size: 0x9
-        public enum TradeCategoryEnum : uint {
+        public enum TradeCategoryEnum : uint
+        {
             Mineral,
             Tech,
             Commodity,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             SpecialShop,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TradeCategoryEnum TradeCategory;
+        /* 0x0 */
+        public TradeCategoryEnum TradeCategory;
     }
 }

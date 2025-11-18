@@ -19,16 +19,20 @@ namespace libMBIN
         public override string ToString()
         {
             string result = "<";
-            if (this.Name != null) {
+            if (this.Name != null)
+            {
                 result += $"name=\"{this.Name}\"";
             }
-            if (this.Value != null) {
+            if (this.Value != null)
+            {
                 result += $" value=\"{this.Value}\"";
             }
-            if (this.Linked != null) {
+            if (this.Linked != null)
+            {
                 result += $" linked=\"{this.Linked}\"";
             }
-            if (this.ArraySize != null) {
+            if (this.ArraySize != null)
+            {
                 result += $" array_size=\"{this.ArraySize}\"";
             }
             result += ">";

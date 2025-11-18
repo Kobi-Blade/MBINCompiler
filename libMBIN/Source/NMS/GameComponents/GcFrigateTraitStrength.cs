@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcFrigateTraitStrength : NMSTemplate
     {
         // size: 0xA
-        public enum FrigateTraitStrengthEnum : uint {
+        public enum FrigateTraitStrengthEnum : uint
+        {
             NegativeLarge,
             NegativeMedium,
             NegativeSmall,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Primary,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FrigateTraitStrengthEnum FrigateTraitStrength;
+        /* 0x0 */
+        public FrigateTraitStrengthEnum FrigateTraitStrength;
     }
 }

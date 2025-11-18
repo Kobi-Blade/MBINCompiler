@@ -1,17 +1,19 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0xDA891A3B8F0465CE, NameHash = 0x5916A21F)]
     public class GcMissionConditionHasFuel : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 SpecificTechID;
+        /* 0x00 */
+        public NMSString0x10 SpecificTechID;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Amount;
+        /* 0x10 */
+        public int Amount;
         [NMS(Index = 0)]
-        /* 0x14 */ public GcStatsTypes TargetStat;
+        /* 0x14 */
+        public GcStatsTypes TargetStat;
         [NMS(Index = 3)]
-        /* 0x18 */ public bool FormatTextAsPercentage;
+        /* 0x18 */
+        public bool FormatTextAsPercentage;
     }
 }

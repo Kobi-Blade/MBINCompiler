@@ -4,12 +4,15 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimationMask : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A Mask;
+        /* 0x00 */
+        public NMSString0x20A Mask;
         // size: 0x1
-        public enum AnimMaskTypeEnum : uint {
+        public enum AnimMaskTypeEnum : uint
+        {
             UpperBody,
         }
         [NMS(Index = 0)]
-        /* 0x20 */ public AnimMaskTypeEnum AnimMaskType;
+        /* 0x20 */
+        public AnimMaskTypeEnum AnimMaskType;
     }
 }

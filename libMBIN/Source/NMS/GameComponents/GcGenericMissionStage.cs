@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcGenericMissionStage : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSTemplate Stage;
+        /* 0x00 */
+        public NMSTemplate Stage;
         [NMS(Index = 0)]
-        /* 0x10 */ public List<GcGenericMissionVersionProgress> Versions;
+        /* 0x10 */
+        public List<GcGenericMissionVersionProgress> Versions;
     }
 }

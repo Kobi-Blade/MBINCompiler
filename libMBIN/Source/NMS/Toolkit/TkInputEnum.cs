@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkInputEnum : NMSTemplate
     {
         // size: 0xBD
-        public enum InputButtonEnum : uint {
+        public enum InputButtonEnum : uint
+        {
             None = 0x0,
             Space = 0x20,
             Exclamation = 0x21,
@@ -196,6 +197,7 @@ namespace libMBIN.NMS.Toolkit
             MaxEnumValue = 0x175,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InputButtonEnum InputButton;
+        /* 0x0 */
+        public InputButtonEnum InputButton;
     }
 }

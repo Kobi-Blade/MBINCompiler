@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkEngineSettingTypes : NMSTemplate
     {
         // size: 0x36
-        public enum EngineSettingEnum : uint {
+        public enum EngineSettingEnum : uint
+        {
             FullScreen,
             Borderless,
             ResolutionWidth,
@@ -61,6 +62,7 @@ namespace libMBIN.NMS.Toolkit
             NVIDIAReflexLowLatency,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public EngineSettingEnum EngineSetting;
+        /* 0x0 */
+        public EngineSettingEnum EngineSetting;
     }
 }

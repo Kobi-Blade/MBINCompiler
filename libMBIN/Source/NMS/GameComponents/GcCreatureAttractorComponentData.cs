@@ -4,17 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureAttractorComponentData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public float ArriveDist;
+        /* 0x0 */
+        public float ArriveDist;
         // size: 0x2
-        public enum AttractorTypeEnum : uint {
+        public enum AttractorTypeEnum : uint
+        {
             Food,
             Harvester,
         }
         [NMS(Index = 3)]
-        /* 0x4 */ public AttractorTypeEnum AttractorType;
+        /* 0x4 */
+        public AttractorTypeEnum AttractorType;
         [NMS(Index = 1)]
-        /* 0x8 */ public bool Static;
+        /* 0x8 */
+        public bool Static;
         [NMS(Index = 0)]
-        /* 0x9 */ public bool Universal;
+        /* 0x9 */
+        public bool Universal;
     }
 }

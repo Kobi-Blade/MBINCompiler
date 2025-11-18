@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCharacterCustomisationColourData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Colour Colour;
+        /* 0x00 */
+        public Colour Colour;
         [NMS(Index = 0)]
-        /* 0x10 */ public TkPaletteTexture Palette;
+        /* 0x10 */
+        public TkPaletteTexture Palette;
     }
 }

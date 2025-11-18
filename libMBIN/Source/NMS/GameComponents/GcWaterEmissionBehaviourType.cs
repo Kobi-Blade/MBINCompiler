@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcWaterEmissionBehaviourType : NMSTemplate
     {
         // size: 0x4
-        public enum WaterEmissionBehaviourTypeEnum : uint {
+        public enum WaterEmissionBehaviourTypeEnum : uint
+        {
             None,
             Constant,
             Pulse,
             NightOnly,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WaterEmissionBehaviourTypeEnum WaterEmissionBehaviourType;
+        /* 0x0 */
+        public WaterEmissionBehaviourTypeEnum WaterEmissionBehaviourType;
     }
 }

@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventoryType : NMSTemplate
     {
         // size: 0x3
-        public enum InventoryTypeEnum : uint {
+        public enum InventoryTypeEnum : uint
+        {
             Substance,
             Technology,
             Product,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InventoryTypeEnum InventoryType;
+        /* 0x0 */
+        public InventoryTypeEnum InventoryType;
     }
 }

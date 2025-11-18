@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcNPCInteractiveObjectType : NMSTemplate
     {
         // size: 0x8
-        public enum NPCInteractiveObjectTypeEnum : uint {
+        public enum NPCInteractiveObjectTypeEnum : uint
+        {
             Idle,
             Generic,
             Chair,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             None,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NPCInteractiveObjectTypeEnum NPCInteractiveObjectType;
+        /* 0x0 */
+        public NPCInteractiveObjectTypeEnum NPCInteractiveObjectType;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcQuickMenuActions : NMSTemplate
     {
         // size: 0x41
-        public enum QuickMenuActionsEnum : uint {
+        public enum QuickMenuActionsEnum : uint
+        {
             None,
             CallFreighter,
             DismissFreighter,
@@ -72,6 +73,7 @@ namespace libMBIN.NMS.GameComponents
             Invalid,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public QuickMenuActionsEnum QuickMenuActions;
+        /* 0x0 */
+        public QuickMenuActionsEnum QuickMenuActions;
     }
 }

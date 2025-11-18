@@ -4,21 +4,28 @@ namespace libMBIN.NMS.Toolkit
     public class TkVertexElement : NMSTemplate
     {
         // size: 0x2
-        public enum InstancingEnum : uint {
+        public enum InstancingEnum : uint
+        {
             PerVertex,
             PerModel,
         }
         [NMS(Index = 5)]
-        /* 0x0 */ public InstancingEnum Instancing;
+        /* 0x0 */
+        public InstancingEnum Instancing;
         [NMS(Index = 0)]
-        /* 0x4 */ public int Type;
+        /* 0x4 */
+        public int Type;
         [NMS(Index = 2)]
-        /* 0x8 */ public byte Normalise;
+        /* 0x8 */
+        public byte Normalise;
         [NMS(Index = 4)]
-        /* 0x9 */ public byte Offset;
+        /* 0x9 */
+        public byte Offset;
         [NMS(Index = 1)]
-        /* 0xA */ public byte SemanticID;
+        /* 0xA */
+        public byte SemanticID;
         [NMS(Index = 3)]
-        /* 0xB */ public byte Size;
+        /* 0xB */
+        public byte Size;
     }
 }

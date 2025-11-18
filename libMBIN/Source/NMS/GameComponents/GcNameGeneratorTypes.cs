@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcNameGeneratorTypes : NMSTemplate
     {
         // size: 0x8
-        public enum MarkovSelectorEnum : uint {
+        public enum MarkovSelectorEnum : uint
+        {
             Generic,
             Mineral,
             Region_NO,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Region_FL,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MarkovSelectorEnum MarkovSelector;
+        /* 0x0 */
+        public MarkovSelectorEnum MarkovSelector;
     }
 }

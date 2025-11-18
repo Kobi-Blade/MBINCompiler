@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetBehaviours : NMSTemplate
     {
         // size: 0x1C
-        public enum PetBehaviourEnum : uint {
+        public enum PetBehaviourEnum : uint
+        {
             None,
             Idle,
             Eat,
@@ -35,6 +36,7 @@ namespace libMBIN.NMS.GameComponents
             TeleportToPlayer,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PetBehaviourEnum PetBehaviour;
+        /* 0x0 */
+        public PetBehaviourEnum PetBehaviour;
     }
 }

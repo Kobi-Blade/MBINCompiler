@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcCutSceneTriggerActionData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Action;
+        /* 0x00 */
+        public NMSString0x10 Action;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 GroupFilter;
+        /* 0x10 */
+        public NMSString0x10 GroupFilter;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x10 IdFilter;
+        /* 0x20 */
+        public NMSString0x10 IdFilter;
         [NMS(Index = 3)]
-        /* 0x30 */ public NMSString0x10 Parameter;
+        /* 0x30 */
+        public NMSString0x10 Parameter;
     }
 }

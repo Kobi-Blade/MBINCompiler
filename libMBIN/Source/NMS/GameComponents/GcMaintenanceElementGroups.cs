@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMaintenanceElementGroups : NMSTemplate
     {
         // size: 0xA
-        public enum MaintenanceGroupEnum : uint {
+        public enum MaintenanceGroupEnum : uint
+        {
             Custom,
             Farming,
             Fuelling,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             RobotHeads,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MaintenanceGroupEnum MaintenanceGroup;
+        /* 0x0 */
+        public MaintenanceGroupEnum MaintenanceGroup;
     }
 }

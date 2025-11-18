@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcInputActions : NMSTemplate
     {
         // size: 0x12B
-        public enum InputActionEnum : uint {
+        public enum InputActionEnum : uint
+        {
             Invalid,
             Player_Forward,
             Player_Back,
@@ -306,6 +307,7 @@ namespace libMBIN.NMS.GameComponents
             SetTimeOfDay,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InputActionEnum InputAction;
+        /* 0x0 */
+        public InputActionEnum InputAction;
     }
 }

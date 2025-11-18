@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiPresetText : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public GcNGuiLayoutData Layout;
+        /* 0x000 */
+        public GcNGuiLayoutData Layout;
         [NMS(Index = 4)]
-        /* 0x048 */ public VariableSizeString Image;
+        /* 0x048 */
+        public VariableSizeString Image;
         [NMS(Index = 0)]
-        /* 0x058 */ public NMSString0x10 PresetID;
+        /* 0x058 */
+        public NMSString0x10 PresetID;
         [NMS(Index = 3, MxmlName = "Graphic Style")]
-        /* 0x068 */ public TkNGuiGraphicStyle GraphicStyle;
+        /* 0x068 */
+        public TkNGuiGraphicStyle GraphicStyle;
         [NMS(Index = 2)]
-        /* 0x188 */ public TkNGuiTextStyle Style;
+        /* 0x188 */
+        public TkNGuiTextStyle Style;
     }
 }

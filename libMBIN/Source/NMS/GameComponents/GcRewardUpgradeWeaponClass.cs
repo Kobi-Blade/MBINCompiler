@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardUpgradeWeaponClass : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public bool MatchClassToCommunityTier;
+        /* 0x0 */
+        public bool MatchClassToCommunityTier;
         [NMS(Index = 0)]
-        /* 0x1 */ public bool Silent;
+        /* 0x1 */
+        public bool Silent;
         [NMS(Index = 2)]
-        /* 0x2 */ public bool SilentlyMoveOnAtMaxClass;
+        /* 0x2 */
+        public bool SilentlyMoveOnAtMaxClass;
     }
 }

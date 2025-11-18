@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpringComponentData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public List<GcCollisionCapsule> CollisionCapsules;
+        /* 0x00 */
+        public List<GcCollisionCapsule> CollisionCapsules;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<GcSpringLink> SpringLinks;
+        /* 0x10 */
+        public List<GcSpringLink> SpringLinks;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x40 Name;
+        /* 0x20 */
+        public NMSString0x40 Name;
         [NMS(Index = 0)]
-        /* 0x60 */ public bool Enabled;
+        /* 0x60 */
+        public bool Enabled;
     }
 }

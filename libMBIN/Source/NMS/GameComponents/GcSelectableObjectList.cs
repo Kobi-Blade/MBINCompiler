@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcSelectableObjectList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Name;
+        /* 0x00 */
+        public NMSString0x10 Name;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<GcSelectableObjectData> Options;
+        /* 0x10 */
+        public List<GcSelectableObjectData> Options;
         [NMS(Index = 1)]
-        /* 0x20 */ public GcAlienRace Race;
+        /* 0x20 */
+        public GcAlienRace Race;
     }
 }

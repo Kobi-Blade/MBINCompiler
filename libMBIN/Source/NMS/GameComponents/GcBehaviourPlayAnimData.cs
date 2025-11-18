@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourPlayAnimData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Anim;
+        /* 0x00 */
+        public NMSString0x10 Anim;
         [NMS(Index = 3)]
-        /* 0x10 */ public List<GcBehaviourPlayAnimTrigger> Triggers;
+        /* 0x10 */
+        public List<GcBehaviourPlayAnimTrigger> Triggers;
         [NMS(Index = 1)]
-        /* 0x20 */ public float BlendInTime;
+        /* 0x20 */
+        public float BlendInTime;
         [NMS(Index = 2)]
-        /* 0x24 */ public float BlendOutAt;
+        /* 0x24 */
+        public float BlendOutAt;
     }
 }

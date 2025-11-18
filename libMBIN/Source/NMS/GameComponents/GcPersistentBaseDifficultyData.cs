@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,14 +6,17 @@ namespace libMBIN.NMS.GameComponents
     public class GcPersistentBaseDifficultyData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public GcDifficultyPresetType DifficultyPreset;
+        /* 0x0 */
+        public GcDifficultyPresetType DifficultyPreset;
         // size: 0x2
         [Flags]
-        public enum PersistentBaseDifficultyFlagsEnum : uint {
+        public enum PersistentBaseDifficultyFlagsEnum : uint
+        {
             None,
             Locked,
         }
         [NMS(Index = 1)]
-        /* 0x4 */ public PersistentBaseDifficultyFlagsEnum PersistentBaseDifficultyFlags;
+        /* 0x4 */
+        public PersistentBaseDifficultyFlagsEnum PersistentBaseDifficultyFlags;
     }
 }

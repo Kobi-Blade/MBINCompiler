@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcByteBeatEnvelope : NMSTemplate
     {
         // size: 0x3
-        public enum ByteBeatEnvelopeEnum : uint {
+        public enum ByteBeatEnvelopeEnum : uint
+        {
             Short,
             Med,
             Long,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ByteBeatEnvelopeEnum ByteBeatEnvelope;
+        /* 0x0 */
+        public ByteBeatEnvelopeEnum ByteBeatEnvelope;
     }
 }

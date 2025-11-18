@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkEmitterBillboardAlignment : NMSTemplate
     {
         // size: 0x8
-        public enum BillboardAlignmentEnum : uint {
+        public enum BillboardAlignmentEnum : uint
+        {
             Screen,
             XLocal,
             YLocal,
@@ -15,8 +16,10 @@ namespace libMBIN.NMS.Toolkit
             ScreenWorld,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BillboardAlignmentEnum BillboardAlignment;
+        /* 0x0 */
+        public BillboardAlignmentEnum BillboardAlignment;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool CameraFacing;
+        /* 0x4 */
+        public bool CameraFacing;
     }
 }

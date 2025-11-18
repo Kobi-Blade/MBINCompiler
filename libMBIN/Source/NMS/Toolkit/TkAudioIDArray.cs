@@ -6,6 +6,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkAudioIDArray : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSString0x80> Array;
+        /* 0x0 */
+        public List<NMSString0x80> Array;
     }
 }

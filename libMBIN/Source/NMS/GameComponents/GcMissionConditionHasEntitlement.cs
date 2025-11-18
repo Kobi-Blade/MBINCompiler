@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasEntitlement : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 Entitlement;
+        /* 0x0 */
+        public NMSString0x10 Entitlement;
     }
 }

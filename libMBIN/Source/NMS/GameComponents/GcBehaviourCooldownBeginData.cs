@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourCooldownBeginData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 Key;
+        /* 0x0 */
+        public NMSString0x10 Key;
     }
 }

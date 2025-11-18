@@ -1,29 +1,37 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0xE23A990FCC338CD9, NameHash = 0x6269F796)]
     public class GcInventoryLayoutGenerationDataEntry : NMSTemplate
     {
         [NMS(Index = 6)]
-        /* 0x00 */ public GcInventoryLayoutGenerationBounds Bounds;
+        /* 0x00 */
+        public GcInventoryLayoutGenerationBounds Bounds;
         [NMS(Index = 7)]
-        /* 0x18 */ public GcInventoryLayoutGenerationBounds TechBounds;
+        /* 0x18 */
+        public GcInventoryLayoutGenerationBounds TechBounds;
         [NMS(Index = 9)]
-        /* 0x30 */ public GcInventoryIndex SpecialTechSlotMaxIndex;
+        /* 0x30 */
+        public GcInventoryIndex SpecialTechSlotMaxIndex;
         [NMS(Index = 5)]
-        /* 0x38 */ public int MaxCargoSlots;
+        /* 0x38 */
+        public int MaxCargoSlots;
         [NMS(Index = 8)]
-        /* 0x3C */ public int MaxNumSpecialTechSlots;
+        /* 0x3C */
+        public int MaxNumSpecialTechSlots;
         [NMS(Index = 1)]
-        /* 0x40 */ public int MaxSlots;
+        /* 0x40 */
+        public int MaxSlots;
         [NMS(Index = 3)]
-        /* 0x44 */ public int MaxTechSlots;
+        /* 0x44 */
+        public int MaxTechSlots;
         [NMS(Index = 4)]
-        /* 0x48 */ public int MinCargoSlots;
+        /* 0x48 */
+        public int MinCargoSlots;
         [NMS(Index = 0)]
-        /* 0x4C */ public int MinSlots;
+        /* 0x4C */
+        public int MinSlots;
         [NMS(Index = 2)]
-        /* 0x50 */ public int MinTechSlots;
+        /* 0x50 */
+        public int MinTechSlots;
     }
 }

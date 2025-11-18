@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcSeasonalLogOverrides : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public NMSString0x20A MissionDescription;
+        /* 0x00 */
+        public NMSString0x20A MissionDescription;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x20A MissionSubtitle;
+        /* 0x20 */
+        public NMSString0x20A MissionSubtitle;
         [NMS(Index = 1)]
-        /* 0x40 */ public NMSString0x20A MissionTitle;
+        /* 0x40 */
+        public NMSString0x20A MissionTitle;
         [NMS(Index = 0)]
-        /* 0x60 */ public List<int> ApplicableSeasonNumbers;
+        /* 0x60 */
+        public List<int> ApplicableSeasonNumbers;
     }
 }

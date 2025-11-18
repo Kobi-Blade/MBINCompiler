@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkPhysicsWorldComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int MaximumNumberOfBodies;
+        /* 0x0 */
+        public int MaximumNumberOfBodies;
         [NMS(Index = 1)]
-        /* 0x4 */ public float SafeRadius;
+        /* 0x4 */
+        public float SafeRadius;
     }
 }

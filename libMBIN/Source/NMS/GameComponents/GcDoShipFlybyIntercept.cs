@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcDoShipFlybyIntercept : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Speed;
+        /* 0x0 */
+        public float Speed;
         [NMS(Index = 1)]
-        /* 0x4 */ public float Time;
+        /* 0x4 */
+        public float Time;
     }
 }

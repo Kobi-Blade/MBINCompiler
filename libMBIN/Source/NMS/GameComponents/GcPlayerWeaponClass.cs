@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerWeaponClass : NMSTemplate
     {
         // size: 0xA
-        public enum WeaponClassEnum : uint {
+        public enum WeaponClassEnum : uint
+        {
             None,
             Projectile,
             ChargedProjectile,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Fishing,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WeaponClassEnum WeaponClass;
+        /* 0x0 */
+        public WeaponClassEnum WeaponClass;
     }
 }

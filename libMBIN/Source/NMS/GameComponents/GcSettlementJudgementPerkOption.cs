@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementJudgementPerkOption : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Perk;
+        /* 0x00 */
+        public NMSString0x10 Perk;
         [NMS(Index = 1)]
-        /* 0x10 */ public float PerkChance;
+        /* 0x10 */
+        public float PerkChance;
     }
 }

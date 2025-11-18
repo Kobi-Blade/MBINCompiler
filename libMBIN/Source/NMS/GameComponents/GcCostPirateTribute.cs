@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostPirateTribute : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float CargoValuePercent;
+        /* 0x0 */
+        public float CargoValuePercent;
         [NMS(Index = 1)]
-        /* 0x4 */ public int MinimumValue;
+        /* 0x4 */
+        public int MinimumValue;
     }
 }

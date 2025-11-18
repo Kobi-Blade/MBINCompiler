@@ -4,13 +4,17 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardFillInventoryWithBrokenSlots : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public int CustomTechCount;
+        /* 0x00 */
+        public int CustomTechCount;
         [NMS(Index = 4)]
-        /* 0x04 */ public int CustomTechOffset;
+        /* 0x04 */
+        public int CustomTechOffset;
         [NMS(Index = 1)]
-        /* 0x08 */ public float FractionOfInventoryToBreak;
+        /* 0x08 */
+        public float FractionOfInventoryToBreak;
         // size: 0x7
-        public enum InventoryToBreakEnum : uint {
+        public enum InventoryToBreakEnum : uint
+        {
             Ship,
             ShipTech,
             Freighter,
@@ -20,8 +24,10 @@ namespace libMBIN.NMS.GameComponents
             Weapon,
         }
         [NMS(Index = 0)]
-        /* 0x0C */ public InventoryToBreakEnum InventoryToBreak;
+        /* 0x0C */
+        public InventoryToBreakEnum InventoryToBreak;
         [NMS(Index = 2)]
-        /* 0x10 */ public NMSString0x20 CustomTechFormat;
+        /* 0x10 */
+        public NMSString0x20 CustomTechFormat;
     }
 }

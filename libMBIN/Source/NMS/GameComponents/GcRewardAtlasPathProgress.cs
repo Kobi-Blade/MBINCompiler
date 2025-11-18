@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardAtlasPathProgress : NMSTemplate
     {
         // size: 0x3
-        public enum AtlasPathProgressTypeEnum : uint {
+        public enum AtlasPathProgressTypeEnum : uint
+        {
             IncrementPathProgress,
             FinalStoryAtlas,
             StoreLoopingCompleteStations,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AtlasPathProgressTypeEnum AtlasPathProgressType;
+        /* 0x0 */
+        public AtlasPathProgressTypeEnum AtlasPathProgressType;
     }
 }

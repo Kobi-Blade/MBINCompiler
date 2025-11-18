@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionSettlementStatLevel : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float NormalisedLevel;
+        /* 0x0 */
+        public float NormalisedLevel;
         [NMS(Index = 1)]
-        /* 0x4 */ public GcSettlementStatType Stat;
+        /* 0x4 */
+        public GcSettlementStatType Stat;
         [NMS(Index = 2)]
-        /* 0x8 */ public TkEqualityEnum Test;
+        /* 0x8 */
+        public TkEqualityEnum Test;
     }
 }

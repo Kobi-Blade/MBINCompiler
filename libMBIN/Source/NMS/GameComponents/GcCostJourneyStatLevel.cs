@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostJourneyStatLevel : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 StatName;
+        /* 0x00 */
+        public NMSString0x10 StatName;
         [NMS(Index = 1)]
-        /* 0x10 */ public int RequiredLevel;
+        /* 0x10 */
+        public int RequiredLevel;
     }
 }

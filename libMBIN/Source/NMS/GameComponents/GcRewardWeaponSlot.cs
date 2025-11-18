@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardWeaponSlot : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Cost;
+        /* 0x00 */
+        public NMSString0x10 Cost;
         [NMS(Index = 2)]
-        /* 0x10 */ public int NumTokens;
+        /* 0x10 */
+        public int NumTokens;
         [NMS(Index = 1)]
-        /* 0x14 */ public bool AwardCostAndOpenWindow;
+        /* 0x14 */
+        public bool AwardCostAndOpenWindow;
     }
 }

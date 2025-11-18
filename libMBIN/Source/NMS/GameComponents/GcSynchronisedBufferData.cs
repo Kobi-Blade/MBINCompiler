@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcSynchronisedBufferData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<ulong> Data;
+        /* 0x0 */
+        public List<ulong> Data;
     }
 }

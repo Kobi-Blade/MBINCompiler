@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSendChatMessage : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A CustomText;
+        /* 0x00 */
+        public NMSString0x20A CustomText;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 StatusMessageId;
+        /* 0x20 */
+        public NMSString0x10 StatusMessageId;
     }
 }

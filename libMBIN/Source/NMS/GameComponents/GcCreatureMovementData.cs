@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,28 +6,40 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureMovementData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<GcCreatureMoveAnimData> Anims;
+        /* 0x00 */
+        public List<GcCreatureMoveAnimData> Anims;
         [NMS(Index = 5)]
-        /* 0x10 */ public float HeightMax;
+        /* 0x10 */
+        public float HeightMax;
         [NMS(Index = 4)]
-        /* 0x14 */ public float HeightMin;
+        /* 0x14 */
+        public float HeightMin;
         [NMS(Index = 8)]
-        /* 0x18 */ public float HeightRangeMax;
+        /* 0x18 */
+        public float HeightRangeMax;
         [NMS(Index = 7)]
-        /* 0x1C */ public float HeightRangeMin;
+        /* 0x1C */
+        public float HeightRangeMin;
         [NMS(Index = 9)]
-        /* 0x20 */ public float HeightTime;
+        /* 0x20 */
+        public float HeightTime;
         [NMS(Index = 1)]
-        /* 0x24 */ public float MoveRange;
+        /* 0x24 */
+        public float MoveRange;
         [NMS(Index = 2)]
-        /* 0x28 */ public float MoveSpeedScale;
+        /* 0x28 */
+        public float MoveSpeedScale;
         [NMS(Index = 3)]
-        /* 0x2C */ public float TurnRadiusScale;
+        /* 0x2C */
+        public float TurnRadiusScale;
         [NMS(Index = 10)]
-        /* 0x30 */ public bool Herd;
+        /* 0x30 */
+        public bool Herd;
         [NMS(Index = 11)]
-        /* 0x31 */ public bool IgnoreRotationInPounce;
+        /* 0x31 */
+        public bool IgnoreRotationInPounce;
         [NMS(Index = 6)]
-        /* 0x32 */ public bool LimitHeightRange;
+        /* 0x32 */
+        public bool LimitHeightRange;
     }
 }

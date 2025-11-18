@@ -1,25 +1,31 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x61F434EDF1264A84, NameHash = 0xFB442B6B)]
     public class GcCollisionCapsule : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public AxisSpecification CapsuleAxis;
+        /* 0x00 */
+        public AxisSpecification CapsuleAxis;
         [NMS(Index = 3)]
-        /* 0x20 */ public Vector3f CapsuleCentre;
+        /* 0x20 */
+        public Vector3f CapsuleCentre;
         [NMS(Index = 6)]
-        /* 0x30 */ public float CapsuleLength;
+        /* 0x30 */
+        public float CapsuleLength;
         [NMS(Index = 5)]
-        /* 0x34 */ public float CapsuleRadius;
+        /* 0x34 */
+        public float CapsuleRadius;
         [NMS(Index = 1)]
-        /* 0x38 */ public NMSString0x40 Name;
+        /* 0x38 */
+        public NMSString0x40 Name;
         [NMS(Index = 2)]
-        /* 0x78 */ public NMSString0x40 NodeName;
+        /* 0x78 */
+        public NMSString0x40 NodeName;
         [NMS(Index = 0)]
-        /* 0xB8 */ public bool Enabled;
+        /* 0xB8 */
+        public bool Enabled;
         [NMS(Index = 7)]
-        /* 0xB9 */ public bool ImproveCollisionForNarrowCapsule;
+        /* 0xB9 */
+        public bool ImproveCollisionForNarrowCapsule;
     }
 }

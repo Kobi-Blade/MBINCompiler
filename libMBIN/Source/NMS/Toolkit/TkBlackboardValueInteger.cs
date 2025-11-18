@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkBlackboardValueInteger : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Key;
+        /* 0x00 */
+        public NMSString0x10 Key;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Value;
+        /* 0x10 */
+        public int Value;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardRechargeTech : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 TechID;
+        /* 0x00 */
+        public NMSString0x10 TechID;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool Silent;
+        /* 0x10 */
+        public bool Silent;
     }
 }

@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcSolarGenerationData : NMSTemplate
     {
         [NMS(Index = 0, MxmlName = "Solar Seed")]
-        /* 0x0 */ public ulong SolarSeed;
+        /* 0x0 */
+        public ulong SolarSeed;
     }
 }

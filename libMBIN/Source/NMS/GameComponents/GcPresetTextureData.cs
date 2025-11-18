@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPresetTextureData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public NMSString0x100 Filename;
+        /* 0x000 */
+        public NMSString0x100 Filename;
         [NMS(Index = 0)]
-        /* 0x100 */ public NMSString0x80 Name;
+        /* 0x100 */
+        public NMSString0x80 Name;
     }
 }

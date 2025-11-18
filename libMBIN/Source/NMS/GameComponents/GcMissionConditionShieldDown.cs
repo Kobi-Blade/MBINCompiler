@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionShieldDown : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public bool RequireOnFoot;
+        /* 0x0 */
+        public bool RequireOnFoot;
     }
 }

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkLSystemGlobalVariation : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public VariableSizeString Model;
+        /* 0x00 */
+        public VariableSizeString Model;
         [NMS(Index = 2)]
-        /* 0x10 */ public int Variations;
+        /* 0x10 */
+        public int Variations;
         [NMS(Index = 0)]
-        /* 0x14 */ public NMSString0x20 Name;
+        /* 0x14 */
+        public NMSString0x20 Name;
     }
 }

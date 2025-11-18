@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetLife : NMSTemplate
     {
         // size: 0x4
-        public enum LifeSettingEnum : uint {
+        public enum LifeSettingEnum : uint
+        {
             Dead,
             Low,
             Mid,
             Full,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public LifeSettingEnum LifeSetting;
+        /* 0x0 */
+        public LifeSettingEnum LifeSetting;
     }
 }

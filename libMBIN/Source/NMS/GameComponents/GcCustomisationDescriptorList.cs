@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationDescriptorList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSString0x20> Descriptors;
+        /* 0x0 */
+        public List<NMSString0x20> Descriptors;
     }
 }

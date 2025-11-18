@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetAccessoryType : NMSTemplate
     {
         // size: 0x1E
-        public enum PetAccessoryEnum : uint {
+        public enum PetAccessoryEnum : uint
+        {
             None,
             CargoCylinder,
             Containers,
@@ -37,6 +38,7 @@ namespace libMBIN.NMS.GameComponents
             MechanicalPaw,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PetAccessoryEnum PetAccessory;
+        /* 0x0 */
+        public PetAccessoryEnum PetAccessory;
     }
 }

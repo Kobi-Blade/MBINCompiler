@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardJourneyThroughCentre : NMSTemplate
     {
         // size: 0x5
-        public enum CentreJourneyDestinationEnum : uint {
+        public enum CentreJourneyDestinationEnum : uint
+        {
             Next,
             Abandoned,
             Vicious,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Balanced,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CentreJourneyDestinationEnum CentreJourneyDestination;
+        /* 0x0 */
+        public CentreJourneyDestinationEnum CentreJourneyDestination;
     }
 }

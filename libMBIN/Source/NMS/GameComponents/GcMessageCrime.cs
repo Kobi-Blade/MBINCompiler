@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcMessageCrime : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f Position;
+        /* 0x00 */
+        public Vector3f Position;
         // size: 0xD
-        public enum CrimeEnum : uint {
+        public enum CrimeEnum : uint
+        {
             AttackCreature,
             AttackSentinel,
             AttackSentinelLaser,
@@ -22,12 +24,16 @@ namespace libMBIN.NMS.GameComponents
             TimedShootable,
         }
         [NMS(Index = 0)]
-        /* 0x10 */ public CrimeEnum Crime;
+        /* 0x10 */
+        public CrimeEnum Crime;
         [NMS(Index = 2)]
-        /* 0x14 */ public GcNodeID Criminal;
+        /* 0x14 */
+        public GcNodeID Criminal;
         [NMS(Index = 4)]
-        /* 0x18 */ public int Value;
+        /* 0x18 */
+        public int Value;
         [NMS(Index = 3)]
-        /* 0x1C */ public GcNodeID Victim;
+        /* 0x1C */
+        public GcNodeID Victim;
     }
 }

@@ -4,13 +4,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkEmitFromParticleInfo : NMSTemplate
     {
         // size: 0x2
-        public enum EmissionRateTypeEnum : uint {
+        public enum EmissionRateTypeEnum : uint
+        {
             PerParticle,
             Distance,
         }
         [NMS(Index = 1)]
-        /* 0x0 */ public EmissionRateTypeEnum EmissionRateType;
+        /* 0x0 */
+        public EmissionRateTypeEnum EmissionRateType;
         [NMS(Index = 0)]
-        /* 0x4 */ public int OtherEmitterIndex;
+        /* 0x4 */
+        public int OtherEmitterIndex;
     }
 }

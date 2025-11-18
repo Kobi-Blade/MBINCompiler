@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionOnPlanetWithSandwormsOverriden : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public bool AcceptMatchingSystem;
+        /* 0x0 */
+        public bool AcceptMatchingSystem;
         [NMS(Index = 0)]
-        /* 0x1 */ public bool AllowInShip;
+        /* 0x1 */
+        public bool AllowInShip;
     }
 }

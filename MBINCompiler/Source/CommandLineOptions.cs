@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MBINCompiler
+namespace MBINCompiler.Source
 {
     using System.Text;
     using static CommandLineOptions.OptionBackers;
@@ -15,31 +15,33 @@ namespace MBINCompiler
 
         public static class OptionBackers
         {
-            public static bool optDebugMode              = false;
-            public static bool optQuiet                  = false;
-            public static bool optNoLog                  = false;
-            public static bool optStreamToConsole        = false;
-            public static bool optHideVersionInfo        = false;
-            public static OverwriteMode optOverwrite     = OverwriteMode.Prompt;
-            public static bool optIgnoreErrors           = false;
-            public static FormatType optInputFormat      = FormatType.Unknown;
-            public static FormatType optOutputFormat     = FormatType.Unknown;
+            public static bool optDebugMode = false;
+            public static bool optQuiet = false;
+            public static bool optNoLog = false;
+            public static bool optStreamToConsole = false;
+            public static bool optHideVersionInfo = false;
+            public static OverwriteMode optOverwrite = OverwriteMode.Prompt;
+            public static bool optIgnoreErrors = false;
+            public static FormatType optInputFormat = FormatType.Unknown;
+            public static FormatType optOutputFormat = FormatType.Unknown;
             public static List<string> optIncludeFilters = null;
             public static List<string> optExcludeFilters = null;
-            public static HeaderFormat optFormatVersion  = HeaderFormat.V4;
-            public static bool optUseThreads             = true;
-            public static bool optTyped                  = false;
+            public static HeaderFormat optFormatVersion = HeaderFormat.V4;
+            public static bool optUseThreads = true;
+            public static bool optTyped = false;
         }
 
         // --debug
-        public static bool DebugMode {
+        public static bool DebugMode
+        {
             get => optDebugMode;
-            internal set {
-                #if DEBUG
-                    optDebugMode = true;
-                #else
+            internal set
+            {
+#if DEBUG
+                optDebugMode = true;
+#else
                     optDebugMode = value;
-                #endif
+#endif
             }
         }
 
@@ -96,10 +98,12 @@ namespace MBINCompiler
                             description = "Unhide the help info for hidden debug options." }
         };
 
-        public static readonly List<Option> OPTIONS_HELP = new List<Option> {
+        public static readonly List<Option> OPTIONS_HELP = new List<Option>
+        {
         };
 
-        public static readonly List<Option> OPTIONS_VERSION = new List<Option> {
+        public static readonly List<Option> OPTIONS_VERSION = new List<Option>
+        {
             //new Option { shortName = 'q', longName = "quiet",
             //             description = "Display a compact version string only,, with no decoration.\n" +
             //                           "For scripts and tools." }
@@ -162,19 +166,20 @@ namespace MBINCompiler
 
             new Option { longName = "typed", description = "Enable type information in MXML." },
         };
-        
-        public static readonly List<Option> OPTIONS_LIST = new List<Option> {
+
+        public static readonly List<Option> OPTIONS_LIST = new List<Option>
+        {
         };
 
         public static readonly List<Option> OPTIONS_REGISTER = new List<Option>
         {
         };
 
-        private static string FormatWrapped( string prefix, int padleft, string txt, bool trim = false )
+        private static string FormatWrapped(string prefix, int padleft, string txt, bool trim = false)
         {
-            txt = CommandLine.WrapLine( txt, padleft );
-            txt = trim ? txt.TrimStart( ' ' ) : txt;
-            return String.Format( "{0,-" + $"{padleft}" + "}{1}", prefix, txt );
+            txt = CommandLine.WrapLine(txt, padleft);
+            txt = trim ? txt.TrimStart(' ') : txt;
+            return String.Format("{0,-" + $"{padleft}" + "}{1}", prefix, txt);
         }
 
         /// <summary>
@@ -185,62 +190,68 @@ namespace MBINCompiler
             string exe = GetExecutableName();
 
             var sb = new StringBuilder();
-            
-            sb.AppendLine( Version.GetVersionStringVerbose() );
 
-            sb.Append( "\nUsage:\n\n" +
+            sb.AppendLine(Version.GetVersionStringVerbose());
+
+            sb.Append("\nUsage:\n\n" +
                    $"    {exe} help [<Option>...]\n" +
                    $"    {exe} version [<Option>...] [<File>]\n" +
                    $"    {exe} register [<Option>...] \n" +
-                   $"    {exe} [convert] [<Option>...] <Path> [<Path>...]\n" );
+                   $"    {exe} [convert] [<Option>...] <Path> [<Path>...]\n");
 
-            sb.Append( "\n\nModes:\n\n" +
-                    FormatWrapped( "  help",     20, "Show this help info.", true ) +
-                    FormatWrapped( "  version",  20, "Show version info.", true ) +
-                    FormatWrapped( "  convert",  20, "Convert files between MBIN and MXML formats.", true ) +
-                    FormatWrapped( "  register", 20, "Add MBINCompiler to your systems PATH variable.", true) );
+            sb.Append("\n\nModes:\n\n" +
+                    FormatWrapped("  help", 20, "Show this help info.", true) +
+                    FormatWrapped("  version", 20, "Show version info.", true) +
+                    FormatWrapped("  convert", 20, "Convert files between MBIN and MXML formats.", true) +
+                    FormatWrapped("  register", 20, "Add MBINCompiler to your systems PATH variable.", true));
 
-            if ( OPTIONS_GENERAL.Count > 0 ) {
-                sb.Append( "\n\nGeneral Options:\n" );
-                foreach ( var option in OPTIONS_GENERAL ) AppendOption( sb, option );
+            if (OPTIONS_GENERAL.Count > 0)
+            {
+                sb.Append("\n\nGeneral Options:\n");
+                foreach (var option in OPTIONS_GENERAL) AppendOption(sb, option);
             }
 
-            sb.Append( FormatWrapped( "\nversion [<Option>...] [<File>]\n\n", 4,
+            sb.Append(FormatWrapped("\nversion [<Option>...] [<File>]\n\n", 4,
                     "    If no valid <File> is specified, the version for this exe is displayed.\n" +
                     "    If <File> is an MBIN, the version that the MBIN was compiled with will be displayed.\n" +
                     "\n" +
-                    "    If -q or --quiet is used, a compact version string will be displayed with no decoration." ) );
+                    "    If -q or --quiet is used, a compact version string will be displayed with no decoration."));
 
-            if ( OPTIONS_VERSION.Count > 0 ) {
-                sb.Append( "\nversion Options:\n" );
-                foreach ( var option in OPTIONS_VERSION ) AppendOption( sb, option );
+            if (OPTIONS_VERSION.Count > 0)
+            {
+                sb.Append("\nversion Options:\n");
+                foreach (var option in OPTIONS_VERSION) AppendOption(sb, option);
             }
 
-            sb.Append( FormatWrapped( "\n\n[convert] [<Option>...] <Path> [<Path>...]\n\n", 4,
+            sb.Append(FormatWrapped("\n\n[convert] [<Option>...] <Path> [<Path>...]\n\n", 4,
                     "    This mode is the default. The convert keyword is optional.\n" +
-                    "    For each <Path>, convert all files between MBIN and MXML formats." ) );
+                    "    For each <Path>, convert all files between MBIN and MXML formats."));
 
-            if ( OPTIONS_CONVERT.Count > 0 ) {
-                sb.Append( "\nconvert Options:\n" );
-                foreach ( var option in OPTIONS_CONVERT ) AppendOption( sb, option );
+            if (OPTIONS_CONVERT.Count > 0)
+            {
+                sb.Append("\nconvert Options:\n");
+                foreach (var option in OPTIONS_CONVERT) AppendOption(sb, option);
             }
 
-            if ( DebugMode ) {
-                sb.Append( FormatWrapped( "\n\n[list] [<Option>...]\n\n", 4,
-                        "    List metadata for all supported MBIN structs." ) );
+            if (DebugMode)
+            {
+                sb.Append(FormatWrapped("\n\n[list] [<Option>...]\n\n", 4,
+                        "    List metadata for all supported MBIN structs."));
 
-                if (OPTIONS_LIST.Count > 0) {
-                    sb.Append( "\nlist Options:\n" );
-                    foreach ( var option in OPTIONS_LIST ) AppendOption( sb, option );
+                if (OPTIONS_LIST.Count > 0)
+                {
+                    sb.Append("\nlist Options:\n");
+                    foreach (var option in OPTIONS_LIST) AppendOption(sb, option);
                 }
             }
 
             return sb.ToString();
         }
 
-        private static void AppendOption( StringBuilder sb, Option option ) {
-            if ( option.isHidden && !DebugMode ) return;
-            sb.Append( option );
+        private static void AppendOption(StringBuilder sb, Option option)
+        {
+            if (option.isHidden && !DebugMode) return;
+            sb.Append(option);
             sb.AppendLine();
         }
 

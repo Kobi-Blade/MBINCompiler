@@ -1,13 +1,13 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x369830CB21B73823, NameHash = 0xEEECBBD3)]
     public class GcMaintenanceOverride : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x000 */ public GcMaintenanceComponentData Data;
+        /* 0x000 */
+        public GcMaintenanceComponentData Data;
         [NMS(Index = 0)]
-        /* 0x410 */ public NMSString0x10 ID;
+        /* 0x410 */
+        public NMSString0x10 ID;
     }
 }

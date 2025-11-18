@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardPetEggHatch : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int EggIndex;
+        /* 0x0 */
+        public int EggIndex;
     }
 }

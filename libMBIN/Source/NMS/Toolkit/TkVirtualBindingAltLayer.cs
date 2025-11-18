@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkVirtualBindingAltLayer : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 HudLayerID;
+        /* 0x00 */
+        public NMSString0x10 HudLayerID;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 ID;
+        /* 0x10 */
+        public NMSString0x10 ID;
     }
 }

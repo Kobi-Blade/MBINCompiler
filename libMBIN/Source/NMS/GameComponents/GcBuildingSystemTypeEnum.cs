@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildingSystemTypeEnum : NMSTemplate
     {
         // size: 0x2
-        public enum BuildingSystemTypeEnum : uint {
+        public enum BuildingSystemTypeEnum : uint
+        {
             Normal,
             AbandonedSystem,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BuildingSystemTypeEnum BuildingSystemType;
+        /* 0x0 */
+        public BuildingSystemTypeEnum BuildingSystemType;
     }
 }

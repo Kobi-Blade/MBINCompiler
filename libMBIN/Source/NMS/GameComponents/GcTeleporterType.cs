@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcTeleporterType : NMSTemplate
     {
         // size: 0xA
-        public enum TeleporterDestinationTypeEnum : uint {
+        public enum TeleporterDestinationTypeEnum : uint
+        {
             Base,
             Spacestation,
             Atlas,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Freighter,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TeleporterDestinationTypeEnum TeleporterDestinationType;
+        /* 0x0 */
+        public TeleporterDestinationTypeEnum TeleporterDestinationType;
     }
 }

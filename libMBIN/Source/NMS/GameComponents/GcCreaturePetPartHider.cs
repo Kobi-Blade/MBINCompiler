@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreaturePetPartHider : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x20A> PartName;
+        /* 0x00 */
+        public List<NMSString0x20A> PartName;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x100 AccessorySlot;
+        /* 0x10 */
+        public NMSString0x100 AccessorySlot;
     }
 }

@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcExpeditionRewardTable : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<GcGenericRewardTableEntry> Table;
+        /* 0x0 */
+        public List<GcGenericRewardTableEntry> Table;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcExpeditionDifficultyKeyframe : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Difficulty;
+        /* 0x0 */
+        public float Difficulty;
         [NMS(Index = 0)]
-        /* 0x4 */ public int EventNumber;
+        /* 0x4 */
+        public int EventNumber;
     }
 }

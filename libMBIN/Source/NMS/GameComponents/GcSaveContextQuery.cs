@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcSaveContextQuery : NMSTemplate
     {
         // size: 0x5
-        public enum SaveContextQueryEnum : uint {
+        public enum SaveContextQueryEnum : uint
+        {
             DontCare,
             Season,
             Main,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             NoMain,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public SaveContextQueryEnum SaveContextQuery;
+        /* 0x0 */
+        public SaveContextQueryEnum SaveContextQuery;
     }
 }

@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionPercentageChance : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int Percent;
+        /* 0x0 */
+        public int Percent;
         [NMS(Index = 3)]
-        /* 0x4 */ public bool OverrideMissionSeedWithRandomSeed;
+        /* 0x4 */
+        public bool OverrideMissionSeedWithRandomSeed;
         [NMS(Index = 2)]
-        /* 0x5 */ public bool OverrideZeroSeed;
+        /* 0x5 */
+        public bool OverrideZeroSeed;
         [NMS(Index = 1)]
-        /* 0x6 */ public bool Seeded;
+        /* 0x6 */
+        public bool Seeded;
     }
 }

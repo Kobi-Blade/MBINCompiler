@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcDefaultMissionProductEnum : NMSTemplate
     {
         // size: 0x3
-        public enum DefaultProductTypeEnum : uint {
+        public enum DefaultProductTypeEnum : uint
+        {
             None,
             PrimaryProduct,
             SecondaryProduct,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DefaultProductTypeEnum DefaultProductType;
+        /* 0x0 */
+        public DefaultProductTypeEnum DefaultProductType;
     }
 }

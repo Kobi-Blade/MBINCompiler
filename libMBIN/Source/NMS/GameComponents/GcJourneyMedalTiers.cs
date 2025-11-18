@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcJourneyMedalTiers : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Bronze;
+        /* 0x0 */
+        public int Bronze;
         [NMS(Index = 3)]
-        /* 0x4 */ public int Gold;
+        /* 0x4 */
+        public int Gold;
         [NMS(Index = 0)]
-        /* 0x8 */ public int None;
+        /* 0x8 */
+        public int None;
         [NMS(Index = 2)]
-        /* 0xC */ public int Silver;
+        /* 0xC */
+        public int Silver;
     }
 }

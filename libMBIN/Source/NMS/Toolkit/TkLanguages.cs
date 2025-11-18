@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkLanguages : NMSTemplate
     {
         // size: 0x12
-        public enum LanguageEnum : uint {
+        public enum LanguageEnum : uint
+        {
             Default,
             English,
             USEnglish,
@@ -25,6 +26,7 @@ namespace libMBIN.NMS.Toolkit
             Korean,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public LanguageEnum Language;
+        /* 0x0 */
+        public LanguageEnum Language;
     }
 }

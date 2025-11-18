@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostCommunityResearchTier : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int CompletedTiers;
+        /* 0x0 */
+        public int CompletedTiers;
         [NMS(Index = 1)]
-        /* 0x4 */ public int MissionIndex;
+        /* 0x4 */
+        public int MissionIndex;
         [NMS(Index = 2)]
-        /* 0x8 */ public TkEqualityEnum Test;
+        /* 0x8 */
+        public TkEqualityEnum Test;
     }
 }

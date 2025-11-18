@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionGalacticPoint : NMSTemplate
     {
         // size: 0x2
-        public enum GalacticPointEnum : uint {
+        public enum GalacticPointEnum : uint
+        {
             Atlas,
             BlackHole,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public GalacticPointEnum GalacticPoint;
+        /* 0x0 */
+        public GalacticPointEnum GalacticPoint;
     }
 }

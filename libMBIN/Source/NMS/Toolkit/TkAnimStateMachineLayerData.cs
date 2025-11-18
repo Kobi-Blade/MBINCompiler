@@ -1,13 +1,13 @@
-using libMBIN.NMS.Toolkit;
-
 namespace libMBIN.NMS.Toolkit
 {
     [NMS(GUID = 0x4285D765844F45DB, NameHash = 0x367D7C3)]
     public class TkAnimStateMachineLayerData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkAnimStateMachineData StateMachineContainer;
+        /* 0x00 */
+        public TkAnimStateMachineData StateMachineContainer;
         [NMS(Index = 0)]
-        /* 0x48 */ public NMSString0x10 Id;
+        /* 0x48 */
+        public NMSString0x10 Id;
     }
 }

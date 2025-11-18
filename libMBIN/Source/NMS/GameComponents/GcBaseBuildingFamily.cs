@@ -6,11 +6,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingFamily : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ID;
+        /* 0x00 */
+        public NMSString0x10 ID;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<NMSString0x10> ObjectIDs;
+        /* 0x10 */
+        public List<NMSString0x10> ObjectIDs;
         // size: 0x5
-        public enum FamilyTypeEnum : uint {
+        public enum FamilyTypeEnum : uint
+        {
             Replacements,
             Extras,
             Symmetrical,
@@ -18,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             Rotations,
         }
         [NMS(Index = 1)]
-        /* 0x20 */ public FamilyTypeEnum FamilyType;
+        /* 0x20 */
+        public FamilyTypeEnum FamilyType;
     }
 }

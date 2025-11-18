@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcAttachmentPointData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public Vector3f Position;
+        /* 0x00 */
+        public Vector3f Position;
         [NMS(Index = 1)]
-        /* 0x10 */ public int SimP;
+        /* 0x10 */
+        public int SimP;
     }
 }

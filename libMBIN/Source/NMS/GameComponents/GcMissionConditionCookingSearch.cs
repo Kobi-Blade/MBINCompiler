@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionCookingSearch : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Product;
+        /* 0x00 */
+        public NMSString0x10 Product;
         [NMS(Index = 1)]
-        /* 0x10 */ public int Amount;
+        /* 0x10 */
+        public int Amount;
         [NMS(Index = 4)]
-        /* 0x14 */ public bool IfCookerOutputMustBeCorvetteModule;
+        /* 0x14 */
+        public bool IfCookerOutputMustBeCorvetteModule;
         [NMS(Index = 3)]
-        /* 0x15 */ public bool ReturnTrueIfCanMakeProduct;
+        /* 0x15 */
+        public bool ReturnTrueIfCanMakeProduct;
         [NMS(Index = 2)]
-        /* 0x16 */ public bool SetIcon;
+        /* 0x16 */
+        public bool SetIcon;
     }
 }

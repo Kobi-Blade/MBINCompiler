@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,15 +6,19 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimVectorBlendNode : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<TkAnimVectorBlendNodeData> BlendChildren;
+        /* 0x00 */
+        public List<TkAnimVectorBlendNodeData> BlendChildren;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 NodeId;
+        /* 0x10 */
+        public NMSString0x10 NodeId;
         // size: 0x2
-        public enum BlendOperationEnum : uint {
+        public enum BlendOperationEnum : uint
+        {
             Blend,
             Add,
         }
         [NMS(Index = 1)]
-        /* 0x20 */ public BlendOperationEnum BlendOperation;
+        /* 0x20 */
+        public BlendOperationEnum BlendOperation;
     }
 }

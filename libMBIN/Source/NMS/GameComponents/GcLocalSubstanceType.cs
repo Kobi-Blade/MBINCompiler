@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcLocalSubstanceType : NMSTemplate
     {
         // size: 0x5
-        public enum LocalSubstanceTypeEnum : uint {
+        public enum LocalSubstanceTypeEnum : uint
+        {
             AnyDeposit,
             Common,
             Uncommon,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Plant,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public LocalSubstanceTypeEnum LocalSubstanceType;
+        /* 0x0 */
+        public LocalSubstanceTypeEnum LocalSubstanceType;
     }
 }

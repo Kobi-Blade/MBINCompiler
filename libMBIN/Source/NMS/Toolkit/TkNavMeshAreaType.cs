@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshAreaType : NMSTemplate
     {
         // size: 0x15
-        public enum NavMeshAreaTypeEnum : byte {
+        public enum NavMeshAreaTypeEnum : byte
+        {
             Null,
             Grass,
             Rock,
@@ -28,6 +29,7 @@ namespace libMBIN.NMS.Toolkit
             UseCollisionTileType,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NavMeshAreaTypeEnum NavMeshAreaType;
+        /* 0x0 */
+        public NavMeshAreaTypeEnum NavMeshAreaType;
     }
 }

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetSectionData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public ulong DiscovererUID;
+        /* 0x0 */
+        public ulong DiscovererUID;
         [NMS(Index = 1, Size = 0x2)]
-        /* 0x8 */ public byte[] DiscovererPlatform;
+        /* 0x8 */
+        public byte[] DiscovererPlatform;
         [NMS(Index = 2)]
-        /* 0xA */ public bool DiscoveredState;
+        /* 0xA */
+        public bool DiscoveredState;
     }
 }

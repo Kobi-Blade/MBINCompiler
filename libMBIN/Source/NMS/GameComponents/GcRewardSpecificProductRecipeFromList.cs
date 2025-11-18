@@ -6,17 +6,21 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSpecificProductRecipeFromList : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSString0x10> ProductList;
+        /* 0x00 */
+        public List<NMSString0x10> ProductList;
         // size: 0x4
-        public enum ProductListRewardOrderEnum : uint {
+        public enum ProductListRewardOrderEnum : uint
+        {
             OneRandom,
             InOrder,
             TryAllRandom,
             TryUnknownRandom,
         }
         [NMS(Index = 2)]
-        /* 0x10 */ public ProductListRewardOrderEnum ProductListRewardOrder;
+        /* 0x10 */
+        public ProductListRewardOrderEnum ProductListRewardOrder;
         [NMS(Index = 0)]
-        /* 0x14 */ public bool FailIfAllKnown;
+        /* 0x14 */
+        public bool FailIfAllKnown;
     }
 }

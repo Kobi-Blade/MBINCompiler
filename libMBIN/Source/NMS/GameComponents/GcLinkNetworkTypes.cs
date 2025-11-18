@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcLinkNetworkTypes : NMSTemplate
     {
         // size: 0x6
-        public enum LinkNetworkTypeEnum : uint {
+        public enum LinkNetworkTypeEnum : uint
+        {
             Power,
             Resources,
             Fuel,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             ByteBeat,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public LinkNetworkTypeEnum LinkNetworkType;
+        /* 0x0 */
+        public LinkNetworkTypeEnum LinkNetworkType;
     }
 }

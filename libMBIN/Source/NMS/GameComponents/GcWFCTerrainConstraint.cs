@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWFCTerrainConstraint : NMSTemplate
     {
         // size: 0x9
-        public enum DirectionEnum : uint {
+        public enum DirectionEnum : uint
+        {
             Left,
             Back,
             Right,
@@ -16,21 +17,26 @@ namespace libMBIN.NMS.GameComponents
             All,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DirectionEnum Direction;
+        /* 0x0 */
+        public DirectionEnum Direction;
         // size: 0x3
-        public enum LevelsEnum : uint {
+        public enum LevelsEnum : uint
+        {
             Lower,
             Upper,
             Both,
         }
         [NMS(Index = 1)]
-        /* 0x4 */ public LevelsEnum Levels;
+        /* 0x4 */
+        public LevelsEnum Levels;
         // size: 0x2
-        public enum TerrainEnum : uint {
+        public enum TerrainEnum : uint
+        {
             RequireAbove,
             RequireBelow,
         }
         [NMS(Index = 2)]
-        /* 0x8 */ public TerrainEnum Terrain;
+        /* 0x8 */
+        public TerrainEnum Terrain;
     }
 }

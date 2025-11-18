@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureLegIKComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int Stuff;
+        /* 0x0 */
+        public int Stuff;
     }
 }

@@ -6,18 +6,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureHealthData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 DeathAnim;
+        /* 0x00 */
+        public NMSString0x10 DeathAnim;
         [NMS(Index = 4)]
-        /* 0x10 */ public NMSString0x10 DeathAudio;
+        /* 0x10 */
+        public NMSString0x10 DeathAudio;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x10 DeathEffect;
+        /* 0x20 */
+        public NMSString0x10 DeathEffect;
         [NMS(Index = 6)]
-        /* 0x30 */ public List<NMSString0x20A> DespawnOnDeathDescriptors;
+        /* 0x30 */
+        public List<NMSString0x20A> DespawnOnDeathDescriptors;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 HurtAnim;
+        /* 0x40 */
+        public NMSString0x10 HurtAnim;
         [NMS(Index = 3)]
-        /* 0x50 */ public NMSString0x10 HurtAudio;
+        /* 0x50 */
+        public NMSString0x10 HurtAudio;
         [NMS(Index = 5)]
-        /* 0x60 */ public bool DespawnOnDeath;
+        /* 0x60 */
+        public bool DespawnOnDeath;
     }
 }

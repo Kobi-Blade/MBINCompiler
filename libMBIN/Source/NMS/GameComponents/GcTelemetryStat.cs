@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcTelemetryStat : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Id;
+        /* 0x00 */
+        public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Type;
+        /* 0x10 */
+        public NMSString0x10 Type;
         [NMS(Index = 2)]
-        /* 0x20 */ public int Value;
+        /* 0x20 */
+        public int Value;
     }
 }

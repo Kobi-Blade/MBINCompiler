@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatsAchievements : NMSTemplate
     {
         // size: 0x2
-        public enum StatsAchievementsEnum : uint {
+        public enum StatsAchievementsEnum : uint
+        {
             FirstWarp,
             FirstDiscovery,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public StatsAchievementsEnum StatsAchievements;
+        /* 0x0 */
+        public StatsAchievementsEnum StatsAchievements;
     }
 }

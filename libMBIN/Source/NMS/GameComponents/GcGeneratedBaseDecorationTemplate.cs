@@ -7,13 +7,17 @@ namespace libMBIN.NMS.GameComponents
     public class GcGeneratedBaseDecorationTemplate : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkModelResource TemplateScene;
+        /* 0x00 */
+        public TkModelResource TemplateScene;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 Id;
+        /* 0x20 */
+        public NMSString0x10 Id;
         [NMS(Index = 5)]
-        /* 0x30 */ public List<int> InvalidRoomIndexes;
+        /* 0x30 */
+        public List<int> InvalidRoomIndexes;
         // size: 0x8
-        public enum DecorationLayerEnum : uint {
+        public enum DecorationLayerEnum : uint
+        {
             Stairs,
             Corridor,
             Room,
@@ -24,10 +28,13 @@ namespace libMBIN.NMS.GameComponents
             DecorationCorridor,
         }
         [NMS(Index = 4)]
-        /* 0x40 */ public DecorationLayerEnum DecorationLayer;
+        /* 0x40 */
+        public DecorationLayerEnum DecorationLayer;
         [NMS(Index = 3)]
-        /* 0x44 */ public int MaxPerRoom;
+        /* 0x44 */
+        public int MaxPerRoom;
         [NMS(Index = 2)]
-        /* 0x48 */ public float Probability;
+        /* 0x48 */
+        public float Probability;
     }
 }

@@ -1,19 +1,22 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0xA3C15EC5C4DB6E2E, NameHash = 0x8685F03E)]
     public class GcCostInteractionIndex : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public NMSString0x20A CantAffordLocID;
+        /* 0x00 */
+        public NMSString0x20A CantAffordLocID;
         [NMS(Index = 2)]
-        /* 0x20 */ public int Index;
+        /* 0x20 */
+        public int Index;
         [NMS(Index = 0)]
-        /* 0x24 */ public GcInteractionType InteractionType;
+        /* 0x24 */
+        public GcInteractionType InteractionType;
         [NMS(Index = 1)]
-        /* 0x28 */ public GcAlienRace Race;
+        /* 0x28 */
+        public GcAlienRace Race;
         [NMS(Index = 3)]
-        /* 0x2C */ public bool AffordIfGreaterThanIndex;
+        /* 0x2C */
+        public bool AffordIfGreaterThanIndex;
     }
 }

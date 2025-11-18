@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcExpeditionHologramComponentData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public Vector3f SpawnOffset;
+        /* 0x00 */
+        public Vector3f SpawnOffset;
         [NMS(Index = 1)]
-        /* 0x10 */ public float CaptainScale;
+        /* 0x10 */
+        public float CaptainScale;
         [NMS(Index = 2)]
-        /* 0x14 */ public float FrigateScale;
+        /* 0x14 */
+        public float FrigateScale;
         [NMS(Index = 0)]
-        /* 0x18 */ public float HologramRotationSpeedDegPerSec;
+        /* 0x18 */
+        public float HologramRotationSpeedDegPerSec;
     }
 }

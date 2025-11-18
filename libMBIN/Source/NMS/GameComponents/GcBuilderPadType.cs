@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuilderPadType : NMSTemplate
     {
         // size: 0x3
-        public enum BuilderPadTypeEnum : uint {
+        public enum BuilderPadTypeEnum : uint
+        {
             NoBuild,
             ExclusivelyBuild,
             Hybrid,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BuilderPadTypeEnum BuilderPadType;
+        /* 0x0 */
+        public BuilderPadTypeEnum BuilderPadType;
     }
 }

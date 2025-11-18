@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemPriceModifiers : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public float BuyBaseMarkup;
+        /* 0x00 */
+        public float BuyBaseMarkup;
         [NMS(Index = 4)]
-        /* 0x04 */ public float BuyMarkupMod;
+        /* 0x04 */
+        public float BuyMarkupMod;
         [NMS(Index = 2)]
-        /* 0x08 */ public float HighPriceMod;
+        /* 0x08 */
+        public float HighPriceMod;
         [NMS(Index = 1)]
-        /* 0x0C */ public float LowPriceMod;
+        /* 0x0C */
+        public float LowPriceMod;
         [NMS(Index = 0)]
-        /* 0x10 */ public float SpaceStationMarkup;
+        /* 0x10 */
+        public float SpaceStationMarkup;
     }
 }

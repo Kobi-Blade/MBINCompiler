@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatRewardGroupStatData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 StatID;
+        /* 0x00 */
+        public NMSString0x10 StatID;
         [NMS(Index = 2)]
-        /* 0x10 */ public float ManualAdjust;
+        /* 0x10 */
+        public float ManualAdjust;
         [NMS(Index = 1)]
-        /* 0x14 */ public float StatMultiplier;
+        /* 0x14 */
+        public float StatMultiplier;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderTreasureCategory : NMSTemplate
     {
         // size: 0xD
-        public enum WonderTreasureCategoryEnum : uint {
+        public enum WonderTreasureCategoryEnum : uint
+        {
             Loot,
             Document,
             BioSample,
@@ -20,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             SpaceBones,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WonderTreasureCategoryEnum WonderTreasureCategory;
+        /* 0x0 */
+        public WonderTreasureCategoryEnum WonderTreasureCategory;
     }
 }

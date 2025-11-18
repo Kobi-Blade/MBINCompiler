@@ -4,12 +4,14 @@ namespace libMBIN.NMS.Toolkit
     public class TkImposterActivation : NMSTemplate
     {
         // size: 0x3
-        public enum ImposterActivationEnum : byte {
+        public enum ImposterActivationEnum : byte
+        {
             Default,
             ForceHaveImposter,
             ForceNoImposter,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ImposterActivationEnum ImposterActivation;
+        /* 0x0 */
+        public ImposterActivationEnum ImposterActivation;
     }
 }

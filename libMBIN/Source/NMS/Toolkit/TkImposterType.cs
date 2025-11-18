@@ -4,11 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkImposterType : NMSTemplate
     {
         // size: 0x2
-        public enum ImposterTypeEnum : byte {
+        public enum ImposterTypeEnum : byte
+        {
             Hemispherical,
             Spherical,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ImposterTypeEnum ImposterType;
+        /* 0x0 */
+        public ImposterTypeEnum ImposterType;
     }
 }

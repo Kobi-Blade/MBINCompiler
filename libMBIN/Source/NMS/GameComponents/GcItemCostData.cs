@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemCostData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ID;
+        /* 0x00 */
+        public NMSString0x10 ID;
         [NMS(Index = 4)]
-        /* 0x10 */ public float ChangePerSale;
+        /* 0x10 */
+        public float ChangePerSale;
         [NMS(Index = 1)]
-        /* 0x14 */ public float Cost;
+        /* 0x14 */
+        public float Cost;
         [NMS(Index = 3)]
-        /* 0x18 */ public float MaxCost;
+        /* 0x18 */
+        public float MaxCost;
         [NMS(Index = 2)]
-        /* 0x1C */ public float MinCost;
+        /* 0x1C */
+        public float MinCost;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcIDPair : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Item1;
+        /* 0x00 */
+        public NMSString0x10 Item1;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Item2;
+        /* 0x10 */
+        public NMSString0x10 Item2;
     }
 }

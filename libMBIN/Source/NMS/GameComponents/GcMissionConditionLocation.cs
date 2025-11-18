@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionLocation : NMSTemplate
     {
         // size: 0x22
-        public enum MissionPlayerLocationEnum : uint {
+        public enum MissionPlayerLocationEnum : uint
+        {
             OnPlanet,
             OnPlanetInVehicle,
             AnywhereInPlanetAtmos,
@@ -41,6 +42,7 @@ namespace libMBIN.NMS.GameComponents
             AtlasStationFinal,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public MissionPlayerLocationEnum MissionPlayerLocation;
+        /* 0x0 */
+        public MissionPlayerLocationEnum MissionPlayerLocation;
     }
 }

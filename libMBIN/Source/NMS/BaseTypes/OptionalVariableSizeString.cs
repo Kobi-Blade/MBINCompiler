@@ -1,14 +1,12 @@
-﻿using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
-namespace libMBIN.NMS
+﻿namespace libMBIN.NMS
 {
     [NMS(Size = 0x10, Alignment = 0x1)]
     public class OptionalVariableSizeString : NMSTemplate, INMSVariableLengthString
     {
         public string Value;
 
-        public string String {
+        public string String
+        {
             get => StringValue();
             set => Value = value;
         }
@@ -34,7 +32,7 @@ namespace libMBIN.NMS
 
         public OptionalVariableSizeString() { }
 
-        public static implicit operator OptionalVariableSizeString ( string str ) => new OptionalVariableSizeString { Value = str };
-        public static implicit operator string ( OptionalVariableSizeString str ) => str.Value;
+        public static implicit operator OptionalVariableSizeString(string str) => new OptionalVariableSizeString { Value = str };
+        public static implicit operator string(OptionalVariableSizeString str) => str.Value;
     }
 }

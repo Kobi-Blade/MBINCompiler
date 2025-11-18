@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceFreighterDefend : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
     }
 }

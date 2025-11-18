@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasEndpointForEvent : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A EventID;
+        /* 0x00 */
+        public NMSString0x20A EventID;
         [NMS(Index = 1)]
-        /* 0x20 */ public float MaxDistance;
+        /* 0x20 */
+        public float MaxDistance;
     }
 }

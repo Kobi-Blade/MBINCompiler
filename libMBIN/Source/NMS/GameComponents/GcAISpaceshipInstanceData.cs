@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcAISpaceshipInstanceData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public VariableSizeString File;
+        /* 0x0 */
+        public VariableSizeString File;
     }
 }

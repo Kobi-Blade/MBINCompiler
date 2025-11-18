@@ -6,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerSpaceshipWarpData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float EntryTime;
+        /* 0x0 */
+        public float EntryTime;
         [NMS(Index = 3)]
-        /* 0x4 */ public float ExitTime;
+        /* 0x4 */
+        public float ExitTime;
         [NMS(Index = 2)]
-        /* 0x8 */ public float TravelTunnelTime;
+        /* 0x8 */
+        public float TravelTunnelTime;
         [NMS(Index = 1)]
-        /* 0xC */ public TkCurveType EntryTunnelCurve;
+        /* 0xC */
+        public TkCurveType EntryTunnelCurve;
         [NMS(Index = 4)]
-        /* 0xD */ public TkCurveType ExitTunnelCurve;
+        /* 0xD */
+        public TkCurveType ExitTunnelCurve;
     }
 }

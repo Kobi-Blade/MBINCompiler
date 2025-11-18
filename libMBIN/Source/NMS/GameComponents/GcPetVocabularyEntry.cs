@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPetVocabularyEntry : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A GenericFallback;
+        /* 0x00 */
+        public NMSString0x20A GenericFallback;
         [NMS(Index = 2)]
-        /* 0x20 */ public List<GcPetVocabularyTraitEntry> Vocabulary;
+        /* 0x20 */
+        public List<GcPetVocabularyTraitEntry> Vocabulary;
         [NMS(Index = 1)]
-        /* 0x30 */ public float OddsOfProcReplacement;
+        /* 0x30 */
+        public float OddsOfProcReplacement;
     }
 }

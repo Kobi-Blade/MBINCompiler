@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -35,5 +34,5 @@ using System.Runtime.InteropServices;
 
 // Do not modify the attributes below.
 // To Update the version, see libMBIN.Version.VERSION.STRING.
-[assembly: AssemblyVersion( libMBIN.Version.VERSION_STRING )]
-[assembly: AssemblyFileVersion( libMBIN.Version.VERSION_STRING )]
+[assembly: AssemblyVersion(libMBIN.Version.VERSION_STRING)]
+[assembly: AssemblyFileVersion(libMBIN.Version.VERSION_STRING)]

@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcUnlockableItemTrees : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Title;
+        /* 0x00 */
+        public NMSString0x20A Title;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<GcUnlockableItemTree> Trees;
+        /* 0x20 */
+        public List<GcUnlockableItemTree> Trees;
     }
 }

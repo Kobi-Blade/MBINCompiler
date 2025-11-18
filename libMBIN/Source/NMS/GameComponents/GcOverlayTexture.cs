@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcOverlayTexture : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public VariableSizeString OverlayDiffuse;
+        /* 0x00 */
+        public VariableSizeString OverlayDiffuse;
         [NMS(Index = 2)]
-        /* 0x10 */ public VariableSizeString OverlayMasks;
+        /* 0x10 */
+        public VariableSizeString OverlayMasks;
         [NMS(Index = 1)]
-        /* 0x20 */ public VariableSizeString OverlayNormal;
+        /* 0x20 */
+        public VariableSizeString OverlayNormal;
         [NMS(Index = 3)]
-        /* 0x30 */ public int OverlayMaskIdx;
+        /* 0x30 */
+        public int OverlayMaskIdx;
     }
 }

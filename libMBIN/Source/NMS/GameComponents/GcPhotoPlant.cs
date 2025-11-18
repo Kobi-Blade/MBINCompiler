@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcPhotoPlant : NMSTemplate
     {
         // size: 0x3
-        public enum PhotoPlantTypeEnum : uint {
+        public enum PhotoPlantTypeEnum : uint
+        {
             Sodium,
             Oxygen,
             BluePlant,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PhotoPlantTypeEnum PhotoPlantType;
+        /* 0x0 */
+        public PhotoPlantTypeEnum PhotoPlantType;
     }
 }

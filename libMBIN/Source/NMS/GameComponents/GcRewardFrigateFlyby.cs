@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,20 +6,28 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardFrigateFlyby : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public GcPlayerCommunicatorMessage CommunicatorMessage;
+        /* 0x00 */
+        public GcPlayerCommunicatorMessage CommunicatorMessage;
         [NMS(Index = 2)]
-        /* 0x50 */ public NMSString0x20A CommunicatorOSDLocId;
+        /* 0x50 */
+        public NMSString0x20A CommunicatorOSDLocId;
         [NMS(Index = 4)]
-        /* 0x70 */ public TkTextureResource MarkerIcon;
+        /* 0x70 */
+        public TkTextureResource MarkerIcon;
         [NMS(Index = 7)]
-        /* 0x88 */ public NMSString0x10 CameraShake;
+        /* 0x88 */
+        public NMSString0x10 CameraShake;
         [NMS(Index = 1)]
-        /* 0x98 */ public float AppearanceDelay;
+        /* 0x98 */
+        public float AppearanceDelay;
         [NMS(Index = 6)]
-        /* 0x9C */ public GcAudioWwiseEvents AudioSting;
+        /* 0x9C */
+        public GcAudioWwiseEvents AudioSting;
         [NMS(Index = 0)]
-        /* 0xA0 */ public GcFrigateFlybyType FlybyType;
+        /* 0xA0 */
+        public GcFrigateFlybyType FlybyType;
         [NMS(Index = 5)]
-        /* 0xA4 */ public GcAudioWwiseEvents PulseAudio;
+        /* 0xA4 */
+        public GcAudioWwiseEvents PulseAudio;
     }
 }

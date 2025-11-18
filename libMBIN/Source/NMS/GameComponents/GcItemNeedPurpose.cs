@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemNeedPurpose : NMSTemplate
     {
         // size: 0x6
-        public enum ItemPurposeEnum : uint {
+        public enum ItemPurposeEnum : uint
+        {
             None,
             Crafting,
             Building,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             Paying,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ItemPurposeEnum ItemPurpose;
+        /* 0x0 */
+        public ItemPurposeEnum ItemPurpose;
     }
 }

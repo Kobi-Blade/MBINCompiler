@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcWonderRecord : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x2)]
-        /* 0x00 */ public ulong[] GenerationID;
+        /* 0x00 */
+        public ulong[] GenerationID;
         [NMS(Index = 1)]
-        /* 0x10 */ public float WonderStatValue;
+        /* 0x10 */
+        public float WonderStatValue;
         [NMS(Index = 2)]
-        /* 0x14 */ public bool SeenInFrontend;
+        /* 0x14 */
+        public bool SeenInFrontend;
     }
 }

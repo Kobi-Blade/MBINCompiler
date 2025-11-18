@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkCurveType : NMSTemplate
     {
         // size: 0x28
-        public enum CurveEnum : byte {
+        public enum CurveEnum : byte
+        {
             Linear,
             SmoothInOut,
             FastInSlowOut,
@@ -47,6 +48,7 @@ namespace libMBIN.NMS.Toolkit
             EaseInOutBounce,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CurveEnum Curve;
+        /* 0x0 */
+        public CurveEnum Curve;
     }
 }

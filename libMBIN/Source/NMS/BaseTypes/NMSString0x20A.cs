@@ -1,7 +1,4 @@
-﻿using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
-namespace libMBIN.NMS
+﻿namespace libMBIN.NMS
 {
     /// <summary>
     /// This is a modified version of the NMSString0x20 which is aligned (hence the 'A' in the name) to 0x8.
@@ -34,9 +31,9 @@ namespace libMBIN.NMS
 
         public NMSString0x20A() { }
 
-        public static implicit operator NMSString0x20A ( string str ) => new NMSString0x20A(str);
-        public static implicit operator string ( NMSString0x20A str ) => str.Value;
-        public static implicit operator NMSString0x20A ( NMSString0x20 str) => new NMSString0x20A(str.Value);
-        public static implicit operator NMSString0x20 (NMSString0x20A str) => new NMSString0x20(str.Value);
+        public static implicit operator NMSString0x20A(string str) => new NMSString0x20A(str);
+        public static implicit operator string(NMSString0x20A str) => str.Value;
+        public static implicit operator NMSString0x20A(NMSString0x20 str) => new NMSString0x20A(str.Value);
+        public static implicit operator NMSString0x20(NMSString0x20A str) => new NMSString0x20(str.Value);
     }
 }

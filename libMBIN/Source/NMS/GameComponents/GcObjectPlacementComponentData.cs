@@ -4,23 +4,31 @@ namespace libMBIN.NMS.GameComponents
     public class GcObjectPlacementComponentData : NMSTemplate
     {
         // size: 0x2
-        public enum ActivationTypeEnum : uint {
+        public enum ActivationTypeEnum : uint
+        {
             GroupNode,
             Locator,
         }
         [NMS(Index = 1)]
-        /* 0x00 */ public ActivationTypeEnum ActivationType;
+        /* 0x00 */
+        public ActivationTypeEnum ActivationType;
         [NMS(Index = 2)]
-        /* 0x04 */ public float FractionOfNodesActive;
+        /* 0x04 */
+        public float FractionOfNodesActive;
         [NMS(Index = 4)]
-        /* 0x08 */ public int MaxGroupsActivated;
+        /* 0x08 */
+        public int MaxGroupsActivated;
         [NMS(Index = 3)]
-        /* 0x0C */ public int MaxNodesActivated;
+        /* 0x0C */
+        public int MaxNodesActivated;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x20 GroupNodeName;
+        /* 0x10 */
+        public NMSString0x20 GroupNodeName;
         [NMS(Index = 6)]
-        /* 0x30 */ public bool UseNodeParent;
+        /* 0x30 */
+        public bool UseNodeParent;
         [NMS(Index = 5)]
-        /* 0x31 */ public bool UseRaycast;
+        /* 0x31 */
+        public bool UseRaycast;
     }
 }

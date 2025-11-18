@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcGasGiantAtmosphereSetting : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public Colour DiscoveryPlanetColour;
+        /* 0x00 */
+        public Colour DiscoveryPlanetColour;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 AtmosphereID;
+        /* 0x10 */
+        public NMSString0x10 AtmosphereID;
         [NMS(Index = 1)]
-        /* 0x20 */ public VariableSizeString GradientMapResource;
+        /* 0x20 */
+        public VariableSizeString GradientMapResource;
     }
 }

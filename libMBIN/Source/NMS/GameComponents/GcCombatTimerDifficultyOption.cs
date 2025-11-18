@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcCombatTimerDifficultyOption : NMSTemplate
     {
         // size: 0x4
-        public enum CombatTimerDifficultyOptionEnum : uint {
+        public enum CombatTimerDifficultyOptionEnum : uint
+        {
             Off,
             Slow,
             Normal,
             Fast,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CombatTimerDifficultyOptionEnum CombatTimerDifficultyOption;
+        /* 0x0 */
+        public CombatTimerDifficultyOptionEnum CombatTimerDifficultyOption;
     }
 }

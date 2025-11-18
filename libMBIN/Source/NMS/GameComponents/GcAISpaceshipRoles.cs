@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcAISpaceshipRoles : NMSTemplate
     {
         // size: 0x8
-        public enum AIShipRoleEnum : uint {
+        public enum AIShipRoleEnum : uint
+        {
             Standard,
             PlayerSquadron,
             Freighter,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             Biggs,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AIShipRoleEnum AIShipRole;
+        /* 0x0 */
+        public AIShipRoleEnum AIShipRole;
     }
 }

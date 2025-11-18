@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionGroup : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public List<NMSTemplate> Conditions;
+        /* 0x00 */
+        public List<NMSTemplate> Conditions;
         [NMS(Index = 2)]
-        /* 0x10 */ public GcMissionConditionTest ConditionTest;
+        /* 0x10 */
+        public GcMissionConditionTest ConditionTest;
         [NMS(Index = 0)]
-        /* 0x14 */ public bool OnlyUsedForTextFormatting;
+        /* 0x14 */
+        public bool OnlyUsedForTextFormatting;
         [NMS(Index = 1)]
-        /* 0x15 */ public bool ValueToReturnForTextFormatting;
+        /* 0x15 */
+        public bool ValueToReturnForTextFormatting;
     }
 }

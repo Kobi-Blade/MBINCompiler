@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardReinitialise : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A OverrideMessage;
+        /* 0x00 */
+        public NMSString0x20A OverrideMessage;
         [NMS(Index = 1)]
-        /* 0x20 */ public bool DoIntroNextWarp;
+        /* 0x20 */
+        public bool DoIntroNextWarp;
     }
 }

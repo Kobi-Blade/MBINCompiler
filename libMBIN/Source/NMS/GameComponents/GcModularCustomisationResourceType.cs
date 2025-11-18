@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcModularCustomisationResourceType : NMSTemplate
     {
         // size: 0xB
-        public enum ModularCustomisationResourceTypeEnum : uint {
+        public enum ModularCustomisationResourceTypeEnum : uint
+        {
             MultiToolStaff,
             Fighter,
             Dropship,
@@ -18,6 +19,7 @@ namespace libMBIN.NMS.GameComponents
             ExhibitBird,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ModularCustomisationResourceTypeEnum ModularCustomisationResourceType;
+        /* 0x0 */
+        public ModularCustomisationResourceTypeEnum ModularCustomisationResourceType;
     }
 }

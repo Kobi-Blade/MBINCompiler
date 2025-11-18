@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkPadEnum : NMSTemplate
     {
         // size: 0x11
-        public enum PadEnum : uint {
+        public enum PadEnum : uint
+        {
             None,
             XInput,
             GLFW,
@@ -24,6 +25,7 @@ namespace libMBIN.NMS.Toolkit
             VirtualController,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PadEnum Pad;
+        /* 0x0 */
+        public PadEnum Pad;
     }
 }

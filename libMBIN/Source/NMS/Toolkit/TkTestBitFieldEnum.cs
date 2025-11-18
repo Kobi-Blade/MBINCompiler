@@ -7,7 +7,8 @@ namespace libMBIN.NMS.Toolkit
     {
         // size: 0x5
         [Flags]
-        public enum EnumEnum : uint {
+        public enum EnumEnum : uint
+        {
             None = 0x0,
             First = 0x1,
             Second = 0x2,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.Toolkit
             Fourth = 0x8,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public EnumEnum Enum;
+        /* 0x0 */
+        public EnumEnum Enum;
     }
 }

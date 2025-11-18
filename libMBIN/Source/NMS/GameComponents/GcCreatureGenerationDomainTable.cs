@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureGenerationDomainTable : NMSTemplate
     {
         [NMS(Index = 4)]
-        /* 0x00 */ public List<GcCreatureGenerationDomainAdditionalEntries> AdditionalTables;
+        /* 0x00 */
+        public List<GcCreatureGenerationDomainAdditionalEntries> AdditionalTables;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Id;
+        /* 0x10 */
+        public NMSString0x10 Id;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<GcCreatureGenerationDomainEntry> Tables;
+        /* 0x20 */
+        public List<GcCreatureGenerationDomainEntry> Tables;
         [NMS(Index = 2)]
-        /* 0x30 */ public float ChanceOfHemisphereLimit;
+        /* 0x30 */
+        public float ChanceOfHemisphereLimit;
         [NMS(Index = 3)]
-        /* 0x34 */ public int MaxToHemisphereLimit;
+        /* 0x34 */
+        public int MaxToHemisphereLimit;
     }
 }

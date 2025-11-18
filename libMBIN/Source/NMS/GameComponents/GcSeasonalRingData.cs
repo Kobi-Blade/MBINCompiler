@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcSeasonalRingData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public float CoreOpacity;
+        /* 0x0 */
+        public float CoreOpacity;
         [NMS(Index = 1)]
-        /* 0x4 */ public float RingOpacity;
+        /* 0x4 */
+        public float RingOpacity;
         [NMS(Index = 0)]
-        /* 0x8 */ public float RingSize;
+        /* 0x8 */
+        public float RingSize;
     }
 }

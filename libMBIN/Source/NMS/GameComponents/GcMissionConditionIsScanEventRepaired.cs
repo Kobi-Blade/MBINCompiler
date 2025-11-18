@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionIsScanEventRepaired : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Event;
+        /* 0x00 */
+        public NMSString0x20A Event;
         [NMS(Index = 1)]
-        /* 0x20 */ public bool CheckForAllRepairsInBuilding;
+        /* 0x20 */
+        public bool CheckForAllRepairsInBuilding;
         [NMS(Index = 2)]
-        /* 0x21 */ public bool OnlyCheckRequiresEmptySlotTypes;
+        /* 0x21 */
+        public bool OnlyCheckRequiresEmptySlotTypes;
     }
 }

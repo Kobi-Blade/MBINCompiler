@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkControllerButtonLookup : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public VariableSizeString ButtonImageLookupFilename;
+        /* 0x00 */
+        public VariableSizeString ButtonImageLookupFilename;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x10 Id;
+        /* 0x10 */
+        public NMSString0x10 Id;
     }
 }

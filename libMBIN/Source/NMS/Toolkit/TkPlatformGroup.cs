@@ -7,7 +7,8 @@ namespace libMBIN.NMS.Toolkit
     {
         // size: 0x6
         [Flags]
-        public enum PlatformMaskEnum : uint {
+        public enum PlatformMaskEnum : uint
+        {
             None = 0x0,
             Playfab = 0x1,
             Steam = 0x2,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.Toolkit
             Nintendo = 0x10,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PlatformMaskEnum PlatformMask;
+        /* 0x0 */
+        public PlatformMaskEnum PlatformMask;
     }
 }

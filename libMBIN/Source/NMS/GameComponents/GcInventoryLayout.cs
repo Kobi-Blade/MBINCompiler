@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventoryLayout : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public GcSeed Seed;
+        /* 0x00 */
+        public GcSeed Seed;
         [NMS(Index = 2)]
-        /* 0x10 */ public int Level;
+        /* 0x10 */
+        public int Level;
         [NMS(Index = 0)]
-        /* 0x14 */ public int Slots;
+        /* 0x14 */
+        public int Slots;
     }
 }

@@ -1,7 +1,4 @@
-﻿using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
-namespace libMBIN.NMS
+﻿namespace libMBIN.NMS
 {
     // used for XYZW and RGBA type vectors
     [NMS(Size = 0x10, Alignment = 0x10)]

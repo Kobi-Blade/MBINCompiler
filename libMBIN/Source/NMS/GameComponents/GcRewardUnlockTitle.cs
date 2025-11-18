@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardUnlockTitle : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 TitleID;
+        /* 0x00 */
+        public NMSString0x10 TitleID;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool NoMusic;
+        /* 0x10 */
+        public bool NoMusic;
         [NMS(Index = 2)]
-        /* 0x11 */ public bool ShowEvenIfAlreadyUnlocked;
+        /* 0x11 */
+        public bool ShowEvenIfAlreadyUnlocked;
     }
 }

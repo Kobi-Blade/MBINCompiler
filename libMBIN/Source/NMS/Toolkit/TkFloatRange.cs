@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkFloatRange : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Maximum;
+        /* 0x0 */
+        public float Maximum;
         [NMS(Index = 0)]
-        /* 0x4 */ public float Minimum;
+        /* 0x4 */
+        public float Minimum;
     }
 }

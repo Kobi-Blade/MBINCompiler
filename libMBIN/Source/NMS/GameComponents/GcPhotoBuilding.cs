@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPhotoBuilding : NMSTemplate
     {
         // size: 0xD
-        public enum PhotoBuildingTypeEnum : uint {
+        public enum PhotoBuildingTypeEnum : uint
+        {
             Shelter,
             Abandoned,
             Shop,
@@ -20,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             LargeBuilding,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public PhotoBuildingTypeEnum PhotoBuildingType;
+        /* 0x0 */
+        public PhotoBuildingTypeEnum PhotoBuildingType;
     }
 }

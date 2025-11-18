@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcInWorldUIScreenData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f ScreenOffset;
+        /* 0x00 */
+        public Vector3f ScreenOffset;
         [NMS(Index = 2)]
-        /* 0x10 */ public Vector4f ScreenRotation;
+        /* 0x10 */
+        public Vector4f ScreenRotation;
         [NMS(Index = 0)]
-        /* 0x20 */ public float ScreenScale;
+        /* 0x20 */
+        public float ScreenScale;
     }
 }

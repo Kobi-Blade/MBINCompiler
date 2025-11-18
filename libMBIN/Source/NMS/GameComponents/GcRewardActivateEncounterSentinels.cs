@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardActivateEncounterSentinels : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A EncounterComponentScanEvent;
+        /* 0x00 */
+        public NMSString0x20A EncounterComponentScanEvent;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 EncounterOverride;
+        /* 0x20 */
+        public NMSString0x10 EncounterOverride;
     }
 }

@@ -4,11 +4,14 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimStateMachineTransitionConditionIntData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Parameter;
+        /* 0x00 */
+        public NMSString0x10 Parameter;
         [NMS(Index = 2)]
-        /* 0x10 */ public int CompareValue;
+        /* 0x10 */
+        public int CompareValue;
         // size: 0x5
-        public enum IntComparisonModeEnum : uint {
+        public enum IntComparisonModeEnum : uint
+        {
             LessThan,
             LessThanEqual,
             Equal,
@@ -16,6 +19,7 @@ namespace libMBIN.NMS.Toolkit
             GreaterThan,
         }
         [NMS(Index = 1)]
-        /* 0x14 */ public IntComparisonModeEnum IntComparisonMode;
+        /* 0x14 */
+        public IntComparisonModeEnum IntComparisonMode;
     }
 }

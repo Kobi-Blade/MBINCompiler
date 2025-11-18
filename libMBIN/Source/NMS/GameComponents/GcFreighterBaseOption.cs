@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcFreighterBaseOption : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public VariableSizeString BaseDataFile;
+        /* 0x00 */
+        public VariableSizeString BaseDataFile;
         [NMS(Index = 1)]
-        /* 0x10 */ public float ProbabilityWeighting;
+        /* 0x10 */
+        public float ProbabilityWeighting;
     }
 }

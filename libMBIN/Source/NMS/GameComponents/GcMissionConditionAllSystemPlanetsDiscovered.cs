@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionAllSystemPlanetsDiscovered : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int DisplayNumberOffset;
+        /* 0x0 */
+        public int DisplayNumberOffset;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool OnlyMoons;
+        /* 0x4 */
+        public bool OnlyMoons;
     }
 }

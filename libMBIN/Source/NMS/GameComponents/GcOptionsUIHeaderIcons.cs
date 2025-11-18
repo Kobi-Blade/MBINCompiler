@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcOptionsUIHeaderIcons : NMSTemplate
     {
         // size: 0x6
-        public enum OptionsUIHeaderIconTypeEnum : uint {
+        public enum OptionsUIHeaderIconTypeEnum : uint
+        {
             General,
             Ship,
             Cog,
@@ -13,6 +14,7 @@ namespace libMBIN.NMS.GameComponents
             Cloud,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public OptionsUIHeaderIconTypeEnum OptionsUIHeaderIconType;
+        /* 0x0 */
+        public OptionsUIHeaderIconTypeEnum OptionsUIHeaderIconType;
     }
 }

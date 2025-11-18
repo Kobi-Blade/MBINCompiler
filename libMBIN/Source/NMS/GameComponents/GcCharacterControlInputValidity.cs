@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcCharacterControlInputValidity : NMSTemplate
     {
         // size: 0x3
-        public enum CharacterControlInputValidityEnum : uint {
+        public enum CharacterControlInputValidityEnum : uint
+        {
             Always,
             PadOnly,
             KeyboardAnMouseOnly,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CharacterControlInputValidityEnum CharacterControlInputValidity;
+        /* 0x0 */
+        public CharacterControlInputValidityEnum CharacterControlInputValidity;
     }
 }

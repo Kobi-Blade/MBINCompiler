@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcFriendlyDroneChatType : NMSTemplate
     {
         // size: 0x5
-        public enum FriendlyDroneChatTypeEnum : uint {
+        public enum FriendlyDroneChatTypeEnum : uint
+        {
             Summoned,
             Unsummoned,
             BecomeWanted,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Idle,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FriendlyDroneChatTypeEnum FriendlyDroneChatType;
+        /* 0x0 */
+        public FriendlyDroneChatTypeEnum FriendlyDroneChatType;
     }
 }

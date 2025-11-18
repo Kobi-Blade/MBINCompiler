@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkEntitlementListData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 EntitlementId;
+        /* 0x00 */
+        public NMSString0x10 EntitlementId;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x40 ServiceID;
+        /* 0x10 */
+        public NMSString0x40 ServiceID;
     }
 }

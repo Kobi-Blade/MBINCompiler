@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkLSystemGlobalRestriction : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public VariableSizeString Model;
+        /* 0x00 */
+        public VariableSizeString Model;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<TkLSystemRestrictionData> Restrictions;
+        /* 0x10 */
+        public List<TkLSystemRestrictionData> Restrictions;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x20 Name;
+        /* 0x20 */
+        public NMSString0x20 Name;
     }
 }

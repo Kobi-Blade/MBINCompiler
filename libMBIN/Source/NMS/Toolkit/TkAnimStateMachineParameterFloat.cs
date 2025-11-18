@@ -4,8 +4,10 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimStateMachineParameterFloat : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Name;
+        /* 0x00 */
+        public NMSString0x10 Name;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Default;
+        /* 0x10 */
+        public float Default;
     }
 }

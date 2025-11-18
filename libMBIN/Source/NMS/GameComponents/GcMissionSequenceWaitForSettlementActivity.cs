@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceWaitForSettlementActivity : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 3)]
-        /* 0x20 */ public VariableSizeString MessageForConflict;
+        /* 0x20 */
+        public VariableSizeString MessageForConflict;
         [NMS(Index = 4)]
-        /* 0x30 */ public VariableSizeString MessageForProposal;
+        /* 0x30 */
+        public VariableSizeString MessageForProposal;
         [NMS(Index = 2)]
-        /* 0x40 */ public VariableSizeString MessageForVisitor;
+        /* 0x40 */
+        public VariableSizeString MessageForVisitor;
         [NMS(Index = 1)]
-        /* 0x50 */ public VariableSizeString MessageWhileBuilding;
+        /* 0x50 */
+        public VariableSizeString MessageWhileBuilding;
     }
 }

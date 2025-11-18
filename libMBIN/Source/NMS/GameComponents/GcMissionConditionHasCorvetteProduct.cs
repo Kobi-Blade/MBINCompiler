@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasCorvetteProduct : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public int Amount;
+        /* 0x0 */
+        public int Amount;
         [NMS(Index = 1)]
-        /* 0x4 */ public GcCorvettePartCategory PartType;
+        /* 0x4 */
+        public GcCorvettePartCategory PartType;
         [NMS(Index = 3)]
-        /* 0x8 */ public TkEqualityEnum Test;
+        /* 0x8 */
+        public TkEqualityEnum Test;
         [NMS(Index = 0)]
-        /* 0xC */ public bool SpecificPartType;
+        /* 0xC */
+        public bool SpecificPartType;
     }
 }

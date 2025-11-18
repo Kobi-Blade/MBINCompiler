@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcGenericMissionVersionProgress : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Progress;
+        /* 0x0 */
+        public int Progress;
         [NMS(Index = 0)]
-        /* 0x4 */ public int Version;
+        /* 0x4 */
+        public int Version;
     }
 }

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcDialogClearanceInfo : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A GlobalDialogID;
+        /* 0x00 */
+        public NMSString0x20A GlobalDialogID;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 AssociatedMission;
+        /* 0x20 */
+        public NMSString0x10 AssociatedMission;
         [NMS(Index = 2)]
-        /* 0x30 */ public bool AlwaysForceClearThisPair;
+        /* 0x30 */
+        public bool AlwaysForceClearThisPair;
     }
 }

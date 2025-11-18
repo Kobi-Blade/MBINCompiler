@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSetAbandonedFreighterMissionState : NMSTemplate
     {
         // size: 0x6
-        public enum AbandonedFreighterMissionStateEnum : uint {
+        public enum AbandonedFreighterMissionStateEnum : uint
+        {
             EndRoomComplete,
             CrewManifestRead,
             CaptainsLogRead,
@@ -13,8 +14,10 @@ namespace libMBIN.NMS.GameComponents
             OpenDoors,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AbandonedFreighterMissionStateEnum AbandonedFreighterMissionState;
+        /* 0x0 */
+        public AbandonedFreighterMissionStateEnum AbandonedFreighterMissionState;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool Silent;
+        /* 0x4 */
+        public bool Silent;
     }
 }

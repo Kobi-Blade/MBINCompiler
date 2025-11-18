@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetResourceIconLookup : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkTextureResource Icon;
+        /* 0x00 */
+        public TkTextureResource Icon;
         [NMS(Index = 2)]
-        /* 0x18 */ public TkTextureResource IconBinocs;
+        /* 0x18 */
+        public TkTextureResource IconBinocs;
         [NMS(Index = 0)]
-        /* 0x30 */ public NMSString0x10 ID;
+        /* 0x30 */
+        public NMSString0x10 ID;
     }
 }

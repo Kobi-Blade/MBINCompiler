@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureRoleDescriptionTable : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<GcCreatureRoleDescription> RoleDescription;
+        /* 0x00 */
+        public List<GcCreatureRoleDescription> RoleDescription;
         [NMS(Index = 4)]
-        /* 0x10 */ public GcPlanetLife LifeLevel;
+        /* 0x10 */
+        public GcPlanetLife LifeLevel;
         [NMS(Index = 2)]
-        /* 0x14 */ public float MaxScaleVariance;
+        /* 0x14 */
+        public float MaxScaleVariance;
         [NMS(Index = 1)]
-        /* 0x18 */ public float MinScaleVariance;
+        /* 0x18 */
+        public float MinScaleVariance;
         [NMS(Index = 3)]
-        /* 0x1C */ public GcTerrainTileType TileType;
+        /* 0x1C */
+        public GcTerrainTileType TileType;
     }
 }

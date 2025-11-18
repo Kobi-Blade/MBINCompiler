@@ -6,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationBoneScales : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A GroupTitle;
+        /* 0x00 */
+        public NMSString0x20A GroupTitle;
         [NMS(Index = 2)]
-        /* 0x20 */ public List<float> Positions;
+        /* 0x20 */
+        public List<float> Positions;
         [NMS(Index = 1)]
-        /* 0x30 */ public NMSString0x10 ScaleBoneName;
+        /* 0x30 */
+        public NMSString0x10 ScaleBoneName;
     }
 }

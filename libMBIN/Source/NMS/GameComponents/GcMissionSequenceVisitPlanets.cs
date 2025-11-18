@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,20 +6,28 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceVisitPlanets : NMSTemplate
     {
         [NMS(Index = 7)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 1)]
-        /* 0x20 */ public VariableSizeString MessageOnIncompletePlanet;
+        /* 0x20 */
+        public VariableSizeString MessageOnIncompletePlanet;
         [NMS(Index = 2)]
-        /* 0x30 */ public List<GcBiomeType> PlanetTypesToWatch;
+        /* 0x30 */
+        public List<GcBiomeType> PlanetTypesToWatch;
         [NMS(Index = 5)]
-        /* 0x40 */ public int NumberOfEachToDiscover;
+        /* 0x40 */
+        public int NumberOfEachToDiscover;
         [NMS(Index = 3)]
-        /* 0x44 */ public bool MustAlsoDiscover;
+        /* 0x44 */
+        public bool MustAlsoDiscover;
         [NMS(Index = 4)]
-        /* 0x45 */ public bool MustAlsoTakePhoto;
+        /* 0x45 */
+        public bool MustAlsoTakePhoto;
         [NMS(Index = 6)]
-        /* 0x46 */ public bool TakeNumberFromSeasonalData;
+        /* 0x46 */
+        public bool TakeNumberFromSeasonalData;
     }
 }

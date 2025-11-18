@@ -6,18 +6,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationTextureOption : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public NMSString0x10 Group;
+        /* 0x00 */
+        public NMSString0x10 Group;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Layer;
+        /* 0x10 */
+        public NMSString0x10 Layer;
         [NMS(Index = 3)]
-        /* 0x20 */ public List<NMSString0x20A> Options;
+        /* 0x20 */
+        public List<NMSString0x20A> Options;
         [NMS(Index = 5)]
-        /* 0x30 */ public List<NMSString0x10> ProductsToUnlock;
+        /* 0x30 */
+        public List<NMSString0x10> ProductsToUnlock;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 TextureOptionsID;
+        /* 0x40 */
+        public NMSString0x10 TextureOptionsID;
         [NMS(Index = 4)]
-        /* 0x50 */ public List<NMSString0x20A> Tips;
+        /* 0x50 */
+        public List<NMSString0x20A> Tips;
         [NMS(Index = 6)]
-        /* 0x60 */ public bool AllowAllColoursWithNoMarkings;
+        /* 0x60 */
+        public bool AllowAllColoursWithNoMarkings;
     }
 }

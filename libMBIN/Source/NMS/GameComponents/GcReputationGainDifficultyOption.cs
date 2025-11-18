@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcReputationGainDifficultyOption : NMSTemplate
     {
         // size: 0x4
-        public enum ReputationGainDifficultyEnum : uint {
+        public enum ReputationGainDifficultyEnum : uint
+        {
             VeryFast,
             Fast,
             Normal,
             Slow,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ReputationGainDifficultyEnum ReputationGainDifficulty;
+        /* 0x0 */
+        public ReputationGainDifficultyEnum ReputationGainDifficulty;
     }
 }

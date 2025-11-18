@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcDungeonRoomParams : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 RoomId;
+        /* 0x00 */
+        public NMSString0x10 RoomId;
         [NMS(Index = 1)]
-        /* 0x10 */ public float BranchProbability;
+        /* 0x10 */
+        public float BranchProbability;
     }
 }

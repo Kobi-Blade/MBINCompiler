@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBaseBuildingMode : NMSTemplate
     {
         // size: 0x5
-        public enum BaseBuildingModeEnum : uint {
+        public enum BaseBuildingModeEnum : uint
+        {
             Inactive,
             Selection,
             Placement,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Relatives,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BaseBuildingModeEnum BaseBuildingMode;
+        /* 0x0 */
+        public BaseBuildingModeEnum BaseBuildingMode;
     }
 }

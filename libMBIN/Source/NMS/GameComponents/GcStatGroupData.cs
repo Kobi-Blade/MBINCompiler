@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcStatGroupData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 GroupName;
+        /* 0x00 */
+        public NMSString0x10 GroupName;
         [NMS(Index = 1)]
-        /* 0x10 */ public List<NMSString0x10> TrackedStats;
+        /* 0x10 */
+        public List<NMSString0x10> TrackedStats;
     }
 }

@@ -4,24 +4,34 @@ namespace libMBIN.NMS.GameComponents
     public class GcBirdData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public float FlapAccel;
+        /* 0x00 */
+        public float FlapAccel;
         [NMS(Index = 2)]
-        /* 0x04 */ public float FlapSpeed;
+        /* 0x04 */
+        public float FlapSpeed;
         [NMS(Index = 8)]
-        /* 0x08 */ public float FlapSpeedForMaxScale;
+        /* 0x08 */
+        public float FlapSpeedForMaxScale;
         [NMS(Index = 7)]
-        /* 0x0C */ public float FlapSpeedForMinScale;
+        /* 0x0C */
+        public float FlapSpeedForMinScale;
         [NMS(Index = 1)]
-        /* 0x10 */ public float FlapSpeedMax;
+        /* 0x10 */
+        public float FlapSpeedMax;
         [NMS(Index = 6)]
-        /* 0x14 */ public float FlapSpeedMaxScale;
+        /* 0x14 */
+        public float FlapSpeedMaxScale;
         [NMS(Index = 0)]
-        /* 0x18 */ public float FlapSpeedMin;
+        /* 0x18 */
+        public float FlapSpeedMin;
         [NMS(Index = 5)]
-        /* 0x1C */ public float FlapSpeedMinScale;
+        /* 0x1C */
+        public float FlapSpeedMinScale;
         [NMS(Index = 4)]
-        /* 0x20 */ public float FlapTurn;
+        /* 0x20 */
+        public float FlapTurn;
         [NMS(Index = 9)]
-        /* 0x24 */ public NMSString0x80 CircleAttractor;
+        /* 0x24 */
+        public NMSString0x80 CircleAttractor;
     }
 }

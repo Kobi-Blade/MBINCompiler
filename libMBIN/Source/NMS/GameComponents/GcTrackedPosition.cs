@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcTrackedPosition : NMSTemplate
     {
         // size: 0x4
-        public enum TrackedPositionEnum : uint {
+        public enum TrackedPositionEnum : uint
+        {
             GameCamera,
             ActiveCamera,
             DebugCamera,
             Frozen,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public TrackedPositionEnum TrackedPosition;
+        /* 0x0 */
+        public TrackedPositionEnum TrackedPosition;
     }
 }

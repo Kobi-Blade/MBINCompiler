@@ -4,13 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetWeatherColourIndex : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Index;
+        /* 0x0 */
+        public int Index;
         // size: 0x2
-        public enum WeatherColourSetEnum : uint {
+        public enum WeatherColourSetEnum : uint
+        {
             Common,
             Rare,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public WeatherColourSetEnum WeatherColourSet;
+        /* 0x4 */
+        public WeatherColourSetEnum WeatherColourSet;
     }
 }

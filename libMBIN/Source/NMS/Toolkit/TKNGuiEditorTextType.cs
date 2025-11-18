@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TKNGuiEditorTextType : NMSTemplate
     {
         // size: 0xF
-        public enum NGuiEditorTextEnum : uint {
+        public enum NGuiEditorTextEnum : uint
+        {
             Text,
             Button,
             WindowTab,
@@ -22,6 +23,7 @@ namespace libMBIN.NMS.Toolkit
             ContextMenuButton,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NGuiEditorTextEnum NGuiEditorText;
+        /* 0x0 */
+        public NGuiEditorTextEnum NGuiEditorText;
     }
 }

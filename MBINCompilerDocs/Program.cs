@@ -1,15 +1,11 @@
-﻿using System;
-using System.Reflection;
-using System.Xml;
-using System.IO;
+﻿using libMBIN;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
-
-using libMBIN;
-using libMBIN.NMS.GameComponents;
-using libMBIN.NMS.Toolkit;
+using System.Xml;
 
 
 namespace MBINCompilerDocs
@@ -41,23 +37,28 @@ namespace MBINCompilerDocs
 
         static internal void GenerateDirs()
         {
-            foreach (var key in NMS_dir_mapping.Values) {
+            foreach (var key in NMS_dir_mapping.Values)
+            {
                 Directory.CreateDirectory(Path.Combine(basePath, key.ToString()));
             }
         }
 
         static string GetNMSType(Type classType)
         {
-            if (classType == typeof(NMSTemplate)) {
+            if (classType == typeof(NMSTemplate))
+            {
                 // We hard-code this since it's namespace won't map to anything.
                 // TODO: Maybe have 'libmbin' map to nms? Might be risky though...
                 return "nms";
             }
             var splitname = classType.Namespace.Split('.');
             string last = splitname[splitname.Length - 1];
-            if (NMS_dir_mapping.ContainsKey(last)) {
+            if (NMS_dir_mapping.ContainsKey(last))
+            {
                 return NMS_dir_mapping[last];
-            } else {
+            }
+            else
+            {
                 return null;
             }
         }
@@ -65,16 +66,20 @@ namespace MBINCompilerDocs
         static string ConvertDatatype(Type dtype)
         {
             string dtypeName = dtype.Name;
-            if (dtypeMapping.ContainsKey(dtypeName)) {
+            if (dtypeMapping.ContainsKey(dtypeName))
+            {
                 return dtypeMapping[dtypeName];
-            } else {
+            }
+            else
+            {
                 return dtypeName;
             }
         }
 
         static void export_md(List<Type> classes)
         {
-            foreach (var t in classes) {
+            foreach (var t in classes)
+            {
                 // Create a stringBuilder object to use for the whole md document
                 StringBuilder md = new StringBuilder();
 
@@ -85,14 +90,16 @@ namespace MBINCompilerDocs
 
                 // Write the class name and GUID
                 md.AppendLine($"## [All classes](../../) > [{NMSType}](../) > {name}");
-                if (t.Namespace != "libMBIN.NMS") {
+                if (t.Namespace != "libMBIN.NMS")
+                {
                     md.AppendLine($"**Size**: 0x{size:X}, **GUID**: 0x{guid:X}\n");
                 }
                 md.AppendLine();
 
                 // Let's get any descriptions if we have any...
                 string class_desc = t.GetCustomAttribute<NMSDescription>()?.Description;
-                if (class_desc != null) {
+                if (class_desc != null)
+                {
                     md.AppendLine(class_desc);
                     md.AppendLine();
                 }
@@ -103,66 +110,84 @@ namespace MBINCompilerDocs
 
                 // Get fields in order of declaration
                 var fields = t.GetFields().OrderBy(field => field.MetadataToken);
-                foreach (var field in fields) {
+                foreach (var field in fields)
+                {
                     var field_attrs = field.GetCustomAttribute<NMSAttribute>();
 
                     // For each field in the class, write a row in the table
-                    if (!(field.GetCustomAttribute<NMSAttribute>()?.Ignore ?? false)) {
+                    if (!(field.GetCustomAttribute<NMSAttribute>()?.Ignore ?? false))
+                    {
                         var fieldType = field.FieldType;
                         // Write the field name first
                         md.Append($"| {field.Name} |");
 
                         // If the base type is based on NMSTemplate, then we want to create a hyperlink to the page.
                         string className = $"{ConvertDatatype(fieldType)}";
-                        if (fieldType.BaseType == typeof(NMSTemplate) || fieldType == typeof(NMSTemplate)) {
+                        if (fieldType.BaseType == typeof(NMSTemplate) || fieldType == typeof(NMSTemplate))
+                        {
                             var fieldNMSType = GetNMSType(fieldType);
-                            if (fieldNMSType != null) {
+                            if (fieldNMSType != null)
+                            {
                                 className = $"[{fieldType.Name}](../../../classes/{fieldNMSType}/{fieldType.Name})";
                             }
                         }
 
                         // For enums, get the values it can have:
-                        if (fieldType.IsEnum) {
+                        if (fieldType.IsEnum)
+                        {
                             md.Append("<div class='expandable'>Enum</div><ol class='enumValues' hidden>");
-                            foreach (var enumValue in Enum.GetValues(fieldType)) {
+                            foreach (var enumValue in Enum.GetValues(fieldType))
+                            {
                                 var enumIndex = Convert.ChangeType(enumValue, Enum.GetUnderlyingType(fieldType));
                                 md.Append($"<li val='0x{enumIndex:X}'>{enumValue.ToString()}</li>");
                             }
                             md.Append("</ol>");
                         }
                         // For a string, get its size:
-                        else if (fieldType.Equals(typeof(System.String))) {
-                            if (name == "VariableSizeString") {
+                        else if (fieldType.Equals(typeof(System.String)))
+                        {
+                            if (name == "VariableSizeString")
+                            {
                                 md.Append($"String (0x??)");
-                            } else {
+                            }
+                            else
+                            {
                                 int? strSize = field.GetCustomAttribute<NMSAttribute>()?.Size;
                                 md.Append($"String (0x{strSize:X})");
                             }
                         }
                         // For an array, get it's size and potential enum values:
-                        else if (fieldType.IsArray) {
+                        else if (fieldType.IsArray)
+                        {
                             int? arrSize = field.GetCustomAttribute<NMSAttribute>()?.Size;
                             var arrayEnumType = field.GetCustomAttribute<NMSAttribute>()?.EnumType;
                             className = className.Substring(0, className.Length - 2);
                             // For enums, get the values it can have:
-                            if (arrayEnumType != null && arrayEnumType.IsEnum) {
+                            if (arrayEnumType != null && arrayEnumType.IsEnum)
+                            {
                                 md.Append($"<div class='expandable'>{className}[0x{arrSize:X}]</div><ul class='enumValues' hidden>");
-                                foreach (var enumValue in Enum.GetValues(arrayEnumType)) {
+                                foreach (var enumValue in Enum.GetValues(arrayEnumType))
+                                {
                                     md.Append($"<li>{enumValue.ToString()}</li>");
                                 }
                                 md.Append("</ul>");
-                            } else {
+                            }
+                            else
+                            {
                                 md.Append($"{className}[0x{arrSize:X}]");
                             }
                         }
                         // For a list, get the list type:
-                        else if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>)) {
+                        else if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>))
+                        {
                             var refType = field.FieldType.GetGenericArguments()[0];
                             string dtypeName = ConvertDatatype(refType);
                             string listClassName = $"{dtypeName}";
-                            if (refType.BaseType == typeof(NMSTemplate) || refType == typeof(NMSTemplate)) {
+                            if (refType.BaseType == typeof(NMSTemplate) || refType == typeof(NMSTemplate))
+                            {
                                 var listNMSType = GetNMSType(refType);
-                                if (listNMSType != null) {
+                                if (listNMSType != null)
+                                {
                                     listClassName = $"[{dtypeName}](../../../classes/{listNMSType}/{dtypeName})";
                                 }
                             }
@@ -170,14 +195,18 @@ namespace MBINCompilerDocs
                         }
                         // This is the case of a NMSTemplate or standard type.
                         // TODO: handle the NMSTemplate case here and above...
-                        else {
+                        else
+                        {
                             md.Append($"{className}");
                         }
                         // See if the field has a description
                         string desc = field.GetCustomAttribute<NMSDescription>()?.Description;
-                        if (desc != null) {
+                        if (desc != null)
+                        {
                             md.AppendLine($" | {desc} |");
-                        } else {
+                        }
+                        else
+                        {
                             md.AppendLine(" | |");
                         }
                     }
@@ -193,7 +222,8 @@ namespace MBINCompilerDocs
 
             XmlDocument xmlDoc = new XmlDocument();
             XmlElement tkNode = xmlDoc.CreateElement(outName);
-            foreach (var t in classes) {
+            foreach (var t in classes)
+            {
                 string name = t.Name;
                 int? size = t.GetCustomAttribute<NMSAttribute>()?.Size;
 
@@ -206,42 +236,51 @@ namespace MBINCompilerDocs
 
                 // Get fields in order of declaration
                 var fields = t.GetFields().OrderBy(field => field.MetadataToken);
-                foreach (var field in fields) {
-                    if (!field.Name.Contains("Padding")) {
+                foreach (var field in fields)
+                {
+                    if (!field.Name.Contains("Padding"))
+                    {
                         var fieldType = field.FieldType;
                         XmlElement fieldNode = xmlDoc.CreateElement(field.Name);
                         XmlAttribute typeAttr = xmlDoc.CreateAttribute("type");
                         // For enums, get the values it can have:
-                        if (fieldType.IsEnum) {
-                            foreach (var enumValue in Enum.GetValues(fieldType)) {
+                        if (fieldType.IsEnum)
+                        {
+                            foreach (var enumValue in Enum.GetValues(fieldType))
+                            {
                                 XmlElement valNode = xmlDoc.CreateElement(enumValue.ToString());
                                 fieldNode.AppendChild(valNode);
                             }
                         }
                         // For a string, get its size:
-                        if (fieldType.Equals(typeof(System.String))) {
+                        if (fieldType.Equals(typeof(System.String)))
+                        {
                             int? strSize = field.GetCustomAttribute<NMSAttribute>()?.Size;
                             XmlAttribute sizeAttr = xmlDoc.CreateAttribute("size");
                             sizeAttr.Value = $"0x{strSize:X}";
                             fieldNode.Attributes.Append(sizeAttr);
                         }
                         // For an array, get it's size and potential enum values:
-                        if (fieldType.IsArray) {
+                        if (fieldType.IsArray)
+                        {
                             int? strSize = field.GetCustomAttribute<NMSAttribute>()?.Size;
                             XmlAttribute sizeAttr = xmlDoc.CreateAttribute("size");
                             sizeAttr.Value = $"0x{strSize:X}";
                             fieldNode.Attributes.Append(sizeAttr);
                             var arrayEnumType = field.GetCustomAttribute<NMSAttribute>()?.EnumType;
                             // For enums, get the values it can have:
-                            if (arrayEnumType != null && arrayEnumType.IsEnum) {
-                                foreach (var enumValue in Enum.GetValues(arrayEnumType)) {
+                            if (arrayEnumType != null && arrayEnumType.IsEnum)
+                            {
+                                foreach (var enumValue in Enum.GetValues(arrayEnumType))
+                                {
                                     XmlElement valNode = xmlDoc.CreateElement(enumValue.ToString());
                                     fieldNode.AppendChild(valNode);
                                 }
                             }
                         }
                         // For a list, get the list type:
-                        if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>)) {
+                        if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>))
+                        {
                             XmlAttribute listTypeAttr = xmlDoc.CreateAttribute("listType");
                             listTypeAttr.Value = field.ReflectedType.Name;
                             fieldNode.Attributes.Append(listTypeAttr);
@@ -260,25 +299,35 @@ namespace MBINCompilerDocs
             }
         }
 
-        static void update_class_list(List<Type> classes, StringBuilder md, bool includeDir = false) {
-            foreach (var t in classes) {
+        static void update_class_list(List<Type> classes, StringBuilder md, bool includeDir = false)
+        {
+            foreach (var t in classes)
+            {
                 //Console.WriteLine(t.Name);
                 var classNMSType = GetNMSType(t);
                 int? size = t.GetCustomAttribute<NMSAttribute>()?.Size;
                 ulong? guid = t.GetCustomAttribute<NMSAttribute>()?.GUID;
-                if (classNMSType != null) {
-                    if (includeDir == true) {
-                        if (t.Namespace != "libMBIN.NMS") {
+                if (classNMSType != null)
+                {
+                    if (includeDir == true)
+                    {
+                        if (t.Namespace != "libMBIN.NMS")
+                        {
                             md.AppendLine($"| [{t.Name}]({classNMSType}/{t.Name}) | 0x{guid:X} | 0x{size:X} |");
                         }
-                        else {
+                        else
+                        {
                             md.AppendLine($"| [{t.Name}]({classNMSType}/{t.Name}) | 0x{size:X} |");
                         }
-                    } else {
-                        if (t.Namespace != "libMBIN.NMS") {
+                    }
+                    else
+                    {
+                        if (t.Namespace != "libMBIN.NMS")
+                        {
                             md.AppendLine($"| [{t.Name}]({t.Name}) | 0x{guid:X} | 0x{size:X} |");
                         }
-                        else {
+                        else
+                        {
                             md.AppendLine($"| [{t.Name}]({t.Name}) | 0x{size:X} |");
                         }
                     }
@@ -288,9 +337,11 @@ namespace MBINCompilerDocs
 
         static void Main(string[] args)
         {
-            if (args.Length == 1) {
+            if (args.Length == 1)
+            {
                 // in this case we have passed an argument to the exe. This will indicate we are running on a CI
-                if (args[0] == "CI") {
+                if (args[0] == "CI")
+                {
                     basePath = Path.Combine("docs", "classes");
                 }
             }

@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcItemFilterData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSTemplate Root;
+        /* 0x0 */
+        public NMSTemplate Root;
     }
 }

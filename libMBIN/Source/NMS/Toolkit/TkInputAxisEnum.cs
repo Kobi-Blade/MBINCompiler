@@ -4,7 +4,8 @@ namespace libMBIN.NMS.Toolkit
     public class TkInputAxisEnum : NMSTemplate
     {
         // size: 0x33
-        public enum InputAxisEnum : uint {
+        public enum InputAxisEnum : uint
+        {
             None = 0x0,
             Invalid = 0x0,
             LeftStick = 0x1,
@@ -58,6 +59,7 @@ namespace libMBIN.NMS.Toolkit
             FakeRightStick = 0x31,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InputAxisEnum InputAxis;
+        /* 0x0 */
+        public InputAxisEnum InputAxis;
     }
 }

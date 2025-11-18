@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,32 +6,46 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationDescriptorGroupOption : NMSTemplate
     {
         [NMS(Index = 5)]
-        /* 0x00 */ public List<GcCustomisationBoneScales> BoneScales;
+        /* 0x00 */
+        public List<GcCustomisationBoneScales> BoneScales;
         [NMS(Index = 3)]
-        /* 0x10 */ public List<GcCustomisationColourGroup> ColourGroups;
+        /* 0x10 */
+        public List<GcCustomisationColourGroup> ColourGroups;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x10 DescriptorOption;
+        /* 0x20 */
+        public NMSString0x10 DescriptorOption;
         [NMS(Index = 9)]
-        /* 0x30 */ public List<NMSString0x10> HideIfGroupActive;
+        /* 0x30 */
+        public List<NMSString0x10> HideIfGroupActive;
         [NMS(Index = 11)]
-        /* 0x40 */ public List<NMSString0x10> SelectingAddsGroup;
+        /* 0x40 */
+        public List<NMSString0x10> SelectingAddsGroup;
         [NMS(Index = 10)]
-        /* 0x50 */ public List<NMSString0x10> SelectingRemovesGroup;
+        /* 0x50 */
+        public List<NMSString0x10> SelectingRemovesGroup;
         [NMS(Index = 1)]
-        /* 0x60 */ public List<GcCustomisationTextureGroup> TextureGroups;
+        /* 0x60 */
+        public List<GcCustomisationTextureGroup> TextureGroups;
         [NMS(Index = 13)]
-        /* 0x70 */ public List<NMSString0x10> UnselectingAddsGroup;
+        /* 0x70 */
+        public List<NMSString0x10> UnselectingAddsGroup;
         [NMS(Index = 12)]
-        /* 0x80 */ public List<NMSString0x10> UnselectingRemovesGroup;
+        /* 0x80 */
+        public List<NMSString0x10> UnselectingRemovesGroup;
         [NMS(Index = 6)]
-        /* 0x90 */ public int InteractionCameraIndexOverride;
+        /* 0x90 */
+        public int InteractionCameraIndexOverride;
         [NMS(Index = 7)]
-        /* 0x94 */ public NMSString0x20 InteracttionCameraFocusJointOverride;
+        /* 0x94 */
+        public NMSString0x20 InteracttionCameraFocusJointOverride;
         [NMS(Index = 8)]
-        /* 0xB4 */ public bool ForceDisableDoF;
+        /* 0xB4 */
+        public bool ForceDisableDoF;
         [NMS(Index = 4)]
-        /* 0xB5 */ public bool ReplaceBaseBoneScales;
+        /* 0xB5 */
+        public bool ReplaceBaseBoneScales;
         [NMS(Index = 2)]
-        /* 0xB6 */ public bool ReplaceBaseColours;
+        /* 0xB6 */
+        public bool ReplaceBaseColours;
     }
 }

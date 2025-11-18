@@ -7,12 +7,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcVehicleScanTableEntry : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A Name;
+        /* 0x00 */
+        public NMSString0x20A Name;
         [NMS(Index = 3)]
-        /* 0x20 */ public TkTextureResource Icon;
+        /* 0x20 */
+        public TkTextureResource Icon;
         [NMS(Index = 2)]
-        /* 0x38 */ public NMSString0x10 RequiredTech;
+        /* 0x38 */
+        public NMSString0x10 RequiredTech;
         [NMS(Index = 0)]
-        /* 0x48 */ public List<NMSString0x20A> ScanList;
+        /* 0x48 */
+        public List<NMSString0x20A> ScanList;
     }
 }

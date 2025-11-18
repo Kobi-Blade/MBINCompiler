@@ -4,13 +4,15 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshInclusionType : NMSTemplate
     {
         // size: 0x4
-        public enum NavMeshInclusionTypeEnum : byte {
+        public enum NavMeshInclusionTypeEnum : byte
+        {
             Auto,
             Ignore,
             Obstacle,
             Walkable,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NavMeshInclusionTypeEnum NavMeshInclusionType;
+        /* 0x0 */
+        public NavMeshInclusionTypeEnum NavMeshInclusionType;
     }
 }

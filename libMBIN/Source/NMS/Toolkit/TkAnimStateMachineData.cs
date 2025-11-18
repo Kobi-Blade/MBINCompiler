@@ -1,4 +1,3 @@
-using libMBIN.NMS.Toolkit;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.Toolkit
@@ -7,22 +6,31 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimStateMachineData : NMSTemplate
     {
         [NMS(Index = 7)]
-        /* 0x00 */ public List<TkAnimStateMachineTransitionData> EntryTransitions;
+        /* 0x00 */
+        public List<TkAnimStateMachineTransitionData> EntryTransitions;
         [NMS(Index = 3)]
-        /* 0x10 */ public NMSString0x10 LayerId;
+        /* 0x10 */
+        public NMSString0x10 LayerId;
         [NMS(Index = 8)]
-        /* 0x20 */ public List<TkAnimStateMachineStateData> States;
+        /* 0x20 */
+        public List<TkAnimStateMachineStateData> States;
         [NMS(Index = 6)]
-        /* 0x30 */ public int DefaultState;
+        /* 0x30 */
+        public int DefaultState;
         [NMS(Index = 4)]
-        /* 0x34 */ public int EntryPosX;
+        /* 0x34 */
+        public int EntryPosX;
         [NMS(Index = 5)]
-        /* 0x38 */ public int EntryPosY;
+        /* 0x38 */
+        public int EntryPosY;
         [NMS(Index = 0)]
-        /* 0x3C */ public float ScrollX;
+        /* 0x3C */
+        public float ScrollX;
         [NMS(Index = 1)]
-        /* 0x40 */ public float ScrollY;
+        /* 0x40 */
+        public float ScrollY;
         [NMS(Index = 2)]
-        /* 0x44 */ public float Zoom;
+        /* 0x44 */
+        public float Zoom;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBuildMenuOption : NMSTemplate
     {
         // size: 0x15
-        public enum BuildMenuOptionEnum : uint {
+        public enum BuildMenuOptionEnum : uint
+        {
             Place,
             ChangeColour,
             FreeRotate,
@@ -28,6 +29,7 @@ namespace libMBIN.NMS.GameComponents
             YFlip,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public BuildMenuOptionEnum BuildMenuOption;
+        /* 0x0 */
+        public BuildMenuOptionEnum BuildMenuOption;
     }
 }

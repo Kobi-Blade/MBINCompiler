@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcAIShipWeapons : NMSTemplate
     {
         // size: 0x3
-        public enum AIShipWeaponEnum : uint {
+        public enum AIShipWeaponEnum : uint
+        {
             Projectile,
             Laser,
             MiningLaser,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public AIShipWeaponEnum AIShipWeapon;
+        /* 0x0 */
+        public AIShipWeaponEnum AIShipWeapon;
     }
 }

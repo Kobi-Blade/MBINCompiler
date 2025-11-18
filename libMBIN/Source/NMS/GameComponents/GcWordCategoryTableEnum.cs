@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcWordCategoryTableEnum : NMSTemplate
     {
         // size: 0x7
-        public enum wordcategorytableEnumEnum : uint {
+        public enum wordcategorytableEnumEnum : uint
+        {
             MISC,
             DIRECTIONS,
             HELP,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             THREAT,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public wordcategorytableEnumEnum wordcategorytableEnum;
+        /* 0x0 */
+        public wordcategorytableEnumEnum wordcategorytableEnum;
     }
 }

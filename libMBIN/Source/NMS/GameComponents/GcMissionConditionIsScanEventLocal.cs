@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionIsScanEventLocal : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Event;
+        /* 0x00 */
+        public NMSString0x20A Event;
         [NMS(Index = 2)]
-        /* 0x20 */ public bool BlockMissionRestart;
+        /* 0x20 */
+        public bool BlockMissionRestart;
         [NMS(Index = 1)]
-        /* 0x21 */ public bool RequiresFullFireteam;
+        /* 0x21 */
+        public bool RequiresFullFireteam;
     }
 }

@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,23 +6,32 @@ namespace libMBIN.NMS.GameComponents
     public class GcScannableComponentData : NMSTemplate
     {
         [NMS(Index = 16)]
-        /* 0x00 */ public NMSString0x20A FreighterObjectAlreadyUsedLocID;
+        /* 0x00 */
+        public NMSString0x20A FreighterObjectAlreadyUsedLocID;
         [NMS(Index = 20)]
-        /* 0x20 */ public List<NMSString0x10> ValidMissionSurveyIds;
+        /* 0x20 */
+        public List<NMSString0x10> ValidMissionSurveyIds;
         [NMS(Index = 4)]
-        /* 0x30 */ public float AlwaysShowRange;
+        /* 0x30 */
+        public float AlwaysShowRange;
         [NMS(Index = 11)]
-        /* 0x34 */ public GcDiscoveryType BinocsDiscoIconOverride;
+        /* 0x34 */
+        public GcDiscoveryType BinocsDiscoIconOverride;
         [NMS(Index = 3)]
-        /* 0x38 */ public float CompassRangeMultiplier;
+        /* 0x38 */
+        public float CompassRangeMultiplier;
         [NMS(Index = 10)]
-        /* 0x3C */ public GcScannerIconTypes Icon;
+        /* 0x3C */
+        public GcScannerIconTypes Icon;
         [NMS(Index = 22)]
-        /* 0x40 */ public float MarkerOffsetOverride;
+        /* 0x40 */
+        public float MarkerOffsetOverride;
         [NMS(Index = 21)]
-        /* 0x44 */ public float MinDisplayDistanceOverride;
+        /* 0x44 */
+        public float MinDisplayDistanceOverride;
         // size: 0x6
-        public enum ScannableTypeEnum : uint {
+        public enum ScannableTypeEnum : uint
+        {
             Binoculars,
             BinocularsHotspots,
             Scanner,
@@ -32,36 +40,52 @@ namespace libMBIN.NMS.GameComponents
             None,
         }
         [NMS(Index = 12)]
-        /* 0x48 */ public ScannableTypeEnum ScannableType;
+        /* 0x48 */
+        public ScannableTypeEnum ScannableType;
         [NMS(Index = 0)]
-        /* 0x4C */ public float ScanRange;
+        /* 0x4C */
+        public float ScanRange;
         [NMS(Index = 2)]
-        /* 0x50 */ public float ScanTime;
+        /* 0x50 */
+        public float ScanTime;
         [NMS(Index = 1)]
-        /* 0x54 */ public NMSString0x20 ScanName;
+        /* 0x54 */
+        public NMSString0x20 ScanName;
         [NMS(Index = 18)]
-        /* 0x74 */ public bool AllowedToMerge;
+        /* 0x74 */
+        public bool AllowedToMerge;
         [NMS(Index = 5)]
-        /* 0x75 */ public bool CanTagIcon;
+        /* 0x75 */
+        public bool CanTagIcon;
         [NMS(Index = 6)]
-        /* 0x76 */ public bool ClearTagOnArrival;
+        /* 0x76 */
+        public bool ClearTagOnArrival;
         [NMS(Index = 7)]
-        /* 0x77 */ public bool DisableIfBuildingPart;
+        /* 0x77 */
+        public bool DisableIfBuildingPart;
         [NMS(Index = 8)]
-        /* 0x78 */ public bool DisableIfInBase;
+        /* 0x78 */
+        public bool DisableIfInBase;
         [NMS(Index = 23)]
-        /* 0x79 */ public bool ForceCompassMarkerOnForScannerIcon;
+        /* 0x79 */
+        public bool ForceCompassMarkerOnForScannerIcon;
         [NMS(Index = 17)]
-        /* 0x7A */ public bool GetIconAndNameFromSettlementBuilding;
+        /* 0x7A */
+        public bool GetIconAndNameFromSettlementBuilding;
         [NMS(Index = 13)]
-        /* 0x7B */ public bool IsPlacedMarker;
+        /* 0x7B */
+        public bool IsPlacedMarker;
         [NMS(Index = 19)]
-        /* 0x7C */ public bool MarkerActiveWithNodeInactive;
+        /* 0x7C */
+        public bool MarkerActiveWithNodeInactive;
         [NMS(Index = 14)]
-        /* 0x7D */ public bool ShowInFreighterBranchRoom;
+        /* 0x7D */
+        public bool ShowInFreighterBranchRoom;
         [NMS(Index = 15)]
-        /* 0x7E */ public bool TellPlayerIfFreighterObjectUsed;
+        /* 0x7E */
+        public bool TellPlayerIfFreighterObjectUsed;
         [NMS(Index = 9)]
-        /* 0x7F */ public bool UseModelNode;
+        /* 0x7F */
+        public bool UseModelNode;
     }
 }

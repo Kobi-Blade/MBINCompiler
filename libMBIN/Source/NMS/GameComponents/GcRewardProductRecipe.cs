@@ -1,19 +1,22 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0x595BE56B7509FEB1, NameHash = 0x3AE338E1)]
     public class GcRewardProductRecipe : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public GcRealitySubstanceCategory ItemCatagory;
+        /* 0x00 */
+        public GcRealitySubstanceCategory ItemCatagory;
         [NMS(Index = 3)]
-        /* 0x04 */ public int ItemLevel;
+        /* 0x04 */
+        public int ItemLevel;
         [NMS(Index = 1)]
-        /* 0x08 */ public GcRarity ItemRarity;
+        /* 0x08 */
+        public GcRarity ItemRarity;
         [NMS(Index = 4, Size = 0xB, EnumType = typeof(GcProductCategory.ProductCategoryEnum))]
-        /* 0x0C */ public bool[] AllowedProductTypes;
+        /* 0x0C */
+        public bool[] AllowedProductTypes;
         [NMS(Index = 2)]
-        /* 0x17 */ public bool IgnoreRarity;
+        /* 0x17 */
+        public bool IgnoreRarity;
     }
 }

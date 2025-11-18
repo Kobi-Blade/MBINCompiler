@@ -7,7 +7,8 @@ namespace libMBIN.NMS.GameComponents
     {
         // size: 0x7
         [Flags]
-        public enum HotspotTypeEnum : uint {
+        public enum HotspotTypeEnum : uint
+        {
             None = 0x0,
             Power = 0x1,
             Mineral1 = 0x2,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             Gas2 = 0x20,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HotspotTypeEnum HotspotType;
+        /* 0x0 */
+        public HotspotTypeEnum HotspotType;
     }
 }

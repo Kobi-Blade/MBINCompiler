@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerHazardType : NMSTemplate
     {
         // size: 0x7
-        public enum HazardEnum : uint {
+        public enum HazardEnum : uint
+        {
             None,
             NoOxygen,
             ExtremeHeat,
@@ -14,6 +15,7 @@ namespace libMBIN.NMS.GameComponents
             Spook,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public HazardEnum Hazard;
+        /* 0x0 */
+        public HazardEnum Hazard;
     }
 }

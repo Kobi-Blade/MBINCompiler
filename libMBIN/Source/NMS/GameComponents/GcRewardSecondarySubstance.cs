@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSecondarySubstance : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ID;
+        /* 0x00 */
+        public NMSString0x10 ID;
         [NMS(Index = 1)]
-        /* 0x10 */ public float AmountFactor;
+        /* 0x10 */
+        public float AmountFactor;
         [NMS(Index = 2)]
-        /* 0x14 */ public bool RewardAsBlobs;
+        /* 0x14 */
+        public bool RewardAsBlobs;
     }
 }

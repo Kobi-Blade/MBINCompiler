@@ -4,14 +4,17 @@ namespace libMBIN.NMS.GameComponents
     public class GcModularCustomisationEffectsData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float EffectTime;
+        /* 0x0 */
+        public float EffectTime;
         // size: 0x3
-        public enum ModularCustomisationEffectModeEnum : uint {
+        public enum ModularCustomisationEffectModeEnum : uint
+        {
             Build,
             BuildOutward,
             Dissolve,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public ModularCustomisationEffectModeEnum ModularCustomisationEffectMode;
+        /* 0x4 */
+        public ModularCustomisationEffectModeEnum ModularCustomisationEffectMode;
     }
 }

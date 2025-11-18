@@ -1,9 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Linq;
+using System.Reflection;
 
 namespace libMBIN.NMS.Toolkit
 {
@@ -11,17 +10,21 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimNodeFrameData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<Quaternion> Rotations;
+        /* 0x00 */
+        public List<Quaternion> Rotations;
         [NMS(Index = 2)]
-        /* 0x10 */ public List<Vector3f> Scales;
+        /* 0x10 */
+        public List<Vector3f> Scales;
         [NMS(Index = 1)]
-        /* 0x20 */ public List<Vector3f> Translations;
+        /* 0x20 */
+        public List<Vector3f> Translations;
 
-        public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo) {
+        public override object CustomDeserialize(BinaryReader reader, Type field, NMSAttribute settings, FieldInfo fieldInfo)
+        {
             var fieldName = fieldInfo.Name;
 
             switch (fieldName)
-                {
+            {
                 case nameof(Rotations):
                     // sort out reading of list
                     long listPosition = reader.BaseStream.Position;
@@ -46,7 +49,7 @@ namespace libMBIN.NMS.Toolkit
                     // now, iterate over the input data.
                     // We will read in the data in chunks of 6 bytes
                     for (int i = 0; i < numEntries; i++)
-                        {
+                    {
                         // assign the variables
                         c_x = reader.ReadUInt16();
                         c_y = reader.ReadUInt16();
@@ -74,7 +77,7 @@ namespace libMBIN.NMS.Toolkit
                         Quaternion qo;
 
                         switch (dropcomponent)
-                            {
+                        {
                             case 3:     // qx was dropped
                                 qo = new Quaternion(qw, qx, qy, qz, 3 - dropcomponent);
                                 break;
@@ -103,13 +106,13 @@ namespace libMBIN.NMS.Toolkit
         }
 
         public override bool CustomSerialize(BinaryWriter writer, Type field, object fieldData, NMSAttribute settings, FieldInfo fieldInfo, ref List<Tuple<long, object>> additionalData, ref int addtDataIndex)
-            {
+        {
             if (field == null || fieldInfo == null)
                 return false;
 
             var fieldName = fieldInfo.Name;
             switch (fieldName)
-                {
+            {
                 case nameof(Rotations):
 
                     IList<Quaternion> data = (IList<Quaternion>)fieldData;
@@ -125,7 +128,7 @@ namespace libMBIN.NMS.Toolkit
                     if (data == null) return true;
 
                     foreach (Quaternion q in data)
-                        {
+                    {
                         List<UInt16> convertedQ = new List<UInt16>
                         {
                             ConvertQuat(q.X),
@@ -172,21 +175,21 @@ namespace libMBIN.NMS.Toolkit
         // f4e6 388d c672
         // f3e6 398d c572
         private UInt16 DetermineDropComponent(List<UInt16> arr)
-            {
+        {
             UInt16 max_loc = 0;        // x by default
             HashSet<UInt16> doubled_elements = new HashSet<UInt16>();
             HashSet<UInt16> condensed_arr = new HashSet<UInt16>();
             // add all the elements in arr to the set version
             foreach (UInt16 i in arr)
-                {
+            {
                 if (condensed_arr.Contains(i))
-                    {
+                {
                     doubled_elements.Add(i);
                 }
                 condensed_arr.Add(i);
             }
             if (condensed_arr.Count == 4)
-                {
+            {
                 // in this case we simply want the max
                 UInt16 max_val = arr.Max();
                 max_loc = (UInt16)arr.IndexOf(max_val);
@@ -195,7 +198,7 @@ namespace libMBIN.NMS.Toolkit
             {
                 // we have a doubled element
                 if (!doubled_elements.Contains(0x3FFF))
-                    {
+                {
                     max_loc = 0;        // remove x
                 }
                 else
@@ -209,7 +212,7 @@ namespace libMBIN.NMS.Toolkit
         }
 
         private UInt16 ConvertQuat(double qi)
-            {
+        {
             return (UInt16)Math.Round(0x3FFF * (Math.Sqrt(2) * qi + 1));
         }
     }

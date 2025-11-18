@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcWaterColourSettingList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<GcPlanetWaterColourData> Settings;
+        /* 0x00 */
+        public List<GcPlanetWaterColourData> Settings;
         [NMS(Index = 1, Size = 0x11, EnumType = typeof(GcBiomeType.BiomeEnum))]
-        /* 0x10 */ public GcWaterEmissionBiomeData[] EmissionTypeSelection;
+        /* 0x10 */
+        public GcWaterEmissionBiomeData[] EmissionTypeSelection;
     }
 }

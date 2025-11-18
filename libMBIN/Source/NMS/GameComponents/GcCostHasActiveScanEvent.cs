@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostHasActiveScanEvent : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A OptionalEventID;
+        /* 0x00 */
+        public NMSString0x20A OptionalEventID;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x20A Text;
+        /* 0x20 */
+        public NMSString0x20A Text;
     }
 }

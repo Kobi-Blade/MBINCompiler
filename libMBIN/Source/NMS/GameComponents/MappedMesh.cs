@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class MappedMesh : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x40 NodeName;
+        /* 0x0 */
+        public NMSString0x40 NodeName;
     }
 }

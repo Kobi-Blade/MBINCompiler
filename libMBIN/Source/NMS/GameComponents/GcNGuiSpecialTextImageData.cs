@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiSpecialTextImageData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Name;
+        /* 0x00 */
+        public NMSString0x10 Name;
         [NMS(Index = 5)]
-        /* 0x10 */ public VariableSizeString Path;
+        /* 0x10 */
+        public VariableSizeString Path;
         [NMS(Index = 4)]
-        /* 0x20 */ public Vector2f Size;
+        /* 0x20 */
+        public Vector2f Size;
         [NMS(Index = 2)]
-        /* 0x28 */ public float HeightModifier;
+        /* 0x28 */
+        public float HeightModifier;
         [NMS(Index = 1)]
-        /* 0x2C */ public float ScaleFromFont;
+        /* 0x2C */
+        public float ScaleFromFont;
         [NMS(Index = 3)]
-        /* 0x30 */ public bool UseFontColour;
+        /* 0x30 */
+        public bool UseFontColour;
     }
 }

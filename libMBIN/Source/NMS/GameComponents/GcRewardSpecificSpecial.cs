@@ -4,18 +4,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardSpecificSpecial : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A Message;
+        /* 0x00 */
+        public NMSString0x20A Message;
         [NMS(Index = 4)]
-        /* 0x20 */ public NMSString0x20A MilestoneRewardOverrideText;
+        /* 0x20 */
+        public NMSString0x20A MilestoneRewardOverrideText;
         [NMS(Index = 0)]
-        /* 0x40 */ public NMSString0x10 ID;
+        /* 0x40 */
+        public NMSString0x10 ID;
         [NMS(Index = 6)]
-        /* 0x50 */ public bool FailIfAlreadyKnown;
+        /* 0x50 */
+        public bool FailIfAlreadyKnown;
         [NMS(Index = 5)]
-        /* 0x51 */ public bool HideInSeasonRewards;
+        /* 0x51 */
+        public bool HideInSeasonRewards;
         [NMS(Index = 2)]
-        /* 0x52 */ public bool ShowSpecialProductPopup;
+        /* 0x52 */
+        public bool ShowSpecialProductPopup;
         [NMS(Index = 3)]
-        /* 0x53 */ public bool UseSpecialFormatting;
+        /* 0x53 */
+        public bool UseSpecialFormatting;
     }
 }

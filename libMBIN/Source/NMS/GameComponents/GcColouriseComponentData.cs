@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcColouriseComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public Colour PrimaryColour;
+        /* 0x00 */
+        public Colour PrimaryColour;
         [NMS(Index = 3)]
-        /* 0x10 */ public Colour QuaternaryColour;
+        /* 0x10 */
+        public Colour QuaternaryColour;
         [NMS(Index = 1)]
-        /* 0x20 */ public Colour SecondaryColour;
+        /* 0x20 */
+        public Colour SecondaryColour;
         [NMS(Index = 2)]
-        /* 0x30 */ public Colour TernaryColour;
+        /* 0x30 */
+        public Colour TernaryColour;
     }
 }

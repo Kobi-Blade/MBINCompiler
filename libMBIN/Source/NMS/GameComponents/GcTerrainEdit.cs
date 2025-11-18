@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcTerrainEdit : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Position;
+        /* 0x0 */
+        public int Position;
         [NMS(Index = 0)]
-        /* 0x4 */ public byte Data;
+        /* 0x4 */
+        public byte Data;
     }
 }

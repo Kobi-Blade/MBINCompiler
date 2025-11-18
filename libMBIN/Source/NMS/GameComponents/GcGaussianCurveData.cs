@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcGaussianCurveData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float Mean;
+        /* 0x0 */
+        public float Mean;
         [NMS(Index = 1)]
-        /* 0x4 */ public float StdDev;
+        /* 0x4 */
+        public float StdDev;
     }
 }

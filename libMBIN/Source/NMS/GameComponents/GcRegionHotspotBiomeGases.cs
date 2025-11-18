@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRegionHotspotBiomeGases : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Gas1Id;
+        /* 0x00 */
+        public NMSString0x10 Gas1Id;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Gas2Id;
+        /* 0x10 */
+        public NMSString0x10 Gas2Id;
     }
 }

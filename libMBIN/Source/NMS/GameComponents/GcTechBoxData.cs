@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcTechBoxData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public TkTextureResource Icon;
+        /* 0x00 */
+        public TkTextureResource Icon;
         [NMS(Index = 1)]
-        /* 0x18 */ public NMSString0x10 InstallTechID;
+        /* 0x18 */
+        public NMSString0x10 InstallTechID;
         [NMS(Index = 0)]
-        /* 0x28 */ public NMSString0x10 ProductID;
+        /* 0x28 */
+        public NMSString0x10 ProductID;
         [NMS(Index = 3)]
-        /* 0x38 */ public bool IsAlien;
+        /* 0x38 */
+        public bool IsAlien;
     }
 }

@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionNumAtlasStationsVisited : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int Count;
+        /* 0x0 */
+        public int Count;
         [NMS(Index = 1)]
-        /* 0x4 */ public TkEqualityEnum Test;
+        /* 0x4 */
+        public TkEqualityEnum Test;
     }
 }

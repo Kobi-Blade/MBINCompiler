@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcSpaceshipShieldComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 ShieldID;
+        /* 0x00 */
+        public NMSString0x10 ShieldID;
         [NMS(Index = 2)]
-        /* 0x10 */ public bool IgnoreHitsWhenPlayerAimingElsewhere;
+        /* 0x10 */
+        public bool IgnoreHitsWhenPlayerAimingElsewhere;
         [NMS(Index = 1)]
-        /* 0x11 */ public bool RotateOnHit;
+        /* 0x11 */
+        public bool RotateOnHit;
     }
 }

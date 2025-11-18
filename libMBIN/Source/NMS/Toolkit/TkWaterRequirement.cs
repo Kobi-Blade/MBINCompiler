@@ -4,11 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkWaterRequirement : NMSTemplate
     {
         // size: 0x2
-        public enum WaterRequirementEnum : uint {
+        public enum WaterRequirementEnum : uint
+        {
             NoStorm,
             Storm,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public WaterRequirementEnum WaterRequirement;
+        /* 0x0 */
+        public WaterRequirementEnum WaterRequirement;
     }
 }

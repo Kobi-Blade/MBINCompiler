@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerCharacterIKOverrideData : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public Vector3f RotStrengths;
+        /* 0x00 */
+        public Vector3f RotStrengths;
         [NMS(Index = 1)]
-        /* 0x10 */ public float Strength;
+        /* 0x10 */
+        public float Strength;
         [NMS(Index = 0)]
-        /* 0x14 */ public bool Enabled;
+        /* 0x14 */
+        public bool Enabled;
     }
 }

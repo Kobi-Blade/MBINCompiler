@@ -4,6 +4,7 @@ namespace libMBIN.NMS.Toolkit
     public class TkAnimationNotifyGeneric : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x10 Id;
+        /* 0x0 */
+        public NMSString0x10 Id;
     }
 }

@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcModularCustomisationProductLookupList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public List<NMSString0x10> ProductLookupList;
+        /* 0x0 */
+        public List<NMSString0x10> ProductLookupList;
     }
 }

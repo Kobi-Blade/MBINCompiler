@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiEditorVisibility : NMSTemplate
     {
         // size: 0x3
-        public enum EditorVisibilityEnum : uint {
+        public enum EditorVisibilityEnum : uint
+        {
             UseData,
             Visible,
             Hidden,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public EditorVisibilityEnum EditorVisibility;
+        /* 0x0 */
+        public EditorVisibilityEnum EditorVisibility;
     }
 }

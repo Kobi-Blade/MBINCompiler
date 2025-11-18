@@ -4,14 +4,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcSyncBufferSaveData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public ulong SpaceAddress;
+        /* 0x00 */
+        public ulong SpaceAddress;
         [NMS(Index = 3)]
-        /* 0x08 */ public uint BufferVersion;
+        /* 0x08 */
+        public uint BufferVersion;
         [NMS(Index = 4)]
-        /* 0x0C */ public uint ItemsCount;
+        /* 0x0C */
+        public uint ItemsCount;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x40 OwnerOnlineId;
+        /* 0x10 */
+        public NMSString0x40 OwnerOnlineId;
         [NMS(Index = 2)]
-        /* 0x50 */ public NMSString0x20 OwnerPlatformId;
+        /* 0x50 */
+        public NMSString0x20 OwnerPlatformId;
     }
 }

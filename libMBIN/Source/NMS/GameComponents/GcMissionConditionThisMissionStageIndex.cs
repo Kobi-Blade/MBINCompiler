@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionThisMissionStageIndex : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int StageIndex;
+        /* 0x0 */
+        public int StageIndex;
     }
 }

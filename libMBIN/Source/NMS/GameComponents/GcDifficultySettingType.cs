@@ -4,11 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcDifficultySettingType : NMSTemplate
     {
         // size: 0x2
-        public enum DifficultySettingTypeEnum : uint {
+        public enum DifficultySettingTypeEnum : uint
+        {
             Toggle,
             OptionList,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public DifficultySettingTypeEnum DifficultySettingType;
+        /* 0x0 */
+        public DifficultySettingTypeEnum DifficultySettingType;
     }
 }

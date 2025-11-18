@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcSettlementBuildingContribution : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<GcSettlementStatValueRange> Base;
+        /* 0x00 */
+        public List<GcSettlementStatValueRange> Base;
         [NMS(Index = 1)]
-        /* 0x10 */ public List<GcSettlementStatValueRange> Upgrade1;
+        /* 0x10 */
+        public List<GcSettlementStatValueRange> Upgrade1;
         [NMS(Index = 2)]
-        /* 0x20 */ public List<GcSettlementStatValueRange> Upgrade2;
+        /* 0x20 */
+        public List<GcSettlementStatValueRange> Upgrade2;
         [NMS(Index = 3)]
-        /* 0x30 */ public List<GcSettlementStatValueRange> Upgrade3;
+        /* 0x30 */
+        public List<GcSettlementStatValueRange> Upgrade3;
     }
 }

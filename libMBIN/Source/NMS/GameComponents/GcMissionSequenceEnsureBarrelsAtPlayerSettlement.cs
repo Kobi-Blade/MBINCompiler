@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceEnsureBarrelsAtPlayerSettlement : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 2)]
-        /* 0x20 */ public int MinBarrelsThreshold;
+        /* 0x20 */
+        public int MinBarrelsThreshold;
         [NMS(Index = 1, MxmlName = "NumBarrels ")]
-        /* 0x24 */ public int NumBarrels;
+        /* 0x24 */
+        public int NumBarrels;
     }
 }

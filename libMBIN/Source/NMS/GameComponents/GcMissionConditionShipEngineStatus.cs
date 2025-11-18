@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionShipEngineStatus : NMSTemplate
     {
         // size: 0xA
-        public enum EngineStatusEnum : uint {
+        public enum EngineStatusEnum : uint
+        {
             Thrusting,
             Braking,
             Landing,
@@ -17,6 +18,7 @@ namespace libMBIN.NMS.GameComponents
             PulsingToPlanet,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public EngineStatusEnum EngineStatus;
+        /* 0x0 */
+        public EngineStatusEnum EngineStatus;
     }
 }

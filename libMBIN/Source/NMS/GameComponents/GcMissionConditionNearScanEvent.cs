@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionNearScanEvent : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A Event;
+        /* 0x00 */
+        public NMSString0x20A Event;
         [NMS(Index = 1)]
-        /* 0x20 */ public float Distance;
+        /* 0x20 */
+        public float Distance;
         [NMS(Index = 2)]
-        /* 0x24 */ public bool AllowInShip;
+        /* 0x24 */
+        public bool AllowInShip;
         [NMS(Index = 4)]
-        /* 0x25 */ public bool MustMatchThisMissionIDSeed;
+        /* 0x25 */
+        public bool MustMatchThisMissionIDSeed;
         [NMS(Index = 3)]
-        /* 0x26 */ public bool RequiresFullFireteam;
+        /* 0x26 */
+        public bool RequiresFullFireteam;
         [NMS(Index = 5)]
-        /* 0x27 */ public bool ReturnTrueIfMarkerGone;
+        /* 0x27 */
+        public bool ReturnTrueIfMarkerGone;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcScareCreaturesAction : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float FleeRadius;
+        /* 0x0 */
+        public float FleeRadius;
         [NMS(Index = 0)]
-        /* 0x4 */ public float HearRadius;
+        /* 0x4 */
+        public float HearRadius;
     }
 }

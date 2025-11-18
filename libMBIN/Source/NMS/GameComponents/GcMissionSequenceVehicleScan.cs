@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceVehicleScan : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A ScanEventID;
+        /* 0x00 */
+        public NMSString0x20A ScanEventID;
         [NMS(Index = 2)]
-        /* 0x20 */ public VariableSizeString DebugText;
+        /* 0x20 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x30 */ public VariableSizeString Message;
+        /* 0x30 */
+        public VariableSizeString Message;
     }
 }

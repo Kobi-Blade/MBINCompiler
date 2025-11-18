@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcFriendlyDroneVocabularyEntry : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x20A GenericFallback;
+        /* 0x0 */
+        public NMSString0x20A GenericFallback;
     }
 }

@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcInputBinding : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public TkVirtualBinding VirtualBinding;
+        /* 0x00 */
+        public TkVirtualBinding VirtualBinding;
         [NMS(Index = 0)]
-        /* 0x68 */ public GcInputActions Action;
+        /* 0x68 */
+        public GcInputActions Action;
         [NMS(Index = 2)]
-        /* 0x6C */ public TkInputAxisEnum Axis;
+        /* 0x6C */
+        public TkInputAxisEnum Axis;
         [NMS(Index = 1)]
-        /* 0x70 */ public TkInputEnum Button;
+        /* 0x70 */
+        public TkInputEnum Button;
     }
 }

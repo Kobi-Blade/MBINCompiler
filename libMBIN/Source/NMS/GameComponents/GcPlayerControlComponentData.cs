@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -8,18 +7,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlayerControlComponentData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public GcPlayerControlInput BaseInput;
+        /* 0x00 */
+        public GcPlayerControlInput BaseInput;
         [NMS(Index = 4)]
-        /* 0x38 */ public TkBlackboardKey AimDir;
+        /* 0x38 */
+        public TkBlackboardKey AimDir;
         [NMS(Index = 6)]
-        /* 0x50 */ public TkBlackboardKey CrosshairDir;
+        /* 0x50 */
+        public TkBlackboardKey CrosshairDir;
         [NMS(Index = 5)]
-        /* 0x68 */ public TkBlackboardKey TorchDir;
+        /* 0x68 */
+        public TkBlackboardKey TorchDir;
         [NMS(Index = 2)]
-        /* 0x80 */ public NMSString0x10 BaseCamera;
+        /* 0x80 */
+        public NMSString0x10 BaseCamera;
         [NMS(Index = 0)]
-        /* 0x90 */ public NMSString0x10 InitialState;
+        /* 0x90 */
+        public NMSString0x10 InitialState;
         [NMS(Index = 3)]
-        /* 0xA0 */ public List<GcPlayerControlState> States;
+        /* 0xA0 */
+        public List<GcPlayerControlState> States;
     }
 }

@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcModularCustomisationDataTable : NMSTemplate
     {
         [NMS(Index = 0, Size = 0xB, EnumType = typeof(GcModularCustomisationResourceType.ModularCustomisationResourceTypeEnum))]
-        /* 0x0000 */ public GcModularCustomisationConfig[] ModularCustomisationConfigs;
+        /* 0x0000 */
+        public GcModularCustomisationConfig[] ModularCustomisationConfigs;
         [NMS(Index = 2, Size = 0xB, EnumType = typeof(GcModularCustomisationResourceType.ModularCustomisationResourceTypeEnum))]
-        /* 0x1AD0 */ public GcModularCustomisationProductLookupList[] ProductLookupLists;
+        /* 0x1AD0 */
+        public GcModularCustomisationProductLookupList[] ProductLookupLists;
         [NMS(Index = 1)]
-        /* 0x1B80 */ public List<GcModularCustomisationSlottableItemList> SharedSlottableItemLists;
+        /* 0x1B80 */
+        public List<GcModularCustomisationSlottableItemList> SharedSlottableItemLists;
     }
 }

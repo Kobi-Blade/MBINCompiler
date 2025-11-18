@@ -4,6 +4,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcPulseEncounterSpawnAlienFreighter : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public NMSString0x20A HailingPuzzleID;
+        /* 0x0 */
+        public NMSString0x20A HailingPuzzleID;
     }
 }

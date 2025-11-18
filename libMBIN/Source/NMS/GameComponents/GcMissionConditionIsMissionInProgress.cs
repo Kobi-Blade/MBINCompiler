@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionIsMissionInProgress : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 MissionID;
+        /* 0x00 */
+        public NMSString0x10 MissionID;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool MustBeSelectedMission;
+        /* 0x10 */
+        public bool MustBeSelectedMission;
     }
 }

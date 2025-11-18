@@ -4,16 +4,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardAssessCookedProduct : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public int AmountAverage;
+        /* 0x00 */
+        public int AmountAverage;
         [NMS(Index = 1)]
-        /* 0x04 */ public int AmountBad;
+        /* 0x04 */
+        public int AmountBad;
         [NMS(Index = 4)]
-        /* 0x08 */ public int AmountBest;
+        /* 0x08 */
+        public int AmountBest;
         [NMS(Index = 5)]
-        /* 0x0C */ public int AmountBestUpper;
+        /* 0x0C */
+        public int AmountBestUpper;
         [NMS(Index = 3)]
-        /* 0x10 */ public int AmountGood;
+        /* 0x10 */
+        public int AmountGood;
         [NMS(Index = 0)]
-        /* 0x14 */ public int AmountWorst;
+        /* 0x14 */
+        public int AmountWorst;
     }
 }

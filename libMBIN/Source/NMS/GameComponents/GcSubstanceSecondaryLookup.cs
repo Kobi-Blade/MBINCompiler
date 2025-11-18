@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcSubstanceSecondaryLookup : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 PrimaryID;
+        /* 0x00 */
+        public NMSString0x10 PrimaryID;
         [NMS(Index = 1)]
-        /* 0x10 */ public List<GcSubstanceSecondary> SecondaryChances;
+        /* 0x10 */
+        public List<GcSubstanceSecondary> SecondaryChances;
     }
 }

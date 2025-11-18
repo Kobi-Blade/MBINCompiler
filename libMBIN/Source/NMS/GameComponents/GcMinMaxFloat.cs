@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMinMaxFloat : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float Max;
+        /* 0x0 */
+        public float Max;
         [NMS(Index = 0)]
-        /* 0x4 */ public float Min;
+        /* 0x4 */
+        public float Min;
     }
 }

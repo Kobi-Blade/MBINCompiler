@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionTakingDamage : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x10 DamageID;
+        /* 0x00 */
+        public NMSString0x10 DamageID;
         [NMS(Index = 0)]
-        /* 0x10 */ public bool RequireShieldDown;
+        /* 0x10 */
+        public bool RequireShieldDown;
     }
 }

@@ -4,10 +4,13 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshAreaNavigability : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x0 */ public float EntryCost;
+        /* 0x0 */
+        public float EntryCost;
         [NMS(Index = 1)]
-        /* 0x4 */ public float TravelCost;
+        /* 0x4 */
+        public float TravelCost;
         [NMS(Index = 0)]
-        /* 0x8 */ public bool IsNavigable;
+        /* 0x8 */
+        public bool IsNavigable;
     }
 }

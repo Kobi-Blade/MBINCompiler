@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcCatalogueGroups : NMSTemplate
     {
         // size: 0x5
-        public enum CatalogueGroupEnum : uint {
+        public enum CatalogueGroupEnum : uint
+        {
             MaterialsAndItems,
             CraftingAndTechnology,
             Buildables,
@@ -12,6 +13,7 @@ namespace libMBIN.NMS.GameComponents
             Wonders,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CatalogueGroupEnum CatalogueGroup;
+        /* 0x0 */
+        public CatalogueGroupEnum CatalogueGroup;
     }
 }

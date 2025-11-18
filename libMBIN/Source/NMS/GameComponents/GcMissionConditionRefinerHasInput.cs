@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionRefinerHasInput : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 InputProduct;
+        /* 0x00 */
+        public NMSString0x10 InputProduct;
         [NMS(Index = 1)]
-        /* 0x10 */ public int InputAmount;
+        /* 0x10 */
+        public int InputAmount;
         [NMS(Index = 2)]
-        /* 0x14 */ public bool MustBeCooker;
+        /* 0x14 */
+        public bool MustBeCooker;
         [NMS(Index = 3)]
-        /* 0x15 */ public bool MustBeCorvetteModule;
+        /* 0x15 */
+        public bool MustBeCorvetteModule;
     }
 }

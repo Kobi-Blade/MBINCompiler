@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceExploreAbandonedFreighter : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public VariableSizeString DebugText;
+        /* 0x00 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x10 */ public VariableSizeString Message;
+        /* 0x10 */
+        public VariableSizeString Message;
         [NMS(Index = 3)]
-        /* 0x20 */ public int Timer;
+        /* 0x20 */
+        public int Timer;
         [NMS(Index = 1)]
-        /* 0x24 */ public bool RequireAllRoomsDone;
+        /* 0x24 */
+        public bool RequireAllRoomsDone;
     }
 }

@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcStoryPageSeenData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int LastSeenEntryIdx;
+        /* 0x0 */
+        public int LastSeenEntryIdx;
         [NMS(Index = 0)]
-        /* 0x4 */ public int PageIdx;
+        /* 0x4 */
+        public int PageIdx;
     }
 }

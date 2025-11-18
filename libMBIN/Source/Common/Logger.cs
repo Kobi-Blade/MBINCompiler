@@ -5,14 +5,16 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace libMBIN {
+namespace libMBIN
+{
 
     using Common;
 
     /// <summary>
     /// Handles logging messages to a log stream.
     /// </summary>
-    public static class Logger {
+    public static class Logger
+    {
 
         private static StreamWriter _logStream = null;
         private static TextWriterTraceListener _traceListener = null;
@@ -22,11 +24,13 @@ namespace libMBIN {
         /// Use <see cref="Open(StreamWriter, bool, bool)"/> to set the stream.
         /// </summary>
         /// <seealso cref="Open(StreamWriter, bool, bool)"/><seealso cref="Close"/>
-        public static StreamWriter LogStream {
+        public static StreamWriter LogStream
+        {
             get => _logStream;
-            private set {
+            private set
+            {
                 TraceListener = null;
-                if ( DisposeWhenClosed ) _logStream?.Dispose();
+                if (DisposeWhenClosed) _logStream?.Dispose();
                 _logStream = value;
             }
         }
@@ -43,9 +47,11 @@ namespace libMBIN {
         /// Otherwise this will be a valid <see cref="TextWriterTraceListener"/> object, regardless if
         /// either <see cref="EnableTraceLogging"/> or <see cref="EnableDebugLogging"/> is true.
         /// </summary>
-        public static TextWriterTraceListener TraceListener {
+        public static TextWriterTraceListener TraceListener
+        {
             get => _traceListener;
-            private set {
+            private set
+            {
                 RemoveListener();
                 _traceListener?.Dispose();
                 _traceListener = value;
@@ -57,9 +63,10 @@ namespace libMBIN {
         /// This is an alias for <see cref="EnableTraceLogging"/>.
         /// It is not possible to enable or disable Debug and Trace logging independently.
         /// </summary>
-        public static bool EnableDebugLogging {
+        public static bool EnableDebugLogging
+        {
             get => (TraceListener != null);
-            set => SetListener( value );
+            set => SetListener(value);
         }
 
         /// <summary>
@@ -67,21 +74,24 @@ namespace libMBIN {
         /// This is an alias for <see cref="EnableDebugLogging"/>.
         /// It is not possible to enable or disable Debug and Trace logging independently.
         /// </summary>
-        public static bool EnableTraceLogging {
+        public static bool EnableTraceLogging
+        {
             get => (TraceListener != null);
-            set => SetListener( value );
+            set => SetListener(value);
         }
 
-        private static void SetListener( bool enable ) {
+        private static void SetListener(bool enable)
+        {
             TraceListener = null;
-            if ( !enable ) return;
-            TraceListener = new TextWriterTraceListener( LogStream, "libMBIN.Logger" );
-            Trace.Listeners.Add( TraceListener );
+            if (!enable) return;
+            TraceListener = new TextWriterTraceListener(LogStream, "libMBIN.Logger");
+            Trace.Listeners.Add(TraceListener);
         }
 
-        private static void RemoveListener() {
-            if ( TraceListener == null ) return;
-            Trace.Listeners.Remove( TraceListener );
+        private static void RemoveListener()
+        {
+            if (TraceListener == null) return;
+            Trace.Listeners.Remove(TraceListener);
         }
 
         #region // Indent
@@ -100,10 +110,12 @@ namespace libMBIN {
         /// <seealso cref="IndentLevel"/><seealso cref="IndentString(string)"/>
         /// <seealso cref="Indent"/><seealso cref="Unindent"/>
         /// <seealso cref="PushIndent(int)"/><seealso cref="PopIndent"/><seealso cref="IndentScope"/>
-        public static int IndentSize {
+        public static int IndentSize
+        {
             get => _indentSize;
-            set {
-                IndentPadding = new string( ' ', (_indentSize = value) * _indentLevel );
+            set
+            {
+                IndentPadding = new string(' ', (_indentSize = value) * _indentLevel);
                 Debug.IndentSize = Trace.IndentSize = value;
             }
         }
@@ -115,10 +127,12 @@ namespace libMBIN {
         /// <seealso cref="IndentSize"/><seealso cref="IndentString(string)"/>
         /// <seealso cref="Indent"/><seealso cref="Unindent"/>
         /// <seealso cref="PushIndent(int)"/><seealso cref="PopIndent"/><seealso cref="IndentScope"/>
-        public static int IndentLevel {
+        public static int IndentLevel
+        {
             get => _indentLevel;
-            set {
-                IndentPadding = new string( ' ', _indentSize * (_indentLevel = value) );
+            set
+            {
+                IndentPadding = new string(' ', _indentSize * (_indentLevel = value));
                 Debug.IndentLevel = Trace.IndentLevel = value;
             }
         }
@@ -127,8 +141,10 @@ namespace libMBIN {
         [ThreadStatic]
 #endif
         private static string _indentPadding = "";
-        private static string IndentPadding {
-            get {
+        private static string IndentPadding
+        {
+            get
+            {
                 return _indentPadding;
             }
             set => _indentPadding = value;
@@ -140,7 +156,8 @@ namespace libMBIN {
         /// <seealso cref="IndentSize"/><seealso cref="IndentLevel"/>
         /// <seealso cref="Indent"/><seealso cref="Unindent"/>
         /// <seealso cref="PushIndent(int)"/><seealso cref="PopIndent"/><seealso cref="IndentScope"/>
-        public static string IndentString( string txt ) {
+        public static string IndentString(string txt)
+        {
             return $"{IndentPadding}{txt}";
         }
 
@@ -154,7 +171,7 @@ namespace libMBIN {
         /// <seealso cref="Indent"/>
         /// <seealso cref="PushIndent(int)"/><seealso cref="PopIndent"/><seealso cref="IndentScope"/>
         /// <seealso cref="IndentSize"/><seealso cref="IndentLevel"/><seealso cref="IndentString(string)"/>
-        public static void Unindent() => IndentLevel = Math.Max( 0, --IndentLevel );
+        public static void Unindent() => IndentLevel = Math.Max(0, --IndentLevel);
 
         /// <summary>
         /// Save the current indent level and sets it to a new value.
@@ -169,9 +186,10 @@ namespace libMBIN {
         /// <seealso cref="PopIndent"/>
         /// <seealso cref="Indent"/><seealso cref="Unindent"/><seealso cref="IndentScope"/>
         /// <seealso cref="IndentSize"/><seealso cref="IndentLevel"/><seealso cref="IndentString(string)"/>
-        public static int PushIndent( int level = -1 ) {
+        public static int PushIndent(int level = -1)
+        {
             int current = IndentLevel;
-            indentStack.Push( current );
+            indentStack.Push(current);
             IndentLevel = (level < 0) ? IndentLevel + 1 : level;
             return current;
         }
@@ -183,7 +201,8 @@ namespace libMBIN {
         /// <seealso cref="PushIndent(int)"/>
         /// <seealso cref="Indent"/><seealso cref="Unindent"/><seealso cref="IndentScope"/>
         /// <seealso cref="IndentSize"/><seealso cref="IndentLevel"/><seealso cref="IndentString(string)"/>
-        public static int PopIndent() {
+        public static int PopIndent()
+        {
             IndentLevel = indentStack.Pop();
             return IndentLevel;
         }
@@ -204,7 +223,8 @@ namespace libMBIN {
         /// <seealso cref="PushIndent(int)"/><seealso cref="PopIndent"/>
         /// <seealso cref="Indent"/><seealso cref="Unindent"/>
         /// <seealso cref="IndentSize"/><seealso cref="IndentLevel"/><seealso cref="IndentString(string)"/>
-        public class IndentScope : IDisposable {
+        public class IndentScope : IDisposable
+        {
             private readonly int previous;
 
             /// <summary>
@@ -216,7 +236,8 @@ namespace libMBIN {
             /// If not specified or less than 0, then the current intent level will be incremented by 1.
             /// Default is -1 (increment).
             /// </param>
-            public IndentScope( int level = -1 ) {
+            public IndentScope(int level = -1)
+            {
                 previous = IndentLevel;
                 IndentLevel = (level < 0) ? ++IndentLevel : level;
             }
@@ -240,8 +261,9 @@ namespace libMBIN {
         /// <seealso cref="Open(Stream, bool, bool)"/>
         /// <seealso cref="Open(StreamWriter, bool, bool)"/>
         /// <seealso cref="Close"/>
-        public static StreamWriter Open( string logfile, bool autoflush = true, bool dispose = true ) {
-            return Open( new FileStream( logfile, FileMode.Create ), autoflush, dispose );
+        public static StreamWriter Open(string logfile, bool autoflush = true, bool dispose = true)
+        {
+            return Open(new FileStream(logfile, FileMode.Create), autoflush, dispose);
         }
 
         /// <summary>Attach a Stream to Logger.</summary>
@@ -252,8 +274,9 @@ namespace libMBIN {
         /// <seealso cref="Open(string, bool, bool)"/>
         /// <seealso cref="Open(StreamWriter, bool, bool)"/>
         /// <seealso cref="Close"/>
-        public static StreamWriter Open( Stream stream, bool autoflush = true, bool dispose = true ) {
-            return Open( new StreamWriter( stream ), autoflush, dispose );
+        public static StreamWriter Open(Stream stream, bool autoflush = true, bool dispose = true)
+        {
+            return Open(new StreamWriter(stream), autoflush, dispose);
         }
 
         /// <summary>Attach a StreamWriter to Logger.</summary>
@@ -275,13 +298,14 @@ namespace libMBIN {
         /// <seealso cref="Open(string, bool, bool)"/>
         /// <seealso cref="Open(Stream, bool, bool)"/>
         /// <seealso cref="Close"/>
-        public static StreamWriter Open( StreamWriter stream, bool autoflush = true, bool dispose = true ) {
-            IndentSize  = _indentSize;  // needed to sync with Debug and Trace loggers
+        public static StreamWriter Open(StreamWriter stream, bool autoflush = true, bool dispose = true)
+        {
+            IndentSize = _indentSize;  // needed to sync with Debug and Trace loggers
             IndentLevel = _indentLevel; // needed to sync with Debug and Trace loggers
 
             Close();
             LogStream = stream;
-            if ( LogStream == null ) return null;
+            if (LogStream == null) return null;
 
             LogStream.AutoFlush = autoflush;
             DisposeWhenClosed = dispose;
@@ -301,99 +325,101 @@ namespace libMBIN {
         /// <summary>Output a log message to any Debug listeners. The message will be prepended with a DEBUG label.</summary>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
-        [Conditional( "DEBUG" )] public static void LogDebug( object obj ) => LogDebug( null, "{0}", obj );
+        [Conditional("DEBUG")] public static void LogDebug(object obj) => LogDebug(null, "{0}", obj);
         /// <summary>Output a log message to any Debug listeners. The message will be prepended with a DEBUG label.</summary>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
-        [Conditional( "DEBUG" )] public static void LogDebug( string tag, object obj ) => LogDebug( tag, "{0}", obj );
+        [Conditional("DEBUG")] public static void LogDebug(string tag, object obj) => LogDebug(tag, "{0}", obj);
         /// <summary>Output a log message to any Debug listeners.</summary>
         /// <param name="label">A label to prepend to the log message.</param>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
-        [Conditional( "DEBUG" )] public static void LogDebug( string label, string tag, object obj ) => LogDebug( label, tag, "{0}", obj );
+        [Conditional("DEBUG")] public static void LogDebug(string label, string tag, object obj) => LogDebug(label, tag, "{0}", obj);
         /// <summary>Output a log message to any Debug listeners. The message will be prepended with a DEBUG label.</summary>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
-        [Conditional( "DEBUG" )] public static void LogDebug( string format, params object[] args ) => LogDebug( null, format, args );
+        [Conditional("DEBUG")] public static void LogDebug(string format, params object[] args) => LogDebug(null, format, args);
         /// <summary>Output a log message to any Debug listeners. The message will be prepended with a DEBUG label.</summary>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
-        [Conditional( "DEBUG" )] public static void LogDebug( string tag, string format, params object[] args ) => LogDebug( "DEBUG", tag, format, args );
+        [Conditional("DEBUG")] public static void LogDebug(string tag, string format, params object[] args) => LogDebug("DEBUG", tag, format, args);
         /// <summary>Output a log message to any Debug listeners.</summary>
         /// <param name="label">A label to prepend to the log message. If label is null and tag is not null then label will default to DEBUG.</param>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
-        [Conditional( "DEBUG" )]
-        public static void LogDebug( string label, string tag, string format, params object[] args ) {
-            label = !string.IsNullOrWhiteSpace( label ) ? label : null;
-            tag = !string.IsNullOrWhiteSpace( tag ) ? tag : null;
+        [Conditional("DEBUG")]
+        public static void LogDebug(string label, string tag, string format, params object[] args)
+        {
+            label = !string.IsNullOrWhiteSpace(label) ? label : null;
+            tag = !string.IsNullOrWhiteSpace(tag) ? tag : null;
             tag = (tag != null) ? $":{tag}" : null; // if there's a tag then format it
             label = (tag != null) ? (label ?? "DEBUG") : label; // if there's a tag and no label then default label to "DEBUG"
-            Debug.WriteLine( string.Format( format, args ), string.IsNullOrWhiteSpace( label ) ? null : $"[{label}]" );
+            Debug.WriteLine(string.Format(format, args), string.IsNullOrWhiteSpace(label) ? null : $"[{label}]");
         }
 
         /// <summary>Output a log message to any Trace listeners. The message will be prepended with a TRACE label.</summary>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        [Conditional( "TRACE" )] public static void LogTrace( object obj ) => LogTrace( null, "{0}", obj );
+        [Conditional("TRACE")] public static void LogTrace(object obj) => LogTrace(null, "{0}", obj);
         /// <summary>Output a log message to any Trace listeners. The message will be prepended with a TRACE label.</summary>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        [Conditional( "TRACE" )] public static void LogTrace( string tag, object obj ) => LogTrace( tag, "{0}", obj );
+        [Conditional("TRACE")] public static void LogTrace(string tag, object obj) => LogTrace(tag, "{0}", obj);
         /// <summary>Output a log message to any Trace listeners.</summary>
         /// <param name="label">A label to prepend to the log message.</param>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        [Conditional( "TRACE" )] public static void LogTrace( string label, string tag, object obj ) => LogTrace( label, tag, "{0}", obj );
+        [Conditional("TRACE")] public static void LogTrace(string label, string tag, object obj) => LogTrace(label, tag, "{0}", obj);
         /// <summary>Output a log message to any Trace listeners. The message will be prepended with a TRACE label.</summary>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        [Conditional( "TRACE" )] public static void LogTrace( string format, params object[] args ) => LogTrace( null, format, args );
+        [Conditional("TRACE")] public static void LogTrace(string format, params object[] args) => LogTrace(null, format, args);
         /// <summary>Output a log message to any Trace listeners. The message will be prepended with a TRACE label.</summary>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        [Conditional( "TRACE" )] public static void LogTrace( string tag, string format, params object[] args ) => LogTrace( "TRACE", tag, format, args );
+        [Conditional("TRACE")] public static void LogTrace(string tag, string format, params object[] args) => LogTrace("TRACE", tag, format, args);
         /// <summary>Output a log message to any Trace listeners.</summary>
         /// <param name="label">A label to prepend to the log message. If label is null and tag is not null then label will default to TRACE.</param>
         /// <param name="tag">A tag that will be combined with the label and prepended to the log message.</param>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
-        [Conditional( "TRACE" )]
-        public static void LogTrace( string label, string tag, string format, params object[] args ) {
-            label = !string.IsNullOrWhiteSpace( label ) ? label : null;
-            tag = !string.IsNullOrWhiteSpace( tag ) ? tag : null;
+        [Conditional("TRACE")]
+        public static void LogTrace(string label, string tag, string format, params object[] args)
+        {
+            label = !string.IsNullOrWhiteSpace(label) ? label : null;
+            tag = !string.IsNullOrWhiteSpace(tag) ? tag : null;
             tag = (tag != null) ? $":{tag}" : null; // if there's a tag then format it
             label = (tag != null) ? (label ?? "TRACE") : label; // if there's a tag and no label then default label to "TRACE"
-            Trace.WriteLine( string.Format( format, args ), string.IsNullOrWhiteSpace( label ) ? null : $"[{label}]" );
+            Trace.WriteLine(string.Format(format, args), string.IsNullOrWhiteSpace(label) ? null : $"[{label}]");
         }
 
         /// <summary>Output a general message to the log and additionally to Console.Out.</summary>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogOutput(string, string, object[])"/>
-        public static void LogOutput( object obj ) => LogMessage( Console.Out, null, "{0}", obj );
+        public static void LogOutput(object obj) => LogMessage(Console.Out, null, "{0}", obj);
         /// <summary>Output a general message to the log and additionally to Console.Out.</summary>
         /// <param name="label">A label to prepend to the log message.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogOutput(string, string, object[])"/>
-        public static void LogOutput( string label, object obj ) => LogMessage( Console.Out, label, "{0}", obj );
+        public static void LogOutput(string label, object obj) => LogMessage(Console.Out, label, "{0}", obj);
         /// <summary>Output a general message to the log and additionally to Console.Out.</summary>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogOutput(string, string, object[])"/>
-        public static void LogOutput( string format, params object[] args ) => LogMessage( Console.Out, null, format, args );
+        public static void LogOutput(string format, params object[] args) => LogMessage(Console.Out, null, format, args);
         /// <summary>Output a general message to the log and additionally to Console.Out.</summary>
         /// <param name="label">A label to prepend to the log message.</param>
         /// <param name="format">A format string that the message will be composed from.</param>
@@ -404,7 +430,7 @@ namespace libMBIN {
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        public static void LogOutput( string label, string format, params object[] args ) => LogMessage( Console.Out, label, format, args );
+        public static void LogOutput(string label, string format, params object[] args) => LogMessage(Console.Out, label, format, args);
 
         /// <summary>
         /// Output an informational message to the log and additionally to Console.Out.
@@ -412,7 +438,7 @@ namespace libMBIN {
         /// </summary>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogInfo(string, object[])"/>
-        public static void LogInfo( object obj ) => LogMessage( Console.Out, "INFO", "{0}", obj );
+        public static void LogInfo(object obj) => LogMessage(Console.Out, "INFO", "{0}", obj);
         /// <summary>
         /// Output an informational message to the log and additionally to Console.Out.
         /// The message will be prepended with an INFO label.
@@ -425,7 +451,7 @@ namespace libMBIN {
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        public static void LogInfo( string format, params object[] args ) => LogMessage( Console.Out, "INFO", format, args );
+        public static void LogInfo(string format, params object[] args) => LogMessage(Console.Out, "INFO", format, args);
 
         /// <summary>
         /// Output a warning message to the log and additionally to Console.Error.
@@ -433,7 +459,7 @@ namespace libMBIN {
         /// </summary>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogWarning(string, object[])"/>
-        public static void LogWarning( object obj ) => LogMessage( Console.Error, "WARN", "{0}", obj );
+        public static void LogWarning(object obj) => LogMessage(Console.Error, "WARN", "{0}", obj);
         /// <summary>
         /// Output a warning message to the log and additionally to Console.Error.
         /// The message will be prepended with a WARN label.
@@ -446,7 +472,7 @@ namespace libMBIN {
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        public static void LogWarning( string format, params object[] args ) => LogMessage( Console.Error, "WARN", format, args );
+        public static void LogWarning(string format, params object[] args) => LogMessage(Console.Error, "WARN", format, args);
 
         /// <summary>
         /// Output an error message to the log and additionally to Console.Error.
@@ -454,7 +480,7 @@ namespace libMBIN {
         /// </summary>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogError(string, object[])"/>
-        public static void LogError( object obj ) => LogMessage( Console.Error, "ERROR", "{0}", obj );
+        public static void LogError(object obj) => LogMessage(Console.Error, "ERROR", "{0}", obj);
         /// <summary>
         /// Output an error message to the log and additionally to Console.Error.
         /// The message will be prepended with an ERROR label.
@@ -467,46 +493,46 @@ namespace libMBIN {
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        public static void LogError( string format, params object[] args ) => LogMessage( Console.Error, "ERROR", $"{format}", args );
+        public static void LogError(string format, params object[] args) => LogMessage(Console.Error, "ERROR", $"{format}", args);
 
 
         /// <summary>Output a general message to <see cref="LogStream"/>.</summary>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( object obj ) => LogMessage( null, null, "{0}", obj );
+        public static void LogMessage(object obj) => LogMessage(null, null, "{0}", obj);
         /// <summary>Output a general message to <see cref="LogStream"/>.</summary>
         /// <param name="label">A label to prepend to the log message.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( string label, object obj ) => LogMessage( null, label, "{0}", obj );
+        public static void LogMessage(string label, object obj) => LogMessage(null, label, "{0}", obj);
         /// <summary>Output a general message to <see cref="LogStream"/> and <paramref name="tee"/>.</summary>
         /// <param name="tee">A secondary stream to tee the message to.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( TextWriter tee, object obj ) => LogMessage( tee, null, "{0}", obj );
+        public static void LogMessage(TextWriter tee, object obj) => LogMessage(tee, null, "{0}", obj);
         /// <summary>Output a general message to <see cref="LogStream"/> and <paramref name="tee"/>.</summary>
         /// <param name="tee">A secondary stream to tee the message to. If tee is Console.Out then no label will be prepended to the tee message.</param>
         /// <param name="label">A label to prepend to the log message.</param>
         /// <param name="obj">Any object. The data to output.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( TextWriter tee, string label, object obj ) => LogMessage( tee, label, "{0}", obj );
+        public static void LogMessage(TextWriter tee, string label, object obj) => LogMessage(tee, label, "{0}", obj);
         /// <summary>Output a general message to <see cref="LogStream"/>.</summary>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( string format, params object[] args ) => LogMessage( null, null, format, args );
+        public static void LogMessage(string format, params object[] args) => LogMessage(null, null, format, args);
         /// <summary>Output a general message to <see cref="LogStream"/>.</summary>
         /// <param name="label">A label to prepend to the log message.</param>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( string label, string format, params object[] args ) => LogMessage( null, label, format, args );
+        public static void LogMessage(string label, string format, params object[] args) => LogMessage(null, label, format, args);
         /// <summary>Output a general message to <see cref="LogStream"/> and <paramref name="tee"/>.</summary>
         /// <param name="tee">A secondary stream to tee the message to.</param>
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( TextWriter tee, string format, params object[] args ) => LogMessage( tee, null, format, args );
+        public static void LogMessage(TextWriter tee, string format, params object[] args) => LogMessage(tee, null, format, args);
         /// <summary>Output a general message to <see cref="LogStream"/> and <paramref name="tee"/>.</summary>
         /// <param name="tee">A secondary stream to tee the message to. If tee is Console.Out then no label will be prepended to the tee message.</param>
         /// <param name="label">A label to prepend to the log message.</param>
@@ -518,10 +544,10 @@ namespace libMBIN {
         /// <seealso cref="LogError(string, object[])"/>
         /// <seealso cref="LogDebug(string, string, string, object[])"/>
         /// <seealso cref="LogTrace(string, string, string, object[])"/>
-        public static void LogMessage( TextWriter tee, string label, string format, params object[] args ) => LogMessage( true, tee, label, format, args );
+        public static void LogMessage(TextWriter tee, string label, string format, params object[] args) => LogMessage(true, tee, label, format, args);
 
         private static object logMessageLock = new object();
-        private static Task   logMessageTask = null;
+        private static Task logMessageTask = null;
 
         /// <summary>Output a general message to <see cref="LogStream"/> and <paramref name="tee"/>.</summary>
         /// <param name="log">True if the message should output to log file as well as tee. False if the message should  only be output to tee.</param>
@@ -530,14 +556,18 @@ namespace libMBIN {
         /// <param name="format">A format string that the message will be composed from.</param>
         /// <param name="args">The arguments to be formatted.</param>
         /// <seealso cref="LogMessage(TextWriter, string, string, object[])"/>
-        public static void LogMessage( bool log, TextWriter tee, string label, string format, params object[] args ) {
-            Async.SynchronizeTask( logMessageLock, ref logMessageTask, () => {
-                label = !string.IsNullOrWhiteSpace( label ) ? $"[{label}]: " : "";
+        public static void LogMessage(bool log, TextWriter tee, string label, string format, params object[] args)
+        {
+            Async.SynchronizeTask(logMessageLock, ref logMessageTask, () =>
+            {
+                label = !string.IsNullOrWhiteSpace(label) ? $"[{label}]: " : "";
                 string[] lines = { "" };
-                try { 
+                try
+                {
                     lines = string.Format(format, args).Replace("\r\n", "\n").Split(new char[] { '\n' });
                 }
-                catch {
+                catch
+                {
                     // to allow LANGUAGE MXML files to work
                     lines = format.Replace("\r\n", "\n").Split(new char[] { '\n' });
                 }
@@ -547,23 +577,26 @@ namespace libMBIN {
 
                 bool first = true;
                 int last = lines.Length - 1;
-                for ( int i = 0; i < lines.Length; i++ ) {
-                    sbLine.AppendLine( IndentString( lines[i] ) );
-                    sbLog.AppendLine( IndentString( GetLabelledLine( label, lines[i], ref first, (i == last) ) ) );
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    sbLine.AppendLine(IndentString(lines[i]));
+                    sbLog.AppendLine(IndentString(GetLabelledLine(label, lines[i], ref first, (i == last))));
                 }
-                WriteLine( log, tee, sbLine.ToString(), sbLog.ToString() );
-            } );
+                WriteLine(log, tee, sbLine.ToString(), sbLog.ToString());
+            });
         }
 
-        private static string GetLabelledLine( string label, string line, ref bool first, bool last ) {
-            if ( !first ) return line;
-            first = (string.IsNullOrWhiteSpace( line ) && !last);
+        private static string GetLabelledLine(string label, string line, ref bool first, bool last)
+        {
+            if (!first) return line;
+            first = (string.IsNullOrWhiteSpace(line) && !last);
             return !first ? $"{label}{line}" : line;
         }
 
-        private static void WriteLine( bool log, TextWriter tee, string line, string logLine ) {
-            tee?.Write( (tee == Console.Out) ? line : logLine );
-            if (log) LogStream?.Write( logLine );
+        private static void WriteLine(bool log, TextWriter tee, string line, string logLine)
+        {
+            tee?.Write((tee == Console.Out) ? line : logLine);
+            if (log) LogStream?.Write(logLine);
         }
 
     }

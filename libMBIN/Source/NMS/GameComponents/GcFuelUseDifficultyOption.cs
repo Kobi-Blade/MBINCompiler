@@ -4,13 +4,15 @@ namespace libMBIN.NMS.GameComponents
     public class GcFuelUseDifficultyOption : NMSTemplate
     {
         // size: 0x4
-        public enum FuelUseDifficultyEnum : uint {
+        public enum FuelUseDifficultyEnum : uint
+        {
             Free,
             Cheap,
             Normal,
             Expensive,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public FuelUseDifficultyEnum FuelUseDifficulty;
+        /* 0x0 */
+        public FuelUseDifficultyEnum FuelUseDifficulty;
     }
 }

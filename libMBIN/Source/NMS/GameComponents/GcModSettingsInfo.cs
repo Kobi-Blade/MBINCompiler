@@ -6,22 +6,31 @@ namespace libMBIN.NMS.GameComponents
     public class GcModSettingsInfo : NMSTemplate
     {
         [NMS(Index = 8)]
-        /* 0x000 */ public List<ulong> Dependencies;
+        /* 0x000 */
+        public List<ulong> Dependencies;
         [NMS(Index = 3)]
-        /* 0x010 */ public ulong AuthorID;
+        /* 0x010 */
+        public ulong AuthorID;
         [NMS(Index = 2)]
-        /* 0x018 */ public ulong ID;
+        /* 0x018 */
+        public ulong ID;
         [NMS(Index = 4)]
-        /* 0x020 */ public ulong LastUpdated;
+        /* 0x020 */
+        public ulong LastUpdated;
         [NMS(Index = 5)]
-        /* 0x028 */ public ushort ModPriority;
+        /* 0x028 */
+        public ushort ModPriority;
         [NMS(Index = 1)]
-        /* 0x02A */ public NMSString0x80 Author;
+        /* 0x02A */
+        public NMSString0x80 Author;
         [NMS(Index = 0)]
-        /* 0x0AA */ public NMSString0x80 Name;
+        /* 0x0AA */
+        public NMSString0x80 Name;
         [NMS(Index = 6)]
-        /* 0x12A */ public bool Enabled;
+        /* 0x12A */
+        public bool Enabled;
         [NMS(Index = 7)]
-        /* 0x12B */ public bool EnabledVR;
+        /* 0x12B */
+        public bool EnabledVR;
     }
 }

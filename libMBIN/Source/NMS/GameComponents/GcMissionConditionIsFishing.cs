@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionIsFishing : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float MinimumDepth;
+        /* 0x0 */
+        public float MinimumDepth;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool TakeDepthFromSeasonData;
+        /* 0x4 */
+        public bool TakeDepthFromSeasonData;
     }
 }

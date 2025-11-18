@@ -4,10 +4,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcObjectiveTextFormatOptions : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A FormattableObjective;
+        /* 0x00 */
+        public NMSString0x20A FormattableObjective;
         [NMS(Index = 2)]
-        /* 0x20 */ public NMSString0x20A FormattableObjectiveTip;
+        /* 0x20 */
+        public NMSString0x20A FormattableObjectiveTip;
         [NMS(Index = 0)]
-        /* 0x40 */ public bool ObjectivesCanBeFormattedBySequences;
+        /* 0x40 */
+        public bool ObjectivesCanBeFormattedBySequences;
     }
 }

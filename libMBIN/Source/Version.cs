@@ -1,7 +1,9 @@
-﻿namespace libMBIN {
+﻿namespace libMBIN
+{
 
     /// <summary>Version Utilities</summary>
-    public static class Version {
+    public static class Version
+    {
 
         // THIS IS THE MASTER VERSION STRING. MAKE VERSION CHANGES HERE.
         // Used by libMBIN.AssemblyInfo, MBINCompiler.AssemblyInfo
@@ -26,25 +28,25 @@
         // When the Release version is incremented:
         //      the Prerelease version should be reset to 0
         internal const string VERSION_STRING = "6.17.0.2";
-        
+
         /// <summary>Shorthand for AssemblyVersion.Major</summary>
-        public static int Major      => AssemblyVersion.Major;
+        public static int Major => AssemblyVersion.Major;
         /// <summary>Shorthand for AssemblyVersion.Minor</summary>
-        public static int Minor      => AssemblyVersion.Minor;
+        public static int Minor => AssemblyVersion.Minor;
         /// <summary>Shorthand for AssemblyVersion.Build</summary>t
         /// 
-        public static int Release    => AssemblyVersion.Build;
+        public static int Release => AssemblyVersion.Build;
         /// <summary>Shorthand for AssemblyVersion.Revision</summary>
         public static int Prerelease => AssemblyVersion.Revision;
 
         /// <summary>The libMBIN assembly version.</summary>
-        public static System.Version AssemblyVersion => new System.Version( VERSION_STRING );
+        public static System.Version AssemblyVersion => new System.Version(VERSION_STRING);
 
         /// <summary>
         ///     The NMS version that is supported by this assembly.
         ///     (The <see cref="Major"/>, <see cref="Minor"/> and <see cref="Release"/> components of <see cref="AssemblyVersion"/>)
         /// </summary>
-        public static System.Version NMSVersion => new System.Version( Major, Minor, Release, 0 );
+        public static System.Version NMSVersion => new System.Version(Major, Minor, Release, 0);
 
         /// <summary>
         ///     Returns a human-readable suffix indicating the <see cref="Prerelease"/> version.
@@ -60,8 +62,9 @@
         ///     Eg. "1.1.0" (Release) or "1.1.0-pre1" (Pre-Release)
         /// </summary>
         /// <returns>"{<see cref="Major"/>}.{<see cref="Minor"/>}.{<see cref="Release"/>}{<see cref="GetSuffix">Suffix</see>}"</returns>
-        public static string GetString() {
-            return $"{AssemblyVersion.Major}.{AssemblyVersion.Minor:00}.{AssemblyVersion.Build}"  + GetSuffix();
+        public static string GetString()
+        {
+            return $"{AssemblyVersion.Major}.{AssemblyVersion.Minor:00}.{AssemblyVersion.Build}" + GetSuffix();
         }
     }
 }

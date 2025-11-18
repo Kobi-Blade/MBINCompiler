@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCustomisationBackpackData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public Vector3f ActiveJetOffset;
+        /* 0x00 */
+        public Vector3f ActiveJetOffset;
         [NMS(Index = 0)]
-        /* 0x10 */ public NMSString0x20 NodeName;
+        /* 0x10 */
+        public NMSString0x20 NodeName;
     }
 }

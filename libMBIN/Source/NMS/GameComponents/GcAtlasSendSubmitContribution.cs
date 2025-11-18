@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcAtlasSendSubmitContribution : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int Contribution;
+        /* 0x0 */
+        public int Contribution;
         [NMS(Index = 0)]
-        /* 0x4 */ public int MissionIndex;
+        /* 0x4 */
+        public int MissionIndex;
     }
 }

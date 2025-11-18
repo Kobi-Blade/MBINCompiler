@@ -1,6 +1,3 @@
-using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS
 {
     [NMS(Size = 0x48, Alignment = 0x1)]

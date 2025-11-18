@@ -1,7 +1,4 @@
-﻿using libMBIN.Source.Common;
-using System;
-
-namespace libMBIN.NMS
+﻿namespace libMBIN.NMS
 {
     /// <summary>
     /// This class is a simple colour one. The values of each field must be between 0 and 1.
@@ -64,7 +61,8 @@ namespace libMBIN.NMS
             this.A = A;
         }
 
-        public Colour32(Colour col) {
+        public Colour32(Colour col)
+        {
             this.R = (byte)(col.R * 255f);
             this.G = (byte)(col.G * 255f);
             this.B = (byte)(col.B * 255f);

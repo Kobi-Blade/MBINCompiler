@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcPaletteColourAlt : NMSTemplate
     {
         // size: 0x8
-        public enum ColourAltNewEnum : uint {
+        public enum ColourAltNewEnum : uint
+        {
             Primary,
             Secondary,
             Alternative3,
@@ -15,6 +16,7 @@ namespace libMBIN.NMS.GameComponents
             None,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public ColourAltNewEnum ColourAltNew;
+        /* 0x0 */
+        public ColourAltNewEnum ColourAltNew;
     }
 }

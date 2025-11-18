@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCharacterAlternateAnimation : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Anim;
+        /* 0x00 */
+        public NMSString0x10 Anim;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Replacement;
+        /* 0x10 */
+        public NMSString0x10 Replacement;
     }
 }

@@ -1,4 +1,5 @@
-namespace libMBIN.NMS {
+namespace libMBIN.NMS
+{
 
     [NMS(Size = 0x20)]
     public class LinkableNMSTemplate : NMSTemplate

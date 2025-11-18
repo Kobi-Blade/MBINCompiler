@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,28 +6,40 @@ namespace libMBIN.NMS.GameComponents
     public class GcExternalObjectListOptions : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Name;
+        /* 0x00 */
+        public NMSString0x10 Name;
         [NMS(Index = 9)]
-        /* 0x10 */ public List<VariableSizeString> Options;
+        /* 0x10 */
+        public List<VariableSizeString> Options;
         [NMS(Index = 1)]
-        /* 0x20 */ public NMSString0x10 ResourceHint;
+        /* 0x20 */
+        public NMSString0x10 ResourceHint;
         [NMS(Index = 2)]
-        /* 0x30 */ public NMSString0x10 ResourceHintIcon;
+        /* 0x30 */
+        public NMSString0x10 ResourceHintIcon;
         [NMS(Index = 10)]
-        /* 0x40 */ public int Order;
+        /* 0x40 */
+        public int Order;
         [NMS(Index = 3)]
-        /* 0x44 */ public float Probability;
+        /* 0x44 */
+        public float Probability;
         [NMS(Index = 4)]
-        /* 0x48 */ public float SeasonalProbabilityOverride;
+        /* 0x48 */
+        public float SeasonalProbabilityOverride;
         [NMS(Index = 5)]
-        /* 0x4C */ public GcTerrainTileType TileType;
+        /* 0x4C */
+        public GcTerrainTileType TileType;
         [NMS(Index = 7)]
-        /* 0x50 */ public bool AddToFilenameHashmapWhenOptional;
+        /* 0x50 */
+        public bool AddToFilenameHashmapWhenOptional;
         [NMS(Index = 6)]
-        /* 0x51 */ public bool AllowLimiting;
+        /* 0x51 */
+        public bool AllowLimiting;
         [NMS(Index = 8)]
-        /* 0x52 */ public bool ChooseUsingLifeLevel;
+        /* 0x52 */
+        public bool ChooseUsingLifeLevel;
         [NMS(Index = 11)]
-        /* 0x53 */ public bool SuppressSpawn;
+        /* 0x53 */
+        public bool SuppressSpawn;
     }
 }

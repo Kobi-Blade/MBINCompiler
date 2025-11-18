@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcEncounterType : NMSTemplate
     {
         // size: 0x9
-        public enum EncounterTypeEnum : uint {
+        public enum EncounterTypeEnum : uint
+        {
             FactoryGuards,
             HarvesterGuards,
             ScrapHeap,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             Fossil,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public EncounterTypeEnum EncounterType;
+        /* 0x0 */
+        public EncounterTypeEnum EncounterType;
     }
 }

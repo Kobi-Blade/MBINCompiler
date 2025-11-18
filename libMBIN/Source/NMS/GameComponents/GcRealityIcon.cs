@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRealityIcon : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A ID;
+        /* 0x00 */
+        public NMSString0x20A ID;
         [NMS(Index = 1)]
-        /* 0x20 */ public TkTextureResource Texture;
+        /* 0x20 */
+        public TkTextureResource Texture;
     }
 }

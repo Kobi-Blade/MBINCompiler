@@ -1,13 +1,13 @@
-using libMBIN.NMS.GameComponents;
-
 namespace libMBIN.NMS.GameComponents
 {
     [NMS(GUID = 0xE395E0BE0E6926BE, NameHash = 0xF989045F)]
     public class GcDefaultSaveData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00000 */ public GcPlayerStateData State;
+        /* 0x00000 */
+        public GcPlayerStateData State;
         [NMS(Index = 1)]
-        /* 0x7F430 */ public GcPlayerSpawnStateData Spawn;
+        /* 0x7F430 */
+        public GcPlayerSpawnStateData Spawn;
     }
 }

@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcBehaviourLegacyData : NMSTemplate
     {
         // size: 0x9
-        public enum LegacyBehaviourEnum : uint {
+        public enum LegacyBehaviourEnum : uint
+        {
             Riding,
             Interaction,
             Attracted,
@@ -16,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             FollowRoutine,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public LegacyBehaviourEnum LegacyBehaviour;
+        /* 0x0 */
+        public LegacyBehaviourEnum LegacyBehaviour;
     }
 }

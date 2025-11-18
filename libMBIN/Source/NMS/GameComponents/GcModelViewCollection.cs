@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcModelViewCollection : NMSTemplate
     {
         [NMS(Index = 0, Size = 0x32, EnumType = typeof(GcModelViews.ModelViewsEnum))]
-        /* 0x0 */ public TkModelRendererData[] ModelViewData;
+        /* 0x0 */
+        public TkModelRendererData[] ModelViewData;
     }
 }

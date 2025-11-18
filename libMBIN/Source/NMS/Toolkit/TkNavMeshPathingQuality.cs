@@ -4,12 +4,14 @@ namespace libMBIN.NMS.Toolkit
     public class TkNavMeshPathingQuality : NMSTemplate
     {
         // size: 0x3
-        public enum NavMeshPathingQualityEnum : uint {
+        public enum NavMeshPathingQualityEnum : uint
+        {
             Normal,
             High,
             Highest,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public NavMeshPathingQualityEnum NavMeshPathingQuality;
+        /* 0x0 */
+        public NavMeshPathingQualityEnum NavMeshPathingQuality;
     }
 }

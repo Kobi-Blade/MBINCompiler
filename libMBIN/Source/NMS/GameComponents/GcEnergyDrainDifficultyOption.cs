@@ -4,12 +4,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcEnergyDrainDifficultyOption : NMSTemplate
     {
         // size: 0x3
-        public enum EnergyDrainDifficultyEnum : uint {
+        public enum EnergyDrainDifficultyEnum : uint
+        {
             Slow,
             Normal,
             Fast,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public EnergyDrainDifficultyEnum EnergyDrainDifficulty;
+        /* 0x0 */
+        public EnergyDrainDifficultyEnum EnergyDrainDifficulty;
     }
 }

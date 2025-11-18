@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcPlanetDataResourceHint : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 Hint;
+        /* 0x00 */
+        public NMSString0x10 Hint;
         [NMS(Index = 1)]
-        /* 0x10 */ public NMSString0x10 Icon;
+        /* 0x10 */
+        public NMSString0x10 Icon;
     }
 }

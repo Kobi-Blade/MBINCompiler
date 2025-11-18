@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionFeedingCreatures : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public int MinCreatures;
+        /* 0x0 */
+        public int MinCreatures;
         [NMS(Index = 1)]
-        /* 0x4 */ public bool TakeNumFromSeasonData;
+        /* 0x4 */
+        public bool TakeNumFromSeasonData;
     }
 }

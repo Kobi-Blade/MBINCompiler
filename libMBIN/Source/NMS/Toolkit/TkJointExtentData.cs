@@ -4,12 +4,16 @@ namespace libMBIN.NMS.Toolkit
     public class TkJointExtentData : NMSTemplate
     {
         [NMS(Index = 2, Size = 0x3)]
-        /* 0x00 */ public float[] JointExtentCenter;
+        /* 0x00 */
+        public float[] JointExtentCenter;
         [NMS(Index = 1, Size = 0x3)]
-        /* 0x0C */ public float[] JointExtentMax;
+        /* 0x0C */
+        public float[] JointExtentMax;
         [NMS(Index = 0, Size = 0x3)]
-        /* 0x18 */ public float[] JointExtentMin;
+        /* 0x18 */
+        public float[] JointExtentMin;
         [NMS(Index = 3, Size = 0x3)]
-        /* 0x24 */ public float[] JointExtentStdDev;
+        /* 0x24 */
+        public float[] JointExtentStdDev;
     }
 }

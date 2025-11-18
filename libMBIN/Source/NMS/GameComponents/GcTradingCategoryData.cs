@@ -6,12 +6,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcTradingCategoryData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public TkTextureResource Icon;
+        /* 0x00 */
+        public TkTextureResource Icon;
         [NMS(Index = 2)]
-        /* 0x18 */ public float ProductMultiplierChangePer100;
+        /* 0x18 */
+        public float ProductMultiplierChangePer100;
         [NMS(Index = 3)]
-        /* 0x1C */ public float SubstanceMultiplierChangePer100;
+        /* 0x1C */
+        public float SubstanceMultiplierChangePer100;
         [NMS(Index = 0)]
-        /* 0x20 */ public NMSString0x40 Name;
+        /* 0x20 */
+        public NMSString0x40 Name;
     }
 }

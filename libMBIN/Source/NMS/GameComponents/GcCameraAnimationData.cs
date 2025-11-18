@@ -6,6 +6,7 @@ namespace libMBIN.NMS.GameComponents
     public class GcCameraAnimationData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public TkModelResource CameraAnimation;
+        /* 0x0 */
+        public TkModelResource CameraAnimation;
     }
 }

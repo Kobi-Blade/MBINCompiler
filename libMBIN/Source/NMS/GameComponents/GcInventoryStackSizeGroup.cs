@@ -4,7 +4,8 @@ namespace libMBIN.NMS.GameComponents
     public class GcInventoryStackSizeGroup : NMSTemplate
     {
         // size: 0xD
-        public enum InventoryStackSizeGroupEnum : uint {
+        public enum InventoryStackSizeGroupEnum : uint
+        {
             Default,
             Personal,
             PersonalCargo,
@@ -20,6 +21,7 @@ namespace libMBIN.NMS.GameComponents
             SeasonTransfer,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public InventoryStackSizeGroupEnum InventoryStackSizeGroup;
+        /* 0x0 */
+        public InventoryStackSizeGroupEnum InventoryStackSizeGroup;
     }
 }

@@ -4,9 +4,11 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasWeapons : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public int CountForInstalledTests;
+        /* 0x0 */
+        public int CountForInstalledTests;
         // size: 0x6
-        public enum WeaponTestEnum : uint {
+        public enum WeaponTestEnum : uint
+        {
             CombatPrimaryEquipped,
             CombatSecondaryEquipped,
             CombatPrimaryInstalled,
@@ -15,6 +17,7 @@ namespace libMBIN.NMS.GameComponents
             ExocraftCombatActive,
         }
         [NMS(Index = 0)]
-        /* 0x4 */ public WeaponTestEnum WeaponTest;
+        /* 0x4 */
+        public WeaponTestEnum WeaponTest;
     }
 }

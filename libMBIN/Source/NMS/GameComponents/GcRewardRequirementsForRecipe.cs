@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcRewardRequirementsForRecipe : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x10 RecipeID;
+        /* 0x00 */
+        public NMSString0x10 RecipeID;
         [NMS(Index = 1)]
-        /* 0x10 */ public bool RewardInCreative;
+        /* 0x10 */
+        public bool RewardInCreative;
     }
 }

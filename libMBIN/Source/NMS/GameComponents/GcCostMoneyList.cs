@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,11 +6,14 @@ namespace libMBIN.NMS.GameComponents
     public class GcCostMoneyList : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public List<int> Costs;
+        /* 0x00 */
+        public List<int> Costs;
         [NMS(Index = 1)]
-        /* 0x10 */ public GcCurrency CostCurrency;
+        /* 0x10 */
+        public GcCurrency CostCurrency;
         // size: 0x9
-        public enum IndexProviderEnum : uint {
+        public enum IndexProviderEnum : uint
+        {
             None,
             ShipSlot,
             ShipClass,
@@ -23,16 +25,20 @@ namespace libMBIN.NMS.GameComponents
             PilotRank,
         }
         [NMS(Index = 4)]
-        /* 0x14 */ public IndexProviderEnum IndexProvider;
+        /* 0x14 */
+        public IndexProviderEnum IndexProvider;
         // size: 0x3
-        public enum OutOfBoundsBehaviourEnum : uint {
+        public enum OutOfBoundsBehaviourEnum : uint
+        {
             NoCost,
             UseFirst,
             UseLast,
         }
         [NMS(Index = 3)]
-        /* 0x18 */ public OutOfBoundsBehaviourEnum OutOfBoundsBehaviour;
+        /* 0x18 */
+        public OutOfBoundsBehaviourEnum OutOfBoundsBehaviour;
         [NMS(Index = 2)]
-        /* 0x1C */ public bool AssertIfOutOfBounds;
+        /* 0x1C */
+        public bool AssertIfOutOfBounds;
     }
 }

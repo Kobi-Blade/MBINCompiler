@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,16 +6,22 @@ namespace libMBIN.NMS.GameComponents
     public class GcAISpaceshipComponentData : NMSTemplate
     {
         [NMS(Index = 3)]
-        /* 0x00 */ public TkModelResource Hangar;
+        /* 0x00 */
+        public TkModelResource Hangar;
         [NMS(Index = 5)]
-        /* 0x20 */ public NMSString0x10 CombatDefinitionID;
+        /* 0x20 */
+        public NMSString0x10 CombatDefinitionID;
         [NMS(Index = 2)]
-        /* 0x30 */ public GcPrimaryAxis Axis;
+        /* 0x30 */
+        public GcPrimaryAxis Axis;
         [NMS(Index = 1)]
-        /* 0x34 */ public GcSpaceshipClasses Class;
+        /* 0x34 */
+        public GcSpaceshipClasses Class;
         [NMS(Index = 0)]
-        /* 0x38 */ public GcAISpaceshipTypes Type;
+        /* 0x38 */
+        public GcAISpaceshipTypes Type;
         [NMS(Index = 4)]
-        /* 0x3C */ public bool IsSpaceAnomaly;
+        /* 0x3C */
+        public bool IsSpaceAnomaly;
     }
 }

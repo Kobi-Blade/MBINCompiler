@@ -1,57 +1,68 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using System.Reflection;
 
-namespace libMBIN {
+namespace libMBIN
+{
 
-    internal static class BinaryStreamExtensions {
+    internal static class BinaryStreamExtensions
+    {
 
-        public static void Align( this BinaryReader reader, int alignBy ) {
+        public static void Align(this BinaryReader reader, int alignBy)
+        {
             long offset = reader.BaseStream.Position;
             long mod = offset % alignBy;
             if (mod != 0) reader.BaseStream.Position += (alignBy - mod);
         }
 
-        public static void Align( this BinaryWriter writer, int alignBy, string name, byte paddingByte = 0 ) {
+        public static void Align(this BinaryWriter writer, int alignBy, string name, byte paddingByte = 0)
+        {
             long offset = writer.BaseStream.Position;
             if (alignBy == 0) return;
             long mod = offset % alignBy;
-            if ( mod != 0 ) {
-                if (paddingByte != 0) {
+            if (mod != 0)
+            {
+                if (paddingByte != 0)
+                {
                     byte[] paddingArray = Enumerable.Repeat(paddingByte, (int)(alignBy - mod)).ToArray();
-                    writer.Write( paddingArray );
-                } else {
-                    writer.Write( new byte[alignBy - mod] );
+                    writer.Write(paddingArray);
                 }
-                NMSTemplate.DebugLogTemplate( $"[C] aligned {name} to offset 0x{writer.BaseStream.Position:X}" );
+                else
+                {
+                    writer.Write(new byte[alignBy - mod]);
+                }
+                NMSTemplate.DebugLogTemplate($"[C] aligned {name} to offset 0x{writer.BaseStream.Position:X}");
             }
         }
 
-        public static string ReadString( this BinaryReader reader, Encoding encoding, int size, bool nullTerminated = false ) {
-            byte[] stringData = reader.ReadBytes( size );
-            string stringValue = encoding.GetString( stringData );
-            if (nullTerminated) {
-                int nullIndex = stringValue.IndexOf( "\0", StringComparison.Ordinal );
-                if (nullIndex >= 0) {
-                    stringValue = stringValue.Remove( nullIndex );
+        public static string ReadString(this BinaryReader reader, Encoding encoding, int size, bool nullTerminated = false)
+        {
+            byte[] stringData = reader.ReadBytes(size);
+            string stringValue = encoding.GetString(stringData);
+            if (nullTerminated)
+            {
+                int nullIndex = stringValue.IndexOf("\0", StringComparison.Ordinal);
+                if (nullIndex >= 0)
+                {
+                    stringValue = stringValue.Remove(nullIndex);
                 }
             }
 
             return stringValue;
         }
 
-        public static void WriteString( this BinaryWriter writer, string str, Encoding encoding = null, int? size = null, bool nullTerminated = false, byte padding = 0 ) {
+        public static void WriteString(this BinaryWriter writer, string str, Encoding encoding = null, int? size = null, bool nullTerminated = false, byte padding = 0)
+        {
             encoding = encoding ?? Encoding.ASCII;
             str = str ?? String.Empty;
 
-            int bufferSize = encoding.GetBytes( str ).Length;
+            int bufferSize = encoding.GetBytes(str).Length;
 
-            if (size != null) {
-                if (size.Value - bufferSize < 0) {
+            if (size != null)
+            {
+                if (size.Value - bufferSize < 0)
+                {
                     Logger.LogWarning($@"The provided string '{str}' is too long (0x{bufferSize:X}). " +
                                       $"It will be shortened to a length of 0x{size.Value:X}. " +
                                       "This may have unintended size effects.");
@@ -59,11 +70,11 @@ namespace libMBIN {
                 bufferSize = size.Value;
             }
 
-            int encodingSize = encoding.GetMaxByteCount( 1 );
+            int encodingSize = encoding.GetMaxByteCount(1);
 
             if (nullTerminated && size == null) bufferSize += 1; // add space for null terminator
 
-            byte[] stringBytes = encoding.GetBytes( str );
+            byte[] stringBytes = encoding.GetBytes(str);
             if (padding != 0 && size != null)
             {
                 // extend the array by a single byte (null padding) then add the difference between the size and the buffer size of the padding bytes
@@ -77,22 +88,24 @@ namespace libMBIN {
             {
                 Array.Resize(ref stringBytes, bufferSize);
             }
-            
 
-            if (nullTerminated && bufferSize > 0) {
-                var trimmedStringBytes = encoding.GetBytes( encoding.GetString( stringBytes ) );
-                if ( trimmedStringBytes.Length > stringBytes.Length ) {
+
+            if (nullTerminated && bufferSize > 0)
+            {
+                var trimmedStringBytes = encoding.GetBytes(encoding.GetString(stringBytes));
+                if (trimmedStringBytes.Length > stringBytes.Length)
+                {
                     trimmedStringBytes = stringBytes; // .NET failed to reencode the trimmed string properly?
                 }
 
                 int nullOffset = trimmedStringBytes.Length;
-                if ( nullOffset == bufferSize )
+                if (nullOffset == bufferSize)
                     nullOffset -= 1;
 
                 stringBytes[nullOffset] = 0; // atm this might add a null in the middle of a character!
             }
 
-            writer.Write( stringBytes );
+            writer.Write(stringBytes);
         }
 
         // Thank you to HugoPeters for the methods below:

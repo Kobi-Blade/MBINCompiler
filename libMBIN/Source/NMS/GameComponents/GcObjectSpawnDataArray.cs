@@ -1,4 +1,3 @@
-using libMBIN.NMS.GameComponents;
 using System.Collections.Generic;
 
 namespace libMBIN.NMS.GameComponents
@@ -7,10 +6,13 @@ namespace libMBIN.NMS.GameComponents
     public class GcObjectSpawnDataArray : NMSTemplate
     {
         [NMS(Index = 2)]
-        /* 0x00 */ public List<GcObjectSpawnData> Objects;
+        /* 0x00 */
+        public List<GcObjectSpawnData> Objects;
         [NMS(Index = 1)]
-        /* 0x10 */ public int MaxObjectsToSpawn;
+        /* 0x10 */
+        public int MaxObjectsToSpawn;
         [NMS(Index = 0)]
-        /* 0x14 */ public GcTerrainTileType TileType;
+        /* 0x14 */
+        public GcTerrainTileType TileType;
     }
 }

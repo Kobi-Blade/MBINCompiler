@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcSkiffComponentData : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x0 */ public float ArrivalTime;
+        /* 0x0 */
+        public float ArrivalTime;
         [NMS(Index = 1)]
-        /* 0x4 */ public float MaximumTravelForce;
+        /* 0x4 */
+        public float MaximumTravelForce;
     }
 }

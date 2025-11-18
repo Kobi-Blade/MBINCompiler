@@ -4,12 +4,16 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionSequenceKillEncounter : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public NMSString0x20A EncounterComponentScanEvent;
+        /* 0x00 */
+        public NMSString0x20A EncounterComponentScanEvent;
         [NMS(Index = 3)]
-        /* 0x20 */ public VariableSizeString DebugText;
+        /* 0x20 */
+        public VariableSizeString DebugText;
         [NMS(Index = 0)]
-        /* 0x30 */ public VariableSizeString Message;
+        /* 0x30 */
+        public VariableSizeString Message;
         [NMS(Index = 2)]
-        /* 0x40 */ public bool AllowedToEscape;
+        /* 0x40 */
+        public bool AllowedToEscape;
     }
 }

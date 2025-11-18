@@ -1,5 +1,4 @@
 using libMBIN.NMS.Toolkit;
-using libMBIN.NMS.GameComponents;
 
 namespace libMBIN.NMS.GameComponents
 {
@@ -7,14 +6,19 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasFish : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public GcFishData TargetFishInfo;
+        /* 0x00 */
+        public GcFishData TargetFishInfo;
         [NMS(Index = 0)]
-        /* 0x68 */ public int Amount;
+        /* 0x68 */
+        public int Amount;
         [NMS(Index = 2)]
-        /* 0x6C */ public TkEqualityEnum QualityTest;
+        /* 0x6C */
+        public TkEqualityEnum QualityTest;
         [NMS(Index = 3)]
-        /* 0x70 */ public TkEqualityEnum SizeTest;
+        /* 0x70 */
+        public TkEqualityEnum SizeTest;
         [NMS(Index = 4)]
-        /* 0x74 */ public bool TakeAmountFromSeasonData;
+        /* 0x74 */
+        public bool TakeAmountFromSeasonData;
     }
 }

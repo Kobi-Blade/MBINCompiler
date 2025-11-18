@@ -6,8 +6,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcNGuiStyleAnimationKeyframeData : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x00 */ public List<NMSTemplate> StyleProperties;
+        /* 0x00 */
+        public List<NMSTemplate> StyleProperties;
         [NMS(Index = 0)]
-        /* 0x10 */ public float Position;
+        /* 0x10 */
+        public float Position;
     }
 }

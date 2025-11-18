@@ -4,20 +4,25 @@ namespace libMBIN.NMS.GameComponents
     public class GcVehicleCheckpointComponentData : NMSTemplate
     {
         // size: 0x2
-        public enum CheckpointTypeEnum : uint {
+        public enum CheckpointTypeEnum : uint
+        {
             Checkpoint,
             Start,
         }
         [NMS(Index = 0)]
-        /* 0x0 */ public CheckpointTypeEnum CheckpointType;
+        /* 0x0 */
+        public CheckpointTypeEnum CheckpointType;
         // size: 0x2
-        public enum RaceTypeEnum : uint {
+        public enum RaceTypeEnum : uint
+        {
             Vehicle,
             Spaceship,
         }
         [NMS(Index = 1)]
-        /* 0x4 */ public RaceTypeEnum RaceType;
+        /* 0x4 */
+        public RaceTypeEnum RaceType;
         [NMS(Index = 2)]
-        /* 0x8 */ public float Radius;
+        /* 0x8 */
+        public float Radius;
     }
 }

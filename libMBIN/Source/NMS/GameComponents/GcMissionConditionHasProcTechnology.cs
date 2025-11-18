@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcMissionConditionHasProcTechnology : NMSTemplate
     {
         [NMS(Index = 0)]
-        /* 0x00 */ public NMSString0x20A ProcTechGroupID;
+        /* 0x00 */
+        public NMSString0x20A ProcTechGroupID;
         [NMS(Index = 1)]
-        /* 0x20 */ public int Count;
+        /* 0x20 */
+        public int Count;
     }
 }

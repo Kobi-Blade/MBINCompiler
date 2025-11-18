@@ -4,8 +4,10 @@ namespace libMBIN.NMS.GameComponents
     public class GcCreatureEffectTriggerRequirementCreatureSize : NMSTemplate
     {
         [NMS(Index = 1)]
-        /* 0x0 */ public float MaxCreatureSize;
+        /* 0x0 */
+        public float MaxCreatureSize;
         [NMS(Index = 0)]
-        /* 0x4 */ public float MinCreatureSize;
+        /* 0x4 */
+        public float MinCreatureSize;
     }
 }
